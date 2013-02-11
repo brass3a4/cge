@@ -26,3 +26,6 @@ a:hover{
 .escondida{
 	display: none;
 }
+.espacioSuperior{
+	padding-top: 10px;
+}

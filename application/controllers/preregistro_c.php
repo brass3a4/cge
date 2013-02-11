@@ -15,8 +15,14 @@
 	    function index(){
 	 		$this->load->view('preregistroGeneral_v',NULL);
 	    }
-	
+		
+		function imprimeDatos()
+		{
+			echo '<pre>';
+			print_r($_POST);
+			echo '</pre>';
+		}
 	
 
-	}    
+	}  
 ?>

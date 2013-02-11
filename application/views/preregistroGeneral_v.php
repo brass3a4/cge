@@ -18,7 +18,7 @@
 			
 			<fieldset class="cuerpo">
 			 	
-				<form action='' method='post' name='process'>
+				<form action='<?=base_url(); ?>index.php/preregistro_c/imprimeDatos/' method='post' name='process' accept-charset="utf-8">
 					<fieldset >
 						<legend class="cuerpo"><h4>Datos generales</h4></legend>
 					<div class="twelve colums">
@@ -51,32 +51,49 @@
 							<fieldset class="cuerpo">
 							<legend class="cuerpo">Dirección</legend>
 							
-							<div class="six columns">
-								<input type="text" id="pais" name="pais" placeholder="Pais"/>
+							<div class="twelve columns">
+								<div class="six columns">
+								<select name='pais'>
+									<option value="1"> País1</option>
+									<option value="2"> País1</option>
+								</select>
 							</div>
 							<div class="six columns">
-								<input type="text" id="estado" name="estado" placeholder="Estado"/>
+								<select name='estado'>
+									<option value="1"> Estado1</option>
+									<option value="2"> Estado2</option>
+								</select>
+							</div>
 							</div>
 							
-							<div class="six columns">
-								<input type="text" id="calle" name="calle" placeholder="Calle"/>
+							<div class="twelve columns espacioSuperior">
+								<div class="six columns">
+									<input type="text" id="calle" name="calle" placeholder="Calle"/>
+								</div>
+								<div class="three columns">
+									<input type="text" id="numero" name="numero" placeholder="Número"/>
+								</div>
+								<div class="three columns">
+									<input type="text" id="numeroInt" name="numero" placeholder="Número interior"/>
+								</div>
 							</div>
-							<div class="three columns">
-								<input type="text" id="numero" name="numero" placeholder="Número"/>
-							</div>
-							<div class="three columns">
-								<input type="text" id="numeroInt" name="numero" placeholder="Número interior"/>
-							</div>
-							<div class="six columns">
+							<div class="twelve columns">
+								<div class="six columns">
 								<input type="text" id="colonia" name="colonia" placeholder="Colonia"/>
 							</div>			
 							<div class="six columns">
-								<input type="text" id="delegacio" name="delegacio" placeholder="Delegación"/>
+									<select name='municipio'>
+									<option value="1"> Municipio1</option>
+									<option value="2"> Municipio2</option>
+								</select>
 							</div>	
-							<div class="four columns">
-								<input type="text" id="cp" name="cp" placeholder="C.P."/>
 							</div>
-							<div class="eight columns"></div>
+							<div class="twelve columns">
+								<div class="four columns" >
+									<input type="text" id="cp" name="cp" placeholder="C.P."/>
+								</div>
+								<div class="six columns"></div>
+							</div>
 														
 							</fieldset>
 							<div class="four columns">
@@ -125,10 +142,10 @@
 					<!-- Custom Radio -->
 							<div class="row">
 									<div class="one columns">
-										<label for="radio8"><input onclick="quitaClaseEscondida('tablaLengua')"  name="radioL" type="radio"  id="radioSi">Sí</label>
+										<label for="radio8"><input onclick="quitaClaseEscondida('tablaLengua')" value="1" name="radioL" type="radio"  id="radioSi">Sí</label>
 									</div>
 									<div class="one columns">
-										<label for="radio9"><input onclick="agregaClaseEscondida('tablaLengua')" name="radioL" CHECKED type="radio" id="radioNo">No</label>
+										<label for="radio9"><input onclick="agregaClaseEscondida('tablaLengua')" value="2" name="radioL" CHECKED type="radio" id="radioNo">No</label>
 									</div>
 									<div class="ten columns"></div>
 							</div>
@@ -164,10 +181,10 @@
 					<!-- Custom Radio -->
 							<div class="row">
 									<div class="one columns">
-										<label for="radio10"><input onclick="quitaClaseEscondida('capacitacion')"  name="radioC" type="radio"  id="radioCSi">Sí</label>
+										<label for="radio10"><input onclick="quitaClaseEscondida('capacitacion')"   value="1" name="radioC" type="radio"  id="radioCSi">Sí</label>
 									</div>
 									<div class="one columns">
-										<label for="radio11"><input onclick="agregaClaseEscondida('capacitacion')" name="radioC" CHECKED type="radio" id="radioCNo">No</label>
+										<label for="radio11"><input onclick="agregaClaseEscondida('capacitacion')" value="2" name="radioC" CHECKED type="radio" id="radioCNo">No</label>
 									</div>
 									<div class="ten columns"></div>
 							</div>
@@ -217,10 +234,10 @@
 					<!-- Custom Radio -->
 							<div class="row">
 									<div class="one columns">
-										<label for="radio12"><input onclick="quitaClaseEscondida('certificacion')"  name="radioCer" type="radio"  id="radioCerSi">Sí</label>
+										<label for="radio12"><input onclick="quitaClaseEscondida('certificacion')" value="1"  name="radioCer" type="radio"  id="radioCerSi">Sí</label>
 									</div>
 									<div class="one columns">
-										<label for="radio13"><input onclick="agregaClaseEscondida('certificacion')" name="radioCer" CHECKED type="radio" id="radioCerNo">No</label>
+										<label for="radio13"><input onclick="agregaClaseEscondida('certificacion')" value="2" name="radioCer" CHECKED type="radio" id="radioCerNo">No</label>
 									</div>
 									<div class="ten columns"></div>
 							</div>
