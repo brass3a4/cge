@@ -1,0 +1,35 @@
+<html><head><title>test</title><meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<link rel='stylesheet' type='text/css' href='../css/local.css'>
+<link rel='stylesheet' type='text/css' href='../css/rbl_forms.css'>
+<link rel='stylesheet' type='text/css' href='./css/t_calendar.css'>
+<script type='text/javascript' src='./js/t_calendar.js'></script>
+<script type='text/javascript' src='./js/t_form.js'></script>
+</head><body><div id='main' style='width: 70%;'>
+<form id='rbform' name='frm1' method='POST' action='#' class='rbl_frm3'><fieldset id='xfs-1'><legend>Test Simple</legend>
+<ul id='f_col_1' style=' width: 209px; height: 217px;' class='connectedSortable cLab2 aa'>
+<li id='f_nb_37' >
+<label for='nb_37'>etat<img class='imgstar' src='../img/rbl/star.png' border='0' alt='obligatoire' title='obligatoire' hspace='0'></label><select  id='nb_37' name='etat'  required='Y'  size='1' ></select><img class='imghelp'  src='../img/rbl/help-browser.png' border='0' title='Activation de l`application (TVA DEB)' alt='Activation de l`application (TVA DEB)' width='16' height='16' hspace='10'>
+</li>
+<li id='f_nb_40' >
+<label for='nb_40'>niveau<img class='imgstar' src='../img/rbl/star.png' border='0' alt='obligatoire' title='obligatoire' hspace='0'></label><input type='text'  id='nb_40' name='niveau'  autoskip='O'  required='Y'  size='2'  maxlength='2'  freemask='NN' /><img class='imghelp'  src='../img/rbl/help-browser.png' border='0' title='Niveau de l`application (01...99 - def 10)' alt='Niveau de l`application (01...99 - def 10)' width='16' height='16' hspace='10'>
+</li>
+<li id='f_nb_36' >
+<label for='nb_36'>Numéro dossier<img class='imgstar' src='../img/rbl/star.png' border='0' alt='obligatoire' title='obligatoire' hspace='0'></label><input type='text'  id='nb_36' name='ndos'  autoskip='O'  required='Y'  size='9'  maxlength='9'  freemask='999AN9999' /><img class='imghelp'  src='../img/rbl/help-browser.png' border='0' title='Numéro du dossier' alt='Numéro du dossier' width='16' height='16' hspace='10'>
+</li>
+</ul>
+<ul id='f_col_2' style=' width: 333px;' class='connectedSortable cLab2 aa'>
+<li id='f_nb_39' >
+<label for='nb_39'>data<img class='imgstar' src='../img/rbl/star_transparent.png' border='0' hspace='0'></label><input type='text'  id='nb_39' name='data'  size='35'  maxlength='35' /><img class='imghelp'  src='../img/rbl/help-browser.png' border='0' title='Commentaires' alt='Commentaires' width='16' height='16' hspace='10'>
+</li>
+<li id='f_nb_38' >
+<label for='nb_38'>Date fin<img class='imgstar' src='../img/rbl/star.png' border='0' alt='obligatoire' title='obligatoire' hspace='0'></label><input type='text'  id='nb_38' name='dfin'  autoskip='O'  required='Y'  size='10'  maxlength='10'  mask='dd/mm/yyyy' /><img src='../img/rbl/_cal.gif' border='0' hspace='2' onclick="displayCalendarName('nb_38','dd/mm/yyyy',this);return false;" ><img class='imghelp'  src='../img/rbl/help-browser.png' border='0' title='Date de fin de l`activation de l`application' alt='Date de fin de l`activation de l`application' width='16' height='16' hspace='10'>
+</li>
+<li id='f_nb_43' >
+<input type='submit'  id='nb_43' class='bt_def'  value='Valider'/>&nbsp;
+</li>
+</ul>
+</fieldset></form>
+<span id='__message__'></span></div><script type='text/javascript'>
+  initFormsValidation('rbform') ;
+  __setZoneMessage('__message__');
+</script></body></html>

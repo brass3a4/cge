@@ -1,0 +1,37 @@
+<html><head><title>test</title><meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<link rel='stylesheet' type='text/css' href='../css/local.css'>
+<link rel='stylesheet' type='text/css' href='../css/rbl_forms.css'>
+<link rel='stylesheet' type='text/css' href='./css/t_calendar.css'>
+<script type='text/javascript' src='./js/t_calendar.js'></script>
+<script type='text/javascript' src='./js/t_form.js'></script>
+<script type='text/javascript' src='./js/t_tools.js'></script>
+</head><body><div id='main'>
+<form id='rbform' name='frm1' method='POST' action='#' class='rbl_frm1' style='width:579px;'><fieldset id='xfs-1'>
+<ul id='f_col_1' style=' width: 571px;' class='connectedSortable cLab1b bb'>
+<li id='f_nb_22' >
+<img border='0' src='../img/rbl/rbllogo_v2.jpg'  class='right_m' />
+</li>
+<li id='f_nb_23' >
+<label for='nb_23' accesskey='C' ><u>C</u>ode Client<img class='imgstar' src='../img/rbl/star.png' border='0' alt='obligatoire' title='obligatoire' hspace='0'></label><input type='text'  id='nb_23' name='cli'  autoskip='O'  required='Y'  size='6'  maxlength='6'  freemask='AA9999' /><img class='imghelp'  src='../img/rbl/help-browser.png' border='0' title='Code client' alt='Code client' width='16' height='16' hspace='10'>
+</li>
+<li id='f_nb_24' >
+<label for='nb_24' accesskey='N' ><u>N</u>iveau<img class='imgstar' src='../img/rbl/star.png' border='0' alt='obligatoire' title='obligatoire' hspace='0'></label><input type='text'  id='nb_24' name='niveau'  autoskip='O'  required='Y'  size='2'  maxlength='2'  freemask='99'  class='in_Right' /><img class='imghelp'  src='../img/rbl/help-browser.png' border='0' title='Niveau de l`application (01...99 - def 10)' alt='Niveau de l`application (01...99 - def 10)' width='16' height='16' hspace='10'>
+</li>
+<li id='f_nb_25' >
+<label for='nb_25' accesskey='D' ><u>D</u>ate entrée<img class='imgstar' src='../img/rbl/star.png' border='0' alt='obligatoire' title='obligatoire' hspace='0'></label><input type='text'  id='nb_25' name='dfin'  autoskip='O'  required='Y'  size='10'  maxlength='10'  mask='dd-mm-yyyy'  class='formStd' /><img src='../img/rbl/_cal.gif' border='0' hspace='2' onclick="displayCalendarName('nb_25','dd-mm-yyyy',this);return false;" ><img class='imghelp'  src='../img/rbl/help-browser.png' border='0' title='Date 1er contact client' alt='Date 1er contact client' width='16' height='16' hspace='10'>
+</li>
+<li id='f_nb_26' >
+<label for='nb_26' accesskey='A' ><u>A</u>dresse<img class='imgstar' src='../img/rbl/star.png' border='0' alt='obligatoire' title='obligatoire' hspace='0'></label><input type='text'  id='nb_26' name='adr'  required='Y'  size='50'  maxlength='80' /><img class='imghelp'  src='../img/rbl/help-browser.png' border='0' title='Saisie de l`adresse' alt='Saisie de l`adresse' width='16' height='16' hspace='10'>
+</li>
+<li id='f_nb_27' >
+<label for='nb_27'><img class='imgstar' src='../img/rbl/star_transparent.png' border='0' hspace='0'></label><input type='text'  id='nb_27' name='adr2'  size='50'  maxlength='80' />
+</li>
+<li id='f_nb_28' >
+<input type='submit'  id='nb_28' name='save'  size='10'  class='bt_def'  value='Sauver'/>&nbsp;
+</li>
+</ul>
+</fieldset></form>
+<span id='__message__'></span></div><script type='text/javascript'>
+  initFormsValidation('rbform') ;
+  __setZoneMessage('__message__');
+</script></body></html>

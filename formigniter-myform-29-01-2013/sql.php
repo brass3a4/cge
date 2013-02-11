@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS  `myform` (
+ id int(40) NOT NULL auto_increment,
+ nombre VARCHAR(255) NOT NULL,
+ usuario VARCHAR(50) NOT NULL,
+ contrasena VARCHAR(32) NOT NULL,
+ re_contrasena VARCHAR(32) NOT NULL,
+ email VARCHAR(100) NOT NULL,
+ PRIMARY KEY (id)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
