@@ -5,10 +5,15 @@
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/foundation.min.css">
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/app.css">
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/css/style.css">
+  	<link rel="stylesheet" href="<?=base_url(); ?>statics/css/datepicker.css">
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/foundation.min.js"></script>
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/jquery.foundation.forms.js"></script>
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/modernizr.foundation.js"></script>
   	<script src="<?=base_url(); ?>statics/js/js.js"></script>
+  	<script src="<?=base_url(); ?>statics/js/jquery-1.8.2.min.js"></script>
+  	<script src="<?=base_url(); ?>statics/js/jquery-ui-1.8.23.custom.min.js"></script>
+  	<script src="<?=base_url(); ?>statics/js/datepickerEsp.js"></script>
+
 </head>
 <body>
 	<?php $datos = ''?>
@@ -25,7 +30,7 @@
 						
 						<div class="twelve columns">
 								<div class="four columns">
-								<input type="text" id="nombre" name="nombre" placeholder="Nombre(s)"/>
+								<input type="text" id="nombre" name="nombre" placeholder="Nombre(s)" required/>
 								</div>
 								<div class="four columns">
 								<input type="text" id="apellidoPat" name="apellidoPat" placeholder="Apellido paterno"/>
@@ -40,7 +45,7 @@
 								<input type="text" id="Nacionalidad" name="Nacionalidad" placeholder="Nacionalidad"/>
 								</div>
 								<div class="four columns">
-								<input type="text" id="fechNac" name="fechNac" placeholder="Fecha de nacimiento"/>
+								<input type="text" id="fechNac" name="fechNac" placeholder="Fecha de nacimiento (AAAA-MM-DD)"/>
 								</div>
 								<div class="four columns">
 								
