@@ -9,6 +9,7 @@
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/foundation.min.js"></script>
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/jquery.foundation.forms.js"></script>
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/modernizr.foundation.js"></script>
+  	<script src="<?=base_url(); ?>statics/foundation/javascripts/jquery.placeholder.js.js"></script>
   	<script src="<?=base_url(); ?>statics/js/js.js"></script>
   	<script src="<?=base_url(); ?>statics/js/jquery-1.8.2.min.js"></script>
   	<script src="<?=base_url(); ?>statics/js/jquery-ui-1.8.23.custom.min.js"></script>
@@ -25,27 +26,27 @@
 			 	
 				<form action='<?=base_url(); ?>index.php/preregistro_c/imprimeDatos/' method='post' name='process' accept-charset="utf-8">
 					<fieldset >
-						<legend class="cuerpo"><h4>Datos generales</h4></legend>
+						<legend class="cuerpo"><h4>Datos personales</h4></legend>
 					<div class="twelve colums">
 						
 						<div class="twelve columns">
 								<div class="four columns">
-								<input type="text" id="nombre" name="nombre" placeholder="Nombre(s)" required/>
+								<input type="text" id="nombre" name="nombre" placeholder="Nombre(s)" title="El nombre debe contener únicamente letras" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
 								</div>
 								<div class="four columns">
-								<input type="text" id="apellidoPat" name="apellidoPat" placeholder="Apellido paterno"/>
+								<input type="text" id="apellidoPat" name="apellidoPat" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Apellido paterno" required/>
 								</div>
 								<div class="four columns">
-								<input type="text" id="apellidoMat" name="apellidoMat" placeholder="Apellido materno"/>
+								<input type="text" id="apellidoMat" name="apellidoMat" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Apellido materno"required/>
 								</div>
 						</div>
 						
 						<div class="twelve columns">
 								<div class="four columns">
-								<input type="text" id="Nacionalidad" name="Nacionalidad" placeholder="Nacionalidad"/>
+								<input type="text" id="Nacionalidad" name="Nacionalidad" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Nacionalidad" required/>
 								</div>
 								<div class="four columns">
-								<input type="text" id="fechNac" name="fechNac" placeholder="Fecha de nacimiento (AAAA-MM-DD)"/>
+								<input type="text" id="fechNac" name="fechNac" title="La fecha debe de tener este formato AAAA-MM-DD" placeholder="Fecha de nacimiento" required/>
 								</div>
 								<div class="four columns">
 								
@@ -73,10 +74,10 @@
 							
 							<div class="twelve columns espacioSuperior">
 								<div class="six columns">
-									<input type="text" id="calle" name="calle" placeholder="Calle"/>
+									<input type="text" id="calle" name="calle" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Calle" required/>
 								</div>
 								<div class="three columns">
-									<input type="text" id="numero" name="numero" placeholder="Número"/>
+									<input type="text" id="numero" name="numero" pattern="[0-9]+" placeholder="Número" required/>
 								</div>
 								<div class="three columns">
 									<input type="text" id="numeroInt" name="numero" placeholder="Número interior"/>
@@ -84,7 +85,7 @@
 							</div>
 							<div class="twelve columns">
 								<div class="six columns">
-								<input type="text" id="colonia" name="colonia" placeholder="Colonia"/>
+								<input type="text" id="colonia" name="colonia" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Colonia" required/>
 							</div>			
 							<div class="six columns">
 									<select name='municipio'>
@@ -95,20 +96,20 @@
 							</div>
 							<div class="twelve columns">
 								<div class="four columns" >
-									<input type="text" id="cp" name="cp" placeholder="C.P."/>
+									<input type="text" id="cp" name="cp" pattern="[0-9]+" placeholder="C.P." required/>
 								</div>
 								<div class="six columns"></div>
 							</div>
 														
 							</fieldset>
 							<div class="four columns">
-								<input type="text" id="rfc" name="rfc" placeholder="RFC"/>
+								<input type="text" id="rfc" name="rfc"  placeholder="RFC" />
 							</div>
 							<div class="four columns">
-								<input type="text" id="curp" name="curp" placeholder="CURP"/>
+								<input type="text" id="curp" name="curp" placeholder="CURP" required/>
 							</div>
 							<div class="four columns">
-								<input type="text" id="email" name="email" placeholder="Correo electrónico"/>
+								<input type="email" id="email" name="email" title="ejemplo@correo.com" placeholder="Correo electrónico" required/>
 							</div>
 						</div>
 						
@@ -138,13 +139,13 @@
 						</div>
 						
 							<div class="eight columns escondida" id="estudio">
-									<input type="text" id="nombEstudio" name="nombEstudio"/>
+									<input type="text" id="nombEstudio" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" name="nombEstudio"/>
 							</div>
 				 	</div>
 				 	</div>
-					<div class="twelve colums">
+					<!--<div class="twelve colums">
 					<h5 class="subheader">¿Ha tomado cursos sobre cómo enseñar la lengua inglesa a niños?</h5>
-					<!-- Custom Radio -->
+				
 							<div class="row">
 									<div class="one columns">
 										<label for="radio8"><input onclick="quitaClaseEscondida('tablaLengua')" value="1" name="radioL" type="radio"  id="radioSi">Sí</label>
@@ -183,7 +184,7 @@
 					</div>
 					<div class="twelve colums">
 					<h5 class="subheader">¿Ha recibido alguna capacitación de parte del PNIEB?</h5>
-					<!-- Custom Radio -->
+				
 							<div class="row">
 									<div class="one columns">
 										<label for="radio10"><input onclick="quitaClaseEscondida('capacitacion')"   value="1" name="radioC" type="radio"  id="radioCSi">Sí</label>
@@ -234,9 +235,10 @@
 								    </tr>
 								</table>
 					</div>
+					-->
 					<div class="twelve colums">
-					<h5 class="subheader">¿Cuenta con alguna certificación como docente de inglés?</h5>
-					<!-- Custom Radio -->
+					<h5 class="subheader">Indique cuál certificación tiene como docente de ingles</h5>
+							<!--
 							<div class="row">
 									<div class="one columns">
 										<label for="radio12"><input onclick="quitaClaseEscondida('certificacion')" value="1"  name="radioCer" type="radio"  id="radioCerSi">Sí</label>
@@ -246,47 +248,43 @@
 									</div>
 									<div class="ten columns"></div>
 							</div>
-							<div class="escondida" id="certificacion">
+							-->
+
+								<!--
 								<blockquote>
 									<p>En caso de haber respondido afirmativante, especifique con qué certificación cuenta</p>
 								</blockquote>
 								
-								<textarea name="certificacionNombre" cols="1" rows="2"></textarea>	
 								<blockquote>
 									<p>Si ha aprobado alguno de estos exámenes u obtenido alguno de los diplomas que mensionan a continuación indíquelo</p>
 								</blockquote>
-								
+								-->
 								<div class="custom">
 									<div class="twelve columns">
 										
-										<label for="checkbox1"><input type="checkbox" id="checkbox1">Examen internacional English Language Testing System (IELTS)</label>
-										<label for="checkbox2"><input type="checkbox" id="checkbox2">Teaching knowledge Test (TKT)</label>
-										<label for="checkbox3"><input type="checkbox" id="checkbox3">Examen Cambridge Preliminary English Test (PET)</label>
-										<label for="checkbox4"><input type="checkbox" id="checkbox4">Examen Cambridge First Certificate in English (FCE)</label>
-										<label for="checkbox5"><input type="checkbox" id="checkbox5">Examen Cambridge Certificate in Advanced English (CAE)</label>
-										<label for="checkbox6"><input type="checkbox" id="checkbox6">Cambridge Certificate of Proficiency in English (CPE)</label>
-										<label for="checkbox7"><input type="checkbox" id="checkbox7">Certificate for Overseas Teachers of English (COTE) ICELT</label>
-										<label for="checkbox8"><input type="checkbox" id="checkbox8">Diploma for Overseas Teachers of English (DOTE)</label>
-										<label for="checkbox9"><input type="checkbox" id="checkbox9">Cuso de formación de Profesores de inglés (UNAM)</label>
-										<label for="checkbox10"><input type="checkbox" id="checkbox10">Exámenes de la comisión Técnica de Idiomas Extranjeros y de la comisión Especial de Lenguas Extranjeras (UNAM)</label>
+										<label for="checkbox1"><input type="checkbox" value="1" name="IELTS" id="checkbox1">Examen internacional English Language Testing System (IELTS)</label>
+										<label for="checkbox2"><input type="checkbox" value="2" name="TKT" id="checkbox2">Teaching knowledge Test (TKT)</label>
+										<label for="checkbox3"><input type="checkbox" value="3" name="PET" id="checkbox3">Examen Cambridge Preliminary English Test (PET)</label>
+										<label for="checkbox4"><input type="checkbox" value="4" name="FCE" id="checkbox4">Examen Cambridge First Certificate in English (FCE)</label>
+										<label for="checkbox5"><input type="checkbox" value="5" name="CAE" id="checkbox5">Examen Cambridge Certificate in Advanced English (CAE)</label>
+										<label for="checkbox6"><input type="checkbox" value="6" name="CPE" id="checkbox6">Cambridge Certificate of Proficiency in English (CPE)</label>
+										<label for="checkbox7"><input type="checkbox" value="7" name="ICELT" id="checkbox7">In service Certificate English Languaje Teaching (ICELT)</label>
+										<label for="checkbox8"><input type="checkbox" value="8" name="DOTE" id="checkbox8">Diploma for Overseas Teachers of English (DOTE)</label>
+										<label for="checkbox9"><input type="checkbox" value="9" name="UNAM" id="checkbox9">Cuso de formación de Profesores de inglés (UNAM)</label>
+										<label for="checkbox10"><input type="checkbox" value="10" name="UNAM2" id="checkbox10">Exámenes de la comisión Técnica de Idiomas Extranjeros y de la comisión Especial de Lenguas Extranjeras (UNAM)</label>
 										
 									</div>
 									<div class="eight columns">
-										<label for="checkbox11" ><input type="checkbox" onclick="habilitar('puntuajeTOEFL')" id="checkbox11">TOEFL institucional: INDICAR PUNTAJE AQUÍ:</label>
+										<label for="checkbox11" ><input type="checkbox" onclick="habilitar('puntuajeTOEFL')" value="11" name="TOEFL" id="checkbox11">TOEFL institucional: INDICAR PUNTAJE AQUÍ:</label>
 									</div>
 									<div class="four columns">
 										<input  class="four columns"type="text" id="puntuajeTOEFL" name="puntuajeTOEFL" disabled>
 									</div>
 									<div class="twelve columns">
-										<label for="checkbox12"><input type="checkbox"  onclick="habilitar('otroText')" id="checkbox12">Otro(s) (especificar ¿cuál?)</label>
+										<label for="checkbox12"><input type="checkbox"  onclick="habilitar('otroText')" value="12" name="otro" id="checkbox12">Otro(s) (especificar ¿cuál?)</label>
 									<textarea name="otra" id="otroText"cols="1" rows="2" disabled></textarea>
 									</div>
 								</div>	
-								
-									
-									
-										
-							</div>
 					</div>
 					
 					</fieldset>
