@@ -65,4 +65,12 @@ $(function() {
 	changeYear: true });
 });
 
+/* Esta función carga la página previa en el historial*/
+function veAtras(){
+  window.history.back()
+}
 
+function cargarVista(url){
+	var uri=url+'preregistro_c/guardaDatos/'
+	document.location.href=uri;
+}

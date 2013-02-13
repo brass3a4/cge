@@ -16,13 +16,17 @@
 	 		$this->load->view('preregistroGeneral_v',NULL);
 	    }
 		
-		function imprimeDatos()
+		
+		function preDatos()
 		{
-			echo '<pre>';
-			print_r($_POST);
-			echo '</pre>';
+			$data['datos'] = $_POST;
+			$this->load->view('preDatos_v',$data);
 		}
-	
+		
+		function guardaDatos()
+		{
+			$this->load->view('registroDocs_v',NULL);
+		}
 
 	}  
 ?>

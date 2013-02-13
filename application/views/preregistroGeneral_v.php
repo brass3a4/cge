@@ -24,7 +24,7 @@
 			
 			<fieldset class="cuerpo">
 			 	
-				<form action='<?=base_url(); ?>index.php/preregistro_c/imprimeDatos/' method='post' name='process' accept-charset="utf-8">
+				<form action='<?=base_url(); ?>preregistro_c/preDatos/' method='post' name='process' accept-charset="utf-8">
 					<fieldset >
 						<legend class="cuerpo"><h4>Datos personales</h4></legend>
 					<div class="twelve colums">
@@ -43,7 +43,7 @@
 						
 						<div class="twelve columns">
 								<div class="four columns">
-								<input type="text" id="Nacionalidad" name="Nacionalidad" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Nacionalidad" required/>
+								<input type="text" id="Nacionalidad" name="nacionalidad" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Nacionalidad" required/>
 								</div>
 								<div class="four columns">
 								<input type="text" id="fechNac" name="fechNac" title="La fecha debe de tener este formato AAAA-MM-DD" placeholder="Fecha de nacimiento" required/>
@@ -80,7 +80,7 @@
 									<input type="text" id="numero" name="numero" pattern="[0-9]+" placeholder="Número" required/>
 								</div>
 								<div class="three columns">
-									<input type="text" id="numeroInt" name="numero" placeholder="Número interior"/>
+									<input type="text" id="numeroInt" name="numeroInt" placeholder="Número interior"/>
 								</div>
 							</div>
 							<div class="twelve columns">
@@ -126,7 +126,7 @@
 				 	<div class="twelve columns">
 				 		<div class="row">
 				 		<div class="four columns">
-							<select onchange="quitaClaseEscondida('estudio')" onkeyup="quitaClaseEscondida('estudio')" onclick="quitaClaseEscondida('estudio')">
+							<select name="tipoEstudio" onchange="quitaClaseEscondida('estudio')" onkeyup="quitaClaseEscondida('estudio')" onclick="quitaClaseEscondida('estudio')">
 								 <option value="1" >Preparatoria:</option>
 								 <option value="2">Pasante de licenciatura en:</option>
 								 <option value="3">Licenciatura en:</option>
@@ -288,7 +288,7 @@
 					</div>
 					
 					</fieldset>
-					<input type="submit" id="enviarBtn" class="button offset-by-five" value="Enviar" />
+					<input type="submit" id="enviarBtn" class="button" style="float: right;" value="Siguiente" />
 				</form>
 			</fieldset>
 
