@@ -27,6 +27,12 @@
 		{
 			$this->load->view('registroDocs_v',NULL);
 		}
-
+		
+		function cargarPDF()
+		{
+			echo "<pre>";
+				print_r($_FILES);
+			echo "</pre>";
+		}
 	}  
 ?>
