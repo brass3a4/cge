@@ -127,7 +127,7 @@
 				 		<div class="row">
 				 		<div class="four columns">
 							<select name="tipoEstudio" onchange="quitaClaseEscondida('estudio')" onkeyup="quitaClaseEscondida('estudio')" onclick="quitaClaseEscondida('estudio')">
-								 <option value="1" >Preparatoria:</option>
+								 <option value="1" >Preparatoria</option>
 								 <option value="2">Pasante de licenciatura en:</option>
 								 <option value="3">Licenciatura en:</option>
 								 <option value="4">Pasante de maestría en:</option>
@@ -262,27 +262,27 @@
 								<div class="custom">
 									<div class="twelve columns">
 										
-										<label for="checkbox1"><input type="checkbox" value="1" name="IELTS" id="checkbox1">Examen internacional English Language Testing System (IELTS)</label>
-										<label for="checkbox2"><input type="checkbox" value="2" name="TKT" id="checkbox2">Teaching knowledge Test (TKT)</label>
-										<label for="checkbox3"><input type="checkbox" value="3" name="PET" id="checkbox3">Examen Cambridge Preliminary English Test (PET)</label>
-										<label for="checkbox4"><input type="checkbox" value="4" name="FCE" id="checkbox4">Examen Cambridge First Certificate in English (FCE)</label>
-										<label for="checkbox5"><input type="checkbox" value="5" name="CAE" id="checkbox5">Examen Cambridge Certificate in Advanced English (CAE)</label>
-										<label for="checkbox6"><input type="checkbox" value="6" name="CPE" id="checkbox6">Cambridge Certificate of Proficiency in English (CPE)</label>
-										<label for="checkbox7"><input type="checkbox" value="7" name="ICELT" id="checkbox7">In service Certificate English Languaje Teaching (ICELT)</label>
-										<label for="checkbox8"><input type="checkbox" value="8" name="DOTE" id="checkbox8">Diploma for Overseas Teachers of English (DOTE)</label>
-										<label for="checkbox9"><input type="checkbox" value="9" name="UNAM" id="checkbox9">Cuso de formación de Profesores de inglés (UNAM)</label>
-										<label for="checkbox10"><input type="checkbox" value="10" name="UNAM2" id="checkbox10">Exámenes de la comisión Técnica de Idiomas Extranjeros y de la comisión Especial de Lenguas Extranjeras (UNAM)</label>
+										<label for="checkbox1"><input type="checkbox" value="1" name="ielts" id="checkbox1">Examen internacional English Language Testing System (IELTS)</label>
+										<label for="checkbox2"><input type="checkbox" value="2" name="tkt" id="checkbox2">Teaching knowledge Test (TKT)</label>
+										<label for="checkbox3"><input type="checkbox" value="3" name="pet" id="checkbox3">Examen Cambridge Preliminary English Test (PET)</label>
+										<label for="checkbox4"><input type="checkbox" value="4" name="fce" id="checkbox4">Examen Cambridge First Certificate in English (FCE)</label>
+										<label for="checkbox5"><input type="checkbox" value="5" name="cae" id="checkbox5">Examen Cambridge Certificate in Advanced English (CAE)</label>
+										<label for="checkbox6"><input type="checkbox" value="6" name="cpe" id="checkbox6">Cambridge Certificate of Proficiency in English (CPE)</label>
+										<label for="checkbox7"><input type="checkbox" value="7" name="icelt" id="checkbox7">In service Certificate English Languaje Teaching (ICELT)</label>
+										<label for="checkbox8"><input type="checkbox" value="8" name="dote" id="checkbox8">Diploma for Overseas Teachers of English (DOTE)</label>
+										<label for="checkbox9"><input type="checkbox" value="9" name="unam1" id="checkbox9">Cuso de formación de Profesores de inglés (UNAM)</label>
+										<label for="checkbox10"><input type="checkbox" value="10" name="unam2" id="checkbox10">Exámenes de la comisión Técnica de Idiomas Extranjeros y de la comisión Especial de Lenguas Extranjeras (UNAM)</label>
 										
 									</div>
 									<div class="eight columns">
-										<label for="checkbox11" ><input type="checkbox" onclick="habilitar('puntuajeTOEFL')" value="11" name="TOEFL" id="checkbox11">TOEFL institucional: INDICAR PUNTAJE AQUÍ:</label>
+										<label for="checkbox11" ><input type="checkbox" value="11" name="toefl" id="checkbox11">TOEFL institucional: INDICAR PUNTAJE AQUÍ:</label>
 									</div>
 									<div class="four columns">
-										<input  class="four columns"type="text" id="puntuajeTOEFL" name="puntuajeTOEFL" disabled>
+										<input  class="four columns" type="text" id="puntuajeTOEFL" name="puntuajeTOEFL" >
 									</div>
 									<div class="twelve columns">
-										<label for="checkbox12"><input type="checkbox"  onclick="habilitar('otroText')" value="12" name="otro" id="checkbox12">Otro(s) (especificar ¿cuál?)</label>
-									<textarea name="otra" id="otroText"cols="1" rows="2" disabled></textarea>
+										<label for="checkbox12"><input type="checkbox"   value="12" name="otro" id="checkbox12">Otro(s) (especificar ¿cuál?)</label>
+									<textarea name="otroText" id="otroText" cols="1" rows="2" ></textarea>
 									</div>
 								</div>	
 					</div>

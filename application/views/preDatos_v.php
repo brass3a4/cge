@@ -39,8 +39,7 @@
 					<label><b>Número: </b> <?=$datos['numero']; ?></label>
 					<?php if(!empty($datos['numeroInt'])){
 						echo '<label><b>Número interior: </b>'.$datos['numeroInt'].'</label>';
-					} 
-					
+						} 
 					?>
 					<label><b>Colonia: </b> <?=$datos['colonia']; ?></label>
 					<label><b>Municipio: </b> <?=$datos['municipio']; ?></label>
@@ -76,6 +75,60 @@
 					
 					?>
 					
+					<?php 
+							if(!empty($datos['ielts']) 
+							|| !empty($datos['tkt'])
+							|| !empty($datos['pet'])
+							|| !empty($datos['fce'])
+							|| !empty($datos['cae'])
+							|| !empty($datos['cpe'])
+							|| !empty($datos['icelt'])
+							|| !empty($datos['dote'])
+							|| !empty($datos['unam1'])
+							|| !empty($datos['unam2'])
+							|| !empty($datos['toefl'])
+							|| !empty($datos['otro'])
+								){
+								echo "<br><label><b>Cetificacion(es) obtenidas en el idioma ingles:<b></label><br>";
+								}
+					?>
+					
+					<?php if(!empty($datos['ielts'])){
+						echo '<label>Examen internacional English Language Testing System (IELTS)</label>';}
+					?>
+					<?php if(!empty($datos['tkt'])){
+						echo '<label>Teaching knowledge Test (TKT)</label>';}
+					?>
+					<?php if(!empty($datos['pet'])){
+						echo '<label>Examen Cambridge Preliminary English Test (PET)</label>';}
+					?>
+					<?php if(!empty($datos['fce'])){
+						echo '<label>Examen Cambridge First Certificate in English (FCE)</label>';}
+					?>
+					<?php if(!empty($datos['cae'])){
+						echo '<label>Examen Cambridge Certificate in Advanced English (CAE)</label>';}
+					?>
+					<?php if(!empty($datos['cpe'])){
+						echo '<label>Cambridge Certificate of Proficiency in English (CPE)</label>';}
+					?>
+					<?php if(!empty($datos['icelt'])){
+						echo '<label>In service Certificate English Languaje Teaching (ICELT)</label>';}
+					?>
+					<?php if(!empty($datos['dote'])){
+						echo '<label>Diploma for Overseas Teachers of English (DOTE)</label>';}
+					?>
+					<?php if(!empty($datos['unam1'])){
+						echo '<label>Cuso de formación de Profesores de inglés (UNAM)</label>';}
+					?>
+					<?php if(!empty($datos['unam2'])){
+						echo '<label>Exámenes de la comisión Técnica de Idiomas Extranjeros y de la comisión Especial de Lenguas Extranjeras (UNAM)</label>';}
+					?>
+					<?php if(!empty($datos['toefl'])){
+						echo '<label>TOEFL institucional, puntuaje: '.$datos['puntuajeTOEFL'].'</label>';}
+					?>
+					<?php if(!empty($datos['otro'])){
+						echo '<label>Otro: '.$datos['otroText'].'</label>';}
+					?>
 					
 				</fieldset>
 				

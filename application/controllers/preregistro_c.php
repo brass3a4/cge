@@ -7,7 +7,7 @@
 	        parent::__construct();
 			
 			$this->load->helper(array('html', 'url'));
-	        //$this->load->model('login_m'); // Load the model
+	        $this->load->model('catalogos_m'); // Load the model
 			//$this->load->library('email');
 	        			
 	   	}
@@ -16,9 +16,9 @@
 	 		$this->load->view('preregistroGeneral_v',NULL);
 	    }
 		
-		
 		function preDatos()
 		{
+			
 			$data['datos'] = $_POST;
 			$this->load->view('preDatos_v',$data);
 		}
