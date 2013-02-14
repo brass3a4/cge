@@ -18,38 +18,9 @@
 	<script type="text/javascript">
 		var base = "<?=base_url(); ?>";
 	</script>
-</head>
-<body>
-	<h1>Combobox dependientes de Pa&iacute;s, Estado y Ciudad con PHP, MySQL, jQuery y un poco de AJAX</h1>
-	<div class="six columns">
-		<dl>
-<dt>Ubicaci&oacute;n:</dt>
-	<dd>Pais:</dd>
-    <dd>
-        <select id="pais" name="pais">
-            <option value="0">Selecciona Uno...</option>
-        </select>
-    </dd>
+	</head>
 
-	<dd>Estado:</dd>
-    <dd>
-        <select id="estado" name="estado">
-            <option value="0">Selecciona Uno...</option>
-        </select>
-    </dd>
-
-	<dd>Ciudad:</dd>
-    <dd>
-        <select id="ciudad" name="ciudad">
-            <option value="0">Selecciona Uno...</option>
-        </select>
-    </dd>
-</dl>
-	</div>
-<pre>
-<?
-	// print_r($datos);
-?>
-</pre>
-</body>
+	<body>
+		<input type="button" value="enviar" id="pais" onclick='dependencia_estado()'/>
+	</body>
 </html>

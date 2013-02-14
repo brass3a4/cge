@@ -11,7 +11,12 @@ class PruebasJulio_c extends CI_Controller
         	$this->load->model(array('catalogos_m'));
        }
 	
-	function index() 
+	function index()
+	{
+		$this->load->view('pruebasJulio', NULL);
+	}
+	
+	function paises() 
 	{	
 			echo 'Antes de entrar a la funcion....';
 			  						
@@ -19,7 +24,35 @@ class PruebasJulio_c extends CI_Controller
 			
 			echo 'Entro a la funcion.....';
 			
-			$this->load->view('pruebasJulio', $Data);
+			foreach($Data['datos'] as $key=>$value)
+			{
+				echo "<option value=".$key.">".$value['NomPais']."</option>";
+			}
+			
+			
+	}
+	
+	function estados() 
+	{
+			  						
+			$Data['datos'] = $this->catalogos_m->mTraerTodo('catEstados', 'IdEstado', 'IdEstado');
+			
+			
+			
+			foreach($Data['datos'] as $key=>$value)
+			{
+				echo "<option value=".$key.">".$value['NomEstado']."</option>";
+			}
+			
+			//print_r($Data['datos']);
+			$this->load->view('pru_v', NULL);
+	}
+	
+	function pru()
+	{
+		$data['datos']= $_GET;
+		
+		$this->load->view('pru2_v', $data);		
 	}
 
 }
