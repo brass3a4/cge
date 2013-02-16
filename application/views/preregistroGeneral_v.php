@@ -17,7 +17,6 @@
 
 </head>
 <body>
-	<?php $datos = ''?>
 	<div class="row">
 		<div class="twelve columns ">
 			<br><br>
@@ -59,16 +58,17 @@
 							
 							<div class="twelve columns">
 								<div class="six columns">
+								<label>País:</label>
 								<select name='pais'>
-									<option value="1"> País1</option>
-									<option value="2"> País1</option>
+									<?php 
+										foreach ($catPais as $key => $value) {
+											echo "<option value=".$key.">".$value['NomPais']."</option>";
+										}
+									?>
 								</select>
 							</div>
 							<div class="six columns">
-								<select name='estado'>
-									<option value="1"> Estado1</option>
-									<option value="2"> Estado2</option>
-								</select>
+								<input type="text" name="estado" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Estado"/>
 							</div>
 							</div>
 							
@@ -88,9 +88,7 @@
 								<input type="text" id="colonia" name="colonia" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Colonia" required/>
 							</div>			
 							<div class="six columns">
-									<select name='municipio'>
-									<option value="1"> Municipio1</option>
-									<option value="2"> Municipio2</option>
+									<input type="text" name="municipio" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Municipio"/>
 								</select>
 							</div>	
 							</div>

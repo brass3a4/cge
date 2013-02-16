@@ -21,6 +21,7 @@
 <body>
 
 	<div class="row">
+		<form action='<?=base_url(); ?>preregistro_c/guardaDatos/' method='post' name='process' accept-charset="utf-8" enctype="multipart/form-data">
 		<div class="twelve columns ">
 			
 			<fieldset class="cuerpo">
@@ -131,9 +132,11 @@
 					?>
 					
 				</fieldset>
-				
+				<form>
+				<input type="hidden" name="datos" value='<? print_r($datos) ?>'/>
+				</form>
 				<a class="button" onclick="veAtras()">Correguir</a>
-				<a class="button" style="float: right;" onclick="cargarVista(urlBase)">Confirmar</a>
+				<input type="submit" class="button" style="float: right;" onclick="cargarVista(urlBase)" value="Confirmar"/>
 				
 			</fieldset>
 

@@ -37,8 +37,6 @@ class PruebasJulio_c extends CI_Controller
 			  						
 			$Data['datos'] = $this->catalogos_m->mTraerTodo('catEstados', 'IdEstado', 'IdEstado');
 			
-			
-			
 			foreach($Data['datos'] as $key=>$value)
 			{
 				echo "<option value=".$key.">".$value['NomEstado']."</option>";

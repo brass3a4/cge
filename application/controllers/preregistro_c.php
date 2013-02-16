@@ -13,8 +13,15 @@
 	   	}
 
 	    function index(){
-	 		$this->load->view('preregistroGeneral_v',NULL);
-	    }
+	    	
+			$this->preRegistro();
+	 	}
+		
+		function preRegistro()
+		{
+			$datos['catPais'] = $this->catalogos_m->mTraerTodo('catPaises', 'IdPais', 'NomPais');
+			$this->load->view('preregistroGeneral_v',$datos);
+		}
 		
 		function preDatos()
 		{
@@ -25,6 +32,7 @@
 		
 		function guardaDatos()
 		{
+			print_r($_POST);
 			$this->load->view('registroDocs_v',NULL);
 		}
 		

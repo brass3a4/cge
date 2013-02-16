@@ -17,7 +17,6 @@
 
 </head>
 <body>
-	<?php $datos = ''?>
 	<div class="row">
 		<div class="twelve columns ">
 			

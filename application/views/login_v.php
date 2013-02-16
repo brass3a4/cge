@@ -12,25 +12,20 @@
 </head>
 <body>
 	<div class="row">
-			<div class="eight columns offset-by-two">
-				<br><br>
+			<div class="eight columns offset-by-four headLogin">
+				
 				<p class="instrucciones">Introduzca sus datos para ingresar al sistema</p>
-				<fieldset class="login">
-					<form action='<?php echo base_url();?>index.php/loguin_c/process' method='post' name='process'>
-									
-						<label for="usuarioInput">Usuario</label>
-				  		<input type="text" id="usuarioInput" name="usuarioInput" />
-					  
-						<label for="passInput">Contraseña</label>
-				  		<input type="password" id="passInput" name="passInput"/>
-				  		
-  						<input type="submit" id="LogueoAdminBtn" class="button offset-by-five" value="Ingresar" />
-					</form>
+				<div class="six columns">
+					<fieldset class="login">
+						<form action='<?php echo base_url();?>index.php/loguin_c/logear' method='post' name='process'>
+					  		<input type="text" id="usuarioInput" name="usuarioInput" placeholder="Correo" required/>
+					  		<input type="password" id="passInput" name="passInput" placeholder="Contraseña" required/>
+  						<input type="submit" id="LogueoAdminBtn" class="button offset-by-four" value="Ingresar" />
+						</form>
 				</fieldset>
+				</div>
 	
-				<p><a class="six columns registroBtn" href="#" id="registroBtn">Registrarse</a></p>
-				<p><a class="six columns OlvidoPassBtn" href="#" id="OlvidoPassBtn">¿Olvidó su contraseña?</a></p>
-
+				<p><a class="eight columns offset-by-four registroBtn" href="#" id="registroBtn">Registrarse</a></p>
 			</div><!--twelve columns-->
 		</div> <!--row-->
 </body>

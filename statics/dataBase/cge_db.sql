@@ -1,99 +1,231 @@
--- phpMyAdmin SQL Dump
--- version 3.5.4
--- http://www.phpmyadmin.net
---
--- Servidor: 127.0.0.1
--- Tiempo de generación: 13-02-2013 a las 22:03:19
--- Versión del servidor: 5.5.28-log
--- Versión de PHP: 5.4.8
-
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
---
--- Base de datos: `cge_db`
---
-
 -- --------------------------------------------------------
 
---
--- Estructura de tabla para la tabla `Aclaraciones`
---
-
-CREATE TABLE IF NOT EXISTS `Aclaraciones` (
-  `IdAclaracion` int(11) NOT NULL,
-  `IdPago` int(11) NOT NULL,
-  PRIMARY KEY (`IdAclaracion`),
-  KEY `fk_Aclaraciones_Pagos1` (`IdPago`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `CamposInformacion`
+-- Volcado de datos para la tabla `catPaises`
 --
 
-CREATE TABLE IF NOT EXISTS `CamposInformacion` (
-  `IdCampo` int(11) NOT NULL,
-  `IdCategoria` int(11) NOT NULL,
-  `NomCorto` varchar(255) DEFAULT NULL,
-  `TipoDato` varchar(255) DEFAULT NULL,
-  `Descripcion` longtext,
-  `Orden` bigint(10) DEFAULT NULL,
-  `Requerido` tinyint(2) DEFAULT NULL,
-  `Bloqueado` tinyint(2) DEFAULT NULL,
-  `Visible` tinyint(2) DEFAULT NULL,
-  `Unico` tinyint(2) DEFAULT NULL,
-  `Registro` tinyint(2) DEFAULT NULL,
-  `DatoPorDefecto` longtext,
-  `FormatoPorDefecto` tinyint(2) DEFAULT NULL,
-  `Parametro1` longtext,
-  `Parametro2` longtext,
-  `Parametro3` longtext,
-  `Parametro4` longtext,
-  `Parametro5` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`IdCampo`),
-  KEY `fk_CamposInformacion_CategoriaInformacion1_idx` (`IdCategoria`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `CategoriaInformacion`
---
-
-CREATE TABLE IF NOT EXISTS `CategoriaInformacion` (
-  `IdCategoria` int(11) NOT NULL,
-  `Nombre` varchar(255) DEFAULT NULL,
-  `Orden` bigint(2) DEFAULT NULL,
-  PRIMARY KEY (`IdCategoria`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `catEstados`
---
-
-CREATE TABLE IF NOT EXISTS `catEstados` (
-  `IdEstado` int(11) NOT NULL AUTO_INCREMENT,
-  `NomEstado` varchar(255) DEFAULT NULL,
-  `Tipo` varchar(20) DEFAULT NULL,
-  `IdPais` int(6) unsigned NOT NULL,
-  PRIMARY KEY (`IdEstado`),
-  KEY `fk_catEstados_catPaises2_idx` (`IdPais`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=122 ;
-
---
--- Volcado de datos para la tabla `catEstados`
---
-
+INSERT INTO `catPaises` (`IdPais`, `NomPais`, `ISO_L`, `PrefijoTel`) VALUES
+(1, 'España', NULL, NULL),
+(2, 'Albania', NULL, NULL),
+(3, 'Andorra', NULL, NULL),
+(4, 'Austria', NULL, NULL),
+(5, 'Bielorrusia', NULL, NULL),
+(6, 'Bélgica', NULL, NULL),
+(7, 'Bosnia - Herzegovina', NULL, NULL),
+(8, 'Bulgaria', NULL, NULL),
+(9, 'Croacia', NULL, NULL),
+(10, 'Chipre', NULL, NULL),
+(11, 'Rep. Checa', NULL, NULL),
+(12, 'Dinamarca', NULL, NULL),
+(13, 'Estonia', NULL, NULL),
+(14, 'I. Feroe', NULL, NULL),
+(15, 'Finlandia', NULL, NULL),
+(16, 'Francia', NULL, NULL),
+(17, 'Alemania', NULL, NULL),
+(18, 'Gibraltar', NULL, NULL),
+(19, 'Grecia', NULL, NULL),
+(20, 'Hungría', NULL, NULL),
+(21, 'Islandia', NULL, NULL),
+(22, 'Irlanda', NULL, NULL),
+(23, 'Italia', NULL, NULL),
+(24, 'Letonia', NULL, NULL),
+(25, 'Liechtenstein', NULL, NULL),
+(26, 'Lituania', NULL, NULL),
+(27, 'Luxemburgo', NULL, NULL),
+(28, 'Macedonia', NULL, NULL),
+(29, 'Malta', NULL, NULL),
+(30, 'Moldavia', NULL, NULL),
+(31, 'Mónaco', NULL, NULL),
+(32, 'Holanda', NULL, NULL),
+(33, 'Noruega', NULL, NULL),
+(34, 'Polonia', NULL, NULL),
+(35, 'Portugal', NULL, NULL),
+(36, 'Rumania', NULL, NULL),
+(37, 'Rusia', NULL, NULL),
+(38, 'San Marino', NULL, NULL),
+(39, 'Eslovaquia', NULL, NULL),
+(40, 'Eslovenia', NULL, NULL),
+(41, 'Suecia', NULL, NULL),
+(42, 'Suiza', NULL, NULL),
+(43, 'Turquia', NULL, NULL),
+(44, 'Ucrania', NULL, NULL),
+(45, 'Reino Unido', NULL, NULL),
+(46, 'Vaticano', NULL, NULL),
+(47, 'Yugoslavia', NULL, NULL),
+(48, 'Bermudas', NULL, NULL),
+(49, 'Canada', NULL, NULL),
+(50, 'Groenlandia', NULL, NULL),
+(51, 'México', NULL, NULL),
+(52, 'Estados Unidos', NULL, NULL),
+(53, 'Anguilla', NULL, NULL),
+(54, 'Antigua y Barbuda', NULL, NULL),
+(55, 'Aruba', NULL, NULL),
+(56, 'Bahamas', NULL, NULL),
+(57, 'Barbados', NULL, NULL),
+(58, 'Belice', NULL, NULL),
+(59, 'I. Caimán', NULL, NULL),
+(60, 'Costa Rica', NULL, NULL),
+(61, 'Cuba', NULL, NULL),
+(62, 'Dominica', NULL, NULL),
+(63, 'Rep. Dominicana', NULL, NULL),
+(64, 'El Salvador', NULL, NULL),
+(65, 'Granada', NULL, NULL),
+(66, 'Guadalupe', NULL, NULL),
+(67, 'Guatemala', NULL, NULL),
+(68, 'Haití', NULL, NULL),
+(69, 'Honduras', NULL, NULL),
+(70, 'Jamaica', NULL, NULL),
+(71, 'Martinica', NULL, NULL),
+(72, 'Montserrat', NULL, NULL),
+(73, 'Antillas Holandesas', NULL, NULL),
+(74, 'Nicaragua', NULL, NULL),
+(75, 'Panamá', NULL, NULL),
+(76, 'Puerto Rico', NULL, NULL),
+(77, 'St.Kitts & Nevis', NULL, NULL),
+(78, 'St. Vicent y Grenadines', NULL, NULL),
+(79, 'Trinidad y Tobago', NULL, NULL),
+(80, 'I. Vírgenes EEUU', NULL, NULL),
+(81, 'Argentina', NULL, NULL),
+(82, 'Bolivia', NULL, NULL),
+(83, 'Brasil', NULL, NULL),
+(84, 'Chile', NULL, NULL),
+(85, 'Colombia', NULL, NULL),
+(86, 'Ecuador', NULL, NULL),
+(87, 'I. Malvinas', NULL, NULL),
+(88, 'Guayana Francesa', NULL, NULL),
+(89, 'I. Galápagos', NULL, NULL),
+(90, 'Guayana', NULL, NULL),
+(91, 'Paraguay', NULL, NULL),
+(92, 'Peru', NULL, NULL),
+(93, 'Sur Georgia e I. Sandwich', NULL, NULL),
+(94, 'Surinam', NULL, NULL),
+(95, 'Uruguay', NULL, NULL),
+(96, 'Venezuela', NULL, NULL),
+(97, 'Argelia', NULL, NULL),
+(98, 'Angola', NULL, NULL),
+(99, 'Benin', NULL, NULL),
+(100, 'Botswana', NULL, NULL),
+(101, 'Burkina Faso', NULL, NULL),
+(102, 'Burundi', NULL, NULL),
+(103, 'Camerún', NULL, NULL),
+(104, 'Cabo Verde', NULL, NULL),
+(105, 'Rep. Centroafricana', NULL, NULL),
+(106, 'Chad', NULL, NULL),
+(107, 'Comoros', NULL, NULL),
+(108, 'Congo', NULL, NULL),
+(109, 'Yibuti', NULL, NULL),
+(110, 'Egipto', NULL, NULL),
+(111, 'Guinea Ecuatorial', NULL, NULL),
+(112, 'Eritrea', NULL, NULL),
+(113, 'Etiopia', NULL, NULL),
+(114, 'Gabón', NULL, NULL),
+(115, 'Gambia', NULL, NULL),
+(116, 'Ghana', NULL, NULL),
+(117, 'Guinea', NULL, NULL),
+(118, 'Guinea-Bissau', NULL, NULL),
+(119, 'Kenia', NULL, NULL),
+(120, 'Lesotho', NULL, NULL),
+(121, 'Liberia', NULL, NULL),
+(122, 'Líbia', NULL, NULL),
+(123, 'Madagascar', NULL, NULL),
+(124, 'Malawi', NULL, NULL),
+(125, 'Mali', NULL, NULL),
+(126, 'Mauritania', NULL, NULL),
+(127, 'Mauricio', NULL, NULL),
+(128, 'Marruecos', NULL, NULL),
+(129, 'Mozambique', NULL, NULL),
+(130, 'Namibia', NULL, NULL),
+(131, 'Níger', NULL, NULL),
+(132, 'Nigeria', NULL, NULL),
+(133, 'I. Reunión', NULL, NULL),
+(134, 'Ruanda', NULL, NULL),
+(135, 'Sao Tomé y Príncipe', NULL, NULL),
+(136, 'Senegal', NULL, NULL),
+(137, 'Seychelles', NULL, NULL),
+(138, 'Sierra Leona', NULL, NULL),
+(139, 'Somalia', NULL, NULL),
+(140, 'Sudáfrica', NULL, NULL),
+(141, 'Sudán', NULL, NULL),
+(142, 'Swazilandia', NULL, NULL),
+(143, 'Tanzania', NULL, NULL),
+(144, 'Togo', NULL, NULL),
+(145, 'Túnez', NULL, NULL),
+(146, 'Uganda', NULL, NULL),
+(147, 'Sáhara Occidental', NULL, NULL),
+(148, 'Zaire', NULL, NULL),
+(149, 'Zambia', NULL, NULL),
+(150, 'Zimbabwe', NULL, NULL),
+(151, 'Afganistán', NULL, NULL),
+(152, 'Bangladesh', NULL, NULL),
+(153, 'Bután', NULL, NULL),
+(154, 'Brunei', NULL, NULL),
+(155, 'Burma (Myanmar)', NULL, NULL),
+(156, 'Camboya', NULL, NULL),
+(157, 'China', NULL, NULL),
+(158, 'Hong Kong', NULL, NULL),
+(159, 'India', NULL, NULL),
+(160, 'Indonesia', NULL, NULL),
+(161, 'Japón', NULL, NULL),
+(162, 'Kazajistán', NULL, NULL),
+(163, 'Kirguizistán', NULL, NULL),
+(164, 'Laos', NULL, NULL),
+(165, 'Macao', NULL, NULL),
+(166, 'Malasia', NULL, NULL),
+(167, 'Maldivas', NULL, NULL),
+(168, 'Mongolia', NULL, NULL),
+(169, 'Nepal', NULL, NULL),
+(170, 'Corea del Norte', NULL, NULL),
+(171, 'Pakistán', NULL, NULL),
+(172, 'Filipinas', NULL, NULL),
+(173, 'Singapur', NULL, NULL),
+(174, 'Corea del Sur', NULL, NULL),
+(175, 'Sri Lanka', NULL, NULL),
+(176, 'Taiwán', NULL, NULL),
+(177, 'Tajikistán', NULL, NULL),
+(178, 'Tailandia', NULL, NULL),
+(179, 'Turkmenistán', NULL, NULL),
+(180, 'Uzbekistán', NULL, NULL),
+(181, 'Vietnam', NULL, NULL),
+(182, 'Armenia', NULL, NULL),
+(183, 'Azerbayan', NULL, NULL),
+(184, 'Bahrain', NULL, NULL),
+(185, 'Georgia', NULL, NULL),
+(186, 'Irán', NULL, NULL),
+(187, 'Iraq', NULL, NULL),
+(188, 'Israel', NULL, NULL),
+(189, 'Jordania', NULL, NULL),
+(190, 'Kuwait', NULL, NULL),
+(191, 'Líbano', NULL, NULL),
+(192, 'Omán', NULL, NULL),
+(193, 'Qatar', NULL, NULL),
+(194, 'Arabia Saudí', NULL, NULL),
+(195, 'Emiratos Arabes Unidos', NULL, NULL),
+(196, 'Yemen', NULL, NULL),
+(197, 'Australia', NULL, NULL),
+(198, 'I. Cook', NULL, NULL),
+(199, 'Fiji', NULL, NULL),
+(200, 'Polinesia Francesa', NULL, NULL),
+(201, 'Guam', NULL, NULL),
+(202, 'Kiribati', NULL, NULL),
+(203, 'I. Marianas del Norte', NULL, NULL),
+(204, 'I. Marshall', NULL, NULL),
+(205, 'Micronesia', NULL, NULL),
+(206, 'Nauru', NULL, NULL),
+(207, 'Nueva Caledonia', NULL, NULL),
+(208, 'Nueva Zelanda', NULL, NULL),
+(209, 'Palau', NULL, NULL),
+(210, 'Papua Nueva Guinea', NULL, NULL),
+(211, 'Samoa', NULL, NULL),
+(212, 'I. Salomón', NULL, NULL),
+(213, 'Tonga', NULL, NULL),
+(214, 'Tuvalu', NULL, NULL),
+(215, 'Vanuatu', NULL, NULL),
+(216, 'I. Wallis y Futuna', NULL, NULL),
+(217, 'Costa de Marfil', NULL, NULL),
+(218, 'I. Vírgenes Británicas', NULL, NULL),
+(219, 'I. Cocos (Keeling)', NULL, NULL),
+(220, 'Siria', NULL, NULL);
 INSERT INTO `catEstados` (`IdEstado`, `NomEstado`, `Tipo`, `IdPais`) VALUES
 (1, 'San José', NULL, 60),
 (2, 'Alajuela', NULL, 60),
@@ -219,18 +351,6 @@ INSERT INTO `catEstados` (`IdEstado`, `NomEstado`, `Tipo`, `IdPais`) VALUES
 
 -- --------------------------------------------------------
 
---
--- Estructura de tabla para la tabla `catMunicipios`
---
-
-CREATE TABLE IF NOT EXISTS `catMunicipios` (
-  `IdMunicipio` int(11) NOT NULL AUTO_INCREMENT,
-  `NomMunicipio` varchar(255) DEFAULT NULL,
-  `IdEstado` int(11) NOT NULL,
-  PRIMARY KEY (`IdMunicipio`),
-  UNIQUE KEY `IdMunicipio_UNIQUE` (`IdMunicipio`),
-  KEY `fk_catMunicipios_catEstados2_idx` (`IdEstado`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3671 ;
 
 --
 -- Volcado de datos para la tabla `catMunicipios`
@@ -3910,602 +4030,4 @@ INSERT INTO `catMunicipios` (`IdMunicipio`, `NomMunicipio`, `IdEstado`) VALUES
 (3669, 'Trancoso', 121),
 (3670, 'Santa María de la Paz', 121);
 
--- --------------------------------------------------------
 
---
--- Estructura de tabla para la tabla `catPaises`
---
-
-CREATE TABLE IF NOT EXISTS `catPaises` (
-  `IdPais` int(6) unsigned NOT NULL,
-  `NomPais` varchar(255) DEFAULT NULL,
-  `ISO_L` varchar(4) DEFAULT NULL,
-  `PrefijoTel` int(8) DEFAULT NULL,
-  PRIMARY KEY (`IdPais`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `catPaises`
---
-
-INSERT INTO `catPaises` (`IdPais`, `NomPais`, `ISO_L`, `PrefijoTel`) VALUES
-(1, 'España', NULL, NULL),
-(2, 'Albania', NULL, NULL),
-(3, 'Andorra', NULL, NULL),
-(4, 'Austria', NULL, NULL),
-(5, 'Bielorrusia', NULL, NULL),
-(6, 'Bélgica', NULL, NULL),
-(7, 'Bosnia - Herzegovina', NULL, NULL),
-(8, 'Bulgaria', NULL, NULL),
-(9, 'Croacia', NULL, NULL),
-(10, 'Chipre', NULL, NULL),
-(11, 'Rep. Checa', NULL, NULL),
-(12, 'Dinamarca', NULL, NULL),
-(13, 'Estonia', NULL, NULL),
-(14, 'I. Feroe', NULL, NULL),
-(15, 'Finlandia', NULL, NULL),
-(16, 'Francia', NULL, NULL),
-(17, 'Alemania', NULL, NULL),
-(18, 'Gibraltar', NULL, NULL),
-(19, 'Grecia', NULL, NULL),
-(20, 'Hungría', NULL, NULL),
-(21, 'Islandia', NULL, NULL),
-(22, 'Irlanda', NULL, NULL),
-(23, 'Italia', NULL, NULL),
-(24, 'Letonia', NULL, NULL),
-(25, 'Liechtenstein', NULL, NULL),
-(26, 'Lituania', NULL, NULL),
-(27, 'Luxemburgo', NULL, NULL),
-(28, 'Macedonia', NULL, NULL),
-(29, 'Malta', NULL, NULL),
-(30, 'Moldavia', NULL, NULL),
-(31, 'Mónaco', NULL, NULL),
-(32, 'Holanda', NULL, NULL),
-(33, 'Noruega', NULL, NULL),
-(34, 'Polonia', NULL, NULL),
-(35, 'Portugal', NULL, NULL),
-(36, 'Rumania', NULL, NULL),
-(37, 'Rusia', NULL, NULL),
-(38, 'San Marino', NULL, NULL),
-(39, 'Eslovaquia', NULL, NULL),
-(40, 'Eslovenia', NULL, NULL),
-(41, 'Suecia', NULL, NULL),
-(42, 'Suiza', NULL, NULL),
-(43, 'Turquia', NULL, NULL),
-(44, 'Ucrania', NULL, NULL),
-(45, 'Reino Unido', NULL, NULL),
-(46, 'Vaticano', NULL, NULL),
-(47, 'Yugoslavia', NULL, NULL),
-(48, 'Bermudas', NULL, NULL),
-(49, 'Canada', NULL, NULL),
-(50, 'Groenlandia', NULL, NULL),
-(51, 'México', NULL, NULL),
-(52, 'Estados Unidos', NULL, NULL),
-(53, 'Anguilla', NULL, NULL),
-(54, 'Antigua y Barbuda', NULL, NULL),
-(55, 'Aruba', NULL, NULL),
-(56, 'Bahamas', NULL, NULL),
-(57, 'Barbados', NULL, NULL),
-(58, 'Belice', NULL, NULL),
-(59, 'I. Caimán', NULL, NULL),
-(60, 'Costa Rica', NULL, NULL),
-(61, 'Cuba', NULL, NULL),
-(62, 'Dominica', NULL, NULL),
-(63, 'Rep. Dominicana', NULL, NULL),
-(64, 'El Salvador', NULL, NULL),
-(65, 'Granada', NULL, NULL),
-(66, 'Guadalupe', NULL, NULL),
-(67, 'Guatemala', NULL, NULL),
-(68, 'Haití', NULL, NULL),
-(69, 'Honduras', NULL, NULL),
-(70, 'Jamaica', NULL, NULL),
-(71, 'Martinica', NULL, NULL),
-(72, 'Montserrat', NULL, NULL),
-(73, 'Antillas Holandesas', NULL, NULL),
-(74, 'Nicaragua', NULL, NULL),
-(75, 'Panamá', NULL, NULL),
-(76, 'Puerto Rico', NULL, NULL),
-(77, 'St.Kitts & Nevis', NULL, NULL),
-(78, 'St. Vicent y Grenadines', NULL, NULL),
-(79, 'Trinidad y Tobago', NULL, NULL),
-(80, 'I. Vírgenes EEUU', NULL, NULL),
-(81, 'Argentina', NULL, NULL),
-(82, 'Bolivia', NULL, NULL),
-(83, 'Brasil', NULL, NULL),
-(84, 'Chile', NULL, NULL),
-(85, 'Colombia', NULL, NULL),
-(86, 'Ecuador', NULL, NULL),
-(87, 'I. Malvinas', NULL, NULL),
-(88, 'Guayana Francesa', NULL, NULL),
-(89, 'I. Galápagos', NULL, NULL),
-(90, 'Guayana', NULL, NULL),
-(91, 'Paraguay', NULL, NULL),
-(92, 'Peru', NULL, NULL),
-(93, 'Sur Georgia e I. Sandwich', NULL, NULL),
-(94, 'Surinam', NULL, NULL),
-(95, 'Uruguay', NULL, NULL),
-(96, 'Venezuela', NULL, NULL),
-(97, 'Argelia', NULL, NULL),
-(98, 'Angola', NULL, NULL),
-(99, 'Benin', NULL, NULL),
-(100, 'Botswana', NULL, NULL),
-(101, 'Burkina Faso', NULL, NULL),
-(102, 'Burundi', NULL, NULL),
-(103, 'Camerún', NULL, NULL),
-(104, 'Cabo Verde', NULL, NULL),
-(105, 'Rep. Centroafricana', NULL, NULL),
-(106, 'Chad', NULL, NULL),
-(107, 'Comoros', NULL, NULL),
-(108, 'Congo', NULL, NULL),
-(109, 'Yibuti', NULL, NULL),
-(110, 'Egipto', NULL, NULL),
-(111, 'Guinea Ecuatorial', NULL, NULL),
-(112, 'Eritrea', NULL, NULL),
-(113, 'Etiopia', NULL, NULL),
-(114, 'Gabón', NULL, NULL),
-(115, 'Gambia', NULL, NULL),
-(116, 'Ghana', NULL, NULL),
-(117, 'Guinea', NULL, NULL),
-(118, 'Guinea-Bissau', NULL, NULL),
-(119, 'Kenia', NULL, NULL),
-(120, 'Lesotho', NULL, NULL),
-(121, 'Liberia', NULL, NULL),
-(122, 'Líbia', NULL, NULL),
-(123, 'Madagascar', NULL, NULL),
-(124, 'Malawi', NULL, NULL),
-(125, 'Mali', NULL, NULL),
-(126, 'Mauritania', NULL, NULL),
-(127, 'Mauricio', NULL, NULL),
-(128, 'Marruecos', NULL, NULL),
-(129, 'Mozambique', NULL, NULL),
-(130, 'Namibia', NULL, NULL),
-(131, 'Níger', NULL, NULL),
-(132, 'Nigeria', NULL, NULL),
-(133, 'I. Reunión', NULL, NULL),
-(134, 'Ruanda', NULL, NULL),
-(135, 'Sao Tomé y Príncipe', NULL, NULL),
-(136, 'Senegal', NULL, NULL),
-(137, 'Seychelles', NULL, NULL),
-(138, 'Sierra Leona', NULL, NULL),
-(139, 'Somalia', NULL, NULL),
-(140, 'Sudáfrica', NULL, NULL),
-(141, 'Sudán', NULL, NULL),
-(142, 'Swazilandia', NULL, NULL),
-(143, 'Tanzania', NULL, NULL),
-(144, 'Togo', NULL, NULL),
-(145, 'Túnez', NULL, NULL),
-(146, 'Uganda', NULL, NULL),
-(147, 'Sáhara Occidental', NULL, NULL),
-(148, 'Zaire', NULL, NULL),
-(149, 'Zambia', NULL, NULL),
-(150, 'Zimbabwe', NULL, NULL),
-(151, 'Afganistán', NULL, NULL),
-(152, 'Bangladesh', NULL, NULL),
-(153, 'Bután', NULL, NULL),
-(154, 'Brunei', NULL, NULL),
-(155, 'Burma (Myanmar)', NULL, NULL),
-(156, 'Camboya', NULL, NULL),
-(157, 'China', NULL, NULL),
-(158, 'Hong Kong', NULL, NULL),
-(159, 'India', NULL, NULL),
-(160, 'Indonesia', NULL, NULL),
-(161, 'Japón', NULL, NULL),
-(162, 'Kazajistán', NULL, NULL),
-(163, 'Kirguizistán', NULL, NULL),
-(164, 'Laos', NULL, NULL),
-(165, 'Macao', NULL, NULL),
-(166, 'Malasia', NULL, NULL),
-(167, 'Maldivas', NULL, NULL),
-(168, 'Mongolia', NULL, NULL),
-(169, 'Nepal', NULL, NULL),
-(170, 'Corea del Norte', NULL, NULL),
-(171, 'Pakistán', NULL, NULL),
-(172, 'Filipinas', NULL, NULL),
-(173, 'Singapur', NULL, NULL),
-(174, 'Corea del Sur', NULL, NULL),
-(175, 'Sri Lanka', NULL, NULL),
-(176, 'Taiwán', NULL, NULL),
-(177, 'Tajikistán', NULL, NULL),
-(178, 'Tailandia', NULL, NULL),
-(179, 'Turkmenistán', NULL, NULL),
-(180, 'Uzbekistán', NULL, NULL),
-(181, 'Vietnam', NULL, NULL),
-(182, 'Armenia', NULL, NULL),
-(183, 'Azerbayan', NULL, NULL),
-(184, 'Bahrain', NULL, NULL),
-(185, 'Georgia', NULL, NULL),
-(186, 'Irán', NULL, NULL),
-(187, 'Iraq', NULL, NULL),
-(188, 'Israel', NULL, NULL),
-(189, 'Jordania', NULL, NULL),
-(190, 'Kuwait', NULL, NULL),
-(191, 'Líbano', NULL, NULL),
-(192, 'Omán', NULL, NULL),
-(193, 'Qatar', NULL, NULL),
-(194, 'Arabia Saudí', NULL, NULL),
-(195, 'Emiratos Arabes Unidos', NULL, NULL),
-(196, 'Yemen', NULL, NULL),
-(197, 'Australia', NULL, NULL),
-(198, 'I. Cook', NULL, NULL),
-(199, 'Fiji', NULL, NULL),
-(200, 'Polinesia Francesa', NULL, NULL),
-(201, 'Guam', NULL, NULL),
-(202, 'Kiribati', NULL, NULL),
-(203, 'I. Marianas del Norte', NULL, NULL),
-(204, 'I. Marshall', NULL, NULL),
-(205, 'Micronesia', NULL, NULL),
-(206, 'Nauru', NULL, NULL),
-(207, 'Nueva Caledonia', NULL, NULL),
-(208, 'Nueva Zelanda', NULL, NULL),
-(209, 'Palau', NULL, NULL),
-(210, 'Papua Nueva Guinea', NULL, NULL),
-(211, 'Samoa', NULL, NULL),
-(212, 'I. Salomón', NULL, NULL),
-(213, 'Tonga', NULL, NULL),
-(214, 'Tuvalu', NULL, NULL),
-(215, 'Vanuatu', NULL, NULL),
-(216, 'I. Wallis y Futuna', NULL, NULL),
-(217, 'Costa de Marfil', NULL, NULL),
-(218, 'I. Vírgenes Británicas', NULL, NULL),
-(219, 'I. Cocos (Keeling)', NULL, NULL),
-(220, 'Siria', NULL, NULL);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `ConceposDePago`
---
-
-CREATE TABLE IF NOT EXISTS `ConceposDePago` (
-  `IdConcepto` int(11) NOT NULL,
-  `NomConcepto` varchar(45) DEFAULT NULL,
-  `CveConcepto` varchar(45) DEFAULT NULL,
-  `PrecioUnitario` varchar(45) DEFAULT NULL,
-  `DescripcionConcepto` varchar(45) DEFAULT NULL,
-  `IdCurso` varchar(45) DEFAULT NULL,
-  `FecAdicionConcepto` varchar(45) DEFAULT NULL,
-  `UltimaModificacion` varchar(45) DEFAULT NULL,
-  `Vigencia` varchar(45) DEFAULT NULL,
-  `EstatusDeVigencia` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`IdConcepto`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `DatosDeFacturacion`
---
-
-CREATE TABLE IF NOT EXISTS `DatosDeFacturacion` (
-  `IdDatosDeFacturacion` int(11) NOT NULL,
-  `IdUsuario` int(11) NOT NULL,
-  `Calle` varchar(255) DEFAULT NULL,
-  `NumExterior` int(11) DEFAULT NULL,
-  `NumInterior` int(11) DEFAULT NULL,
-  `Colonia` varchar(255) DEFAULT NULL,
-  `CP` int(11) DEFAULT NULL,
-  `RFC` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`IdDatosDeFacturacion`),
-  KEY `fk_DatosDeFacturacion_Usuarios1` (`IdUsuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `DatosUsuario`
---
-
-CREATE TABLE IF NOT EXISTS `DatosUsuario` (
-  `IdDatosUsuario` int(11) NOT NULL,
-  `IdCampo` int(11) NOT NULL,
-  `IdUsuario` int(11) NOT NULL,
-  `Datos` longtext,
-  `DataFormat` tinyint(2) DEFAULT NULL,
-  PRIMARY KEY (`IdDatosUsuario`),
-  KEY `fk_DatosUsuario_CamposInformacion1_idx` (`IdCampo`),
-  KEY `fk_DatosUsuario_Usuarios1_idx` (`IdUsuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `DetalleOrdenDePago`
---
-
-CREATE TABLE IF NOT EXISTS `DetalleOrdenDePago` (
-  `IdDetalleOrdenPago` int(11) NOT NULL,
-  `IdOrdenDePago` int(11) NOT NULL,
-  `IdTipoDePago` int(11) NOT NULL,
-  `IdConcepto` int(11) NOT NULL,
-  `CantidadConceptos` varchar(45) DEFAULT NULL,
-  `PrecioTotalConceptos` varchar(45) DEFAULT NULL,
-  `FechaDeOrden` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`IdDetalleOrdenPago`),
-  KEY `fk_DetalleOrdenDePago_OrdenDePago1` (`IdOrdenDePago`),
-  KEY `fk_DetalleOrdenDePago_TipoDePago1` (`IdTipoDePago`),
-  KEY `fk_DetalleOrdenDePago_ConceposDePago1_idx` (`IdConcepto`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `Facturas`
---
-
-CREATE TABLE IF NOT EXISTS `Facturas` (
-  `IdFactura` int(11) NOT NULL,
-  `IdPago` int(11) NOT NULL,
-  `IdDatosDeFacturacion` int(11) NOT NULL,
-  PRIMARY KEY (`IdFactura`),
-  KEY `fk_Facturas_Pagos1` (`IdPago`),
-  KEY `fk_Facturas_DatosDeFacturacion1` (`IdDatosDeFacturacion`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `OrdenDePago`
---
-
-CREATE TABLE IF NOT EXISTS `OrdenDePago` (
-  `IdOrdenDePago` int(11) NOT NULL,
-  `IdUsuario` int(11) NOT NULL,
-  `valOrdenPago` varchar(45) DEFAULT NULL,
-  `NumOrdenPago` varchar(45) DEFAULT NULL,
-  `FechaCompra` varchar(45) DEFAULT NULL,
-  `CantidadProductos` varchar(45) DEFAULT NULL,
-  `CostoTotal` varchar(45) DEFAULT NULL,
-  `IdTipoPago` varchar(45) DEFAULT NULL,
-  `IdEstatusOrden` varchar(45) DEFAULT NULL,
-  `Cancelada` varchar(45) DEFAULT NULL,
-  `Pagada` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`IdOrdenDePago`),
-  KEY `fk_OrdenDePago_Usuarios1` (`IdUsuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `Pagos`
---
-
-CREATE TABLE IF NOT EXISTS `Pagos` (
-  `IdPago` int(11) NOT NULL,
-  `IdOrdenDePago` int(11) NOT NULL,
-  PRIMARY KEY (`IdPago`),
-  KEY `fk_Pagos_OrdenDePago1` (`IdOrdenDePago`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `PagosRefrendados`
---
-
-CREATE TABLE IF NOT EXISTS `PagosRefrendados` (
-  `idPagoRefrendado` int(11) NOT NULL,
-  `IdPago` int(11) NOT NULL,
-  `IdRefrendo` int(11) NOT NULL,
-  PRIMARY KEY (`idPagoRefrendado`),
-  KEY `fk_PagosRefrendados_Pagos1` (`IdPago`),
-  KEY `fk_PagosRefrendados_Refrendos1` (`IdRefrendo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `Permisos`
---
-
-CREATE TABLE IF NOT EXISTS `Permisos` (
-  `IdPermiso` int(11) NOT NULL,
-  `NomPermiso` varchar(45) DEFAULT NULL,
-  `TipoPrivilegio` varchar(45) DEFAULT NULL,
-  `IdRole` int(11) NOT NULL,
-  PRIMARY KEY (`IdPermiso`,`IdRole`),
-  KEY `fk_Permisos_Roles1` (`IdRole`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `Refrendos`
---
-
-CREATE TABLE IF NOT EXISTS `Refrendos` (
-  `IdRefrendo` int(11) NOT NULL,
-  PRIMARY KEY (`IdRefrendo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `Roles`
---
-
-CREATE TABLE IF NOT EXISTS `Roles` (
-  `IdRole` int(11) NOT NULL AUTO_INCREMENT,
-  `NomRole` varchar(30) DEFAULT NULL,
-  PRIMARY KEY (`IdRole`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `saeInstitucionEducativa`
---
-
-CREATE TABLE IF NOT EXISTS `saeInstitucionEducativa` (
-  `IdInstEdu` int(10) unsigned zerofill NOT NULL AUTO_INCREMENT,
-  `NomInstitucion` varchar(255) DEFAULT NULL,
-  `NomCorto` varchar(25) DEFAULT NULL,
-  PRIMARY KEY (`IdInstEdu`),
-  UNIQUE KEY `IdInstEdu_UNIQUE` (`IdInstEdu`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `TipoDePago`
---
-
-CREATE TABLE IF NOT EXISTS `TipoDePago` (
-  `IdTipoDePago` int(11) NOT NULL,
-  `Nombre` varchar(45) DEFAULT NULL,
-  `CveTipoPago` varchar(45) DEFAULT NULL,
-  `EstatusDeVigencia` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`IdTipoDePago`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `User_Roles`
---
-
-CREATE TABLE IF NOT EXISTS `User_Roles` (
-  `IdUserRole` int(11) NOT NULL AUTO_INCREMENT,
-  `IdUsuario` int(11) NOT NULL,
-  `IdRole` int(11) NOT NULL,
-  PRIMARY KEY (`IdUserRole`),
-  KEY `fk_Usuarios_Roles_Usuarios1` (`IdUsuario`),
-  KEY `fk_User_Roles_Roles1` (`IdRole`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `Usuarios`
---
-
-CREATE TABLE IF NOT EXISTS `Usuarios` (
-  `IdUsuario` int(11) NOT NULL AUTO_INCREMENT,
-  `usuario` varchar(100) DEFAULT NULL,
-  `password` varchar(40) DEFAULT NULL,
-  `Nombre` varchar(100) DEFAULT NULL,
-  `a_Paterno` varchar(100) DEFAULT NULL,
-  `a_MaternoUs` varchar(100) DEFAULT NULL,
-  `Sexo` varchar(1) DEFAULT NULL,
-  `CURP` varchar(45) DEFAULT NULL,
-  `Nacionalidad` varchar(50) DEFAULT NULL,
-  `FecNacimiento` datetime DEFAULT NULL,
-  `Calle` varchar(255) DEFAULT NULL,
-  `NumExterior` int(11) DEFAULT NULL,
-  `NumInterior` int(11) DEFAULT NULL,
-  `Colonia` varchar(255) DEFAULT NULL,
-  `CP` int(11) DEFAULT NULL,
-  `Telefono` varchar(20) DEFAULT NULL,
-  `TelCelular` varchar(20) DEFAULT NULL,
-  `TelOficina` varchar(20) DEFAULT NULL,
-  `OficinaExt` varchar(20) DEFAULT NULL,
-  `email` varchar(100) DEFAULT NULL,
-  `IdPais` int(6) unsigned NOT NULL,
-  `IdEstado` int(11) NOT NULL,
-  `IdMunicipio` int(11) NOT NULL,
-  PRIMARY KEY (`IdUsuario`),
-  UNIQUE KEY `email_UNIQUE` (`email`),
-  UNIQUE KEY `CURP_UNIQUE` (`CURP`),
-  KEY `fk_Usuarios_catPaises1_idx` (`IdPais`),
-  KEY `fk_Usuarios_catEstados1_idx` (`IdEstado`),
-  KEY `fk_Usuarios_catMunicipios1_idx` (`IdMunicipio`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `Aclaraciones`
---
-ALTER TABLE `Aclaraciones`
-  ADD CONSTRAINT `fk_Aclaraciones_Pagos1` FOREIGN KEY (`IdPago`) REFERENCES `Pagos` (`IdPago`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `CamposInformacion`
---
-ALTER TABLE `CamposInformacion`
-  ADD CONSTRAINT `fk_CamposInformacion_CategoriaInformacion1` FOREIGN KEY (`IdCategoria`) REFERENCES `CategoriaInformacion` (`IdCategoria`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `catEstados`
---
-ALTER TABLE `catEstados`
-  ADD CONSTRAINT `fk_catEstados_catPaises2` FOREIGN KEY (`IdPais`) REFERENCES `catPaises` (`IdPais`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `catMunicipios`
---
-ALTER TABLE `catMunicipios`
-  ADD CONSTRAINT `fk_catMunicipios_catEstados2` FOREIGN KEY (`IdEstado`) REFERENCES `catEstados` (`IdEstado`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `DatosDeFacturacion`
---
-ALTER TABLE `DatosDeFacturacion`
-  ADD CONSTRAINT `fk_DatosDeFacturacion_Usuarios1` FOREIGN KEY (`IdUsuario`) REFERENCES `Usuarios` (`IdUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `DatosUsuario`
---
-ALTER TABLE `DatosUsuario`
-  ADD CONSTRAINT `fk_DatosUsuario_CamposInformacion1` FOREIGN KEY (`IdCampo`) REFERENCES `CamposInformacion` (`IdCampo`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_DatosUsuario_Usuarios1` FOREIGN KEY (`IdUsuario`) REFERENCES `Usuarios` (`IdUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `DetalleOrdenDePago`
---
-ALTER TABLE `DetalleOrdenDePago`
-  ADD CONSTRAINT `fk_DetalleOrdenDePago_OrdenDePago1` FOREIGN KEY (`IdOrdenDePago`) REFERENCES `OrdenDePago` (`IdOrdenDePago`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_DetalleOrdenDePago_TipoDePago1` FOREIGN KEY (`IdTipoDePago`) REFERENCES `TipoDePago` (`IdTipoDePago`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_DetalleOrdenDePago_ConceposDePago1` FOREIGN KEY (`IdConcepto`) REFERENCES `ConceposDePago` (`IdConcepto`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `Facturas`
---
-ALTER TABLE `Facturas`
-  ADD CONSTRAINT `fk_Facturas_Pagos1` FOREIGN KEY (`IdPago`) REFERENCES `Pagos` (`IdPago`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_Facturas_DatosDeFacturacion1` FOREIGN KEY (`IdDatosDeFacturacion`) REFERENCES `DatosDeFacturacion` (`IdDatosDeFacturacion`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `OrdenDePago`
---
-ALTER TABLE `OrdenDePago`
-  ADD CONSTRAINT `fk_OrdenDePago_Usuarios1` FOREIGN KEY (`IdUsuario`) REFERENCES `Usuarios` (`IdUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `Pagos`
---
-ALTER TABLE `Pagos`
-  ADD CONSTRAINT `fk_Pagos_OrdenDePago1` FOREIGN KEY (`IdOrdenDePago`) REFERENCES `OrdenDePago` (`IdOrdenDePago`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `PagosRefrendados`
---
-ALTER TABLE `PagosRefrendados`
-  ADD CONSTRAINT `fk_PagosRefrendados_Pagos1` FOREIGN KEY (`IdPago`) REFERENCES `Pagos` (`IdPago`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_PagosRefrendados_Refrendos1` FOREIGN KEY (`IdRefrendo`) REFERENCES `Refrendos` (`IdRefrendo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `Permisos`
---
-ALTER TABLE `Permisos`
-  ADD CONSTRAINT `fk_Permisos_Roles1` FOREIGN KEY (`IdRole`) REFERENCES `Roles` (`IdRole`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `User_Roles`
---
-ALTER TABLE `User_Roles`
-  ADD CONSTRAINT `fk_Usuarios_Roles_Usuarios1` FOREIGN KEY (`IdUsuario`) REFERENCES `Usuarios` (`IdUsuario`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_User_Roles_Roles1` FOREIGN KEY (`IdRole`) REFERENCES `Roles` (`IdRole`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `Usuarios`
---
-ALTER TABLE `Usuarios`
-  ADD CONSTRAINT `fk_Usuarios_catPaises1` FOREIGN KEY (`IdPais`) REFERENCES `catPaises` (`IdPais`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_Usuarios_catEstados1` FOREIGN KEY (`IdEstado`) REFERENCES `catEstados` (`IdEstado`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_Usuarios_catMunicipios1` FOREIGN KEY (`IdMunicipio`) REFERENCES `catMunicipios` (`IdMunicipio`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -71,6 +71,8 @@ function veAtras(){
 }
 
 function cargarVista(url){
-	var uri=url+'preregistro_c/guardaDatos/'
+	alert(datos);
+	var uri=url+'preregistro_c/guardaDatos/';
 	document.location.href=uri;
+ 	
 }
