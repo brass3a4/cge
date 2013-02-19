@@ -8,49 +8,23 @@ class PruebasJulio_c extends CI_Controller
           
             $this->load->helper(array('html', 'url'));
 
-        	$this->load->model(array('catalogos_m'));
+        	$this->load->model(array('catalogos_m', 'usuarios_m'));
        }
 	
 	function index()
 	{
-		$this->load->view('pruebasJulio', NULL);
+		$data['datos']=$this->pru();
+		$this->load->view('pruebasJulio', $data);
 	}
 	
-	function paises() 
-	{	
-			echo 'Antes de entrar a la funcion....';
-			  						
-			$Data['datos'] = $this->catalogos_m->mTraerTodo('catPaises', 'IdPais', 'NomPais');
-			
-			echo 'Entro a la funcion.....';
-			
-			foreach($Data['datos'] as $key=>$value)
-			{
-				echo "<option value=".$key.">".$value['NomPais']."</option>";
-			}
-			
-			
-	}
-	
-	function estados() 
-	{
-			  						
-			$Data['datos'] = $this->catalogos_m->mTraerTodo('catEstados', 'IdEstado', 'IdEstado');
-			
-			foreach($Data['datos'] as $key=>$value)
-			{
-				echo "<option value=".$key.">".$value['NomEstado']."</option>";
-			}
-			
-			//print_r($Data['datos']);
-			$this->load->view('pru_v', NULL);
-	}
-	
+		
 	function pru()
 	{
-		$data['datos']= $_GET;
+		$datos = array( 'saludo' => 'hola');
 		
-		$this->load->view('pru2_v', $data);		
+		$variable = $this->usuarios_m->guardaUsuario($datos);
+		
+		return $variable;
 	}
 
 }

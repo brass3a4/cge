@@ -70,9 +70,9 @@ function veAtras(){
   window.history.back()
 }
 
-function cargarVista(url){
-	alert(datos);
-	var uri=url+'preregistro_c/guardaDatos/';
-	document.location.href=uri;
+function cargarVista(){
+	
+	var url=urlBase+'preregistro_c/guardaDatos/';
+	document.location.href=url;
  	
 }

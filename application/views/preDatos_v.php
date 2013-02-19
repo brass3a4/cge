@@ -21,6 +21,7 @@
 <body>
 
 	<div class="row">
+		
 		<form action='<?=base_url(); ?>preregistro_c/guardaDatos/' method='post' name='process' accept-charset="utf-8" enctype="multipart/form-data">
 		<div class="twelve columns ">
 			
@@ -29,47 +30,55 @@
 				<fieldset>
 					<h4>Por favor verifica los datos que ingresaste</h4>
 					
-					<label><b>Nombre:</b> <?=$datos['nombre']; ?></label>
-					<label><b>Apellido Paterno: </b> <?=$datos['apellidoPat']; ?></label>
-					<label><b>Apellido Materno: </b> <?=$datos['apellidoMat']; ?></label>
-					<label><b>Nacionalidad: </b> <?=$datos['nacionalidad']; ?></label>
-					<label><b>Fecha de nacimiento: </b> <?=$datos['fechNac']; ?></label>
-					<label><b>País: </b> <?=$datos['pais']; ?></label>
-					<label><b>Estado: </b> <?=$datos['pais']; ?></label>
-					<label><b>Calle: </b> <?=$datos['calle']; ?></label>
-					<label><b>Número: </b> <?=$datos['numero']; ?></label>
-					<?php if(!empty($datos['numeroInt'])){
-						echo '<label><b>Número interior: </b>'.$datos['numeroInt'].'</label>';
+					<label><b>Nombre:</b> <?=$datos['Usuarios_Nombre']; ?></label>
+					<label><b>Apellido Paterno: </b> <?=$datos['Usuarios_aPaterno']; ?></label>
+					<label><b>Apellido Materno: </b> <?=$datos['Usuarios_aMaterno']; ?></label>
+					<label><b>Nacionalidad: </b> <?=$datos['Usuarios_Nacionalidad']; ?></label>
+					<label><b>Fecha de nacimiento: </b> <?=$datos['Usuarios_FecNacimiento']; ?></label>
+					<label><b>País: </b><?php
+					//Busco en el catálogo de paises el IdPais del dato proporcionado comparando uno por uno hasta que coincida 
+					foreach ($catPais as $key => $value) {
+						if($key == $datos['Usuarios_IdPais']){
+							echo $value['NomPais'];
+						}
+					}
+					?></label>
+					<label><b>Estado: </b> <?=$datos['Usuarios_NomEstado']; ?></label>
+					<label><b>Calle: </b> <?=$datos['Usuarios_Calle']; ?></label>
+					<label><b>Número: </b> <?=$datos['Usuarios_NumExterior']; ?></label>
+					<!-- Si mandaron el Num interior lo muestro en la vista -->
+					<?php if(!empty($datos['Usuarios_NumInterior'])){
+						echo '<label><b>Número interior: </b>'.$datos['Usuarios_NumInterior'].'</label>';
 						} 
 					?>
-					<label><b>Colonia: </b> <?=$datos['colonia']; ?></label>
-					<label><b>Municipio: </b> <?=$datos['municipio']; ?></label>
-					<label><b>C.P.: </b> <?=$datos['cp']; ?></label>
-					<label><b>RFC: </b> <?=$datos['rfc']; ?></label>
-					<label><b>CURP: </b> <?=$datos['curp']; ?></label>
-					<label><b>Correo electrónico: </b> <?=$datos['email']; ?></label>
+					<label><b>Colonia: </b> <?=$datos['Usuarios_Colonia']; ?></label>
+					<label><b>Municipio: </b> <?=$datos['Usuarios_NomMunicipio']; ?></label>
+					<label><b>C.P.: </b> <?=$datos['Usuarios_CP']; ?></label>
+					<label><b>RFC: </b> <?=$datos['Usuarios_RFC']; ?></label>
+					<label><b>CURP: </b> <?=$datos['Usuarios_CURP']; ?></label>
+					<label><b>Correo electrónico: </b> <?=$datos['Usuarios_email']; ?></label>
 					<?php 
-						switch ($datos['tipoEstudio']) {
+						switch ($datos['DatosUsuario_tipoEstudio']) {
 							case '1':
 									echo '<label><b>Máximo de estudios: </b>Preparatoria</label>';	
 								break;
 							case '2':
-									echo '<label><b>Máximo de estudios: </b>Pasante de licenciatura en '.$datos['nombEstudio'].'</label>';	
+									echo '<label><b>Máximo de estudios: </b>Pasante de licenciatura en '.$datos['DatosUsuario_nombEstudio'].'</label>';	
 								break;
 							case '3':
-									echo '<label><b>Máximo de estudios: </b>Licenciatura en '.$datos['nombEstudio'].'</label>';	
+									echo '<label><b>Máximo de estudios: </b>Licenciatura en '.$datos['DatosUsuario_nombEstudio'].'</label>';	
 								break;
 							case '4':
-									echo '<label><b>Máximo de estudios: </b>Pasante de maestría en '.$datos['nombEstudio'].'</label>';	
+									echo '<label><b>Máximo de estudios: </b>Pasante de maestría en '.$datos['DatosUsuario_nombEstudio'].'</label>';	
 								break;
 							case '5':
-									echo '<label><b>Máximo de estudios: </b>Maestría en '.$datos['nombEstudio'].'</label>';	
+									echo '<label><b>Máximo de estudios: </b>Maestría en '.$datos['DatosUsuario_nombEstudio'].'</label>';	
 								break;
 							case '6':
-									echo '<label><b>Máximo de estudios: </b>Pasante de doctorado en '.$datos['nombEstudio'].'</label>';	
+									echo '<label><b>Máximo de estudios: </b>Pasante de doctorado en '.$datos['DatosUsuario_nombEstudio'].'</label>';	
 								break;
 							case '7':
-									echo '<label><b>Máximo de estudios: </b>Doctorado en '.$datos['nombEstudio'].'</label>';	
+									echo '<label><b>Máximo de estudios: </b>Doctorado en '.$datos['DatosUsuario_nombEstudio'].'</label>';	
 								break;
 						}
 					
@@ -77,66 +86,68 @@
 					?>
 					
 					<?php 
-							if(!empty($datos['ielts']) 
-							|| !empty($datos['tkt'])
-							|| !empty($datos['pet'])
-							|| !empty($datos['fce'])
-							|| !empty($datos['cae'])
-							|| !empty($datos['cpe'])
-							|| !empty($datos['icelt'])
-							|| !empty($datos['dote'])
-							|| !empty($datos['unam1'])
-							|| !empty($datos['unam2'])
-							|| !empty($datos['toefl'])
-							|| !empty($datos['otro'])
+							if(!empty($datos['DatosUsuario_ielts']) 
+							|| !empty($datos['DatosUsuario_tkt'])
+							|| !empty($datos['DatosUsuario_pet'])
+							|| !empty($datos['DatosUsuario_fce'])
+							|| !empty($datos['DatosUsuario_cae'])
+							|| !empty($datos['DatosUsuario_cpe'])
+							|| !empty($datos['DatosUsuario_icelt'])
+							|| !empty($datos['DatosUsuario_dote'])
+							|| !empty($datos['DatosUsuario_unam1'])
+							|| !empty($datos['DatosUsuario_unam2'])
+							|| !empty($datos['DatosUsuario_toefl'])
+							|| !empty($datos['DatosUsuario_otro'])
 								){
 								echo "<br><label><b>Cetificacion(es) obtenidas en el idioma ingles:<b></label><br>";
 								}
 					?>
 					
-					<?php if(!empty($datos['ielts'])){
+					<?php if(!empty($datos['DatosUsuario_ielts'])){
 						echo '<label>Examen internacional English Language Testing System (IELTS)</label>';}
 					?>
-					<?php if(!empty($datos['tkt'])){
+					<?php if(!empty($datos['DatosUsuario_tkt'])){
 						echo '<label>Teaching knowledge Test (TKT)</label>';}
 					?>
-					<?php if(!empty($datos['pet'])){
+					<?php if(!empty($datos['DatosUsuario_pet'])){
 						echo '<label>Examen Cambridge Preliminary English Test (PET)</label>';}
 					?>
-					<?php if(!empty($datos['fce'])){
+					<?php if(!empty($datos['DatosUsuario_fce'])){
 						echo '<label>Examen Cambridge First Certificate in English (FCE)</label>';}
 					?>
-					<?php if(!empty($datos['cae'])){
+					<?php if(!empty($datos['DatosUsuario_cae'])){
 						echo '<label>Examen Cambridge Certificate in Advanced English (CAE)</label>';}
 					?>
-					<?php if(!empty($datos['cpe'])){
+					<?php if(!empty($datos['DatosUsuario_cpe'])){
 						echo '<label>Cambridge Certificate of Proficiency in English (CPE)</label>';}
 					?>
-					<?php if(!empty($datos['icelt'])){
+					<?php if(!empty($datos['DatosUsuario_icelt'])){
 						echo '<label>In service Certificate English Languaje Teaching (ICELT)</label>';}
 					?>
-					<?php if(!empty($datos['dote'])){
+					<?php if(!empty($datos['DatosUsuario_dote'])){
 						echo '<label>Diploma for Overseas Teachers of English (DOTE)</label>';}
 					?>
-					<?php if(!empty($datos['unam1'])){
+					<?php if(!empty($datos['DatosUsuario_unam1'])){
 						echo '<label>Cuso de formación de Profesores de inglés (UNAM)</label>';}
 					?>
-					<?php if(!empty($datos['unam2'])){
+					<?php if(!empty($datos['DatosUsuario_unam2'])){
 						echo '<label>Exámenes de la comisión Técnica de Idiomas Extranjeros y de la comisión Especial de Lenguas Extranjeras (UNAM)</label>';}
 					?>
-					<?php if(!empty($datos['toefl'])){
-						echo '<label>TOEFL institucional, puntuaje: '.$datos['puntuajeTOEFL'].'</label>';}
+					<?php if(!empty($datos['DatosUsuario_toefl'])){
+						echo '<label>TOEFL institucional, puntuaje: '.$datos['DatosUsuario_puntuajeTOEFL'].'</label>';}
 					?>
-					<?php if(!empty($datos['otro'])){
-						echo '<label>Otro: '.$datos['otroText'].'</label>';}
+					<?php if(!empty($datos['DatosUsuario_otro'])){
+						echo '<label>Otro: '.$datos['DatosUsuario_otroText'].'</label>';}
 					?>
 					
 				</fieldset>
 				<form>
-				<input type="hidden" name="datos" value='<? print_r($datos) ?>'/>
+				<!-- Serializamos el arreglo para pasarlo como cadena al controlador por el input hidden-->
+				<?php  $str = serialize($datos);?>
+				<input type="hidden" name="datos" value='<?=$str?>'/>
 				</form>
 				<a class="button" onclick="veAtras()">Correguir</a>
-				<input type="submit" class="button" style="float: right;" onclick="cargarVista(urlBase)" value="Confirmar"/>
+				<input type="submit" class="button" style="float: right;" onclick="cargarVista()" value="Confirmar"/>
 				
 			</fieldset>
 
