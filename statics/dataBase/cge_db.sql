@@ -1,10 +1,3 @@
--- --------------------------------------------------------
-
-
---
--- Volcado de datos para la tabla `catPaises`
---
-
 INSERT INTO `catPaises` (`IdPais`, `NomPais`, `ISO_L`, `PrefijoTel`) VALUES
 (1, 'España', NULL, NULL),
 (2, 'Albania', NULL, NULL),
@@ -4029,5 +4022,3 @@ INSERT INTO `catMunicipios` (`IdMunicipio`, `NomMunicipio`, `IdEstado`) VALUES
 (3668, 'Zacatecas', 121),
 (3669, 'Trancoso', 121),
 (3670, 'Santa María de la Paz', 121);
-
-

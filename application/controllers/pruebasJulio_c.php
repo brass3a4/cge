@@ -21,10 +21,15 @@ class PruebasJulio_c extends CI_Controller
 	function pru()
 	{
 		$datos = array( 'saludo' => 'hola');
+		$usuario='jmartinez12';
+		$pass='admin12';
+		$IdUsuario = 1;
+		$credenciales = array('usuario' => $usuario, 'password' => $pass);
+		$verifica = $this->usuarios_m->guardaCredenciales($credenciales,$IdUsuario);
+			
+		echo $verifica;
 		
-		$variable = $this->usuarios_m->guardaUsuario($datos);
-		
-		return $variable;
+		return $verifica;
 	}
 
 }
