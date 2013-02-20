@@ -68,11 +68,6 @@
 				$this->load->view('confirmacion_v',$datosN);
 				
 				$this->enviaCorreo($data,$credenciales,$IdUsuario);
-				
-				
-				
-				
-				
 			}else{
 				echo "<script>alert('Error al Guardar Usuario, intente de nuevo')window.close()</script>";
 			}
@@ -159,11 +154,5 @@
 		    return utf8_encode($cadena);
 		}
 		
-		function cargarPDF()
-		{
-			echo "<pre>";
-			print_r($_FILES);
-			echo "</pre>";
-		}
 	}  
 ?>

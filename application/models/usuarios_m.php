@@ -86,6 +86,43 @@ class usuarios_m extends CI_Model {
 		}
 	}
 	
-	
+	/* Este modelo verifica si el usuario existe y si la contraseña es correcta
+		 * @param
+		 * 
+		 * $datos = array ( 
+							'usuario' => 'brass3a4',
+							'password' => '123'
+						   );
+		 * 
+		 * */
+		function verificaUsuario($datos){
+			
+			if (isset($datos['usuario'])) {
+				$this->db->select('password');
+				$this->db->from('Usuarios');
+				$this->db->where('usuario',$datos['usuario']);
+				
+				$consultaPass = $this->db->get();
+				
+				/*Sí existe el usuario:*/
+				if($consultaPass->num_rows() > 0){
+					foreach ($consultaPass->result_array() as $row) {
+						$pass = $row['password']; 
+					}
+					/*Si la contraseña coincide: */
+					if($pass == $datos['password']){
+						$mensaje = '1';
+					}else{
+						$mensaje = '2';
+					}
+				}else{
+					
+					$mensaje = '3';
+				}
+				
+				return $mensaje;
+				}
+			
+		}
 	
 }

@@ -15,26 +15,34 @@
   	<script src="<?=base_url(); ?>statics/js/jquery-1.8.2.min.js"></script>
   	<script src="<?=base_url(); ?>statics/js/jquery-ui-1.8.23.custom.min.js"></script>
   	<script src="<?=base_url(); ?>statics/js/datepickerEsp.js"></script>
-  	
+  	<script type="text/javascript">
+  		var urlBase = '<?=base_url(); ?>';
+  	</script>
 
 </head>
 <body>
 	<div class="row">
-			<div class="eight columns offset-by-four headLogin">
-				
-				<p class="instrucciones">Introduzca sus datos para ingresar al sistema</p>
-				<div class="six columns">
-					<fieldset class="login">
-						<form action='<?php echo base_url();?>login_c/verifica' method='post' name='process' accept-charset="utf-8" enctype="multipart/form-data">
-							<?php if(!(is_null($msg))) echo $msg;?>
-					  		<input type="text" id="usuarioInput" name="usuario" placeholder="Usuario" required/>
-					  		<input type="password" id="passInput" name="password" placeholder="Contraseña" required/>
-  						<input type="submit" id="LogueoAdminBtn" class="button offset-by-four" value="Ingresar" />
-						</form>
+			<div class="twelve columns headLogin">
+			<fieldset class="cuerpo">
+				<fieldset >
+					<legend class="cuerpo"><h4>Completa los pasos siguiente para terminar tu registro</h4></legend>
+					<p><b>Paso 1:</b></p>
+					<a class="button" onclick="cargaVistaDocs()"> Subir documentos</a>
+					<p class="espacioSuperior"><b>Paso 2:</b></p>
+					
+					<?php 
+						if($valor != NULL){
+							echo '<a class="button"> Subir documentos2</a>';
+						}else{
+							echo '<a class="button" disabled> Subir documentos2</a>';
+						}
+					
+					?>
+					
+					
 				</fieldset>
-				</div>
-	
-				<p><a class="eight columns offset-by-four registroBtn" href="<?php echo base_url();?>preregistro_c" id="registroBtn">Registrarse</a></p>
+				
+			</fieldset>
 			</div><!--twelve columns-->
 		</div> <!--row-->
 </body>

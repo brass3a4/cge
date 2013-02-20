@@ -33,3 +33,10 @@ a:hover{
 .headLogin{
 	padding-top: 20%;
 }
+
+.button.disabled, .button[disabled]{
+	background: #5BB75B;
+}
+.button.disabled:hover, .button[disabled]:hover{
+	background: none repeat scroll 0 0 #51A351;
+}

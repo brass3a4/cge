@@ -76,3 +76,9 @@ function cargarVista(){
 	document.location.href=url;
  	
 }
+function cargaVistaDocs(){
+	
+	var url=urlBase+'menuRegistro_c/cargaDocs/';
+	document.location.href=url;
+ 	
+}
