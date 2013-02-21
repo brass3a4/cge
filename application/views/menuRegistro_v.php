@@ -27,7 +27,7 @@
 				<fieldset >
 					<legend class="cuerpo"><h4>Completa los pasos siguiente para terminar tu registro</h4></legend>
 					<p><b>Paso 1:</b></p>
-					<a class="button" onclick="cargaVistaDocs()"> Subir documentos</a>
+					<a class="button" onclick="cargaVistaDocs('<?=$usuario ?>')"> Subir documentos</a>
 					<p class="espacioSuperior"><b>Paso 2:</b></p>
 					
 					<?php 

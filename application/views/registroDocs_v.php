@@ -22,7 +22,7 @@
 			
 			<fieldset class="cuerpo">
 			 	
-				<form action='<?=base_url(); ?>menuRegistro_c/cargarPDF/' method='post' name='process' accept-charset="utf-8" enctype="multipart/form-data">
+				<form action='<?=base_url(); ?>menuRegistro_c/cargarPDF/<?=$usuario?>' method='post' name='process' accept-charset="utf-8" enctype="multipart/form-data">
 					<fieldset>
 						<legend class="cuerpo"><h4>Solicitud de ingreso</h4></legend>
 						
@@ -42,6 +42,7 @@
 							<p class="espacioSuperior">b) <b>Constancia dominio inglés</b> equivalente a nivel B2 del Marco Común Europeo</p>
 						<input type="file" name="file3" id="constancia2" class="offset-by-five" required>
 						</div> 
+						
 					</fieldset>
 				 	<a class="button" style="float: left;" onclick="veAtras()"> Regresar</a>
 					<input type="submit" id="enviarBtn" class="button" style="float: right;" value="Enviar" />

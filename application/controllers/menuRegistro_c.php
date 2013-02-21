@@ -12,22 +12,44 @@
 	        			
 	   	}
 
-	    function index($verifica = NULL){
-	    	$data['valor'] = $verifica;
-	 		$this->load->view('menuRegistro_v',$data);
+		function index($verifica = NULL){
+	    	$this->principal(NULL);
 	    }
 		
-		function cargaDocs()
+		function principal($usr = NULL)
 		{
-			$this->load->view('registroDocs_v',NULL);
+				
+			$data['usuario'] = $usr;
+			$data['valor']='1';
+			$this->load->view('menuRegistro_v',$data);
+		}
+	   
+		
+		function cargaDocs($usuario)
+		{
+			$data['usuario'] = $usuario;	
+			$this->load->view('registroDocs_v',$data);
 		}
 		
-		function cargarPDF()
+		function cargarPDF($usuario)
 		{
+			print_r($usuario);
 			echo "<pre>";
 			print_r($_FILES);
 			echo "</pre>";
-			$this->index(1);
+			
+			$ruta = exec('pwd');
+			
+			$creaDir = 'mkdir '.$ruta.'/statics/docs/'.$usuario;
+			exec($creaDir,$var);
+			
+			$cambiaPer = 'chmod 777 '.$ruta.'/statics/docs/'.$usuario;
+			exec($cambiaPer,$var);
+
+			$creaArch = 'touch '.$ruta.'/statics/docs/'.$usuario.'/archivo.txt';
+			exec($creaArch,$var);
+			echo 'ok';
+			
 		}
 	}    
 ?>

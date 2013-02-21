@@ -26,7 +26,7 @@
 				$verifica = $this->usuarios_m->verificaUsuario($credenciales);
 				
 				if ($verifica == '1'){
-					redirect('menuRegistro_c/');
+					redirect('menuRegistro_c/principal/'.$credenciales['usuario']);
 				} else {
 					
 					$msg = '<label class="error">Nombre de usuario y/o contraseña incorrectos</label><br>';
