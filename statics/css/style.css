@@ -29,6 +29,9 @@ a:hover{
 .espacioSuperior{
 	padding-top: 10px;
 }
+.espacioInferior{
+	padding-bottom: 10px;
+}
 
 .headLogin{
 	padding-top: 20%;

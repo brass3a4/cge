@@ -179,4 +179,25 @@ class usuarios_m extends CI_Model {
 				return '0';
 			}
 		}
+		function traeArchivos($idUsuario)
+		{
+			if(isset($idUsuario)){
+				$this->db->select('*');
+				$this->db->from('archivos');
+				$this->db->where('IdUsuario',$idUsuario);
+				$consulta = $this->db->get();
+				
+				if($consulta->num_rows() > 0){
+					foreach ($consulta->result_array() as $row) {
+						$datos[$row['IdArchivo']] = $row; 
+					}
+					
+				
+				return $datos;
+				}
+				
+			}else{
+				return '0';
+			}
+		}
 }

@@ -18,9 +18,18 @@
 		
 		function principal($usr = NULL)
 		{
-				
+			$idUsuario = $this->usuarios_m->traeUsuarioId($usr);
+			
+			$data['archivos'] = $this->usuarios_m->traeArchivos($idUsuario); 	
 			$data['usuario'] = $usr;
-			$data['valor']='1';
+			
+			if(isset($data['archivos']) && $data['archivos'] != '0'){
+				$data['valor']='1';
+			}else{
+				$data['valor']='0';
+			}
+			
+			
 			$this->load->view('menuRegistro_v',$data);
 		}
 	   
@@ -72,7 +81,7 @@
 							print_r($destino[$i].'</br>');
 						    if (move_uploaded_file($tmp[$i],$destino[$i])) {
 									
-								$datos['archivos'] = array('url'=>$url[$i],'nomArchivo'=>$prefijo[$i]."_".$archivo[$i], 'IdUsuario' => $idUsuario);
+								$datos['archivos'] = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario);
 								$mensaje = $this->usuarios_m->llenaTabla($datos);	
 								$status = "Archivo subido: <b>".$prefijo[$i]."_".$archivo[$i]."</b>";
 								
@@ -91,7 +100,8 @@
 						echo 'No es valido el tipo archivo';
 					}
 				}
-				$this->principal($usuario);
+				redirect('menuRegistro_c/principal/'.$usuario);
+				//$this->principal($usuario);
 			}/* fin if idUsuario */
 		}
 	}    

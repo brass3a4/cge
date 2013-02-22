@@ -27,17 +27,37 @@
 				<fieldset >
 					<legend class="cuerpo"><h4>Completa los pasos siguiente para terminar tu registro</h4></legend>
 					<p><b>Paso 1:</b></p>
-					<a class="button" onclick="cargaVistaDocs('<?=$usuario ?>')"> Subir documentos</a>
+					<div class="twelve columns espacioInferior">
+						<div class="six columns">
+							<a class="button" onclick="cargaVistaDocs('<?=$usuario ?>')"> Subir documentos</a>
+						</div>
+						<div class="twelve columns">
+							<table class="cuerpo">
+								<tr>
+							<?php if($valor != '0' && isset($archivos)):?>
+								<?php foreach($archivos as $archivo):?>
+									<td>
+									<a href="<?= base_url().$archivo['url'];?>"><img src="<?= base_url().'statics/img/text-x-preview.png'?>" height="50" width="50"><?=$archivo['nomArchivo']?></a>
+									</td>
+								<?php endforeach;?>
+							<?php endif;?>
+								</tr>
+							</table>
+						</div>
+						
+					</div>
 					<p class="espacioSuperior"><b>Paso 2:</b></p>
+									
+					<div class="twelve columns">
+						<div class="six columns">
+							<?php if($valor == '0'){
+								echo '<a class="button" disabled> Subir documentos2</a>';
+							}else{
+								echo '<a class="button" > Subir documentos2</a>';
+							}?>
+						</div>
+					</div>
 					
-					<?php 
-						if($valor != NULL){
-							echo '<a class="button"> Subir documentos2</a>';
-						}else{
-							echo '<a class="button" disabled> Subir documentos2</a>';
-						}
-					
-					?>
 					
 					
 				</fieldset>
