@@ -124,5 +124,59 @@ class usuarios_m extends CI_Model {
 				}
 			
 		}
-	
+		
+		function traeUsuarioId($nomUsuario)
+		{
+			if(isset($nomUsuario)){
+				$this->db->select('IdUsuario');
+				$this->db->from('Usuarios');
+				$this->db->where('usuario',$nomUsuario);
+				$IdUsuario = $this->db->get();
+				
+				if($IdUsuario->num_rows() > 0){
+					foreach ($IdUsuario->result_array() as $row) {
+						$idUsr = $row['IdUsuario']; 
+					}
+					
+				
+				return $idUsr;
+				}
+				
+			}else{
+				return '0';
+			}
+		}
+		
+		function llenaTabla($datos)
+		{
+			if(isset($datos)){
+				$this->db->insert('archivos', $datos['archivos']);
+				
+				return '1';
+			}else{
+				return '0';
+			}
+		}
+		
+		function traeDatosUsuario($idUsuario)
+		{
+			if(isset($idUsuario)){
+				$this->db->select('*');
+				$this->db->from('Usuarios');
+				$this->db->where('IdUsuario',$idUsuario);
+				$consulta = $this->db->get();
+				
+				if($consulta->num_rows() > 0){
+					foreach ($consulta->result_array() as $row) {
+						$datos = $row; 
+					}
+					
+				
+				return $datos;
+				}
+				
+			}else{
+				return '0';
+			}
+		}
 }

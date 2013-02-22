@@ -32,7 +32,13 @@
 					<div class="offset-by-five">
 						<p>Usuario: <b><?= $credenciales['usuario']?></b></p>
 						<p>Contraseña: <b><?= $credenciales['password']?></b></p>
+						<p><b> Para continuar con tu registro ingresa a: </b></p>
 					</div>
+					
+					<form action="<?php echo base_url();?>generaPdf_c/crear/<?= $credenciales['usuario']?>" method="post">
+						<input type="submit" class="button" value="Guardar" />
+					</form>
+					
 				</fieldset>
 			</fieldset>
 		</div>
