@@ -26,34 +26,36 @@
 			<fieldset class="cuerpo">
 				<fieldset >
 					<legend class="cuerpo"><h4>Completa los pasos siguiente para terminar tu registro</h4></legend>
-					<p><b>Paso 1:</b></p>
+					<p><b>Paso 1: Solicitud de ingreso</b></p>
 					<div class="twelve columns espacioInferior">
 						<div class="six columns">
 							<a class="button" onclick="cargaVistaDocs('<?=$usuario ?>')"> Subir documentos</a>
 						</div>
 						<div class="twelve columns">
-							<table class="cuerpo">
-								<tr>
+							
 							<?php if($valor != '0' && isset($archivos)):?>
-								<?php foreach($archivos as $archivo):?>
-									<td>
-									<a href="<?= base_url().$archivo['url'];?>"><img src="<?= base_url().'statics/img/text-x-preview.png'?>" height="50" width="50"><?=$archivo['nomArchivo']?></a>
-									</td>
-								<?php endforeach;?>
+								<table class="cuerpo espacioSuperior" border="0">
+									<tr>
+									<?php foreach($archivos as $archivo):?>
+										<td>
+										<a href="<?= base_url().$archivo['url'];?>"><img src="<?= base_url().'statics/img/text-x-preview.png'?>" height="50" width="50"><?=$archivo['nomArchivo']?></a>
+										</td>
+									<?php endforeach;?>
+									</tr>
+								</table>
 							<?php endif;?>
-								</tr>
-							</table>
+								
 						</div>
 						
 					</div>
-					<p class="espacioSuperior"><b>Paso 2:</b></p>
+					<p class="espacioSuperior"><b>Paso 2: Pago</b></p>
 									
 					<div class="twelve columns">
 						<div class="six columns">
 							<?php if($valor == '0'){
-								echo '<a class="button" disabled> Subir documentos2</a>';
+								echo '<a class="button" style="padding: 10px 40px;" disabled> Realiza pago</a>';
 							}else{
-								echo '<a class="button" > Subir documentos2</a>';
+								echo '<a class="button" style="padding: 10px 40px;" >Realiza pago  </a>';
 							}?>
 						</div>
 					</div>

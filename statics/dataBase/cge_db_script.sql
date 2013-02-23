@@ -8,6 +8,8 @@ USE `cge_db` ;
 -- -----------------------------------------------------
 -- Table `cge_db`.`catPaises`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`catPaises` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`catPaises` (
   `IdPais` INT(6) UNSIGNED NOT NULL ,
   `NomPais` VARCHAR(255) NULL DEFAULT NULL ,
@@ -21,6 +23,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`Usuarios`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`Usuarios` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`Usuarios` (
   `IdUsuario` INT(11) NOT NULL AUTO_INCREMENT ,
   `usuario` VARCHAR(100) NULL DEFAULT NULL ,
@@ -62,6 +66,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`OrdenDePago`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`OrdenDePago` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`OrdenDePago` (
   `IdOrdenDePago` INT(11) NOT NULL ,
   `IdUsuario` INT(11) NOT NULL ,
@@ -88,6 +94,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`Pagos`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`Pagos` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`Pagos` (
   `IdPago` INT(11) NOT NULL ,
   `IdOrdenDePago` INT(11) NOT NULL ,
@@ -105,6 +113,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`Aclaraciones`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`Aclaraciones` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`Aclaraciones` (
   `IdAclaracion` INT(11) NOT NULL AUTO_INCREMENT ,
   `IdPago` INT(11) NOT NULL ,
@@ -122,6 +132,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`CategoriaInformacion`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`CategoriaInformacion` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`CategoriaInformacion` (
   `IdCategoria` INT(11) NOT NULL ,
   `Nombre` VARCHAR(255) NULL DEFAULT NULL ,
@@ -134,6 +146,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`CamposInformacion`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`CamposInformacion` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`CamposInformacion` (
   `IdCampo` INT(11) NOT NULL ,
   `IdCategoria` INT(11) NOT NULL ,
@@ -167,6 +181,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`ConceposDePago`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`ConceposDePago` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`ConceposDePago` (
   `IdConcepto` INT(11) NOT NULL ,
   `NomConcepto` VARCHAR(45) NULL DEFAULT NULL ,
@@ -186,6 +202,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`DatosDeFacturacion`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`DatosDeFacturacion` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`DatosDeFacturacion` (
   `IdDatosDeFacturacion` INT(11) NOT NULL ,
   `IdUsuario` INT(11) NOT NULL ,
@@ -209,6 +227,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`DatosUsuario`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`DatosUsuario` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`DatosUsuario` (
   `IdDatosUsuario` INT(11) NOT NULL AUTO_INCREMENT ,
   `IdUsuario` INT(11) NOT NULL ,
@@ -229,6 +249,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`TipoDePago`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`TipoDePago` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`TipoDePago` (
   `IdTipoDePago` INT(11) NOT NULL AUTO_INCREMENT ,
   `Nombre` VARCHAR(45) NULL DEFAULT NULL ,
@@ -242,6 +264,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`DetalleOrdenDePago`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`DetalleOrdenDePago` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`DetalleOrdenDePago` (
   `IdDetalleOrdenPago` INT(11) NOT NULL AUTO_INCREMENT ,
   `IdOrdenDePago` INT(11) NOT NULL ,
@@ -276,6 +300,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`Facturas`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`Facturas` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`Facturas` (
   `IdFactura` INT(11) NOT NULL ,
   `IdPago` INT(11) NOT NULL ,
@@ -300,6 +326,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`Refrendos`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`Refrendos` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`Refrendos` (
   `IdRefrendo` INT(11) NOT NULL ,
   PRIMARY KEY (`IdRefrendo`) )
@@ -310,6 +338,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`PagosRefrendados`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`PagosRefrendados` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`PagosRefrendados` (
   `idPagoRefrendado` INT(11) NOT NULL ,
   `IdPago` INT(11) NOT NULL ,
@@ -334,6 +364,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`Roles`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`Roles` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`Roles` (
   `IdRole` INT(11) NOT NULL AUTO_INCREMENT ,
   `NomRole` VARCHAR(30) NULL DEFAULT NULL ,
@@ -345,6 +377,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`Permisos`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`Permisos` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`Permisos` (
   `IdPermiso` INT(11) NOT NULL AUTO_INCREMENT ,
   `NomPermiso` VARCHAR(45) NULL DEFAULT NULL ,
@@ -364,6 +398,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`User_Roles`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`User_Roles` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`User_Roles` (
   `IdUserRole` INT(11) NOT NULL AUTO_INCREMENT ,
   `IdUsuario` INT(11) NOT NULL ,
@@ -388,6 +424,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`catEstados`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`catEstados` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`catEstados` (
   `IdEstado` INT(11) NOT NULL AUTO_INCREMENT ,
   `NomEstado` VARCHAR(255) NULL DEFAULT NULL ,
@@ -408,6 +446,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`catMunicipios`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`catMunicipios` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`catMunicipios` (
   `IdMunicipio` INT(11) NOT NULL AUTO_INCREMENT ,
   `NomMunicipio` VARCHAR(255) NULL DEFAULT NULL ,
@@ -428,6 +468,8 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 -- Table `cge_db`.`saeInstitucionEducativa`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`saeInstitucionEducativa` ;
+
 CREATE  TABLE IF NOT EXISTS `cge_db`.`saeInstitucionEducativa` (
   `IdInstEdu` INT(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT ,
   `NomInstitucion` VARCHAR(255) NULL DEFAULT NULL ,
@@ -436,6 +478,27 @@ CREATE  TABLE IF NOT EXISTS `cge_db`.`saeInstitucionEducativa` (
   UNIQUE INDEX `IdInstEdu_UNIQUE` (`IdInstEdu` ASC) )
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `cge_db`.`archivos`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `cge_db`.`archivos` ;
+
+CREATE  TABLE IF NOT EXISTS `cge_db`.`archivos` (
+  `IdArchivo` INT NOT NULL AUTO_INCREMENT ,
+  `nomArchivo` VARCHAR(100) NULL ,
+  `url` VARCHAR(100) NULL ,
+  `IdTipoDocumento` INT NULL ,
+  `IdUsuario` INT(11) NOT NULL ,
+  PRIMARY KEY (`IdArchivo`) ,
+  INDEX `fk_archivos_Usuarios1` (`IdUsuario` ASC) ,
+  CONSTRAINT `fk_archivos_Usuarios1`
+    FOREIGN KEY (`IdUsuario` )
+    REFERENCES `cge_db`.`Usuarios` (`IdUsuario` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
 
 
