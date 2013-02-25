@@ -104,7 +104,9 @@
 					Su número de solicitud es: '.$IdUsuario.' 
 					Su usuario y contraseña asignados son:
 					Usuario: '.$credenciales['usuario'].'
-					contraseña: '.$credenciales['password'].'';
+					contraseña: '.$credenciales['password'].'
+					Para completar tu registro por favor ingresa a: 
+					'.base_url().'login_c';
 			$this->email->message($msj);		
 			if(!($this->email->send()))
 			  {

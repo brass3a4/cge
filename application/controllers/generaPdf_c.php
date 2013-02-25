@@ -37,7 +37,7 @@
 				$contenido['soliciud'] = 'Su número de solicitud es: '.$idUsuario. "\n";
 				$contenido['usuario'] = 'Usuario: '.$usuario."\n";
 				$contenido['contrasena'] = 'contraseña: '.$datos['password']."\n\n\n";
-				$contenido['login'] = 'Para completar tu registro por favor ingresa a: ';			// $aPat = $datos['aPaterno'];			// $aMat = $datos['aMaterno'];
+				$contenido['login'] = 'Para completar tu registro por favor ingresa a: '.base_url().'login_c';			// $aPat = $datos['aPaterno'];			// $aMat = $datos['aMaterno'];
 				// $pass = $datos['password'];
 				// $contenido = 'Estimado profesor:'.$datos['Nombre'].$datos['aPaterno'].$datos['aMaterno'].',su preregistro y solicitud de ingreso al Diplomado Virtual:\n 
 				// "Formación docente en la enseñanza escolarizada de inglés para niños" ha realizado con exito:\n
