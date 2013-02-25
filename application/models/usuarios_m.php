@@ -150,7 +150,21 @@ class usuarios_m extends CI_Model {
 		function llenaTabla($datos)
 		{
 			if(isset($datos)){
-				$this->db->insert('archivos', $datos['archivos']);
+				$this->db->select('NomArchivo');
+				$this->db->where('IdArchivo', $datos['archivos']['IdArchivo']);
+				$this->db->from('archivos');
+				$consulta = $this->db->get();
+
+				if($consulta->num_rows() > 0){
+					
+					echo 'hola 1';
+					$this->db->where('IdArchivo', $datos['archivos']['IdArchivo']);
+					$this->db->update('archivos', $datos['archivos']); 					
+				}else{
+					echo 'hola 2';
+					$this->db->insert('archivos', $datos['archivos']);
+					
+				}				
 				
 				return '1';
 			}else{
