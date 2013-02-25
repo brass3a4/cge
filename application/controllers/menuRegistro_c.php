@@ -81,7 +81,7 @@
 							print_r($destino[$i].'</br>');
 						    if (move_uploaded_file($tmp[$i],$destino[$i])) {
 									
-								$datos['archivos'] = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario);
+								$datos['archivos'] = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario, 'IdArchivo' => $i);
 								$mensaje = $this->usuarios_m->llenaTabla($datos);	
 								$status = "Archivo subido: <b>".$prefijo[$i]."_".$archivo[$i]."</b>";
 								
