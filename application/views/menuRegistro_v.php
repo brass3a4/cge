@@ -25,7 +25,7 @@
 			<div class="twelve columns headLogin">
 			<fieldset class="cuerpo">
 				<fieldset >
-					<legend class="cuerpo"><h4>Completa los pasos siguiente para terminar tu registro</h4></legend>
+					<legend class="cuerpo"><h4>Completa los pasos siguientes para terminar tu registro</h4></legend>
 					<p><b>Paso 1: Solicitud de ingreso</b></p>
 					<div class="twelve columns espacioInferior">
 						<div class="six columns">
@@ -63,6 +63,10 @@
 					
 					
 				</fieldset>
+				<form action='<?=base_url(); ?>login_c/reiniciarSesion' method='post'>
+					<input type="submit" class="button" style="float: right;" value="Cerrar sesión" />
+				</form>
+				
 				
 			</fieldset>
 			</div><!--twelve columns-->

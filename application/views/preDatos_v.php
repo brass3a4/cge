@@ -146,7 +146,7 @@
 				<?php  $str = serialize($datos);?>
 				<input type="hidden" name="datos" value='<?=$str?>'/>
 				</form>
-				<a class="button" onclick="veAtras()">Correguir</a>
+				<a class="button" onclick="veAtras()">Corregir</a>
 				<input type="submit" class="button" style="float: right;" onclick="cargarVista()" value="Confirmar"/>
 				
 			</fieldset>

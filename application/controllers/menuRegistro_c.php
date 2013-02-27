@@ -8,10 +8,15 @@
 			
 			$this->load->helper(array('html', 'url'));
 	        $this->load->model('usuarios_m'); // Load the model
-			//$this->load->library('email');
-	        			
+			$this->is_logged_in();	        			
 	   	}
 
+		private function is_logged_in(){
+			$logged_in = $this->session->userdata('logged_in');
+			if(!isset($logged_in) or $logged_in != TRUE){
+				redirect(base_url().'login_c');
+			}
+		}
 		function index($verifica = NULL){
 	    	$this->principal(NULL);
 	    }
