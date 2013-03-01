@@ -33,6 +33,7 @@ class usuarios_m extends CI_Model {
 	 * */
 	function guardaUsuario($datos)
 	{
+		
 		if (!empty($datos)) {
 				
         	$this->db->insert('Usuarios', $datos['Usuarios']);
@@ -51,10 +52,11 @@ class usuarios_m extends CI_Model {
                 
             }
 		    
+			$datos['UserRoles']['Usuarios_IdUsuario']=$IdUsuario;
 			/* Para la tabla Datos usuarios guardamos los datos dependiendo del IdUsuario*/
 			foreach($datos as $tabla => $campos){
                 
-                if($tabla != 'Usuarios' && (!empty($tabla))){
+                if($tabla != 'Usuarios' && (!empty($tabla)) && $tabla != 'UserRoles'){
                 	
 					foreach ($campos as $nomCampo => $valor) {
 						
@@ -63,7 +65,12 @@ class usuarios_m extends CI_Model {
 						$this->db->set('IdUsuario', $IdUsuario);
 						$this->db->insert('DatosUsuario');
 					}
+					
                 }
+				if($tabla == "UserRoles"){
+						
+						$this->db->insert($tabla,$campos);
+				}
                 
             }
 			

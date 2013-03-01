@@ -79,17 +79,17 @@
 		function enviaCorreo($data,$credenciales,$IdUsuario)
 		{
 			//Configuración para mandar el correo
-			$config['protocol'] = 'mail';
-			$config['wordwrap'] = FALSE;				
+			// $config['protocol'] = 'mail';
+			// $config['wordwrap'] = FALSE;				
 			//$config['mailtype']='html';
 			
-			/*$config['protocol'] = 'smtp';
+			$config['protocol'] = 'smtp';
 			$config['smtp_host'] = 'ssl://smtp.googlemail.com';
 			$config['smtp_port'] = '465';
 			$config['smtp_user'] = 'rentzana@virtuami.izt.uam.mx';
 			$config['smtp_pass'] = 'rentzana75#';
 
-			$config['smtp_timeout'] = '7';*/
+			$config['smtp_timeout'] = '7';
 			$config['charset']    = 'utf-8';
 			$config['newline']    = "\r\n";
 			$config['mailtype'] = 'text'; // or html

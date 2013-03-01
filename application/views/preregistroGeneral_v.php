@@ -284,7 +284,7 @@
 									</div>
 								</div>	
 					</div>
-					
+					<input type="hidden" name="UserRoles_Roles_IdRole" value="3"/>
 					</fieldset>
 					<input type="submit" id="enviarBtn" class="button" style="float: right;" value="Siguiente" />
 				</form>
