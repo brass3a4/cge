@@ -7,6 +7,20 @@ function quitaClaseEscondida(valor){
 	$('#'+valor).removeClass("escondida");
 }
 
+/* Esta función agrega la clase "escondida"
+  @param:
+  		$valor type[string] (id del <div>)
+ * */
+function quitaClaseEscondidaIns(valor,id){
+	if(id != 1 && id !=2 && id !=7 && id !=8){	
+		$('#'+valor).removeClass("escondida");
+	}
+	if(id == 8){
+		$('#OtraIns').removeClass("escondida");
+	}
+}
+
+
 /* Esta función quita la clase "escondida"
   @param:
   		$valor type[string] (id del <div>)
@@ -62,6 +76,11 @@ function habilitar (id){
 
 $(function() {
 	$( "#fechNac" ).datepicker({ dateFormat: "yy-mm-dd",
+	changeYear: true });
+});
+
+$(function() {
+	$( "#FechExa" ).datepicker({ dateFormat: "yy-mm-dd",
 	changeYear: true });
 });
 
