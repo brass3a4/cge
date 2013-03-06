@@ -95,9 +95,9 @@ function cargarVista(){
 	document.location.href=url;
  	
 }
-function cargaVistaDocs(usr){
+function cargaVistaDocs(usr,idrol){
 	
-	var url=urlBase+'menuRegistro_c/cargaDocs/'+usr;
+	var url=urlBase+'menuRegistro_c/cargaDocs/'+usr+'/'+idrol;
 	document.location.href=url;
  	
 }

@@ -24,23 +24,25 @@
 			 	
 				<form action='<?=base_url(); ?>menuRegistro_c/cargarPDF/<?=$usuario?>' method='post' name='process' accept-charset="utf-8" enctype="multipart/form-data">
 					<fieldset>
-						<legend class="cuerpo"><h4>Solicitud de ingreso</h4></legend>
-						
-						<div class="twelve columns">
-							<h5>1.- Exposición de motivos</h5>
-					
+						<legend class="cuerpo"><h4>Sube los siguientes documentos</h4></legend>
+						<blockquote>
 							<p>
-							En este espacio envie en el documento en procesador de textos word, los motivos por los que quiere cursar este diplomado. 
-							El documento deberá ser enviado en el idioma inglés en no máximo de una cuartilla.
+								Los documentos deben estár en formato PDF y cada documento debe estar escaneado por ambos lados.
 							</p>
-						
-						<input type="file" name="1" id="motivos" class="offset-by-five" required> 
-						<h5>2.- Documentación</h5>
-							<p>a) <b>Carta constancia</b> actual membretada y sellada de la instutución escolar donde trabaja en la
-								que se esoecifique a qué grupo o grupos enseña.</p>
-							<input type="file" name="2" id="constancia" class="offset-by-five" required>
-							<p class="espacioSuperior">b) <b>Constancia dominio inglés</b> equivalente a nivel B2 del Marco Común Europeo</p>
-						<input type="file" name="3" id="constancia2" class="offset-by-five" required>
+						</blockquote>
+						<div class="twelve columns">
+							<h5>1.- Título de licenciatura</h5>
+								<input type="file" name="1" id="tituloLic" class="offset-by-five" required> 
+							<h5>2.- Certificado de licenciatura con calificaciones y promedio</h5>
+								<input type="file" name="2" id="certificadoLic" class="offset-by-five" required>
+							<h5>3.- Acta de nacimiento</h5>	
+								<input type="file" name="3" id="ActaNac" class="offset-by-five" required>
+							<h5>4.- CURP</h5>
+								<input type="file" name="4" id="curp" class="offset-by-five" required>
+							<h5>5.- Cedula profesional</h5>
+								<input type="file" name="5" id="cedula" class="offset-by-five" required>
+							<h5>6.- Identificación oficial con fotografía (IFE o Pasaporte)</h5>
+								<input type="file" name="6" id="elector" class="offset-by-five" required>
 						</div> 
 						
 					</fieldset>

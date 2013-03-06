@@ -25,24 +25,24 @@
 			<div class="twelve columns headLogin">
 			<fieldset class="cuerpo">
 				<fieldset >
-					<legend class="cuerpo"><h4>Completa los pasos siguientes para terminar tu registro</h4></legend>
+					<legend class="cuerpo"><h4>Completa para terminar tu registro</h4></legend>
 					<p><b>Paso 1: Solicitud de ingreso</b></p>
 					<div class="twelve columns espacioInferior">
 						<div class="six columns">
 							<a class="button" onclick="cargaVistaDocs('<?=$usuario ?>','<?= $idRol?>')"> Subir documentos</a>
 						</div>
-						<div class="twelve columns">
+						<div class="twelve columns espacioSuperior" style="padding-left: 25%;">
 							
 							<?php if($valor != '0' && isset($archivos)):?>
-								<table class="cuerpo espacioSuperior" border="0">
-									<tr>
+								
+									<ol>
 									<?php foreach($archivos as $archivo):?>
-										<td>
+										<li>
 										<a href="<?= base_url().$archivo['url'];?>"><img src="<?= base_url().'statics/img/text-x-preview.png'?>" height="50" width="50"><?=$archivo['nomArchivo']?></a>
-										</td>
+										</li>
 									<?php endforeach;?>
-									</tr>
-								</table>
+									</ol>
+								
 							<?php endif;?>
 								
 						</div>

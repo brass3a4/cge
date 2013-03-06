@@ -154,18 +154,13 @@ class usuarios_m extends CI_Model {
 			}
 		}
 		
-		function llenaTabla($datos)
+		function llenaTabla($datos,$idArchivo = NULL)
 		{
 			if(isset($datos)){
-				$this->db->select('NomArchivo');
-				$this->db->where('IdArchivo', $datos['archivos']['IdArchivo']);
-				$this->db->from('archivos');
-				$consulta = $this->db->get();
-
-				if($consulta->num_rows() > 0){
+				if($idArchivo != NULL){
 					
 					echo 'hola 1';
-					$this->db->where('IdArchivo', $datos['archivos']['IdArchivo']);
+					$this->db->where('IdArchivo', $idArchivo);
 					$this->db->update('archivos', $datos['archivos']); 					
 				}else{
 					echo 'hola 2';
@@ -200,6 +195,11 @@ class usuarios_m extends CI_Model {
 				return '0';
 			}
 		}
+		
+		/*Esta función trae los archivos de un usuario a partir de su IdUsuario
+		 * @param:
+		 * 			$IdUsuario [INT]
+		 * */
 		function traeArchivos($idUsuario)
 		{
 			if(isset($idUsuario)){
@@ -215,6 +215,32 @@ class usuarios_m extends CI_Model {
 					
 				
 				return $datos;
+				}
+				
+			}else{
+				return '0';
+			}
+		}
+		
+		/* Esta función trae el rol de un usuario a partir de su IdUsuario
+		 * @param:
+		 * 			$IdUsuario [INT]
+		 * */
+		function traeRolUsuario($idUsuario)
+		{
+			if(isset($idUsuario)){
+				$this->db->select('Roles_IdRole');
+				$this->db->from('UserRoles');
+				$this->db->where('Usuarios_IdUsuario',$idUsuario);
+				$consulta = $this->db->get();
+				
+				if($consulta->num_rows() > 0){
+					foreach ($consulta->result_array() as $row) {
+						$idRol = $row['Roles_IdRole']; 
+					}
+					
+				
+				return $idRol;
 				}
 				
 			}else{

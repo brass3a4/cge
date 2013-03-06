@@ -25,7 +25,10 @@
 		{
 			$idUsuario = $this->usuarios_m->traeUsuarioId($usr);
 			
-			$data['archivos'] = $this->usuarios_m->traeArchivos($idUsuario); 	
+			$data['archivos'] = $this->usuarios_m->traeArchivos($idUsuario);
+			
+			$data['idRol'] = $this->usuarios_m->traeRolUsuario($idUsuario);
+			 	
 			$data['usuario'] = $usr;
 			
 			if(isset($data['archivos']) && $data['archivos'] != '0'){
@@ -35,21 +38,60 @@
 			}
 			
 			
-			$this->load->view('menuRegistro_v',$data);
+			
+			switch ($data['idRol']) {
+				case '3':
+						$this->load->view('menuRegistro_v',$data);
+					break;
+				case '4':
+						echo "Aspirante diplomado politicas";
+					break;
+				case '5':
+						
+						$this->load->view('menuRegistroP_v',$data);
+					break;
+				
+				default:
+					
+					break;
+			}
+			
 		}
 	   
 		
-		function cargaDocs($usuario)
+		function cargaDocs($usuario,$idRol)
 		{
-			$data['usuario'] = $usuario;	
-			$this->load->view('registroDocs_v',$data);
+			$data['usuario'] = $usuario;
+			
+			switch ($idRol) {
+				case '3':
+						$this->load->view('registroDocs_v',$data);
+					break;
+				case '4':
+						echo "Aspirante diplomado politicas";
+					break;
+				case '5':
+						
+						$this->load->view('registroDocsP_v',$data);
+					break;
+				
+				default:
+					
+					break;
+			}
+				
+			
 		}
 		
 		function cargarPDF($usuario)
 		{
 			$idUsuario = $this->usuarios_m->traeUsuarioId($usuario);
-			if($idUsuario != '0'){
 			
+			
+			if($idUsuario != '0'){
+				
+				$archivos = $this->usuarios_m->traeArchivos($idUsuario);
+				
 				$ruta = exec('pwd');
 				
 				$creaDir = 'mkdir '.$ruta.'/statics/docs/'.$usuario;
@@ -58,36 +100,36 @@
 				exec($cambiaPer,$var);
 				
 				// obtenemos los datos del archivo
-				$tamano['1'] = $_FILES["file"]['size'];
-				$tipo['1'] = $_FILES["file"]['type'];
-				$archivo['1'] = $_FILES["file"]['name'];
-				$tmp['1'] = $_FILES['file']['tmp_name'];
-				$prefijo['1'] = substr(md5(uniqid(rand())),0,6);
+				$i=1;
+				foreach ($_FILES as $row) {
+					$tamano[$i] = $row['size'];
+					$tipo[$i] = $row['type'];
+					$archivo[$i] = $row['name'];
+					$tmp[$i] = $row['tmp_name'];
+					$prefijo[$i] = substr(md5(uniqid(rand())),0,6);
+					$i++;
+				}
 				
-				$tamano['2'] = $_FILES["file2"]['size'];
-				$tipo['2'] = $_FILES["file2"]['type'];
-				$archivo['2'] = $_FILES["file2"]['name'];
-				$tmp['2'] = $_FILES['file2']['tmp_name'];
-				$prefijo['2'] = substr(md5(uniqid(rand())),0,6);
-				
-				$tamano['3'] = $_FILES["file3"]['size'];
-				$tipo['3'] = $_FILES["file3"]['type'];
-				$archivo['3'] = $_FILES["file3"]['name'];
-				$tmp['3'] = $_FILES['file3']['tmp_name'];
-				$prefijo['3'] = substr(md5(uniqid(rand())),0,6);
-				
-				for ($i=1; $i < 4; $i++) {
+				$i=1;	
+				foreach ($archivo as $row) {
+					
+					if(isset($archivos[$i])){
+						$idArchivo = $archivos[$i]['IdArchivo'];
+					}else{
+						$idArchivo = NULL;
+					}
 					 
 					if($tipo[$i] == "application/pdf" || $tipo[$i] == "application/msword" || $tipo[$i] == "image/jpg" || $tipo[$i] == "image/png" || $tipo[$i] == "image/jpeg" || $tipo[$i] == "image/gif"){			
 						if ($archivo[$i] != "") {
 						    // guardamos el archivo a la carpeta files
 						    $destino[$i] =  $ruta.'/statics/docs/'.$usuario."/".$prefijo[$i]."_".$archivo[$i];
 						    $url[$i] = '/statics/docs/'.$usuario."/".$prefijo[$i]."_".$archivo[$i];
-							print_r($destino[$i].'</br>');
+							//print_r($destino[$i].'</br>');
 						    if (move_uploaded_file($tmp[$i],$destino[$i])) {
 									
-								$datos['archivos'] = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario, 'IdArchivo' => $i);
-								$mensaje = $this->usuarios_m->llenaTabla($datos);	
+								$datos['archivos'] = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario);
+								//print_r($datos);
+								$mensaje = $this->usuarios_m->llenaTabla($datos,$idArchivo);	
 								$status = "Archivo subido: <b>".$prefijo[$i]."_".$archivo[$i]."</b>";
 								
 								
@@ -104,7 +146,8 @@
 					}else{
 						echo 'No es valido el tipo archivo';
 					}
-				}
+					$i++;
+				}// fin for
 				redirect('menuRegistro_c/principal/'.$usuario);
 				//$this->principal($usuario);
 			}/* fin if idUsuario */
