@@ -81,6 +81,13 @@ class usuarios_m extends CI_Model {
 		}
 	}
 	
+	/*Esta función guarda las credenciales de identificación de un usuario mediante el idUsuario
+	 * @param:
+	 * 
+	 * 			$credenciales [Array]
+	 * 			$IdUsuario [INT]
+	 * */
+	
 	function guardaCredenciales($credenciales,$IdUsuario)
 	{
 		if(!empty($credenciales)){
@@ -132,6 +139,10 @@ class usuarios_m extends CI_Model {
 			
 		}
 		
+		/* Esta función trae el IdUsario de un usuario mediante el nombre de usuario
+		 * @param:
+		 * 			$nomUsuario [INT]
+		 * */
 		function traeUsuarioId($nomUsuario)
 		{
 			if(isset($nomUsuario)){
@@ -154,16 +165,23 @@ class usuarios_m extends CI_Model {
 			}
 		}
 		
+		/*Esta funcion agrega archivos a un usuario
+		 * @param:
+		 * 			$datos [Array]
+		 * 			$idArchivo [INT]
+		 * 
+		 * Este es un ejemplo de $datos = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario); 
+		 * */
 		function llenaTabla($datos,$idArchivo = NULL)
 		{
 			if(isset($datos)){
+				/*si el idArchivo es distinto de vacio entonces hay un archivo ya relacionado a un usuario así que hay que actualizarlo
+				 *mediante el idArchivo de lo contrario hay que agregarlo.*/
 				if($idArchivo != NULL){
-					
-					echo 'hola 1';
 					$this->db->where('IdArchivo', $idArchivo);
 					$this->db->update('archivos', $datos['archivos']); 					
 				}else{
-					echo 'hola 2';
+					
 					$this->db->insert('archivos', $datos['archivos']);
 					
 				}				
@@ -174,6 +192,11 @@ class usuarios_m extends CI_Model {
 			}
 		}
 		
+		/* Esta función trae los datos de un usuario mediante su idUsuario
+		 * @param:
+		 * 			$idUsuario [INT]
+		 * 
+		 * */
 		function traeDatosUsuario($idUsuario)
 		{
 			if(isset($idUsuario)){

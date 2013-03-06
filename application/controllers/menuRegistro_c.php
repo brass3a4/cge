@@ -31,6 +31,7 @@
 			 	
 			$data['usuario'] = $usr;
 			
+			// si el usuario tiene archivos valor = 1 en caso contrario valor = 0
 			if(isset($data['archivos']) && $data['archivos'] != '0'){
 				$data['valor']='1';
 			}else{
@@ -38,16 +39,17 @@
 			}
 			
 			
-			
+			/* Dependiendo del rol del usuario abre diferentes vistas*/
 			switch ($data['idRol']) {
 				case '3':
+						// vista para curso ingles
 						$this->load->view('menuRegistro_v',$data);
 					break;
 				case '4':
 						echo "Aspirante diplomado politicas";
 					break;
 				case '5':
-						
+						// vista para posgrados
 						$this->load->view('menuRegistroP_v',$data);
 					break;
 				
@@ -63,39 +65,47 @@
 		{
 			$data['usuario'] = $usuario;
 			
-			switch ($idRol) {
-				case '3':
-						$this->load->view('registroDocs_v',$data);
-					break;
-				case '4':
-						echo "Aspirante diplomado politicas";
-					break;
-				case '5':
-						
-						$this->load->view('registroDocsP_v',$data);
-					break;
-				
-				default:
+			if(isset($idRol)){
+				/* dependiendo del rol manda a abrir la vista correspondiente*/
+				switch ($idRol) {
+					case '3':
+							$this->load->view('registroDocs_v',$data);
+						break;
+					case '4':
+							echo "Aspirante diplomado politicas";
+						break;
+					case '5':
+							
+							$this->load->view('registroDocsP_v',$data);
+						break;
 					
-					break;
+					default:
+						
+						break;
+				}	
 			}
-				
-			
 		}
 		
+		/* Esta función sube archivos al usuario
+		 * @param:
+		 * 			$usuario [String]
+		 * 
+		 * */
 		function cargarPDF($usuario)
 		{
 			$idUsuario = $this->usuarios_m->traeUsuarioId($usuario);
 			
-			
+			/*Si el usuario existe:*/
 			if($idUsuario != '0'){
 				
 				$archivos = $this->usuarios_m->traeArchivos($idUsuario);
 				
+				//cargamos la ruta absoluta
 				$ruta = exec('pwd');
-				
+				// creamos el directorio donde se guardaran los archivos del usuario, 
 				$creaDir = 'mkdir '.$ruta.'/statics/docs/'.$usuario;
 				exec($creaDir,$var);
+				//Cambiamos los permisos de directorio para poder escribir en él
 				$cambiaPer = 'chmod 777 '.$ruta.'/statics/docs/'.$usuario;
 				exec($cambiaPer,$var);
 				
@@ -110,32 +120,36 @@
 					$i++;
 				}
 				
-				$i=1;	
+				$i=1;
+				// Para cada archivo...	
 				foreach ($archivo as $row) {
 					
+					//si existe el archivo obtrenemos el idArchivo, en caso contrario asignamos a la variable $idArchivo = NULL
 					if(isset($archivos[$i])){
 						$idArchivo = $archivos[$i]['IdArchivo'];
 					}else{
 						$idArchivo = NULL;
 					}
-					 
+					
+					/* si el archivo es uno de los formatos permitidos:..*/ 
 					if($tipo[$i] == "application/pdf" || $tipo[$i] == "application/msword" || $tipo[$i] == "image/jpg" || $tipo[$i] == "image/png" || $tipo[$i] == "image/jpeg" || $tipo[$i] == "image/gif"){			
 						if ($archivo[$i] != "") {
-						    // guardamos el archivo a la carpeta files
+						    // guardamos el archivo a la carpeta asignada al usuario
 						    $destino[$i] =  $ruta.'/statics/docs/'.$usuario."/".$prefijo[$i]."_".$archivo[$i];
 						    $url[$i] = '/statics/docs/'.$usuario."/".$prefijo[$i]."_".$archivo[$i];
-							//print_r($destino[$i].'</br>');
+							
+							
 						    if (move_uploaded_file($tmp[$i],$destino[$i])) {
 									
 								$datos['archivos'] = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario);
-								//print_r($datos);
+								
 								$mensaje = $this->usuarios_m->llenaTabla($datos,$idArchivo);	
 								$status = "Archivo subido: <b>".$prefijo[$i]."_".$archivo[$i]."</b>";
 								
 								
 						    } else {
 						    	
-								$status = "Error al subir el archivo ".$prefijo[$i]."_".$archivo[$i];
+								$status = "Error al subir el archivo ".$archivo[$i];
 								
 						    }
 						} else {
