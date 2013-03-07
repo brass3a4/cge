@@ -132,7 +132,7 @@
 				 	<legend class="cuerpo"><h4>Información académica</h4></legend>
 				 	<div class="twelve columns">
 					 	<blockquote>
-						  <p>Indique su grado máximo de estudios y si, es su caso, complete el campo en blanco indicando 
+						  <p>Indique su grado máximo de estudios y, si es su caso, complete el campo en blanco indicando 
 						  	qué licenciatura, maestria o doctorado ha estudiado o se encuentra estudiando.</p>
 						</blockquote>
 				 	</div>
