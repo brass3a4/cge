@@ -30,22 +30,27 @@
 						
 						<div class="twelve columns">
 								<div class="four columns">
-								<input type="text" id="nombre" name="Usuarios_Nombre" placeholder="Nombre(s)" title="El nombre debe contener únicamente letras" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
+									<label>Nombre(s):</label>
+									<input type="text" id="nombre" name="Usuarios_Nombre" title="El nombre debe contener únicamente letras" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
 								</div>
 								<div class="four columns">
-								<input type="text" id="apellidoPat" name="Usuarios_aPaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Apellido paterno" required/>
-								</div>
+									<label>Apellido paterno:</label>
+									<input type="text" id="apellidoPat" name="Usuarios_aPaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
+									</div>
 								<div class="four columns">
-								<input type="text" id="apellidoMat" name="Usuarios_aMaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Apellido materno"required/>
+									<label>Apellido materno:</label>										
+									<input type="text" id="apellidoMat" name="Usuarios_aMaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
 								</div>
 						</div>
 						
 						<div class="twelve columns">
 								<div class="four columns">
-								<input type="text" id="Nacionalidad" name="Usuarios_Nacionalidad" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Nacionalidad" required/>
+									<label>Nacionalidad:</label>
+									<input type="text" id="Nacionalidad" name="Usuarios_Nacionalidad" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
 								</div>
 								<div class="four columns">
-								<input type="text" id="fechNac" name="Usuarios_FecNacimiento" title="La fecha debe de tener este formato AAAA-MM-DD" placeholder="Fecha de nacimiento" required/>
+									<label>Fecha de nacimiento:</label>
+									<input type="text" id="fechNac" name="Usuarios_FecNacimiento" title="La fecha debe de tener este formato AAAA-MM-DD" required/>
 								</div>
 								<div class="four columns">
 								
@@ -68,46 +73,56 @@
 								</select>
 							</div>
 							<div class="six columns">
-								<input type="text" name="Usuarios_NomEstado" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Estado"/>
+								<label>Estado:</label>
+								<input type="text" name="Usuarios_NomEstado" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" />
 							</div>
 							</div>
 							
-							<div class="twelve columns espacioSuperior">
+							<div class="twelve columns ">
 								<div class="six columns">
-									<input type="text" id="calle" name="Usuarios_Calle" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Calle" required/>
+									<label>Calle:</label>
+									<input type="text" id="calle" name="Usuarios_Calle" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
 								</div>
 								<div class="three columns">
-									<input type="text" id="numero" name="Usuarios_NumExterior" pattern="[0-9]+" placeholder="Número" required/>
+									<label>Número exterior:</label>
+									<input type="text" id="numero" name="Usuarios_NumExterior" pattern="[0-9]+" required/>
 								</div>
 								<div class="three columns">
-									<input type="text" id="numeroInt" name="Usuarios_NumInterior" placeholder="Número interior"/>
+									<label>Número interior:</label>
+									<input type="text" id="numeroInt" name="Usuarios_NumInterior" />
 								</div>
 							</div>
 							<div class="twelve columns">
 								<div class="six columns">
-								<input type="text" id="colonia" name="Usuarios_Colonia" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Colonia" required/>
+								<label>Colonia:</label>
+								<input type="text" id="colonia" name="Usuarios_Colonia" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
 							</div>			
 							<div class="six columns">
-									<input type="text" name="Usuarios_NomMunicipio" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Municipio"/>
+									<label>Municipio:</label>
+									<input type="text" name="Usuarios_NomMunicipio" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|"/>
 								</select>
 							</div>	
 							</div>
 							<div class="twelve columns">
 								<div class="four columns" >
-									<input type="text" id="cp" name="Usuarios_CP" pattern="[0-9]+" placeholder="C.P." required/>
+									<label>Código postal:</label>
+									<input type="text" id="cp" name="Usuarios_CP" pattern="[0-9]+" required/>
 								</div>
 								<div class="six columns"></div>
 							</div>
 														
 							</fieldset>
 							<div class="four columns">
-								<input type="text" id="rfc" name="Usuarios_RFC"  placeholder="RFC" />
+								<label>RFC:</label>
+								<input type="text" id="rfc" name="Usuarios_RFC" />
 							</div>
 							<div class="four columns">
-								<input type="text" id="curp" name="Usuarios_CURP" placeholder="CURP" required/>
+								<label>CURP:</label>
+								<input type="text" id="curp" name="Usuarios_CURP" required/>
 							</div>
 							<div class="four columns">
-								<input type="email" id="email" name="Usuarios_email" title="ejemplo@correo.com" placeholder="Correo electrónico" required/>
+								<label>Correo electrónico:</label>
+								<input type="email" id="email" name="Usuarios_email" title="ejemplo@correo.com" required/>
 							</div>
 						</div>
 						
@@ -117,7 +132,7 @@
 				 	<legend class="cuerpo"><h4>Información académica</h4></legend>
 				 	<div class="twelve columns">
 					 	<blockquote>
-						  <p>Indique su grado máximo de estudios y si es su casao, complete la/las lineas indicando, 
+						  <p>Indique su grado máximo de estudios y si, es su caso, complete el campo en blanco indicando 
 						  	qué licenciatura, maestria o doctorado ha estudiado o se encuentra estudiando.</p>
 						</blockquote>
 				 	</div>
@@ -143,7 +158,7 @@
 				 	</div>
 
 					<div class="twelve colums">
-					<h5 class="subheader">Indique cuál certificación tiene como docente de ingles</h5>
+					<h5 class="subheader">Indique cuál certificación tiene como docente de inglés</h5>
 							
 								<div class="custom">
 									<div class="twelve columns">

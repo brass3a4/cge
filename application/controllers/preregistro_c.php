@@ -92,7 +92,7 @@
 			$config['smtp_timeout'] = '7';
 			$config['charset']    = 'utf-8';
 			$config['newline']    = "\r\n";
-			$config['mailtype'] = 'text'; // or html
+			$config['mailtype'] = 'html'; // or html
 			$config['validation'] = TRUE; // bool whether to validate email or not
 			
 			
@@ -100,7 +100,7 @@
 			$this->email->from('rentzana@virtuami.izt.uam.mx', 'Diplomado Virtual');
 			$this->email->to($data['Usuarios_email']);
 			$this->email->subject('Gracias por Registrarse');
-			$msj='Estimado profesor: '.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].', su preregistro y solicitud de ingreso al Diplomado Virtual: "Formación docente en la enseñanza escolarizada de inglés para niños" ha realizado con exito:
+			$msj='Estimado profesor:</br> '.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].', su preregistro y solicitud de ingreso al Diplomado Virtual: "Formación docente en la enseñanza escolarizada de inglés para niños" ha realizado con exito:
 					Su número de solicitud es: '.$IdUsuario.' 
 					Su usuario y contraseña asignados son:
 					Usuario: '.$credenciales['usuario'].'

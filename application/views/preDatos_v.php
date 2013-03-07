@@ -28,7 +28,7 @@
 			<fieldset class="cuerpo">
 				
 				<fieldset>
-					<h4>Por favor verifica los datos que ingresaste</h4>
+					<h4>Por favor verifique sus datos</h4>
 					
 					<label><b>Nombre:</b> <?=$datos['Usuarios_Nombre']; ?></label>
 					<label><b>Apellido Paterno: </b> <?=$datos['Usuarios_aPaterno']; ?></label>
@@ -99,7 +99,7 @@
 							|| !empty($datos['DatosUsuario_toefl'])
 							|| !empty($datos['DatosUsuario_otro'])
 								){
-								echo "<br><label><b>Cetificacion(es) obtenidas en el idioma ingles:<b></label><br>";
+								echo "<br><label><b>Cestificacion(es) obtenidas en el idioma inglés:<b></label><br>";
 								}
 					?>
 					

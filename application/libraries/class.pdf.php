@@ -2154,7 +2154,6 @@ function PRVTcheckTextDirective1(&$text,$i,&$f,$final,&$x,&$y,$size=0,$angle=0,$
 * add text to the document, at a specified location, size and angle on the page
 */
 function addText($x,$y,$size,$text,$angle=0,$wordSpaceAdjust=0){
-  $text = utf8_decode($text);
   if (!$this->numFonts){$this->selectFont('./fonts/Helvetica');}
 
   // if there are any open callbacks, then they should be called, to show the start of the line

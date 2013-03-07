@@ -45,7 +45,7 @@
 				$contenido['soliciud'] = 'Su número de solicitud es: '.$idUsuario. "\n";
 				$contenido['usuario'] = 'Usuario: '.$usuario."\n";
 				$contenido['contrasena'] = 'contraseña: '.$datos['password']."\n\n\n";
-				$contenido['login'] = 'Para completar su registro por favor ingrese a: '.base_url().'login_c';			
+				$contenido['login'] = 'Para completar su registro por favor ingresa a: '.base_url().'login_c';			
                 		$text = ""; 
 				$pdf->AddPage();
 				$pdf->SetFont('Arial','B',12);
