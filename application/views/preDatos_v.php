@@ -99,7 +99,7 @@
 							|| !empty($datos['DatosUsuario_toefl'])
 							|| !empty($datos['DatosUsuario_otro'])
 								){
-								echo "<br><label><b>Cestificacion(es) obtenidas en el idioma inglés:<b></label><br>";
+								echo "<br><label><b>Certificacion(es) obtenidas en el idioma inglés:<b></label><br>";
 								}
 					?>
 					

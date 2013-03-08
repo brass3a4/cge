@@ -100,7 +100,7 @@
 			$this->email->from('rentzana@virtuami.izt.uam.mx', 'Diplomado Virtual');
 			$this->email->to($data['Usuarios_email']);
 			$this->email->subject('Gracias por Registrarse');
-			$msj='Estimado profesor:</br> '.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].', su preregistro y solicitud de ingreso al Diplomado Virtual: "Formación docente en la enseñanza escolarizada de inglés para niños" se ha realizado con éxito:
+			$msj='Estimado profesor: '.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].', su preregistro y solicitud de ingreso al Diplomado Virtual: "Formación docente en la enseñanza escolarizada de inglés para niños" se ha realizado con éxito:
 					Su número de solicitud es: '.$IdUsuario.' 
 					Su usuario y contraseña asignados son:
 					Usuario: '.$credenciales['usuario'].'
