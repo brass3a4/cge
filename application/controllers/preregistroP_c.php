@@ -31,7 +31,7 @@
 			
 			
 			
-			$this->load->view('preDatos_v',$data);
+			$this->load->view('preDatosP_v',$data);
 		}
 		
 		function guardaDatos()
@@ -65,7 +65,7 @@
 			
 			if($verifica == 1){
 				$datosN = array('data' => $data, 'credenciales' => $credenciales, 'IdUsuario' => $IdUsuario);
-				$this->load->view('confirmacion_v',$datosN);
+				$this->load->view('confirmacionP_v',$datosN);
 				
 				$this->enviaCorreo($data,$credenciales,$IdUsuario);
 			}else{

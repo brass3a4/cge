@@ -30,25 +30,31 @@
 						
 						<div class="twelve columns">
 								<div class="four columns">
-								<input type="text" id="nombre" name="Usuarios_Nombre" placeholder="Nombre(s)" title="El nombre debe contener únicamente letras" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
+									<label>Nombre(s):</label>
+									<input type="text" id="nombre" name="Usuarios_Nombre" title="El nombre debe contener únicamente letras" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
 								</div>
 								<div class="four columns">
-								<input type="text" id="apellidoPat" name="Usuarios_aPaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Apellido paterno" required/>
+									<label>Apellido paterno:</label>
+									<input type="text" id="apellidoPat" name="Usuarios_aPaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|"  required/>
 								</div>
 								<div class="four columns">
-								<input type="text" id="apellidoMat" name="Usuarios_aMaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Apellido materno"required/>
+									<label>Apellido materno:</label>
+									<input type="text" id="apellidoMat" name="Usuarios_aMaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
 								</div>
 						</div>
 						
 						<div class="twelve columns">
 								<div class="four columns">
-									<input type="text" id="Nacionalidad" name="Usuarios_Nacionalidad" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Nacionalidad" required/>
+									<label>Nacionalidad:</label>
+									<input type="text" id="Nacionalidad" name="Usuarios_Nacionalidad" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|"  required/>
 								</div>
 								<div class="four columns">
-									<input type="text" id="fechNac" name="Usuarios_FecNacimiento" title="La fecha debe de tener este formato AAAA-MM-DD" placeholder="Fecha de nacimiento" required/>
+									<label>Fecha de nacimiento:</label>
+									<input type="text" id="fechNac" name="Usuarios_FecNacimiento" title="La fecha debe de tener este formato AAAA-MM-DD"  required/>
 								</div>
 								<div class="four columns">
-									<input type="text" id="Lnacimiento" name="Usuarios_lugarNac" placeholder="Lugar de nacimiento" required/>
+									<label>Lugar de nacimiento:</label>
+									<input type="text" id="Lnacimiento" name="Usuarios_lugarNac" required/>
 								</div>
 						</div>
 							
@@ -68,56 +74,69 @@
 								</select>
 							</div>
 							<div class="six columns">
-								<input type="text" name="Usuarios_NomEstado" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Estado"/>
+								<label>Estado:</label>
+								<input type="text" name="Usuarios_NomEstado" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" />
 							</div>
 							</div>
 							
-							<div class="twelve columns espacioSuperior">
+							<div class="twelve columns ">
 								<div class="six columns">
-									<input type="text" id="calle" name="Usuarios_Calle" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Calle" required/>
+									<label>Calle:</label>
+									<input type="text" id="calle" name="Usuarios_Calle" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
 								</div>
 								<div class="three columns">
-									<input type="text" id="numero" name="Usuarios_NumExterior" pattern="[0-9]+" placeholder="Número" required/>
+									<label>Número exterior:</label>
+									<input type="text" id="numero" name="Usuarios_NumExterior" pattern="[0-9]+" required/>
 								</div>
 								<div class="three columns">
-									<input type="text" id="numeroInt" name="Usuarios_NumInterior" placeholder="Número interior"/>
+									<label>Número interior:</label>
+									<input type="text" id="numeroInt" name="Usuarios_NumInterior" />
 								</div>
 							</div>
 							<div class="twelve columns">
 								<div class="six columns">
-								<input type="text" id="colonia" name="Usuarios_Colonia" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Colonia" required/>
+								<label>Colonia:</label>	
+								<input type="text" id="colonia" name="Usuarios_Colonia" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
 							</div>			
 							<div class="six columns">
-									<input type="text" name="Usuarios_NomMunicipio" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" placeholder="Municipio"/>
+									<label>Municipio:</label>
+									<input type="text" name="Usuarios_NomMunicipio" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" />
 								</select>
 							</div>	
 							</div>
 							<div class="twelve columns">
 								<div class="four columns" >
-									<input type="text" id="cp" name="Usuarios_CP" pattern="[0-9]+" placeholder="C.P." required/>
+									<label>Código postal:</label>
+									<input type="text" id="cp" name="Usuarios_CP" pattern="[0-9]+" required/>
 								</div>
 								<div class="four columns">
-									<input type="text" id="Tel" name="Usuarios_Telefono" pattern="[0-9]+" placeholder="Teléfono" required/>
+									<label>Teléfono:</label>
+									<input type="text" id="Tel" name="Usuarios_Telefono" pattern="[0-9]+" required/>
 								</div>
 								<div class="four columns">
-									<input type="text" id="TelOf" name="Usuarios_TelOficina" pattern="[0-9]+" placeholder="Teléfono oficina" required/>
+									<label>Teléfono oficina:</label>
+									<input type="text" id="TelOf" name="Usuarios_TelOficina" pattern="[0-9]+" required/>
 								</div>
 							</div>
 							<div class="twelve columns">
 								<div class="four columns" >
-									<input type="text" id="Fax" name="Usuarios_Fax" pattern="[0-9]+" placeholder="Fax" required/>
+									<label>Fax:</label>
+									<input type="text" id="Fax" name="Usuarios_Fax" pattern="[0-9]+" required/>
 								</div>
 							</div>
 														
 							</fieldset>
 							<div class="four columns">
-								<input type="text" id="rfc" name="Usuarios_RFC"  placeholder="RFC" />
+								<label>RFC:</label>
+								<input type="text" id="rfc" name="Usuarios_RFC"/>
 							</div>
 							<div class="four columns">
-								<input type="text" id="curp" name="Usuarios_CURP" placeholder="CURP" required/>
+								<label>CURP:</label>
+								<input type="text" id="curp" name="Usuarios_CURP" required/>
 							</div>
 							<div class="four columns">
-								<input type="email" id="email" name="Usuarios_email" title="ejemplo@correo.com" placeholder="Correo electrónico" required/>
+								<label>Correo electrónico:</label>
+								<input type="email" id="email" name="Usuarios_email" title="ejemplo@correo.com" required/>
 							</div>
 						</div>
 						
@@ -130,7 +149,7 @@
 				 		<div class="row">
 				 		<label class="espacioInferior"><b>Institución de procedencia:</b></label>
 				 		<div class="four columns">
-							<select name="DatosUsuario_tipoEstudio" onchange="quitaClaseEscondidaIns('institucion',this.options[this.selectedIndex].value)" onkeyup="quitaClaseEscondida('estudio',this.options[this.selectedIndex].value)" onclick="quitaClaseEscondida('estudio',this.options[this.selectedIndex].value)">
+							<select name="DatosUsuario_TipoInstProcedencia" onchange="quitaClaseEscondidaIns('institucion',this.options[this.selectedIndex].value)" onkeyup="quitaClaseEscondida('estudio',this.options[this.selectedIndex].value)" onclick="quitaClaseEscondida('estudio',this.options[this.selectedIndex].value)">
 								 <option value="1" >UNAM</option>
 								 <option value="2">IPN</option>
 								 <option value="3">Incorporada a la UNAM</option>
@@ -144,6 +163,7 @@
 						</div>
 						
 							<div class="eight columns escondida" id="institucion">
+									
 									<input type="text" id="DatosUsuario_institucionProcedencia" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" name="DatosUsuario_institucionProcedencia" placeholder="Especifique"/>
 							</div>
 							<div class="twelve columns escondida" id="OtraIns">
@@ -170,7 +190,7 @@
 						<label class="espacioInferior"><b>Último nivel de estudios</b></label>
 						<div class="four columns">
 						
-							<select name="DatosUsuario_UnivelEstdio">
+							<select name="DatosUsuario_UnivelEstudio">
 								<option value="1" >Licenciatura:</option>
 								<option value="2" >Especialización:</option>
 								<option value="3" >Maestría:</option>
@@ -180,10 +200,12 @@
 							<input type="text" id="DatosUsuario_nombEstudio" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" name="DatosUsuario_nombEstudio" placeholder="Especifique"/>
 						</div>
 						<div class="four columns">
-							<input type="text" id="FechExa" name="DatosUsuario_FecNacimiento" title="La fecha debe de tener este formato AAAA-MM-DD" placeholder="Fecha de examen" required/>
+							<label>Fecha de examen:</label>
+							<input type="text" id="FechExa" name="DatosUsuario_FecExa" title="La fecha debe de tener este formato AAAA-MM-DD" required/>
 						</div>
 						<div class="two columns">
-							<input type="text" id="Prom" name="DatosUsuario_Prom" placeholder="Promedio" pattern="[0-9]+" required/>
+							<label>Promedio:</label>
+							<input type="text" id="Prom" name="DatosUsuario_Prom" pattern="[0-9]+" required/>
 						</div>
 						<div class="six columns">
 						</div>	
@@ -197,33 +219,35 @@
 						<blockquote>Seleccione una opción:</blockquote>
 						<div class="six columns">
 							<label>Unidad:</label>
-							<input type="radio" name="unidad" value="AZC">AZC
-							<input type="radio" name="unidad" value="IZT">IZT
-							<input type="radio" name="unidad" value="XOC">XOC
-							<input type="radio" name="unidad" value="CUA">CUA
+							<input type="radio" name="DatosUsuario_unidad" value="AZC">AZC
+							<input type="radio" name="DatosUsuario_unidad" value="IZT">IZT
+							<input type="radio" name="DatosUsuario_unidad" value="XOC">XOC
+							<input type="radio" name="DatosUsuario_unidad" value="CUA">CUA
 						</div>
 						<div class="six columns">
 							<label>División:</label>
-							<input type="radio" name="division" value="CBI">CBI
-							<input type="radio" name="division" value="CSH">CSH
-							<input type="radio" name="division" value="CBS">CBS
-							<input type="radio" name="division" value="CAD">CAD
-							<input type="radio" name="division" value="CCD">CCD
-							<input type="radio" name="division" value="CNI">CNI
+							<input type="radio" name="DatosUsuario_division" value="CBI">CBI
+							<input type="radio" name="DatosUsuario_division" value="CSH">CSH
+							<input type="radio" name="DatosUsuario_division" value="CBS">CBS
+							<input type="radio" name="DatosUsuario_division" value="CAD">CAD
+							<input type="radio" name="DatosUsuario_division" value="CCD">CCD
+							<input type="radio" name="DatosUsuario_division" value="CNI">CNI
 						</div>
 						<div class="six columns espacioSuperior">
 							<label>Nivel de estudios solicitado:</label>
-							<input type="radio" name="NivEstudio" value="Especializacion">Especialización
-							<input type="radio" name="NivEstudio" value="Maestria">Maestría
-							<input type="radio" name="NivEstudio" value="Doctorado">Doctorado
+							<input type="radio" name="DatosUsuario_NivEstudio" value="Especializacion">Especialización
+							<input type="radio" name="DatosUsuario_NivEstudio" value="Maestria">Maestría
+							<input type="radio" name="DatosUsuario_NivEstudio" value="Doctorado">Doctorado
 						</div>
 						<div class="six columns espacioSuperior">
-							<input type="text" name="NomPosgrado" placeholder="Nombre del posgrado" required/>
+							<label>Nombre del posgrado:</label>
+							<input type="text" name="DatosUsuario_NomPosgrado" required/>
 						</div>
-						<div class="six columns espacioSuperior">
-							<input type="text" name="AreaConcentracion" placeholder="Área de concentración" required/>
+						<div class="six columns">
+							<label>Área de concentración:</label>
+							<input type="text" name="DatosUsuario_AreaConcentracion" required/>
 						</div>
-						<div class="six columns espacioSuperior">
+						<div class="six columns">
 						</div>
 					</fieldset>
 					<input type="submit" id="enviarBtn" class="button" style="float: right;" value="Siguiente" />
