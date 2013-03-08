@@ -105,17 +105,26 @@
 						    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 						    
 						</head>
-						<body style="background-image:url('.base_url().'statics/img/image.jpeg);">
-											<br><br><br><br><br><br><br>
-											Estimado profesor:<br><br> <b>'.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].'</b>, 
+						<body>
+							<table width="100%" style="background-image:url('.base_url().'statics/img/image2.jpeg);">
+							<tr>
+							<br><br><br><br><br><br><br><br><br><br><br><br>
+							</tr>
+							<tr>
+							Estimado profesor:<br><br> <b>'.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].'</b>, 
 											su preregistro y solicitud de ingreso al Diplomado Virtual:<br> 
 											"Formación docente en la enseñanza escolarizada de inglés para niños" se ha realizado con éxito:<br><br>
 											Su número de solicitud es: '.$IdUsuario.'<br> 
 											Su usuario y contraseña asignados son:<br><br>
+											<b>
 											Usuario: '.$credenciales['usuario'].'<br>
 											contraseña: '.$credenciales['password'].'<br>
+											</b>
 											Para completar su registro por favor ingrese 
 											<a href="'.base_url().'login_c">Aquí </a>
+							</tr>
+							</table>				
+							
 						</body>
 					</html>';
 			

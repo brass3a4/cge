@@ -28,6 +28,7 @@
 						<blockquote>
 							<p>
 								Los documentos deben estár en formato PDF y cada documento debe estar escaneado por ambos lados.
+								<b>El tamaño máximo por cada documento debe ser de 2MB.</b>
 							</p>
 						</blockquote>
 						<div class="twelve columns">

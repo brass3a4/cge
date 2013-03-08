@@ -34,7 +34,7 @@
 				</fieldset>
 				</div>
 	
-				<p><a class="eight columns offset-by-four registroBtn" href="<?php echo base_url();?>preregistro_c" id="registroBtn">Registrarse</a></p>
+				<!-- <p><a class="eight columns offset-by-four registroBtn" href="<?php echo base_url();?>preregistro_c" id="registroBtn">Registrarse</a></p> -->
 			</div><!--twelve columns-->
 		</div> <!--row-->
 </body>

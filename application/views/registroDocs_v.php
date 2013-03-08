@@ -32,6 +32,7 @@
 							<p>
 							En este espacio envie en el documento en procesador de textos word, los motivos por los que quiere cursar este diplomado. 
 							El documento deberá ser enviado en el idioma inglés en no máximo de una cuartilla.
+							<b>El tamaño máximo por cada documento debe ser de 2MB.</b>
 							</p>
 						
 						<input type="file" name="1" id="motivos" class="offset-by-five" required> 
