@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 	
-	class PreregistroP_c extends CI_Controller{
+	class PreregistroC_c extends CI_Controller{
     
 	    function __construct(){
 	        parent::__construct();
@@ -17,13 +17,14 @@
 			$this->preRegistro();
 	 	}
 		
-		/* Esta función */
+		/* Esta función carga la vista del formulario para hacer el preregistro*/
 		function preRegistro()
 		{
 			$datos['catPais'] = $this->catalogos_m->mTraerTodo('catPaises', 'IdPais', 'NomPais');
-			$this->load->view('preregistroP_v',$datos);
+			$this->load->view('preregistroC_v',$datos);
 		}
 		
+		/*Esta función carga la vista de previsualizacion de datos para ser confirmados*/
 		function preDatos()
 		{
 			$data['catPais'] = $this->catalogos_m->mTraerTodo('catPaises', 'IdPais', 'NomPais');
@@ -31,9 +32,10 @@
 			
 			
 			
-			$this->load->view('preDatosP_v',$data);
+			$this->load->view('preDatosC_v',$data);
 		}
 		
+		/*Esta función guarda los datos de un usuario nuevo*/
 		function guardaDatos()
 		{
 			// Quitamos la serialización que se hizo en la vista preDatos_v	
@@ -76,6 +78,9 @@
 			
 		}
 		
+		/*Esta función envia un correo de confirmacion al usuario por su registro existoso
+		 * @param $data[Array], $credenciales[Array],$IdUsuario[INT]
+		 * */ 
 		function enviaCorreo($data,$credenciales,$IdUsuario)
 		{
 			//Configuración para mandar el correo
@@ -133,7 +138,8 @@
 			   show_error($this->email->print_debugger());
 			  }		
 			}
-		
+			
+		/*Esta función genera una contraseña*/
 		function generaPass()
 		{
 			$tamano = 8;
@@ -148,19 +154,27 @@
 			return $cadena;	
 		}
 		
+		/* Esta función genera un usuario a partir del nombre del usuario y su idUsuario
+		 * @param $datosUsuario[Array], IdUsuario [INT]
+		 * @return $usuario [Array]
+		 * */
 		function creaUsuario($datosUsuario,$IdUsuario)
 		{
-			$nombre = $this->normaliza($datosUsuario['Nombre']);
+			$nombre = $this->normaliza($datosUsuario['Nombre']);//Quita acentos del nombre
 			
-			$aPSinEspacios = $this->limpiaEspacios($datosUsuario['aPaterno']);
+			$aPSinEspacios = $this->limpiaEspacios($datosUsuario['aPaterno']);//Quita los espacios si hay en el apellido paterno
 	
-			$aPaterno = $this->normaliza($aPSinEspacios);
+			$aPaterno = $this->normaliza($aPSinEspacios);//quita los acentos del nombre
 			
-			$usuario = $nombre[0].$aPaterno.$IdUsuario;
+			$usuario = $nombre[0].$aPaterno.$IdUsuario;//toma la primera letra del nombre y la concatena con el apellido y el idUsuario
 			
 			return $usuario;
 		}
 		
+		/*Esta función quita los espacios de una cadena
+		 * @param $cadena [string]
+		 * @return $cadenaSin [String]
+		 * */
 		function limpiaEspacios($cadena){
 			
 		    $cadenaSin = preg_replace( "([ ]+)", "", $cadena );
@@ -168,6 +182,10 @@
 		    return $cadenaSin;
 		}
 		
+		/*Esta funcion quita acentos,tildes, etc
+		 * @param $cadena [String]
+		 * @return $cadena [String]
+		 * */
 		function normaliza ($cadena){
 		    $originales = 'ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûýýþÿŔŕ';
 		    $modificadas = 'aaaaaaaceeeeiiiidnoooooouuuuybsaaaaaaaceeeeiiiidnoooooouuuyybyRr';

@@ -44,20 +44,19 @@
 				} else {
 					
 					//$this->session->sess_destroy();
-	        		$msg = '<label class="error">Nombre de usuario y/o contraseña incorrectos</label><br>';
-					$this->reiniciarSesion();
+	        		$msg = '<label class="error offset-by-one">Nombre de usuario y/o contraseña incorrectos</label><br>';
+					$this->reiniciarSesion($msg);
 				}
 				
 			}
 			
 		}
 		
-		
 		/* Esta función destruye la sesión*/
-		public function reiniciarSesion(){
+		public function reiniciarSesion($msg = NULL){
 		
 			$this->session->sess_destroy();	
-	        $this->index();
+	        $this->index($msg);
 		}
 
 	}    

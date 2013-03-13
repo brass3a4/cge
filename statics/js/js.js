@@ -1,4 +1,4 @@
-/* Esta función agrega la clase "escondida"
+/* Esta función quita la clase "escondida"
   @param:
   		$valor type[string] (id del <div>)
  * */
@@ -7,7 +7,7 @@ function quitaClaseEscondida(valor){
 	$('#'+valor).removeClass("escondida");
 }
 
-/* Esta función agrega la clase "escondida"
+/* Esta función quita la clase "escondida"
   @param:
   		$valor type[string] (id del <div>)
  * */
@@ -20,8 +20,46 @@ function quitaClaseEscondidaIns(valor,id){
 	}
 }
 
-
 /* Esta función quita la clase "escondida"
+  @param:
+  		$valor type[string] (id del <div>)
+ * */
+function quitaClaseEscondidaInsP(valor,id) {
+	if(id == 6 && id != 7){
+		$('#'+valor).removeClass("escondida");
+	}else{
+		$('#'+valor).addClass("escondida");
+	}  
+	if(id == 7){
+		$('#EmpUAM').removeClass("escondida");
+	}else{
+		$('#EmpUAM').addClass("escondida");
+	}
+}
+/* Esta función quita la clase "escondida"
+  @param:
+  		$valor type[string] (id del <div>)
+ * */
+function quitaClaseEscondidaUGradoO(valor,id) {
+	if(id == 6){
+		$('#'+valor).removeClass("escondida");
+	}else{
+		$('#'+valor).addClass("escondida");
+	}
+}
+/* Esta función quita la clase "escondida"
+  @param:
+  		$valor type[string] (id del <div>)
+ * */
+function quitaClaseEscondidaExpEst(valor,id) {
+	if(id == 1){
+		$('#'+valor).removeClass("escondida");
+	}else{
+		$('#'+valor).addClass("escondida");
+	}
+}
+
+/* Esta función agrega la clase "escondida"
   @param:
   		$valor type[string] (id del <div>)
  * */
@@ -89,15 +127,30 @@ function veAtras(){
   window.history.back()
 }
 
+
 function cargarVista(){
 	
 	var url=urlBase+'preregistro_c/guardaDatos/';
 	document.location.href=url;
  	
 }
+
+/*Esta función carga la vista para cargar datos dependiendo del usuario y el rol
+	@param usr[string], idrol[INT] 
+ * */
 function cargaVistaDocs(usr,idrol){
 	
 	var url=urlBase+'menuRegistro_c/cargaDocs/'+usr+'/'+idrol;
 	document.location.href=url;
  	
+}
+
+function cargarVistaUsuariosRol(idRol) {
+  	var url=urlBase+'adminDocs_c/muestraUsuariosRol/'+idRol;
+	document.location.href=url;
+}
+
+function cargaVistaDocsUsuario(idUsuario) {
+  	var url=urlBase+'adminDocs_c/muestraDocsUsuario/'+idUsuario;
+  	document.location.href=url;
 }

@@ -19,7 +19,6 @@
 <body>
 	<div class="row">
 		<div class="twelve columns ">
-			<br><br>
 			
 			<fieldset class="cuerpo">
 			 	
@@ -101,7 +100,6 @@
 							<div class="six columns">
 									<label>Municipio:</label>
 									<input type="text" name="Usuarios_NomMunicipio" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" />
-								</select>
 							</div>	
 							</div>
 							<div class="twelve columns">

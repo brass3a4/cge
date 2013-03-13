@@ -52,6 +52,10 @@
 						// vista para posgrados
 						$this->load->view('menuRegistroP_v',$data);
 					break;
+				case '9':
+						// vista para posgrados
+						$this->load->view('menuRegistroC_v',$data);
+					break;
 				
 				default:
 					
@@ -77,6 +81,10 @@
 					case '5':
 							
 							$this->load->view('registroDocsP_v',$data);
+						break;
+					case '9':
+							
+							$this->load->view('registroDocsC_v',$data);
 						break;
 					
 					default:

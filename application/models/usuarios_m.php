@@ -30,6 +30,8 @@ class usuarios_m extends CI_Model {
 							        )
 							); 
 	 * 
+	 * @return $idUsuario [INT]
+	 * 
 	 * */
 	function guardaUsuario($datos)
 	{
@@ -86,6 +88,8 @@ class usuarios_m extends CI_Model {
 	 * 
 	 * 			$credenciales [Array]
 	 * 			$IdUsuario [INT]
+	 * 
+	 * @return BOLEAN
 	 * */
 	
 	function guardaCredenciales($credenciales,$IdUsuario)
@@ -107,6 +111,7 @@ class usuarios_m extends CI_Model {
 							'usuario' => 'brass3a4',
 							'password' => '123'
 						   );
+	 	 * @return $mensaje [string] 
 		 * 
 		 * */
 		function verificaUsuario($datos){
@@ -142,6 +147,8 @@ class usuarios_m extends CI_Model {
 		/* Esta función trae el IdUsario de un usuario mediante el nombre de usuario
 		 * @param:
 		 * 			$nomUsuario [INT]
+		 * 
+		 * @return $idUsr [INT]
 		 * */
 		function traeUsuarioId($nomUsuario)
 		{
@@ -170,6 +177,7 @@ class usuarios_m extends CI_Model {
 		 * 			$datos [Array]
 		 * 			$idArchivo [INT]
 		 * 
+		 * @return BOLEAN
 		 * Este es un ejemplo de $datos = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario); 
 		 * */
 		function llenaTabla($datos,$idArchivo = NULL)
@@ -196,6 +204,7 @@ class usuarios_m extends CI_Model {
 		 * @param:
 		 * 			$idUsuario [INT]
 		 * 
+		 * @return $datos [array]
 		 * */
 		function traeDatosUsuario($idUsuario)
 		{
@@ -222,6 +231,7 @@ class usuarios_m extends CI_Model {
 		/*Esta función trae los archivos de un usuario a partir de su IdUsuario
 		 * @param:
 		 * 			$IdUsuario [INT]
+		 * @return $datos[Array]
 		 * */
 		function traeArchivos($idUsuario)
 		{
@@ -248,6 +258,7 @@ class usuarios_m extends CI_Model {
 		/* Esta función trae el rol de un usuario a partir de su IdUsuario
 		 * @param:
 		 * 			$IdUsuario [INT]
+		 * @return $idRol[INT]
 		 * */
 		function traeRolUsuario($idUsuario)
 		{
@@ -269,5 +280,32 @@ class usuarios_m extends CI_Model {
 			}else{
 				return '0';
 			}
+		}
+		
+		/* Esta función trae todos los usuarios dependiendo de su idRol
+		 * @param $idRol[INT]
+		 * @return $usuarios[array]
+		 * */
+		function traeUsuariosRol($idRol)
+		{
+			if(isset($idRol)){
+				$this->db->select('*');
+				$this->db->from('Usuarios');
+				$this->db->join('UserRoles', 'UserRoles.Usuarios_IdUsuario = Usuarios.IdUsuario');
+				$this->db->where('UserRoles.Roles_IdRole', $idRol);
+				$consulta = $this->db->get();
+				
+				if($consulta->num_rows() > 0){
+					foreach ($consulta->result_array() as $DatosUsuario) {
+						$usuarios[$DatosUsuario['IdUsuario']]= $DatosUsuario; 
+					}
+					
+				return $usuarios;
+				}
+				
+			}else{
+				return '0';
+			}
+			
 		}
 }

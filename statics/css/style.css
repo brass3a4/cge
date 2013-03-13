@@ -1,8 +1,11 @@
 body{
-	background-color:#EEEEEE;
+	background: url(../img/registro.jpg) no-repeat top center white;
 }
 .login{
-	background-color:#B5D991;
+	background: url(../img/bg.png) repeat left top transparent;
+	box-shadow: 0 -5px 15px #808080;
+	margin-top: 55%
+	
 }
 
 .button{
@@ -20,8 +23,15 @@ a{
 a:hover{
 	color: #51A351;
 }
-.cuerpo{
-	background-color:#B5D991;
+.cuerpo {
+	background: url(../img/bg.png) repeat left top transparent;
+	box-shadow: 0 -5px 15px #808080;
+	margin-top: 15%;
+}
+.cuerpo .cuerpo{
+	background: none;
+	box-shadow: none;
+	margin-top: 0;
 }
 .escondida{
 	display: none;
@@ -33,9 +43,7 @@ a:hover{
 	padding-bottom: 10px;
 }
 
-.headLogin{
-	padding-top: 10%;
-}
+
 
 .button.disabled, .button[disabled]{
 	background: #5BB75B;

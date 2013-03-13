@@ -10,6 +10,7 @@
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/jquery.foundation.forms.js"></script>
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/modernizr.foundation.js"></script>
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/jquery.placeholder.js.js"></script>
+  	<script src="<?=base_url(); ?>statics/foundation/javascripts/foundation.forms.js"></script>
   	<script src="<?=base_url(); ?>statics/js/js.js"></script>
   	<script src="<?=base_url(); ?>statics/js/jquery-1.8.2.min.js"></script>
   	<script src="<?=base_url(); ?>statics/js/jquery-ui-1.8.23.custom.min.js"></script>
@@ -19,10 +20,10 @@
 <body>
 	<div class="row">
 		<div class="twelve columns ">
-		
+			
 			<fieldset class="cuerpo">
 			 	
-				<form action='<?=base_url(); ?>preregistro_c/preDatos/' method='post' name='process' accept-charset="utf-8">
+				<form action='<?=base_url(); ?>preregistroC_c/preDatos/' method='post' name='process' accept-charset="utf-8">
 					<fieldset >
 						<legend class="cuerpo"><h4>Datos personales</h4></legend>
 					<div class="twelve colums">
@@ -88,7 +89,7 @@
 								</div>
 								<div class="three columns">
 									<label>Número interior:</label>
-									<input type="text" id="numeroInt" name="Usuarios_NumInterior" />
+									<input type="text" id="numeroInt" name="Usuarios_NumInterior" pattern="[0-9]+" />
 								</div>
 							</div>
 							<div class="twelve columns">
@@ -99,7 +100,6 @@
 							<div class="six columns">
 									<label>Municipio:</label>
 									<input type="text" name="Usuarios_NomMunicipio" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|"/>
-								</select>
 							</div>	
 							</div>
 							<div class="twelve columns">
@@ -128,65 +128,89 @@
 				 	</div>
 				 	</fieldset> 
 				 	<fieldset>
-				 	<legend class="cuerpo"><h4>Información académica</h4></legend>
-				 	<div class="twelve columns">
-					 	<blockquote>
-						  <p>Indique su grado máximo de estudios y, si es su caso, complete el campo en blanco indicando 
-						  	qué licenciatura, maestria o doctorado ha estudiado o se encuentra estudiando.</p>
-						</blockquote>
+				 	<legend class="cuerpo"><h4>Información académica y profesional</h4></legend>
+				 	<div class="six columns">
+					 	<label>1. Procendencia:</label>
+					 	<select name="DatosUsuario_InstProcedencia" onchange="quitaClaseEscondidaInsP('ProfExt',this.options[this.selectedIndex].value)" onkeyup="quitaClaseEscondidaP('ProfExt',this.options[this.selectedIndex].value)" onclick="quitaClaseEscondidaInsP('ProfExt',this.options[this.selectedIndex].value)" required>
+					 		<option value="1">Profesor de UAM Iztapalapa</option>
+					 		<option value="2">Profesor de UAM Xochimilco</option>
+					 		<option value="3">Profesor de UAM Azcapozalco</option>
+					 		<option value="4">Profesor de UAM Cuajimalpa</option>
+					 		<option value="5">Profesor de UAM Lerma</option>
+					 		<option value="6">Profesor Externo</option>
+					 		<option value="7">Empleado UAM</option>
+					 	</select>
+					 	<div id="ProfExt" class="espacioSuperior escondida">
+					 		<label> Especifique:</label>
+					 		<input name="DatosUsuario_InstProcedenciaOtra" type="text" />
+					 	</div>
+					 	<div id="EmpUAM" class="espacioSuperior escondida">
+					 		<label>Número de empleado:</label>
+					 		<input name="DatosUsuario_NumEmp" type="text" />
+					 	</div>
 				 	</div>
-				 	<div class="twelve columns">
-				 		<div class="row">
-				 		<div class="four columns">
-							<select name="DatosUsuario_tipoEstudio" onchange="quitaClaseEscondida('estudio')" onkeyup="quitaClaseEscondida('estudio')" onclick="quitaClaseEscondida('estudio')">
-								 <option value="1" >Preparatoria</option>
-								 <option value="2">Pasante de licenciatura en:</option>
-								 <option value="3">Licenciatura en:</option>
-								 <option value="4">Pasante de maestría en:</option>
-								 <option value="5">Maestría en:</option>
-								 <option value="6">Pasante de doctorado en:</option>
-								 <option value="7">Doctorado en:</option>
-								
-							</select>
-						</div>
-						
-							<div class="eight columns escondida" id="estudio">
-									<input type="text" id="DatosUsuario_nombEstudio" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" name="DatosUsuario_nombEstudio"/>
-							</div>
+				 	<div class="six columns">
+					 	<label>2. Último grado de estudios:</label>
+					 	<select name="DatosUsuario_UGradoEstudio" onchange="quitaClaseEscondidaUGradoO('UGradoEstudioOtro',this.options[this.selectedIndex].value)" onkeyup="quitaClaseEscondidaUGradoO('UGradoEstudioOtro',this.options[this.selectedIndex].value)" onclick="quitaClaseEscondidaUGradoO('UGradoEstudioOtro',this.options[this.selectedIndex].value)" required>
+					 		<option value="1">Posdoctorado</option>
+					 		<option value="2">Doctor</option>
+					 		<option value="3">Maestro</option>
+					 		<option value="4">Licenciado</option>
+					 		<option value="5">Técnico Superior Universitario</option>
+					 		<option value="6">Otro</option>
+					 	</select>
+					 	<div id="UGradoEstudioOtro" class="espacioSuperior escondida">
+					 		<label> Especifique:</label>
+					 		<input name="DatosUsuario_UGradoEstudioOtro" type="text" />
+					 	</div>
 				 	</div>
+				 	<div class="six columns espacioSuperior custom">
+				 			<label>3. Seleccione el nivel o niveles escolares en los que desenvuelve como profesor:</label>
+	      					<label><input type="checkbox" name="DatosUsuario_NivelEProfP" value="1">Posgrado</label>
+	      					<label><input type="checkbox" name="DatosUsuario_NivelEProfU" value="2">Universitario</label>
+	      					<label><input type="checkbox" name="DatosUsuario_NivelEProfMS" value="3">Nivel medio superior</label>
+	      					<label><input type="checkbox" name="DatosUsuario_NivelEProfBa" value="4">Educación básica</label>
 				 	</div>
-
-					<div class="twelve colums">
-					<h5 class="subheader">Indique cuál certificación tiene como docente de inglés</h5>
-							
-								<div class="custom">
-									<div class="twelve columns">
-										
-										<label for="checkbox1"><input type="checkbox" value="1" name="DatosUsuario_ielts" id="checkbox1">Examen internacional English Language Testing System (IELTS)</label>
-										<label for="checkbox2"><input type="checkbox" value="2" name="DatosUsuario_tkt" id="checkbox2">Teaching knowledge Test (TKT)</label>
-										<label for="checkbox3"><input type="checkbox" value="3" name="DatosUsuario_pet" id="checkbox3">Examen Cambridge Preliminary English Test (PET)</label>
-										<label for="checkbox4"><input type="checkbox" value="4" name="DatosUsuario_fce" id="checkbox4">Examen Cambridge First Certificate in English (FCE)</label>
-										<label for="checkbox5"><input type="checkbox" value="5" name="DatosUsuario_cae" id="checkbox5">Examen Cambridge Certificate in Advanced English (CAE)</label>
-										<label for="checkbox6"><input type="checkbox" value="6" name="DatosUsuario_cpe" id="checkbox6">Cambridge Certificate of Proficiency in English (CPE)</label>
-										<label for="checkbox7"><input type="checkbox" value="7" name="DatosUsuario_icelt" id="checkbox7">In service Certificate English Languaje Teaching (ICELT)</label>
-										<label for="checkbox8"><input type="checkbox" value="8" name="DatosUsuario_dote" id="checkbox8">Diploma for Overseas Teachers of English (DOTE)</label>
-										<label for="checkbox9"><input type="checkbox" value="9" name="DatosUsuario_unam1" id="checkbox9">Cuso de formación de Profesores de inglés (UNAM)</label>
-										<label for="checkbox10"><input type="checkbox" value="10" name="DatosUsuario_unam2" id="checkbox10">Exámenes de la comisión Técnica de Idiomas Extranjeros y de la comisión Especial de Lenguas Extranjeras (UNAM)</label>
-										
-									</div>
-									<div class="eight columns">
-										<label for="checkbox11" ><input type="checkbox" value="11" name="DatosUsuario_toefl" id="checkbox11">TOEFL institucional: INDICAR PUNTAJE AQUÍ:</label>
-									</div>
-									<div class="four columns">
-										<input  class="four columns" type="text" id="puntuajeTOEFL" name="DatosUsuario_puntuajeTOEFL" >
-									</div>
-									<div class="twelve columns">
-										<label for="checkbox12"><input type="checkbox"   value="12" name="DatosUsuario_otro" id="checkbox12">Otro(s) (especificar ¿cuál?)</label>
-									<textarea name="DatosUsuario_otroText" id="otroText" cols="1" rows="2" ></textarea>
-									</div>
-								</div>	
-					</div>
-					<input type="hidden" name="UserRoles_Roles_IdRole" value="3"/>
+				 	<div class="six columns espacioSuperior">
+				 		<label>4. Mencione el nombre de la última materia o curso en el que ha impartido clase:</label>
+				 		<input type="text" name="DatosUsuario_UltimaMateria" required/>
+				 	</div>
+				 	<div class="six columns espacioSuperior">
+				 		<label>5. ¿Cuántos años de experiencia tiene impartiendo clases?</label>
+				 		<select name="DatosUsuario_AExp">
+				 			<option value="1">Menos de 1</option>
+				 			<option value="2">De 1 a 5</option>
+				 			<option value="3">De 6 a 15</option>
+				 			<option value="4">De 16 a 25</option>
+				 			<option value="5">Más de 25</option>
+				 		</select>
+				 	</div>
+				 	<div class="twelve columns espacioSuperior">
+				 		<label>6. ¿Ha tenido experiencia como estudiante o docente virtual?</label>
+				 		<div class="two columns">
+				 			<select name="DatosUsuario_ExpEst" onchange="quitaClaseEscondidaExpEst('No',this.options[this.selectedIndex].value)" onkeyup="quitaClaseEscondidaExpEst('No',this.options[this.selectedIndex].value)" onclick="quitaClaseEscondidaExpEst('No',this.options[this.selectedIndex].value)" required>
+				 				<option value="1">Sí</option>
+				 				<option value="2" selected>No</option>
+				 			</select>
+				 		</div>
+				 		<div id="No" class="ten columns escondida">
+				 			<label>Mencione el nivel acádemico:</label>
+				 			<input type="text" name="DatosUsuario_NAcademicoEst" />
+				 			<label>Nombre del curso o programa de estudios:</label>
+				 			<input type="text" name="DatosUsuario_NomCusoEst" />
+				 		</div>
+				 	</div>
+				 	<div class="twelve columns espacioSuperior">
+				 		<label>Reflexione ¿Cuántas horas al día dispone para dedicar a un curso virtual?</label>
+				 		<div class="six columns">
+				 			<select name="DatosUsuario_HorasDisp" required>
+				 				<option value="1">Menos de 1</option>
+				 				<option value="2">De 2 a 4</option>
+				 				<option value="3">Más de 5</option>
+				 			</select>
+				 		</div>
+				 	</div>
+					<input type="hidden" name="UserRoles_Roles_IdRole" value="9"/>
 					</fieldset>
 					<input type="submit" id="enviarBtn" class="button" style="float: right;" value="Siguiente" />
 				</form>
@@ -197,4 +221,3 @@
 	</div> <!--row-->
 </body>
 </html>
-

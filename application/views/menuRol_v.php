@@ -1,7 +1,6 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/foundation.min.css">
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/app.css">
@@ -15,29 +14,32 @@
   	<script src="<?=base_url(); ?>statics/js/jquery-1.8.2.min.js"></script>
   	<script src="<?=base_url(); ?>statics/js/jquery-ui-1.8.23.custom.min.js"></script>
   	<script src="<?=base_url(); ?>statics/js/datepickerEsp.js"></script>
-  	
-
+	<script type="text/javascript">
+		var urlBase = "<?=base_url(); ?>";
+	</script>
 </head>
 <body>
+	<pre><?php 
+			
+	?></pre>
 	<div class="row">
-			<div class="eleven columns offset-by-three headLogin">
+		
+		<div class="twelve columns ">
+			
+			<fieldset class="cuerpo">
 				
-				
-				<div class="six columns">
-					<fieldset class="login">
-						<p class="offset-by-one"><b>Introduzca sus datos para ingresar al sistema</b></p>
-						<form action='<?php echo base_url();?>login_c/verifica' method='post' name='process' accept-charset="utf-8" enctype="multipart/form-data">
-							<?php if(!(is_null($msg))) echo $msg;?>
-					  		<input type="text" id="usuarioInput" name="usuario" placeholder="Usuario" required/>
-					  		<input type="password" id="passInput" name="password" placeholder="Contraseña" required/>
-  						<input type="submit" id="LogueoAdminBtn" class="button offset-by-four" value="Ingresar" />
-						</form>
+				<fieldset>
+					<legend class="cuerpo"><h4>Seleccione un rol</h4></legend>
+					<a class="button" onclick="cargarVistaUsuariosRol('3')">Aspirantes Curso Ingles >></a><br><br>
+					<a class="button" onclick="cargarVistaUsuariosRol('5')">Aspirantes Posgrado Políticas >></a><br><br>
+					<a class="button" onclick="cargarVistaUsuariosRol('9')">Aspirates Cursos Generales >></a><br><br>
 				</fieldset>
-				</div>
-	
-				<!-- <p><a class="eight columns offset-by-four registroBtn" href="<?php echo base_url();?>preregistro_c" id="registroBtn">Registrarse</a></p> -->
-			</div><!--twelve columns-->
-		</div> <!--row-->
+								
+			</fieldset>
+
+
+		</div><!--twelve columns-->
+	</div> <!--row-->
 </body>
 </html>
 

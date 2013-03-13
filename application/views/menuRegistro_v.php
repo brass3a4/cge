@@ -22,7 +22,7 @@
 </head>
 <body>
 	<div class="row">
-			<div class="twelve columns headLogin">
+			<div class="twelve columns">
 			<fieldset class="cuerpo">
 				<fieldset >
 					<legend class="cuerpo"><h4>Completa los pasos siguientes para terminar tu registro</h4></legend>
