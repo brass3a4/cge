@@ -28,9 +28,6 @@
 			<fieldset class="cuerpo">
 				
 				<fieldset>
-					<!-- <pre><?php 
-						print_r($archivosUsuario);	
-					?></pre> -->
 					
 					<legend class="cuerpo"><h4>Los Documentos de <?=$datosUsuario['Nombre']?> <?=$datosUsuario['aPaterno']?> <?=$datosUsuario['aMaterno']?> son:</h4></legend>
 					

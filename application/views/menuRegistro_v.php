@@ -29,7 +29,12 @@
 					<p><b>Paso 1: Solicitud de ingreso</b></p>
 					<div class="twelve columns espacioInferior">
 						<div class="six columns">
+							<?php if($valor == 0): ?>
 							<a class="button" onclick="cargaVistaDocs('<?=$usuario ?>','<?= $idRol?>')"> Subir documentos</a>
+							<?php endif ?>
+							<?php if($valor == 1): ?>
+							<a class="button" disabled> Subir documentos</a>
+							<?php endif ?>
 						</div>
 						<div class="twelve columns">
 							

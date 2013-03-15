@@ -138,15 +138,10 @@
 					 		<option value="4">Profesor de UAM Cuajimalpa</option>
 					 		<option value="5">Profesor de UAM Lerma</option>
 					 		<option value="6">Profesor Externo</option>
-					 		<option value="7">Empleado UAM</option>
 					 	</select>
 					 	<div id="ProfExt" class="espacioSuperior escondida">
 					 		<label> Especifique:</label>
 					 		<input name="DatosUsuario_InstProcedenciaOtra" type="text" />
-					 	</div>
-					 	<div id="EmpUAM" class="espacioSuperior escondida">
-					 		<label>Número de empleado:</label>
-					 		<input name="DatosUsuario_NumEmp" type="text" />
 					 	</div>
 				 	</div>
 				 	<div class="six columns">
@@ -187,13 +182,13 @@
 				 	</div>
 				 	<div class="twelve columns espacioSuperior">
 				 		<label>6. ¿Ha tenido experiencia como estudiante o docente virtual?</label>
-				 		<div class="two columns">
+				 		<div class="two columns espacioSuperior">
 				 			<select name="DatosUsuario_ExpEst" onchange="quitaClaseEscondidaExpEst('No',this.options[this.selectedIndex].value)" onkeyup="quitaClaseEscondidaExpEst('No',this.options[this.selectedIndex].value)" onclick="quitaClaseEscondidaExpEst('No',this.options[this.selectedIndex].value)" required>
 				 				<option value="1">Sí</option>
 				 				<option value="2" selected>No</option>
 				 			</select>
 				 		</div>
-				 		<div id="No" class="ten columns escondida">
+				 		<div id="No" class="ten columns escondida espacioSuperior">
 				 			<label>Mencione el nivel acádemico:</label>
 				 			<input type="text" name="DatosUsuario_NAcademicoEst" />
 				 			<label>Nombre del curso o programa de estudios:</label>
@@ -201,7 +196,7 @@
 				 		</div>
 				 	</div>
 				 	<div class="twelve columns espacioSuperior">
-				 		<label>Reflexione ¿Cuántas horas al día dispone para dedicar a un curso virtual?</label>
+				 		<label>7. ¿Cuántas horas al día dispone para dedicar a un curso virtual?</label>
 				 		<div class="six columns">
 				 			<select name="DatosUsuario_HorasDisp" required>
 				 				<option value="1">Menos de 1</option>

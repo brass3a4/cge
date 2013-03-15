@@ -180,16 +180,18 @@ class usuarios_m extends CI_Model {
 		 * @return BOLEAN
 		 * Este es un ejemplo de $datos = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario); 
 		 * */
-		function llenaTabla($datos,$idArchivo = NULL)
+		function llenaTabla($datos,$idArchivo)
 		{
 			if(isset($datos)){
 				/*si el idArchivo es distinto de vacio entonces hay un archivo ya relacionado a un usuario así que hay que actualizarlo
 				 *mediante el idArchivo de lo contrario hay que agregarlo.*/
 				if($idArchivo != NULL){
+					
 					$this->db->where('IdArchivo', $idArchivo);
 					$this->db->update('archivos', $datos['archivos']); 					
 				}else{
-					
+					echo "string";
+					print_r($idArchivo);
 					$this->db->insert('archivos', $datos['archivos']);
 					
 				}				

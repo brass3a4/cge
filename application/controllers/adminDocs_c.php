@@ -18,12 +18,6 @@
 			//$this->menuSeleccionaRol();
 	 	}
 		
-		function menuSeleccionaRol()
-		{
-			$idRol=$_POST['idRol'];
-			$this->muestraUsuariosRol($idRol);
-		}
-		
 		function muestraUsuariosRol($idRol)
 		{
 			$datos['usuarios'] = $this->usuarios_m->traeUsuariosRol($idRol);

@@ -101,6 +101,7 @@
 		 * */
 		function cargarPDF($usuario)
 		{
+			
 			$idUsuario = $this->usuarios_m->traeUsuarioId($usuario);
 			
 			/*Si el usuario existe:*/
@@ -135,6 +136,7 @@
 					//si existe el archivo obtrenemos el idArchivo, en caso contrario asignamos a la variable $idArchivo = NULL
 					if(isset($archivos[$i])){
 						$idArchivo = $archivos[$i]['IdArchivo'];
+						
 					}else{
 						$idArchivo = NULL;
 					}
@@ -151,7 +153,7 @@
 									
 								$datos['archivos'] = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario);
 								
-								$mensaje = $this->usuarios_m->llenaTabla($datos,$idArchivo);	
+								$mensaje = $this->usuarios_m->llenaTabla($datos,$idArchivo);
 								$status = "Archivo subido: <b>".$prefijo[$i]."_".$archivo[$i]."</b>";
 								
 								

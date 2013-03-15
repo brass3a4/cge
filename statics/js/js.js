@@ -30,11 +30,7 @@ function quitaClaseEscondidaInsP(valor,id) {
 	}else{
 		$('#'+valor).addClass("escondida");
 	}  
-	if(id == 7){
-		$('#EmpUAM').removeClass("escondida");
-	}else{
-		$('#EmpUAM').addClass("escondida");
-	}
+	
 }
 /* Esta función quita la clase "escondida"
   @param:
@@ -57,6 +53,25 @@ function quitaClaseEscondidaExpEst(valor,id) {
 	}else{
 		$('#'+valor).addClass("escondida");
 	}
+}
+
+function quitaClaseEscondidaProc(id) {
+  	if(id == 1){
+		$('#profUAM').removeClass("escondida");
+		$('#inputs').removeClass("escondida");
+		$('#profExt').addClass("escondida");
+	}
+  	if(id == 2){
+		$('#profExt').removeClass("escondida");
+		$('#inputs').removeClass("escondida");
+		$('#profUAM').addClass("escondida");
+	}
+	if(id == 0) {
+		$('#inputs').addClass("escondida");
+		$('#profExt').addClass("escondida");
+		$('#profUAM').addClass("escondida");
+	};
+
 }
 
 /* Esta función agrega la clase "escondida"

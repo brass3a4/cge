@@ -26,10 +26,15 @@
 			<fieldset class="cuerpo">
 				<fieldset >
 					<legend class="cuerpo"><h4>Completa para terminar tu registro</h4></legend>
-					<p><b>Paso 1: Solicitud de ingreso</b></p>
+					<p><b>Paso 1: Dumentos de identificación</b></p>
 					<div class="twelve columns espacioInferior">
 						<div class="six columns">
+							<?php if($valor == 0): ?>
 							<a class="button" onclick="cargaVistaDocs('<?=$usuario ?>','<?= $idRol?>')"> Subir documentos</a>
+							<?php endif ?>
+							<?php if($valor == 1): ?>
+							<a class="button" disabled> Subir documentos</a>
+							<?php endif ?>
 						</div>
 						<div class="twelve columns espacioSuperior" style="padding-left: 25%;">
 							

@@ -1,20 +1,20 @@
 body{
-	background: url(../img/registro.jpg) no-repeat top center white;
+	background: url("../img/registro.jpg") no-repeat scroll center top white;
 }
-.login{
-	background: url(../img/bg.png) repeat left top transparent;
-	box-shadow: 0 -5px 15px #808080;
-	margin-top: 55%
-	
+.row {
+	margin-top: 150px;
+}
+.row .login{
+	margin-top: 0;
 }
 
 .button{
-	background-color:#5BB75B;
+	background-color:#714d99;
 	box-shadow: 0 0px 0 rgba(0, 0, 0, 0.5) inset;
-	border: 1px solid #5BB75B;
+	border: 1px solid #714d99;
 }
 .button:hover, .button:focus {
-    background-color: #51A351;
+    background-color: #857399;
     color: #FFFFFF;
 }
 a{
@@ -23,15 +23,19 @@ a{
 a:hover{
 	color: #51A351;
 }
-.cuerpo {
-	background: url(../img/bg.png) repeat left top transparent;
-	box-shadow: 0 -5px 15px #808080;
-	margin-top: 15%;
+
+.ui-datepicker a {
+	color: #7A6D89;
+}
+
+.cuerpo, .login {
+	background: url("../img/bg.png") repeat center center transparent;
+	box-shadow: 5px 5px 10px gray;
 }
 .cuerpo .cuerpo{
 	background: none;
 	box-shadow: none;
-	margin-top: 0;
+	margin-top: inherit;
 }
 .escondida{
 	display: none;
@@ -43,6 +47,12 @@ a:hover{
 	padding-bottom: 10px;
 }
 
+.button.disabled, .button[disabled]{
+	background: #5BB75B;
+}
+.button.disabled:hover, .button[disabled]:hover{
+	background: none repeat scroll 0 0 #51A351;
+}
 
 
 .button.disabled, .button[disabled]{

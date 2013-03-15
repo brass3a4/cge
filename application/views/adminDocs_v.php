@@ -28,17 +28,14 @@
 			<fieldset class="cuerpo">
 				
 				<fieldset>
-					<!-- <pre><?php 
-						print_r($usuarios);	
-					?></pre> -->
-					
+										
 					<legend class="cuerpo"><h4>Las siguientes pesonas son aspirantes</h4></legend>
 					<?php 
 						if (isset($usuarios)) {
 							echo '<ol>';
 							foreach ($usuarios as $datosUsuario) {
 								
-								echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a></li>';
+								echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a></li><br><br>';
 							}
 							echo '</ol>';
 						}

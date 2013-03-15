@@ -24,26 +24,42 @@
 			 	
 				<form action='<?=base_url(); ?>menuRegistro_c/cargarPDF/<?=$usuario?>' method='post' name='process' accept-charset="utf-8" enctype="multipart/form-data">
 					<fieldset>
-						<legend class="cuerpo"><h4>entes documentos</h4></legend>
+						<legend class="cuerpo"><h4>Sube los siguientes documentos</h4></legend>
 						<blockquote>
 							<p>
 								Los documentos deben estár en formato PDF y cada documento debe estar escaneado por ambos lados.
-								<b>El tamaño máximo por cada documento debe ser de 2MB.</b>
+								<b>El tamaño por cada documento debe ser a lo más de 2MB.</b>
 							</p>
 						</blockquote>
+						
 						<div class="twelve columns">
-							<h5>1.- Título de licenciatura</h5>
-								<input type="file" name="1" id="tituloLic" class="offset-by-five" required> 
-							<h5>2.- Certificado de licenciatura con calificaciones y promedio</h5>
-								<input type="file" name="2" id="certificadoLic" class="offset-by-five" required>
-							<h5>3.- Acta de nacimiento</h5>	
-								<input type="file" name="3" id="ActaNac" class="offset-by-five" required>
-							<h5>4.- CURP</h5>
-								<input type="file" name="4" id="curp" class="offset-by-five" required>
-							<h5>5.- Cedula profesional</h5>
-								<input type="file" name="5" id="cedula" class="offset-by-five" required>
-							<h5>6.- Identificación oficial con fotografía (IFE o Pasaporte)</h5>
-								<input type="file" name="6" id="elector" class="offset-by-five" required>
+							<div class="four columns">
+								<p>Seleccione su procedencia:</p>
+							</div>
+							<div class="eight columns">
+								<select onchange="quitaClaseEscondidaProc(this.options[this.selectedIndex].value)" onkeyup="quitaClaseEscondidaProc(this.options[this.selectedIndex].value)" onclick="quitaClaseEscondidaProc(this.options[this.selectedIndex].value)">
+									<option value="0"></option>
+									<option value="1">Profesor UAM</option>
+									<option value="2">Profesor Externo</option>
+								</select>
+							</div>
+							
+						</div>
+						<div class="twelve columns">
+							<div id="profUAM" class="twelve columns escondida" >
+							
+								<p>1. Adjuntar la carta exposición de motivos</p> 
+								<p>2. Adjuntar una identificación oficial vigente de la UAM</p>
+							</div>
+							<div id="profExt" class="twelve columns escondida">
+							
+								<p>1. Adjuntar la carta exposición de motivos</p> 
+								<p>2. Adjuntar una identificación oficial vigente de la Institución educativa en la que labora</p>	
+							</div>
+							<div id="inputs" class="twelve columns escondida">	
+								<input type="file" name="1" id="ExpMotivos" class="offset-by-five" required>
+								<input type="file" name="2" id="DocOficial" class="offset-by-five" required>	
+							</div>
 						</div> 
 						
 					</fieldset>
