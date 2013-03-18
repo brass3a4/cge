@@ -14,33 +14,36 @@
   	<script src="<?=base_url(); ?>statics/js/jquery-1.8.2.min.js"></script>
   	<script src="<?=base_url(); ?>statics/js/jquery-ui-1.8.23.custom.min.js"></script>
   	<script src="<?=base_url(); ?>statics/js/datepickerEsp.js"></script>
-	<script type="text/javascript">
-		var urlBase = "<?=base_url(); ?>";
-	</script>
+
 </head>
 <body>
-	<pre><?php 
-			
-	?></pre>
+
 	<div class="row">
-		
 		<div class="twelve columns ">
+			<br><br>
 			
 			<fieldset class="cuerpo">
-				
-				<fieldset>
-					<legend class="cuerpo"><h4>Seleccione un rol</h4></legend>
-					<a class="button" onclick="cargarVistaUsuariosRol('3')">Aspirantes Curso Ingles >></a><br><br>
-					<a class="button" onclick="cargarVistaUsuariosRol('4')">Aspirantes Diplomado Políticas >></a><br><br>
-					<a class="button" onclick="cargarVistaUsuariosRol('5')">Aspirantes Posgrado Políticas >></a><br><br>
-					<a class="button" onclick="cargarVistaUsuariosRol('9')">Aspirates Cursos Generales >></a><br><br>
+				<fieldset class="cuerpo">
+					<legend class="cuerpo" ><h4>Preregistro exitoso</h4></legend>	
+					<p>Estimado profesor: <b><?=$data['Usuarios_Nombre']?> <?=$data['Usuarios_aPaterno']?> <?=$data['Usuarios_aMaterno'] ?></b> , su preregistro y solicitud de ingreso al Diplomado Virtual: 
+						"Políticas y Desarrollo Cultural" se ha realizado con éxito.</p>
+					<p>Su número de solicitud es: <b><?=$IdUsuario?></b></p>	
+					<p>Su usuario y contraseña asignados son:</p>
+					<div class="offset-by-five">
+						<p>Usuario: <b><?= $credenciales['usuario']?></b></p>
+						<p>Contraseña: <b><?= $credenciales['password']?></b></p>
+						<p>Reciba un cordial saludo. Coordinación Académica del Curso</p>
+					</div>
+					<p>Reciba un cordial saludo.</p>
+					<p>Coordinación Académica del Curso</p>
+					<p><b> Para continuar con su registro ingrese <a href="<?=base_url();?>login_c">aquí</a></b></p>
+					<form action="<?php echo base_url();?>generaPdf_c/crearDipomado/<?= $credenciales['usuario']?>" method="post">
+						<input type="submit" class="button" value="Exportar a pdf" />
+					</form>
+					
 				</fieldset>
-								
 			</fieldset>
-
-
-		</div><!--twelve columns-->
-	</div> <!--row-->
+		</div>
+	</div>
 </body>
 </html>
-

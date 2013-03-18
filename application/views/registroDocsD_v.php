@@ -27,22 +27,28 @@
 						<legend class="cuerpo"><h4>Sube los siguientes documentos</h4></legend>
 						<blockquote>
 							<p>
-								Los documentos deben estar digitatizados en formato PDF por ambos lados.
+								El archivo PDF de cada uno de losdocumentos debe incluir ambos lados, según sea necesario (frente y
+								vuelta), ser completamente legible, y entregarse con el nombre del
+								documento tal como se solicita a continuación.
 								<b>El tamaño máximo por cada documento debe ser a lo más 2MB.</b>
 							</p>
 						</blockquote>
 						<div class="twelve columns">
-							<h5>1.- Título de licenciatura</h5>
-								<input type="file" name="1" id="tituloLic" class="offset-by-five" required> 
-							<h5>2.- Certificado de licenciatura con calificaciones y promedio</h5>
-								<input type="file" name="2" id="certificadoLic" class="offset-by-five" required>
-							<h5>3.- Acta de nacimiento</h5>	
-								<input type="file" name="3" id="ActaNac" class="offset-by-five" required>
-							<h5>4.- CURP o documento de identidad</h5>
-								<input type="file" name="4" id="curp" class="offset-by-five" required>
-							<h5>5.- Currículum Vitae con documentos probatorios.</h5>
-								<input type="file" name="5" id="cv" class="offset-by-five" required>
-							<h5>6.- Identificación oficial con fotografía (IFE o Pasaporte)</h5>
+
+							<h5>1.- Constancia de nivel máximo de estudios</h5>
+								<blockquote>
+									Nombre: inicial del nombre+apellido_constancia (Ejemplo: lsuarez_constancia.pdf)
+								</blockquote>
+								<input type="file" name="2" id="certificadoU" class="offset-by-five" required>
+							<h5>2.- Currículum Vitae</h5>
+								<blockquote>
+									Nombre:inicialdelnombre+apellidopaterno_cv (Ejemplo: lsuarez_cv.pdf).
+								</blockquote>	
+								<input type="file" name="3" id="cv" class="offset-by-five" required>
+							<h5>3.- Identificación oficial con fotografía</h5> 
+								<blockquote>
+									Nombre: inicial del nombre+apellidopaterno_identificacion (Ejemplo:lsuarez_identificacion.pdf)
+								</blockquote>
 								<input type="file" name="6" id="elector" class="offset-by-five" required>
 						</div> 
 						

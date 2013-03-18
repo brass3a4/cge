@@ -68,7 +68,97 @@
 
 		}		
 	
-	
+		function crearPosgrado($usuario = NULL)
+		{
+			
+	        	$pdf = new FPDF();
+
+			$idUsuario = $this->usuarios_m->traeUsuarioId($usuario);
+			
+			if($idUsuario != '0'){
+				
+				$datos = $this->usuarios_m->traeDatosUsuario($idUsuario);
+				//echo '<pre>';
+				//print_r($datos);
+				
+				$contenido["cad1"] = 'Estimado profesor:'."\n\n";
+				$contenido['nombre'] = $datos['Nombre'].' ';
+				$contenido['aPat'] = $datos['aPaterno'].' ';
+				$contenido['aMat'] = $datos['aMaterno'].' ';
+				$contenido['cad2'] = 'su preregistro y solicitud de ingreso al Posgrado Virtual: ';
+				$contenido['cad3'] = '"Política y Cultura en América Latina" se ha realizado con exito.'."\n\n";
+				$contenido['soliciud'] = 'Su número de solicitud es: '.$idUsuario. "\n";
+				$contenido['usuario'] = 'Usuario: '.$usuario."\n";
+				$contenido['contrasena'] = 'contraseña: '.$datos['password']."\n\n\n";
+				$contenido['saludo'] = 'Reciba un cordial saludo.'."\n".'Coordinación Académica del Curso'."\n\n\n";
+				$contenido['login'] = 'Para completar su registro por favor ingrese a: '.base_url().'login_c';			
+                		$text = ""; 
+				$pdf->AddPage();
+				$pdf->SetFont('Arial','B',12);
+
+				$pdf->Image($_SERVER["DOCUMENT_ROOT"]."/cge/statics/img/image.jpeg",1,1,250);
+
+				foreach ($contenido as $row) {
+					$text = $text.$row;
+				}
+
+				$pdf->Ln(60);
+				$text = utf8_decode($text);
+				$pdf->Multicell(0, 5, $text, 0, 'J', false);
+
+				$pdf->Output();
+           
+
+		 	}
+
+
+		}
+
+		function crearDipomado($usuario = NULL)
+		{
+			
+	        	$pdf = new FPDF();
+
+			$idUsuario = $this->usuarios_m->traeUsuarioId($usuario);
+			
+			if($idUsuario != '0'){
+				
+				$datos = $this->usuarios_m->traeDatosUsuario($idUsuario);
+				//echo '<pre>';
+				//print_r($datos);
+				
+				$contenido["cad1"] = 'Estimado profesor:'."\n\n";
+				$contenido['nombre'] = $datos['Nombre'].' ';
+				$contenido['aPat'] = $datos['aPaterno'].' ';
+				$contenido['aMat'] = $datos['aMaterno'].' ';
+				$contenido['cad2'] = 'su preregistro y solicitud de ingreso al Diplimado Virtual: ';
+				$contenido['cad3'] = '"Políticas y Desarrollo Cultural" se ha realizado con exito.'."\n\n";
+				$contenido['soliciud'] = 'Su número de solicitud es: '.$idUsuario. "\n";
+				$contenido['usuario'] = 'Usuario: '.$usuario."\n";
+				$contenido['contrasena'] = 'contraseña: '.$datos['password']."\n\n\n";
+				$contenido['saludo'] = 'Reciba un cordial saludo.'."\n".'Coordinación Académica del Curso'."\n\n\n";
+				$contenido['login'] = 'Para completar su registro por favor ingrese a: '.base_url().'login_c';			
+                		$text = ""; 
+				$pdf->AddPage();
+				$pdf->SetFont('Arial','B',12);
+
+				$pdf->Image($_SERVER["DOCUMENT_ROOT"]."/cge/statics/img/image.jpeg",1,1,250);
+
+				foreach ($contenido as $row) {
+					$text = $text.$row;
+				}
+
+				$pdf->Ln(60);
+				$text = utf8_decode($text);
+				$pdf->Multicell(0, 5, $text, 0, 'J', false);
+
+				$pdf->Output();
+           
+
+		 	}
+
+
+		}
 
 	}    
 ?>

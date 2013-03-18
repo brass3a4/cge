@@ -14,6 +14,11 @@ function quitaClaseEscondida(valor){
 function quitaClaseEscondidaIns(valor,id){
 	if(id != 1 && id !=2 && id !=7 && id !=8){	
 		$('#'+valor).removeClass("escondida");
+		$('#OtraIns').addClass("escondida");
+		
+	}else{
+		$('#OtraIns').addClass("escondida");
+		$('#institucion').addClass("escondida");
 	}
 	if(id == 8){
 		$('#OtraIns').removeClass("escondida");

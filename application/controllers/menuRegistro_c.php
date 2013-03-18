@@ -46,7 +46,8 @@
 						$this->load->view('menuRegistro_v',$data);
 					break;
 				case '4':
-						echo "Aspirante diplomado politicas";
+						// vista para curso diplomado en ciencias póliticas
+						$this->load->view('menuRegistroD_v',$data);
 					break;
 				case '5':
 						// vista para posgrados
@@ -76,7 +77,8 @@
 							$this->load->view('registroDocs_v',$data);
 						break;
 					case '4':
-							echo "Aspirante diplomado politicas";
+							//echo "Aspirante diplomado politicas";
+							$this->load->view('registroDocsD_v',$data);
 						break;
 					case '5':
 							

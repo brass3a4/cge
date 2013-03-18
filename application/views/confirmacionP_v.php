@@ -25,17 +25,18 @@
 			<fieldset class="cuerpo">
 				<fieldset class="cuerpo">
 					<legend class="cuerpo" ><h4>Preregistro exitoso</h4></legend>	
-					<p>Estimado profesor: <b><?=$data['Usuarios_Nombre']?> <?=$data['Usuarios_aPaterno']?> <?=$data['Usuarios_aMaterno'] ?></b> , su preregistro y solicitud de ingreso al Diplomado Virtual: 
-						"Formación docente en la enseñanza escolarizada de inglés para niños" se ha realizado con éxito.</p>
+					<p>Estimado profesor: <b><?=$data['Usuarios_Nombre']?> <?=$data['Usuarios_aPaterno']?> <?=$data['Usuarios_aMaterno'] ?></b> , su preregistro y solicitud de ingreso al Posgrado Virtual: 
+						"Política y Cultura en América Latina" se ha realizado con éxito.</p>
 					<p>Su número de solicitud es: <b><?=$IdUsuario?></b></p>	
 					<p>Su usuario y contraseña asignados son:</p>
 					<div class="offset-by-five">
 						<p>Usuario: <b><?= $credenciales['usuario']?></b></p>
 						<p>Contraseña: <b><?= $credenciales['password']?></b></p>
-						
 					</div>
+					<p>Reciba un cordial saludo.</p>
+					<p>Coordinación Académica del Curso</p>
 					<p><b> Para continuar con su registro ingrese <a href="<?=base_url();?>login_c">aquí</a></b></p>
-					<form action="<?php echo base_url();?>generaPdf_c/crear/<?= $credenciales['usuario']?>" method="post">
+					<form action="<?php echo base_url();?>generaPdf_c/crearPosgrado/<?= $credenciales['usuario']?>" method="post">
 						<input type="submit" class="button" value="Exportar a pdf" />
 					</form>
 					
