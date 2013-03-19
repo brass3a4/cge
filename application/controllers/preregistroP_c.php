@@ -79,17 +79,17 @@
 		function enviaCorreo($data,$credenciales,$IdUsuario)
 		{
 			//Configuración para mandar el correo
-			// $config['protocol'] = 'mail';
-			// $config['wordwrap'] = FALSE;				
+			$config['protocol'] = 'mail';
+			$config['wordwrap'] = FALSE;				
 			//$config['mailtype']='html';
 			
-			$config['protocol'] = 'smtp';
+			/*$config['protocol'] = 'smtp';
 			$config['smtp_host'] = 'ssl://smtp.googlemail.com';
 			$config['smtp_port'] = '465';
 			$config['smtp_user'] = 'rentzana@virtuami.izt.uam.mx';
 			$config['smtp_pass'] = 'rentzana75#';
 
-			$config['smtp_timeout'] = '7';
+			$config['smtp_timeout'] = '7';*/
 			$config['charset']    = 'utf-8';
 			$config['newline']    = "\r\n";
 			$config['mailtype'] = 'html'; // or html
@@ -97,7 +97,7 @@
 			
 			
 			$this->email->initialize($config);
-			$this->email->from('rentzana@virtuami.izt.uam.mx', 'Diplomado Virtual');
+			$this->email->from('rentzana@virtuami.izt.uam.mx', 'Posgrado Virtual');
 			$this->email->to($data['Usuarios_email']);
 			$this->email->subject('Gracias por Registrarse');
 			$msj = '<html>
@@ -112,8 +112,8 @@
 							</tr>
 							<tr>
 							Estimado candidato:<br><br> <b>'.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].'</b>, 
-											su preregistro y solicitud de ingreso al Diplomado Virtual:<br> 
-											"Formación docente en la enseñanza escolarizada de inglés para niños" se ha realizado con éxito:<br><br>
+											su preregistro y solicitud de ingreso al Posgrado Virtual:<br> 
+											"Política y Cultura en América Latina" se ha realizado con éxito:<br><br>
 											Su número de solicitud es: '.$IdUsuario.'<br> 
 											Su usuario y contraseña asignados son:<br><br>
 											<b>
@@ -121,7 +121,7 @@
 											contraseña: '.$credenciales['password'].'<br>
 											</b>
 											Para completar su registro por favor ingrese 
-											<a href="'.base_url().'login_c">Aquí </a>
+											<a href="'.base_url().'login_c">aquí. En este paso debe subir todos los documentos solicitados en la convocatoria.</a>
 							</tr>
 							</table>				
 							

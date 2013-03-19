@@ -36,7 +36,7 @@
 					</div>
 					<p>Reciba un cordial saludo.</p>
 					<p>Coordinación Académica del Curso</p>
-					<p><b> Para continuar con su registro ingrese <a href="<?=base_url();?>login_c">aquí</a></b></p>
+					<p><b> Para continuar con su registro ingrese <a href="<?=base_url();?>login_c">aquí.</a></b>En este paso debe subir todos los documentos solicitados en la convocatoria.</p>
 					<form action="<?php echo base_url();?>generaPdf_c/crearDipomado/<?= $credenciales['usuario']?>" method="post">
 						<input type="submit" class="button" value="Exportar a pdf" />
 					</form>

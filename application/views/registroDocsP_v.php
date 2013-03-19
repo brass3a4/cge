@@ -33,16 +33,22 @@
 						</blockquote>
 						<div class="twelve columns">
 							<h5>1.- Título de licenciatura</h5>
+								<p>Nombre: inicialdelnombre+apellidopaterno_titulo (Ejemplo: lsuarez_titulo.pdf).</p>
 								<input type="file" name="1" id="tituloLic" class="offset-by-five" required> 
-							<h5>2.- Certificado de licenciatura con calificaciones y promedio</h5>
+							<h5>2.- Certificado de estudios de licenciatura con promedio mínimo de ocho (indispensable). El certificado debe contener asignaturas
+									cursadas, calificación de cada una de ellas y promedio general.</h5>
+								<p>Nombre: inicialdelnombre+apellidopaterno_certificado (Ejemplo: lsuarez_certificado.pdf).</p>
 								<input type="file" name="2" id="certificadoLic" class="offset-by-five" required>
-							<h5>3.- Acta de nacimiento</h5>	
+							<h5>3.- Acta de nacimiento</h5>
+								<p>Nombre: inicial del nombre+apellidopaterno_acta (Ejemplo: lsuarez_acta.pdf)</p>	
 								<input type="file" name="3" id="ActaNac" class="offset-by-five" required>
-							<h5>4.- CURP o documento de identidad</h5>
+							<h5>4.- CURP (en el caso de los mexicanos) o documento de identidad</h5>
+								<p>Nombre: inicial del nombre+apellidopaterno_di (Ejemplo: lsuarez_di.pdf)</p>
 								<input type="file" name="4" id="curp" class="offset-by-five" required>
-							<h5>5.- Currículum Vitae con documentos probatorios.</h5>
+							<h5>5.- Currículum Vitae con documentos probatorios</h5>
 								<input type="file" name="5" id="cv" class="offset-by-five" required>
 							<h5>6.- Identificación oficial con fotografía (IFE o Pasaporte)</h5>
+								<p>Nombre: inicial del nombre+apellidopaterno_identificacion (Ejemplo:lsuarez_identificacion.pdf)</p>
 								<input type="file" name="6" id="elector" class="offset-by-five" required>
 						</div> 
 						

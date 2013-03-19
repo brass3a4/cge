@@ -26,7 +26,9 @@
 		<div class="twelve columns ">
 			
 			<fieldset class="cuerpo">
-				
+				<pre><?php 
+					
+				?></pre>
 				<fieldset>
 					
 					<legend class="cuerpo"><h4>Los Documentos de <?=$datosUsuario['Nombre']?> <?=$datosUsuario['aPaterno']?> <?=$datosUsuario['aMaterno']?> son:</h4></legend>
@@ -41,11 +43,22 @@
 									}
 									
 							echo "</ol>";
+						}else{
+							echo '<div class="alert-box alert">El usuario aún no tiene archivos</div>';
 						}						
 					?>
-					
+					<form action='<?php echo base_url();?>adminDocs_c/apruebaDocsUsuario/<?=$datosUsuario['IdUsuario']?>' method="post">
+						
+						<?php if(isset($archivosUsuario) && !empty($archivosUsuario)):?>
+							<label for="checkbox1"><input type="checkbox" id="checkbox1" value="1" name="DatosUsuario_AceptAd" <?=(isset($datosUsuario['AceptAd']) && $datosUsuario['AceptAd'] == '1' ) ? "checked disabled" : "" ?> required>Documentos aprobados etapa 2</label>
+							<label for="checkbox2"><input type="checkbox" id="checkbox2" value="1" name="DatosUsuario_AceptAc" disabled>Documentos aprobados etapa 3</label>
+							<input type="submit" id="enviarBtn" class="button offset-by-five"  value="Enviar" />
+						<?php endif; ?>
+						
+						
+					</form>
 				</fieldset>
-			<a class="button" style="float: right;" onclick="veAtras()">Regresar</a>	
+			<a class="button" style="float: left;" onclick="veAtras()">Regresar</a>	
 			</fieldset>
 
 

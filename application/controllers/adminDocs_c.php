@@ -34,6 +34,31 @@
 			$datos['archivosUsuario'] = $this->usuarios_m->traeArchivos($idUsuario);
 			$this->load->view('docsUsuario_v',$datos);
 		}
+		
+		function apruebaDocsUsuario($idUsuario)
+		{
+			$data = $_POST;	
+				
+			foreach($data as $campo => $valor){ 
+			
+	            $pos = strpos($campo, '_');
+				
+	            $nombre_tabla = substr($campo, 0, $pos);
+		
+	            $nombre_campo = substr($campo, ++$pos);
+				
+				if(!empty($valor))
+	            	$datos[$nombre_tabla][$nombre_campo] = $valor; 
+
+			}
+			if(isset($datos)){
+				$val = $this->usuarios_m->guardaAprobacionDocsUsuario($idUsuario,$datos);
+				redirect('adminDocs_c/muestraDocsUsuario/'.$idUsuario);	
+			}else{
+				redirect('adminDocs_c/muestraDocsUsuario/'.$idUsuario);
+			}
+			
+		}
 	}
 	
 	

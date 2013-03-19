@@ -38,6 +38,8 @@
 								echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a></li><br><br>';
 							}
 							echo '</ol>';
+						}else{
+							echo '<div class="alert-box alert">No hay usuarios para este curso</div>';
 						}
 					?>
 					

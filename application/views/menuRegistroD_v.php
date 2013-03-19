@@ -53,15 +53,23 @@
 						</div>
 						
 					</div>
-					<p class="espacioSuperior"><b>Paso 2: Pago</b></p>
+					<p class="espacioSuperior"><b>Paso 2: Segunda etapa, documentos legalizados</b></p>
+					<p><b>Nota: </b>Esta etapa se habilitará en cuanto sean acaptados los documentos del paso 1</p>				
+					<div class="twelve columns">
+						<div class="six columns">
+							
+								<a class="button" disabled> Subir documentos </a>
+							
+						</div>
+					</div>
+					
+					<p class="espacioSuperior"><b>Paso 3: Pago</b></p>
 									
 					<div class="twelve columns">
 						<div class="six columns">
-							<?php if($valor == '0'){
-								echo '<a class="button" style="padding: 10px 40px;" disabled> Realiza pago</a>';
-							}else{
-								echo '<a class="button" style="padding: 10px 40px;" >Realiza pago  </a>';
-							}?>
+							
+							<a class="button" style="padding: 10px 40px;" disabled> Realiza pago</a>
+							
 						</div>
 					</div>
 					

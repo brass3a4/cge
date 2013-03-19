@@ -45,7 +45,8 @@
 				$contenido['soliciud'] = 'Su número de solicitud es: '.$idUsuario. "\n";
 				$contenido['usuario'] = 'Usuario: '.$usuario."\n";
 				$contenido['contrasena'] = 'contraseña: '.$datos['password']."\n\n\n";
-				$contenido['login'] = 'Para completar su registro por favor ingrese a: '.base_url().'login_c';			
+				$contenido['login'] = 'Para completar su registro por favor ingrese a: '.base_url().'login_c'."\n";
+				$contenido['pd'] = 'En este paso debe subir todos los documentos solicitados en la convocatoria.';			
                 		$text = ""; 
 				$pdf->AddPage();
 				$pdf->SetFont('Arial','B',12);
@@ -90,8 +91,9 @@
 				$contenido['soliciud'] = 'Su número de solicitud es: '.$idUsuario. "\n";
 				$contenido['usuario'] = 'Usuario: '.$usuario."\n";
 				$contenido['contrasena'] = 'contraseña: '.$datos['password']."\n\n\n";
-				$contenido['saludo'] = 'Reciba un cordial saludo.'."\n".'Coordinación Académica del Curso'."\n\n\n";
-				$contenido['login'] = 'Para completar su registro por favor ingrese a: '.base_url().'login_c';			
+				$contenido['saludo'] = 'Reciba un cordial saludo.'."\n".'Coordinación Académica'."\n\n\n";
+				$contenido['login'] = 'Para completar su registro por favor ingrese a: '.base_url().'login_c'."\n";
+				$contenido['pd'] = 'En este paso debe subir todos los documentos solicitados en la convocatoria.';			
                 		$text = ""; 
 				$pdf->AddPage();
 				$pdf->SetFont('Arial','B',12);
@@ -137,7 +139,8 @@
 				$contenido['usuario'] = 'Usuario: '.$usuario."\n";
 				$contenido['contrasena'] = 'contraseña: '.$datos['password']."\n\n\n";
 				$contenido['saludo'] = 'Reciba un cordial saludo.'."\n".'Coordinación Académica del Curso'."\n\n\n";
-				$contenido['login'] = 'Para completar su registro por favor ingrese a: '.base_url().'login_c';			
+				$contenido['login'] = 'Para completar su registro por favor ingrese a: '.base_url().'login_c'."\n";
+				$contenido['pd'] = 'En este paso debe subir todos los documentos solicitados en la convocatoria.';	
                 		$text = ""; 
 				$pdf->AddPage();
 				$pdf->SetFont('Arial','B',12);

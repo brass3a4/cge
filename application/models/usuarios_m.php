@@ -190,8 +190,7 @@ class usuarios_m extends CI_Model {
 					$this->db->where('IdArchivo', $idArchivo);
 					$this->db->update('archivos', $datos['archivos']); 					
 				}else{
-					echo "string";
-					print_r($idArchivo);
+					
 					$this->db->insert('archivos', $datos['archivos']);
 					
 				}				
@@ -221,8 +220,16 @@ class usuarios_m extends CI_Model {
 						$datos = $row; 
 					}
 					
-				
-				return $datos;
+				$this->db->select('*');
+				$this->db->from('DatosUsuario');
+				$this->db->where('IdUsuario',$idUsuario);
+				$consulta = $this->db->get();
+				if($consulta->num_rows() > 0){
+					foreach ($consulta->result_array() as $row) {
+						$datos[$row['NomCampo']] = $row['Datos']; 
+					}
+					return $datos;
+				}
 				}
 				
 			}else{
@@ -306,6 +313,32 @@ class usuarios_m extends CI_Model {
 				}
 				
 			}else{
+				return '0';
+			}
+			
+		}
+		
+		function guardaAprobacionDocsUsuario($idUsuario,$datos)
+		{
+			if (isset($idUsuario) && isset($datos)) {
+				
+				foreach($datos as $tabla => $campos){
+                
+                if($tabla == 'DatosUsuario' && (!empty($tabla))){
+                	
+					foreach ($campos as $nomCampo => $valor) {
+						
+						$this->db->set('NomCampo', $nomCampo);
+						$this->db->set('Datos', $valor);
+						$this->db->set('IdUsuario', $idUsuario);
+						$this->db->insert('DatosUsuario');
+					}
+					
+                }
+                
+            }
+				return '1';
+			} else {
 				return '0';
 			}
 			
