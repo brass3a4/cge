@@ -41,7 +41,7 @@
 				$contenido['aPat'] = $datos['aPaterno'].' ';
 				$contenido['aMat'] = $datos['aMaterno'].' ';
 				$contenido['cad2'] = 'su preregistro y solicitud de ingreso al Diplomado Virtual: ';
-				$contenido['cad3'] = '"Formación docente en la enseñanza escolarizada de inglés para niños" se ha realizado con exito.'."\n\n";
+				$contenido['cad3'] = '"Formación docente en la enseñanza escolarizada de inglés para niños" se ha realizado con éxito.'."\n\n";
 				$contenido['soliciud'] = 'Su número de solicitud es: '.$idUsuario. "\n";
 				$contenido['usuario'] = 'Usuario: '.$usuario."\n";
 				$contenido['contrasena'] = 'contraseña: '.$datos['password']."\n\n\n";
@@ -81,12 +81,12 @@
 				//echo '<pre>';
 				//print_r($datos);
 				
-				$contenido["cad1"] = 'Estimado profesor:'."\n\n";
+				$contenido["cad1"] = 'Estimado candidato:'."\n\n";
 				$contenido['nombre'] = $datos['Nombre'].' ';
 				$contenido['aPat'] = $datos['aPaterno'].' ';
 				$contenido['aMat'] = $datos['aMaterno'].' ';
 				$contenido['cad2'] = 'su preregistro y solicitud de ingreso al Posgrado Virtual: ';
-				$contenido['cad3'] = '"Política y Cultura en América Latina" se ha realizado con exito.'."\n\n";
+				$contenido['cad3'] = '"Política y Cultura en América Latina" se ha realizado con éxito.'."\n\n";
 				$contenido['soliciud'] = 'Su número de solicitud es: '.$idUsuario. "\n";
 				$contenido['usuario'] = 'Usuario: '.$usuario."\n";
 				$contenido['contrasena'] = 'contraseña: '.$datos['password']."\n\n\n";
@@ -127,12 +127,12 @@
 				//echo '<pre>';
 				//print_r($datos);
 				
-				$contenido["cad1"] = 'Estimado profesor:'."\n\n";
+				$contenido["cad1"] = 'Estimado candidato:'."\n\n";
 				$contenido['nombre'] = $datos['Nombre'].' ';
 				$contenido['aPat'] = $datos['aPaterno'].' ';
 				$contenido['aMat'] = $datos['aMaterno'].' ';
-				$contenido['cad2'] = 'su preregistro y solicitud de ingreso al Diplimado Virtual: ';
-				$contenido['cad3'] = '"Políticas y Desarrollo Cultural" se ha realizado con exito.'."\n\n";
+				$contenido['cad2'] = 'su preregistro y solicitud de ingreso al Diplomado Virtual: ';
+				$contenido['cad3'] = '"Políticas y Desarrollo Cultural" se ha realizado con éxito.'."\n\n";
 				$contenido['soliciud'] = 'Su número de solicitud es: '.$idUsuario. "\n";
 				$contenido['usuario'] = 'Usuario: '.$usuario."\n";
 				$contenido['contrasena'] = 'contraseña: '.$datos['password']."\n\n\n";

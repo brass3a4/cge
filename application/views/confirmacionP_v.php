@@ -25,7 +25,7 @@
 			<fieldset class="cuerpo">
 				<fieldset class="cuerpo">
 					<legend class="cuerpo" ><h4>Preregistro exitoso</h4></legend>	
-					<p>Estimado profesor: <b><?=$data['Usuarios_Nombre']?> <?=$data['Usuarios_aPaterno']?> <?=$data['Usuarios_aMaterno'] ?></b> , su preregistro y solicitud de ingreso al Posgrado Virtual: 
+					<p>Estimado candidato: <b><?=$data['Usuarios_Nombre']?> <?=$data['Usuarios_aPaterno']?> <?=$data['Usuarios_aMaterno'] ?></b> , su preregistro y solicitud de ingreso al Posgrado Virtual: 
 						"Política y Cultura en América Latina" se ha realizado con éxito.</p>
 					<p>Su número de solicitud es: <b><?=$IdUsuario?></b></p>	
 					<p>Su usuario y contraseña asignados son:</p>

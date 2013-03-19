@@ -30,15 +30,15 @@
 						<div class="twelve columns">
 								<div class="four columns">
 									<label>Nombre(s):</label>
-									<input type="text" id="nombre" name="Usuarios_Nombre" title="El nombre debe contener únicamente letras" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
+									<input type="text" id="nombre" name="Usuarios_Nombre" title="El nombre debe contener únicamente letras" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç.]*$|" required/>
 								</div>
 								<div class="four columns">
 									<label>Apellido paterno:</label>
-									<input type="text" id="apellidoPat" name="Usuarios_aPaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|"  required/>
+									<input type="text" id="apellidoPat" name="Usuarios_aPaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç.]*$|"  required/>
 								</div>
 								<div class="four columns">
 									<label>Apellido materno:</label>
-									<input type="text" id="apellidoMat" name="Usuarios_aMaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
+									<input type="text" id="apellidoMat" name="Usuarios_aMaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç.]*$|" required/>
 								</div>
 						</div>
 						
@@ -81,7 +81,7 @@
 							<div class="twelve columns ">
 								<div class="six columns">
 									<label>Calle:</label>
-									<input type="text" id="calle" name="Usuarios_Calle" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
+									<input type="text" id="calle" name="Usuarios_Calle" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç.]*$|" required/>
 								</div>
 								<div class="three columns">
 									<label>Número exterior:</label>
@@ -213,19 +213,19 @@
 					<input type="hidden" name="UserRoles_Roles_IdRole" value="5"/>
 					</fieldset>
 					<fieldset>
-						<legend class="cuerpo"><h4>Datos académicos</h4></legend>
+						<legend class="cuerpo"><h4>Datos académicos del prosgrado solicitado</h4></legend>
 						<blockquote>Seleccione una opción:</blockquote>
 						<div class="six columns">
 							<label>Unidad:</label>
 							<input type="radio" name="DatosUsuario_unidad" value="AZC">AZC
-							<input type="radio" name="DatosUsuario_unidad" value="IZT">IZT
+							<input type="radio" name="DatosUsuario_unidad" value="IZT" checked>IZT
 							<input type="radio" name="DatosUsuario_unidad" value="XOC">XOC
 							<input type="radio" name="DatosUsuario_unidad" value="CUA">CUA
 						</div>
 						<div class="six columns">
 							<label>División:</label>
 							<input type="radio" name="DatosUsuario_division" value="CBI">CBI
-							<input type="radio" name="DatosUsuario_division" value="CSH">CSH
+							<input type="radio" name="DatosUsuario_division" value="CSH" checked>CSH
 							<input type="radio" name="DatosUsuario_division" value="CBS">CBS
 							<input type="radio" name="DatosUsuario_division" value="CAD">CAD
 							<input type="radio" name="DatosUsuario_division" value="CCD">CCD
@@ -233,13 +233,13 @@
 						</div>
 						<div class="six columns espacioSuperior">
 							<label>Nivel de estudios solicitado:</label>
-							<input type="radio" name="DatosUsuario_NivEstudio" value="Especializacion">Especialización
+							<input type="radio" name="DatosUsuario_NivEstudio" value="Especializacion" checked>Especialización
 							<input type="radio" name="DatosUsuario_NivEstudio" value="Maestria">Maestría
 							<input type="radio" name="DatosUsuario_NivEstudio" value="Doctorado">Doctorado
 						</div>
 						<div class="six columns espacioSuperior">
 							<label>Nombre del posgrado:</label>
-							<input type="text" name="DatosUsuario_NomPosgrado" required/>
+							<input type="text" name="DatosUsuario_NomPosgrado" value="Pólitica y cultura en América Latina"/>
 						</div>
 						<div class="six columns">
 							<label>Área de concentración:</label>

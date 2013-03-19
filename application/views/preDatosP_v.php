@@ -24,7 +24,7 @@
 		<!-- <pre><?php
 			print_r($datos);
 		?></pre> -->
-		<form action='<?=base_url(); ?>preregistro_c/guardaDatos/' method='post' accept-charset="utf-8" enctype="multipart/form-data">
+		<form action='<?=base_url(); ?>preregistroP_c/guardaDatos/' method='post' accept-charset="utf-8" enctype="multipart/form-data">
 		<div class="twelve columns ">
 			
 			<fieldset class="cuerpo">

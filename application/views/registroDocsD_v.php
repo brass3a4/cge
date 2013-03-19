@@ -24,25 +24,25 @@
 			 	
 				<form action='<?=base_url(); ?>menuRegistro_c/cargarPDF/<?=$usuario?>' method='post' name='process' accept-charset="utf-8" enctype="multipart/form-data">
 					<fieldset>
-						<legend class="cuerpo"><h4>Sube los siguientes documentos</h4></legend>
+						<legend class="cuerpo"><h4>Sube los siguientes documentos en formato PDF</h4></legend>
 						<blockquote>
 							<p>
-								El archivo PDF de cada uno de losdocumentos debe incluir ambos lados, según sea necesario (frente y
+								El archivo PDF de cada uno de los documentos debe incluir ambos lados, según sea necesario (frente y
 								vuelta), ser completamente legible, y entregarse con el nombre del
 								documento tal como se solicita a continuación.
-								<b>El tamaño máximo por cada documento debe ser a lo más 2MB.</b>
+								<b>El tamaño máximo de los archivos no debe exeder los 2MB</b>
 							</p>
 						</blockquote>
 						<div class="twelve columns">
 
-							<h5>1.- Constancia de nivel máximo de estudios</h5>
+							<h5>1.- Certificado de nivel máximo de estudios</h5>
 								<blockquote>
 									Nombre: inicial del nombre+apellido_constancia (Ejemplo: lsuarez_constancia.pdf)
 								</blockquote>
 								<input type="file" name="2" id="certificadoU" class="offset-by-five" required>
-							<h5>2.- Currículum Vitae</h5>
+							<h5>2.- Currículum Vitae con documentos probatorios</h5>
 								<blockquote>
-									Nombre:inicialdelnombre+apellidopaterno_cv (Ejemplo: lsuarez_cv.pdf).
+									Nombre: inicialdelnombre+apellidopaterno_cv (Ejemplo: lsuarez_cv.pdf).
 								</blockquote>	
 								<input type="file" name="3" id="cv" class="offset-by-five" required>
 							<h5>3.- Identificación oficial con fotografía</h5> 

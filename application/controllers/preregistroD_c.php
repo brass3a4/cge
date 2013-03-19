@@ -111,7 +111,7 @@
 							<br><br><br><br><br><br><br><br><br><br><br><br>
 							</tr>
 							<tr>
-							Estimado profesor:<br><br> <b>'.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].'</b>, 
+							Estimado candidato:<br><br> <b>'.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].'</b>, 
 											su preregistro y solicitud de ingreso al Diplomado Virtual:<br> 
 											"Políticas y Desarrollo Cultural" se ha realizado con éxito:<br><br>
 											Su número de solicitud es: '.$IdUsuario.'<br> 

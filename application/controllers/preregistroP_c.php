@@ -111,7 +111,7 @@
 							<br><br><br><br><br><br><br><br><br><br><br><br>
 							</tr>
 							<tr>
-							Estimado profesor:<br><br> <b>'.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].'</b>, 
+							Estimado candidato:<br><br> <b>'.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].'</b>, 
 											su preregistro y solicitud de ingreso al Diplomado Virtual:<br> 
 											"Formación docente en la enseñanza escolarizada de inglés para niños" se ha realizado con éxito:<br><br>
 											Su número de solicitud es: '.$IdUsuario.'<br> 

@@ -25,14 +25,14 @@
 			<fieldset class="cuerpo">
 				<fieldset class="cuerpo">
 					<legend class="cuerpo" ><h4>Preregistro exitoso</h4></legend>	
-					<p>Estimado profesor: <b><?=$data['Usuarios_Nombre']?> <?=$data['Usuarios_aPaterno']?> <?=$data['Usuarios_aMaterno'] ?></b> , su preregistro y solicitud de ingreso al Diplomado Virtual: 
+					<p>Estimado canditado: <b><?=$data['Usuarios_Nombre']?> <?=$data['Usuarios_aPaterno']?> <?=$data['Usuarios_aMaterno'] ?></b> , su preregistro y solicitud de ingreso al Diplomado Virtual: 
 						"Políticas y Desarrollo Cultural" se ha realizado con éxito.</p>
 					<p>Su número de solicitud es: <b><?=$IdUsuario?></b></p>	
 					<p>Su usuario y contraseña asignados son:</p>
 					<div class="offset-by-five">
 						<p>Usuario: <b><?= $credenciales['usuario']?></b></p>
 						<p>Contraseña: <b><?= $credenciales['password']?></b></p>
-						<p>Reciba un cordial saludo. Coordinación Académica del Curso</p>
+						
 					</div>
 					<p>Reciba un cordial saludo.</p>
 					<p>Coordinación Académica del Curso</p>
