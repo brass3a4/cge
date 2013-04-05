@@ -25,6 +25,8 @@
 		{
 			$idUsuario = $this->usuarios_m->traeUsuarioId($usr);
 			
+			$data['idUsuario']=$idUsuario;
+
 			$data['archivos'] = $this->usuarios_m->traeArchivos($idUsuario);
 			
 			$data['idRol'] = $this->usuarios_m->traeRolUsuario($idUsuario);

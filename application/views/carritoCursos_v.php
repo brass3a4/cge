@@ -25,37 +25,55 @@
 			<div class="twelve columns">
 			<fieldset class="cuerpo">
 				<fieldset >
-					<legend class="cuerpo"><h4>Completa para terminar tu registro</h4></legend>
-					<p><b></b></p>
-					<div class="twelve columns espacioInferior">
-						<div class="six columns">
-							
-							<a class="button" onclick="cargarVistaCursos('<?=$idUsuario?>')"> Comprar cursos >></a>
-							
-						</div>
-						<div class="twelve columns espacioSuperior">
-							
-						</div>
+					
+					<legend class="cuerpo"><h4>Carrito de compras</h4></legend>
+					
+					<form action='<?=base_url();?>/cursos_c/generaOrdenPago' method='post' name='process' accept-charset="utf-8">
 						
-					</div>
-									
-					<div class="twelve columns">
-						<div class="six columns">
-							
-						</div>
-					</div>
-					
-					
+						<div class="twelve columns" style="padding-top: 1%;">
+							<table class="twelve">
+							  <thead>
+							    <tr>
+							      <th>Nombre curso</th>
+							      <th>Precio</th>
+							    </tr>
+							  </thead>
+							  	<tbody>
+					      <?php
+					     	$i=0;
+							if (!empty($datos)) {
+								
+							 
+						      	foreach ($datos as $key => $value) {
+									echo '<tr>
+									      	<td>'.$key.'</td>
+									      	<td>$200</td>
+									      </tr>';
+							  		$i++;
+								}
+							}
+					      ?>
+					      		<tr>
+							      <td>Precio Total</td>
+							      <td><?php 
+							      		echo '$'.$i*200;
+							      	?></td>
+							    </tr>
+					        	</tbody>
+							</table>
+					      	
+					    </div>
+					    <?php  $str = serialize($datos);?>
+					    <input type="hidden" name="datos" value='<?=$str?>'/>
+					    <input type="hidden" name="idUsuario" value='<?=$idUsuario?>'/>
+						<div class="twelve colums espacioSuperior">
+						<a class="button" onclick="veAtras()">Regresar</a>
+						<input type="submit" id="sigteBtn" class="button" style="float: right;" value="Confirmar compra" />
+					</form>
 					
 				</fieldset>
-				<form action='<?=base_url(); ?>login_c/reiniciarSesion' method='post'>
-					<input type="submit" class="button" style="float: right;" value="Cerrar sesión" />
-				</form>
-				
-				
 			</fieldset>
-			</div><!--twelve columns-->
-		</div> <!--row-->
+			</div>
+	</div>
 </body>
 </html>
-

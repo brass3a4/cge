@@ -147,14 +147,6 @@ function veAtras(){
   window.history.back()
 }
 
-
-function cargarVista(){
-	
-	var url=urlBase+'preregistro_c/guardaDatos/';
-	document.location.href=url;
- 	
-}
-
 /*Esta función carga la vista para cargar datos dependiendo del usuario y el rol
 	@param usr[string], idrol[INT] 
  * */
@@ -173,4 +165,9 @@ function cargarVistaUsuariosRol(idRol) {
 function cargaVistaDocsUsuario(idUsuario) {
   	var url=urlBase+'adminDocs_c/muestraDocsUsuario/'+idUsuario;
   	document.location.href=url;
+}
+
+function cargarVistaCursos(idUsuario) {
+  	var url=urlBase+'cursos_c/listaCursos/'+idUsuario;
+	document.location.href=url;
 }

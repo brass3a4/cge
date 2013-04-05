@@ -27,12 +27,11 @@
 			
 			<fieldset class="cuerpo">
 				<pre><?php 
-					
+										
 				?></pre>
 				<fieldset>
 					
 					<legend class="cuerpo"><h4>Los Documentos de <?=$datosUsuario['Nombre']?> <?=$datosUsuario['aPaterno']?> <?=$datosUsuario['aMaterno']?> son:</h4></legend>
-					
 					<?php 
 						if (isset($archivosUsuario)) {
 							echo "<ol>";

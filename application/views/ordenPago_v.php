@@ -25,37 +25,11 @@
 			<div class="twelve columns">
 			<fieldset class="cuerpo">
 				<fieldset >
-					<legend class="cuerpo"><h4>Completa para terminar tu registro</h4></legend>
-					<p><b></b></p>
-					<div class="twelve columns espacioInferior">
-						<div class="six columns">
-							
-							<a class="button" onclick="cargarVistaCursos('<?=$idUsuario?>')"> Comprar cursos >></a>
-							
-						</div>
-						<div class="twelve columns espacioSuperior">
-							
-						</div>
-						
-					</div>
-									
-					<div class="twelve columns">
-						<div class="six columns">
-							
-						</div>
-					</div>
 					
-					
-					
+					<legend class="cuerpo"><h4>Orden de pago</h4></legend>
 				</fieldset>
-				<form action='<?=base_url(); ?>login_c/reiniciarSesion' method='post'>
-					<input type="submit" class="button" style="float: right;" value="Cerrar sesión" />
-				</form>
-				
-				
 			</fieldset>
-			</div><!--twelve columns-->
-		</div> <!--row-->
+			</div>
+	</div>
 </body>
 </html>
-

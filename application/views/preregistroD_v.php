@@ -113,13 +113,13 @@
 								</div>
 								<div class="four columns">
 									<label>Teléfono oficina:</label>
-									<input type="text" id="TelOf" name="Usuarios_TelOficina" pattern="[0-9]+" required/>
+									<input type="text" id="TelOf" name="Usuarios_TelOficina" pattern="[0-9]+"/>
 								</div>
 							</div>
 							<div class="twelve columns">
 								<div class="four columns" >
 									<label>Fax:</label>
-									<input type="text" id="Fax" name="Usuarios_Fax" pattern="[0-9]+" required/>
+									<input type="text" id="Fax" name="Usuarios_Fax" pattern="[0-9]+"/>
 								</div>
 							</div>
 														

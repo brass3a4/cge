@@ -22,7 +22,7 @@
 			
 			<fieldset class="cuerpo">
 			 	
-				<form action='<?=base_url(); ?>preregistroP_c/preDatos/' method='post' name='process' accept-charset="utf-8">
+				<form action='<?=base_url(); ?>preregistroP_c/preDatos/' method='post' name='process' accept-charset="utf-8" class="custom">
 					<fieldset >
 						<legend class="cuerpo"><h4>Datos personales</h4></legend>
 					<div class="twelve colums">
@@ -113,13 +113,13 @@
 								</div>
 								<div class="four columns">
 									<label>Teléfono oficina:</label>
-									<input type="text" id="TelOf" name="Usuarios_TelOficina" pattern="[0-9]+" required/>
+									<input type="text" id="TelOf" name="Usuarios_TelOficina" pattern="[0-9]+"/>
 								</div>
 							</div>
 							<div class="twelve columns">
 								<div class="four columns" >
 									<label>Fax:</label>
-									<input type="text" id="Fax" name="Usuarios_Fax" pattern="[0-9]+" required/>
+									<input type="text" id="Fax" name="Usuarios_Fax" pattern="[0-9]+"/>
 								</div>
 							</div>
 														
@@ -147,7 +147,7 @@
 				 		<div class="row">
 				 		<label class="espacioInferior"><b>Institución de procedencia:</b></label>
 				 		<div class="four columns">
-							<select name="DatosUsuario_TipoInstProcedencia" onchange="quitaClaseEscondidaIns('institucion',this.options[this.selectedIndex].value)" onkeyup="quitaClaseEscondida('estudio',this.options[this.selectedIndex].value)" onclick="quitaClaseEscondida('estudio',this.options[this.selectedIndex].value)">
+							<select name="DatosUsuario_TipoInstProcedencia" onchange="quitaClaseEscondidaIns('institucion',this.options[this.selectedIndex].value)" onkeyup="quitaClaseEscondidaIns('institucion',this.options[this.selectedIndex].value)" onclick="quitaClaseEscondidaIns('institucion',this.options[this.selectedIndex].value)">
 								 <option value="1" >UNAM</option>
 								 <option value="2">IPN</option>
 								 <option value="3">Incorporada a la UNAM</option>
@@ -203,7 +203,7 @@
 						</div>
 						<div class="two columns">
 							<label>Promedio:</label>
-							<input type="text" id="Prom" name="DatosUsuario_Prom" pattern="[0-9]+" required/>
+							<input type="text" id="Prom" name="DatosUsuario_Prom" title="Debe contener sólo números" pattern="[0-9]+" required/>
 						</div>
 						<div class="six columns">
 						</div>	
@@ -215,37 +215,40 @@
 					<fieldset>
 						<legend class="cuerpo"><h4>Datos académicos del prosgrado solicitado</h4></legend>
 						<blockquote>Seleccione una opción:</blockquote>
-						<div class="six columns">
+						<div class="six columns row">
 							<label>Unidad:</label>
-							<input type="radio" name="DatosUsuario_unidad" value="AZC">AZC
-							<input type="radio" name="DatosUsuario_unidad" value="IZT" checked>IZT
-							<input type="radio" name="DatosUsuario_unidad" value="XOC">XOC
-							<input type="radio" name="DatosUsuario_unidad" value="CUA">CUA
+							<input type="radio" name="DatosUsuario_unidad" value="AZC" disabled>AZC
+							<input type="radio" class="custom radio checked" name="DatosUsuario_unidad" value="IZT">IZTd
+							<input type="radio" name="DatosUsuario_unidad" value="XOC" disabled>XOC
+							<input type="radio" name="DatosUsuario_unidad" value="CUA" disabled>CUA
 						</div>
+						
 						<div class="six columns">
 							<label>División:</label>
-							<input type="radio" name="DatosUsuario_division" value="CBI">CBI
+							<input type="radio" name="DatosUsuario_division" value="CBI" disabled>CBI
 							<input type="radio" name="DatosUsuario_division" value="CSH" checked>CSH
-							<input type="radio" name="DatosUsuario_division" value="CBS">CBS
-							<input type="radio" name="DatosUsuario_division" value="CAD">CAD
-							<input type="radio" name="DatosUsuario_division" value="CCD">CCD
-							<input type="radio" name="DatosUsuario_division" value="CNI">CNI
+							<input type="radio" name="DatosUsuario_division" value="CBS" disabled>CBS
+							<input type="radio" name="DatosUsuario_division" value="CAD" disabled>CAD
+							<input type="radio" name="DatosUsuario_division" value="CCD" disabled>CCD
+							<input type="radio" name="DatosUsuario_division" value="CNI" disabled>CNI
 						</div>
 						<div class="six columns espacioSuperior">
 							<label>Nivel de estudios solicitado:</label>
 							<input type="radio" name="DatosUsuario_NivEstudio" value="Especializacion" checked>Especialización
-							<input type="radio" name="DatosUsuario_NivEstudio" value="Maestria">Maestría
-							<input type="radio" name="DatosUsuario_NivEstudio" value="Doctorado">Doctorado
+							<input type="radio" name="DatosUsuario_NivEstudio" value="Maestria" disabled>Maestría
+							<input type="radio" name="DatosUsuario_NivEstudio" value="Doctorado" disabled>Doctorado
 						</div>
 						<div class="six columns espacioSuperior">
 							<label>Nombre del posgrado:</label>
-							<input type="text" name="DatosUsuario_NomPosgrado" value="Pólitica y cultura en América Latina"/>
+							<input type="text" name="DatosUsuario_NomPosgrado" value="Pólitica y cultura en América Latina" disabled/>
+							<input type="hidden" name="DatosUsuario_NomPosgrado" value="Pólitica y cultura en América Latina" />
 						</div>
 						<div class="six columns">
 							<label>Área de concentración:</label>
-							<input type="text" name="DatosUsuario_AreaConcentracion" required/>
+							<input type="text" name="DatosUsuario_AreaConcentracion" />
 						</div>
 						<div class="six columns">
+							
 						</div>
 					</fieldset>
 					<input type="submit" id="enviarBtn" class="button" style="float: right;" value="Siguiente" />

@@ -129,7 +129,7 @@
 					</html>';
 			$this->email->message($msj);		
 			if(!($this->email->send()))
-			  {
+			{
 			   show_error($this->email->print_debugger());
 			  }		
 			}

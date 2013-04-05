@@ -95,7 +95,7 @@
 							case '8':
 									//Busco en el catálogo de paises el IdPais del dato proporcionado comparando uno por uno hasta que coincida 
 									foreach ($catPais as $key => $value) {
-										if($key == $datos['Usuarios_IdPais']){
+										if($key == $datos['DatosUsuario_IdPaisIns']){
 											$pais =$value['NomPais'];
 										}
 									}
@@ -138,10 +138,10 @@
 				<!-- Serializamos el arreglo para pasarlo como cadena al controlador por el input hidden-->
 				<?php  $str = serialize($datos);?>
 				<input type="hidden" name="datos" value='<?=$str?>'/>
-				</form>
-				<a class="button" onclick="veAtras()">Corregir</a>
-				<input type="submit" class="button" style="float: right;" onclick="cargarVista()" value="Confirmar"/>
 				
+				<a class="button" onclick="veAtras()">Corregir</a>
+				<input type="submit" class="button" style="float: right;" value="Confirmar"/>
+				</form>
 			</fieldset>
 
 

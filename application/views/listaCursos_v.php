@@ -25,37 +25,27 @@
 			<div class="twelve columns">
 			<fieldset class="cuerpo">
 				<fieldset >
-					<legend class="cuerpo"><h4>Completa para terminar tu registro</h4></legend>
-					<p><b></b></p>
-					<div class="twelve columns espacioInferior">
-						<div class="six columns">
-							
-							<a class="button" onclick="cargarVistaCursos('<?=$idUsuario?>')"> Comprar cursos >></a>
-							
-						</div>
-						<div class="twelve columns espacioSuperior">
-							
-						</div>
-						
-					</div>
-									
-					<div class="twelve columns">
-						<div class="six columns">
-							
-						</div>
-					</div>
 					
-					
+					<legend class="cuerpo"><h4>Selecciona los cursos que quieres comprar</h4></legend>
+					<form action='<?=base_url();?>cursos_c/carritoCursos' method='post' name='process' accept-charset="utf-8">
+						<input type="hidden" name="idUsuario" value="<?=$idUsuario?>" />
+						<div class="twelve columns" style="padding-top: 1%;">
+					      
+					      <label for="curso1"><input type="checkbox" id="curso1" name="Curso1" value="1"> Curso 1</label>
+					      <label for="curso2"><input type="checkbox" id="curso2" name="Curso2" value="2"> Curso 2</label>
+					      <label for="curso3"><input type="checkbox" id="curso3" name="Curso3" value="3"> Curso 3</label>
+					      <label for="curso4"><input type="checkbox" id="curso4" name="Curso4" value="4"> Curso 4</label>
+					      <label for="curso5"><input type="checkbox" id="curso5" name="Curso5" value="5"> Curso 5</label>
+					    </div>
+					    
+						<div class="twelve colums espacioSuperior" style="padding-top: 15%;">
+						<a class="button" onclick="veAtras()">Regresar</a>
+						<input type="submit" id="sigteBtn" class="button" style="float: right;" value="Siguiente" />
+					</form>
 					
 				</fieldset>
-				<form action='<?=base_url(); ?>login_c/reiniciarSesion' method='post'>
-					<input type="submit" class="button" style="float: right;" value="Cerrar sesión" />
-				</form>
-				
-				
 			</fieldset>
-			</div><!--twelve columns-->
-		</div> <!--row-->
+			</div>
+	</div>
 </body>
 </html>
-
