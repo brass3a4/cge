@@ -27,6 +27,9 @@
 				<fieldset >
 					
 					<legend class="cuerpo"><h4>Orden de pago</h4></legend>
+					
+					
+					
 				</fieldset>
 			</fieldset>
 			</div>

@@ -7,6 +7,7 @@
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/app.css">
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/css/style.css">
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/css/datepicker.css">
+  	
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/foundation.min.js"></script>
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/jquery.foundation.forms.js"></script>
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/modernizr.foundation.js"></script>
@@ -15,6 +16,7 @@
   	<script src="<?=base_url(); ?>statics/js/jquery-1.8.2.min.js"></script>
   	<script src="<?=base_url(); ?>statics/js/jquery-ui-1.8.23.custom.min.js"></script>
   	<script src="<?=base_url(); ?>statics/js/datepickerEsp.js"></script>
+  	
   	<script type="text/javascript">
   		var urlBase = '<?=base_url(); ?>';
   	</script>
@@ -27,10 +29,12 @@
 				<fieldset >
 					
 					<legend class="cuerpo"><h4>Carrito de compras</h4></legend>
-					
+					<div class="twelve columns">
+						<img src="<?=base_url(); ?>statics/img/cart.png" style="float: right;"/>
+					</div>
 					<form action='<?=base_url();?>/cursos_c/generaOrdenPago' method='post' name='process' accept-charset="utf-8">
 						
-						<div class="twelve columns" style="padding-top: 1%;">
+						<div class="twelve columns">
 							<table class="twelve">
 							  <thead>
 							    <tr>
@@ -61,14 +65,26 @@
 							    </tr>
 					        	</tbody>
 							</table>
-					      	
+					    <?php if ($i == 0): ?>
+							<div class="alert-box alert">
+							  Debes elegir almenos un curso
+							</div>	
+						<?php endif;?> 	
 					    </div>
-					    <?php  $str = serialize($datos);?>
+					    <?php if(isset($datos)){
+					    	$str = serialize($datos);	
+					    }?>
 					    <input type="hidden" name="datos" value='<?=$str?>'/>
 					    <input type="hidden" name="idUsuario" value='<?=$idUsuario?>'/>
 						<div class="twelve colums espacioSuperior">
 						<a class="button" onclick="veAtras()">Regresar</a>
-						<input type="submit" id="sigteBtn" class="button" style="float: right;" value="Confirmar compra" />
+						<?php if($i != 0): ?>
+							<input type="submit" id="sigteBtn" class="button" style="float: right;" value="Confirmar compra" />
+						<?php endif;?>
+						<?php if($i == 0): ?>
+							<input type="submit" id="sigteBtn" class="button" style="float: right;" value="Confirmar compra" disabled/>
+						<?php endif;?>
+						</div>
 					</form>
 					
 				</fieldset>
