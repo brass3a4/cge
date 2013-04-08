@@ -171,3 +171,8 @@ function cargarVistaCursos(idUsuario) {
   	var url=urlBase+'cursos_c/listaCursos/'+idUsuario;
 	document.location.href=url;
 }
+
+function noAtras() {
+	window.history.forward(1);
+}
+

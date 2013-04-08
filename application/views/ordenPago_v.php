@@ -17,17 +17,28 @@
   	<script src="<?=base_url(); ?>statics/js/datepickerEsp.js"></script>
   	<script type="text/javascript">
   		var urlBase = '<?=base_url(); ?>';
+  		//window.onload = noAtras;
   	</script>
-
+  	
 </head>
-<body>
+<body >
 	<div class="row">
 			<div class="twelve columns">
 			<fieldset class="cuerpo">
 				<fieldset >
 					
-					<legend class="cuerpo"><h4>Orden de pago</h4></legend>
+					<legend class="cuerpo"><h4>Compra exitosa</h4></legend>
 					
+					<div class="twelve columns offset-by-two">
+						<div class="six columns">
+							<form action="<?php echo base_url();?>generaPdf_c/generaOrdenPagoPDF/" method="post">
+								<input type="submit" class="button" value="Genera oden de pago" />
+							</form>
+						</div>
+						<div class="six columns">
+							<a class="button">Inicio</a>
+						</div>
+					</div>
 					
 					
 				</fieldset>

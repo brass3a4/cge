@@ -19,8 +19,8 @@
   	
   	<script type="text/javascript">
   		var urlBase = '<?=base_url(); ?>';
+  		//window.onload = noAtras;
   	</script>
-
 </head>
 <body>
 	<div class="row">
@@ -32,7 +32,7 @@
 					<div class="twelve columns">
 						<img src="<?=base_url(); ?>statics/img/cart.png" style="float: right;"/>
 					</div>
-					<form action='<?=base_url();?>/cursos_c/generaOrdenPago' method='post' name='process' accept-charset="utf-8">
+					<form action='<?=base_url();?>cursos_c/generaOrdenPago' method='post' name='process' accept-charset="utf-8">
 						
 						<div class="twelve columns">
 							<table class="twelve">
