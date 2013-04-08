@@ -35,6 +35,12 @@
 					<form action='<?=base_url();?>cursos_c/generaOrdenPago' method='post' name='process' accept-charset="utf-8">
 						
 						<div class="twelve columns">
+						<?php if (!isset($datos)): ?>
+							<div class="alert-box alert">
+							  <center> Debes elegir almenos un curso</center>
+							</div>	
+						<?php endif;?>
+						<?php if (isset($datos)): ?>
 							<table class="twelve">
 							  <thead>
 							    <tr>
@@ -43,33 +49,25 @@
 							    </tr>
 							  </thead>
 							  	<tbody>
-					      <?php
-					     	$i=0;
-							if (!empty($datos)) {
-								
-							 
-						      	foreach ($datos as $key => $value) {
-									echo '<tr>
-									      	<td>'.$key.'</td>
-									      	<td>$200</td>
-									      </tr>';
-							  		$i++;
-								}
-							}
-					      ?>
-					      		<tr>
-							      <td>Precio Total</td>
-							      <td><?php 
-							      		echo '$'.$i*200;
-							      	?></td>
-							    </tr>
+							      <?php
+							     	$i=0;
+									if (!empty($datos)) {
+								      	foreach ($datos as $key => $value) {
+											echo '<tr>
+											      	<td>'.$key.'</td>
+											      	<td>$200</td>
+											      </tr>';
+									  		$i++;
+										}
+									}
+							      ?>
+						      		<tr>
+								      <td><b>Precio Total</b></td>
+								      <td><?php	echo '<b>$'.$i*200 .'</b>';	?></td>
+								    </tr>
 					        	</tbody>
 							</table>
-					    <?php if ($i == 0): ?>
-							<div class="alert-box alert">
-							  Debes elegir almenos un curso
-							</div>	
-						<?php endif;?> 	
+						<?php endif;?>
 					    </div>
 					    <?php if(isset($datos)){
 					    	$str = serialize($datos);	
@@ -78,10 +76,10 @@
 					    <input type="hidden" name="idUsuario" value='<?=$idUsuario?>'/>
 						<div class="twelve colums espacioSuperior">
 						<a class="button" onclick="veAtras()">Regresar</a>
-						<?php if($i != 0): ?>
+						<?php if(isset($i) && $i != 0): ?>
 							<input type="submit" id="sigteBtn" class="button" style="float: right;" value="Confirmar compra" />
 						<?php endif;?>
-						<?php if($i == 0): ?>
+						<?php if(isset($i) && $i == 0): ?>
 							<input type="submit" id="sigteBtn" class="button" style="float: right;" value="Confirmar compra" disabled/>
 						<?php endif;?>
 						</div>
