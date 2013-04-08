@@ -25,7 +25,7 @@
 			<div class="twelve columns">
 			<fieldset class="cuerpo">
 				<fieldset >
-					<legend class="cuerpo"><h4>Bienvenido <?= $usuario?></h4></legend>
+					<legend class="cuerpo"><h4>Bienvenido <?=$usuario?></h4></legend>
 					<p><b></b></p>
 					<div class="twelve columns espacioInferior">
 						<div class="six columns">

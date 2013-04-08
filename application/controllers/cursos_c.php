@@ -46,7 +46,7 @@
 			
 			$data['idUsuario'] = $_POST['idUsuario'];
 			$data['datos'] = unserialize($_POST['datos']);
-			
+			$data['datosUsuario'] = $this->usuarios_m->traeDatosUsuario($_POST['idUsuario']);
 			//Se guardan los datos para generar la orden de pago con lo datos seleccionados
 			
 			

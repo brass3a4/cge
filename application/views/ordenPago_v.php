@@ -36,7 +36,7 @@
 							</form>
 						</div>
 						<div class="six columns">
-							<a class="button">Inicio</a>
+							<a class="button" onclick="cargarVistaMenuRegistroC('<?=$datosUsuario['usuario']?>')">Inicio</a>
 						</div>
 					</div>
 					

@@ -171,8 +171,12 @@ function cargarVistaCursos(idUsuario) {
   	var url=urlBase+'cursos_c/listaCursos/'+idUsuario;
 	document.location.href=url;
 }
-
+ /* Esta función evita regresar a la página anterior*/
 function noAtras() {
 	window.history.forward(1);
 }
 
+function cargarVistaMenuRegistroC(idUsuario) {
+  	var url=urlBase+'menuRegistro_c/principal/'+idUsuario;
+	document.location.href=url;
+}
