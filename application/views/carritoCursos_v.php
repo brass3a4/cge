@@ -37,7 +37,7 @@
 						<div class="twelve columns">
 						<?php if (!isset($datos)): ?>
 							<div class="alert-box alert">
-							  <center> Debes elegir almenos un curso</center>
+							  <center> Debes elegir al menos un curso</center>
 							</div>	
 						<?php endif;?>
 						<?php if (isset($datos)): ?>
