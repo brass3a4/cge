@@ -33,6 +33,8 @@
 			 	
 			$data['usuario'] = $usr;
 			
+			$data['datosUsuario'] = $this->usuarios_m->traeDatosUsuario($idUsuario);
+			
 			// si el usuario tiene archivos valor = 1 en caso contrario valor = 0
 			if(isset($data['archivos']) && $data['archivos'] != '0'){
 				$data['valor']='1';

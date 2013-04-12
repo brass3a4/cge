@@ -78,6 +78,31 @@
 								    </tr>
 					        	</tbody>
 							</table>
+							<div class="six colums espacioSuperior" >
+							    <label><b>¿Cómo desea realizar su pago?</b></label>
+								<select style="display:none;" id="customDropdown" name="TipoPago" required>
+									<option value="PVU">Pago en ventanilla UAMI</option>
+									<option value="PVBR">Pago en ventanilla BANCOMER</option>
+									<!-- <option value="PVBX">Pago en ventanilla BANAMEX</option>
+									<option value="TBR">Transferencia bancaria BANCOMER</option>
+									<option value="TBX">Transferencia bancaria BANAMEX</option>
+									<option value="PLBR">Pago en linea BANCOMER</option> -->
+								</select>
+								<div class="custom dropdown">
+									<a href="#" class="current">
+										Seleccione una opción
+									</a>
+									<a href="#" class="selector"></a>
+									<ul>
+										<li>Pago en ventanilla UAMI</li>
+										<li>Pago en ventanilla BANCOMER</li>
+										<!-- <li>Pago en ventanilla BANAMEX</li>
+										<li>Transferencia bancaria BANCOMER</li>
+										<li>Transferencia bancaria BANAMEX</li>
+										<li>Pago en linea BANCOMER</li> -->
+									</ul>
+								</div>
+						    </div>
 						<?php endif;?>
 					    </div>
 					    <?php if(isset($productos)){
@@ -88,31 +113,7 @@
 					    <input type="hidden" name="CostoTotal" value='<?=$precioTotal?>'/>
 					    <input type="hidden" name="CantidadProductos" value='<?=$i?>'/>
 					    
-					    <div class="six colums espacioSuperior" >
-						    <label><b>¿Cómo desea realizar su pago?</b></label>
-							<select style="display:none;" id="customDropdown" name="TipoPago" required>
-								<option value="PVU">Pago en ventanilla UAMI</option>
-								<option value="PVBR">Pago en ventanilla BANCOMER</option>
-								<option value="PVBX">Pago en ventanilla BANAMEX</option>
-								<option value="TBR">Transferencia bancaria BANCOMER</option>
-								<option value="TBX">Transferencia bancaria BANAMEX</option>
-								<option value="PLBR">Pago en linea BANCOMER</option>
-							</select>
-							<div class="custom dropdown">
-								<a href="#" class="current">
-									Seleccione una opción
-								</a>
-								<a href="#" class="selector"></a>
-								<ul>
-									<li>Pago en ventanilla UAMI</li>
-									<li>Pago en ventanilla BANCOMER</li>
-									<li>Pago en ventanilla BANAMEX</li>
-									<li>Transferencia bancaria BANCOMER</li>
-									<li>Transferencia bancaria BANAMEX</li>
-									<li>Pago en linea BANCOMER</li>
-								</ul>
-							</div>
-					    </div>
+					    
 						<div class="twelve colums espacioSuperior">
 						<a class="button" onclick="veAtras()">Regresar</a>
 						<?php if(isset($i) && $i != 0): ?>

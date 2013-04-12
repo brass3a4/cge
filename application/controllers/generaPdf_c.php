@@ -167,7 +167,7 @@
 		function generaOrdenPagoPDF($tipoPago,$idPedido){
 			switch ($tipoPago) {
 				case 'PVU':
-					
+					$this->generaOrdenPVU($idPedido);
 					break;
 					
 				case 'PVBR':
@@ -300,5 +300,109 @@
 
 		 	//}
 		}
+
+		function generaOrdenPVU($idPedido){
+			
+			$datos = $this->pedidos_m->traeDatosPedido($idPedido);
+			$datosUsuario = $this->usuarios_m->traeDatosUsuario($datos['datosPedido']['Usuarios_IdUsuario']);
+			$cursos = $this->pedidos_m->traeProductos();
+			
+			foreach ($cursos as $key => $value) {
+				foreach ($datos['datosDetallePedido'] as $llave => $valor) {
+					if ($value['IdProducto'] == $valor['Productos_IdProducto']) {
+						$datos['datosDetallePedido'][$llave]['Producto'] = $value['Producto'];
+						$datos['datosDetallePedido'][$llave]['Precio'] = $value['Precio'];
+					}
+				}
+			
+			}
+			
+			// echo '<pre>';
+			// print_r($datos);
+			$pdf = new FPDF();
+
+			//$idUsuario = $this->usuarios_m->traeUsuarioId($usuario);
+			
+			//if($idUsuario != '0'){
+				
+			//$datos = $this->usuarios_m->traeDatosUsuario($idUsuario);
+			//echo '<pre>';
+			//print_r($datos);
+			
+			$contenido["folio"] = 'Folio número: '.$datos['datosPedido']['IdTransaccion']."\n\n";
+			$contenido["datosAcceso"] = 'Datos de acceso'."\n\n";
+			$contenido["usr"] = 'Usuario: '.$datosUsuario['usuario']."\n";
+			$contenido["pass"] = 'Contraseña: '.$datosUsuario['password']."\n\n";
+			$contenido["indica"] = 'Indicaciones importantes:'."\n\n";
+			$contenido["cad1"] = '*Antes de acudir a las cajas de la UAMI le pedimos que acuda a la Coordinación de Educación Virtual por su comprobante de pre registro, el cual le será solicitado parapoder realizar su pago. Estamos ubicados en el edificio de la biblioteca, pero la entrada es independiente y se encuentra frente al edificio de posgrado.'."\n";
+			$contenido["cad2"] = '*Tras realizar su pago, acuda de nueva cuenta a la Coordinación de Educación Virtual para entregarlo y finalizar su proceso de inscripción.'."\n\n";
+			//$contenido["cad3"] = '*Le pedimos que todos los campos del comprobante escaneado se vean correctamente.'."\n\n";
+
+            $text = ""; 
+			$pdf->AddPage();
+			$pdf->SetFont('Arial','',11);
+
+			$pdf->Image($_SERVER["DOCUMENT_ROOT"]."/cge/statics/img/image.jpeg",1,1,250);
+
+			foreach ($contenido as $row) {
+				$text = $text.$row;
+			}
+
+			$pdf->Ln(50);
+			$text = utf8_decode($text);
+			$pdf->Multicell(0, 5, $text, 0, 'J', false);
+			
+			$pdf->Ln(10);
+			$pdf->SetFont('Arial','B',15);
+			
+			$contenidoCursos['titulo'] = 'Recibo de pago curso'."\n";
+			$contenidoCursos['titulo2'] = 'Favor de cobrar los conceptos por separado';
+			
+			$text2="";
+			foreach ($contenidoCursos as $row) {
+				$text2 = $text2.$row;
+			}
+			
+			$text2 = utf8_decode($text2);
+			$pdf->Multicell(0, 5, $text2, 0, 'C', false);
+			
+			
+			$pdf->Ln(5);
+			$pdf->SetFont('Arial','',11);
+			
+			foreach ($datos['datosDetallePedido'] as $datosDet) {
+				$contenidoPago['titulo'] = "\n".'Pago en ventanilla UAM'."\n";
+				$contenidoPago['concepto'] = 'Concepto a pagar: '.$datosDet['RefAPagar']."\n";
+				$contenidoPago['monto'] = 'Monto a pagar: $'.$datosDet['Precio']."\n";
+			
+			
+				$text3="";
+				foreach ($contenidoPago as $row) {
+					$text3 = $text3.$row;
+				}
+				
+				$text3 = utf8_decode($text3);
+				$pdf->Multicell(0, 5, $text3, 0, 'J', false);
+				
+				$pdf->Ln(5);
+				
+				$pdf->Cell(90,5,'Nombre del Curso',1,0,'C',0);
+				$pdf->Cell(90,5,'Total',1,1,'C',0);
+				
+				$pdf->Cell(90,5,$datosDet['Producto'],1,0,'C',0);
+				$pdf->Cell(90,5,'$'.$datosDet['Precio'],1,1,'C',0);
+				
+				$pdf->Ln(5);
+				$lineas = "Recorta aquí -------------------------------------------------------------------------------------------------------------------------------------------------";
+				$lineas = utf8_decode($lineas);
+				$pdf->Multicell(0, 5, $lineas, 0, 'C', false);
+			}
+			
+			$pdf->Output();
+       
+
+		 	//}
+		}
+
 	}    
 ?>

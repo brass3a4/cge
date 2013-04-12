@@ -1,5 +1,6 @@
 <html>
 <head>
+	<title>Inicio</title>
 	<meta charset="utf-8" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
@@ -25,7 +26,7 @@
 			<div class="twelve columns">
 			<fieldset class="cuerpo">
 				<fieldset >
-					<legend class="cuerpo"><h4>Bienvenido <?=$usuario?></h4></legend>
+					<legend class="cuerpo"><h4>Bienvenido <?=$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].''?></h4></legend>
 					<p><b></b></p>
 					<div class="twelve columns espacioInferior">
 						<div class="six columns">
