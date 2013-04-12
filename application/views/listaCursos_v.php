@@ -1,5 +1,9 @@
 <html>
 <head>
+	
+	
+	
+	<title>Lista de cursos</title>
 	<meta charset="utf-8" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
@@ -25,22 +29,31 @@
 			<div class="twelve columns">
 			<fieldset class="cuerpo">
 				<fieldset >
-					
-					<legend class="cuerpo"><h4>Selecciona los cursos que quieres comprar</h4></legend>
 					<form action='<?=base_url();?>cursos_c/carritoCursos' method='post' name='process' accept-charset="utf-8">
 						<input type="hidden" name="idUsuario" value="<?=$idUsuario?>" />
 						<div class="twelve columns" style="padding-top: 1%;">
 					      
-					      <label for="curso1"><input type="checkbox" id="curso1" name="Curso1" value="1"> Curso 1</label>
-					      <label for="curso2"><input type="checkbox" id="curso2" name="Curso2" value="2"> Curso 2</label>
-					      <label for="curso3"><input type="checkbox" id="curso3" name="Curso3" value="3"> Curso 3</label>
-					      <label for="curso4"><input type="checkbox" id="curso4" name="Curso4" value="4"> Curso 4</label>
-					      <label for="curso5"><input type="checkbox" id="curso5" name="Curso5" value="5"> Curso 5</label>
+					      <?php if(isset($cursos) && !empty($cursos)){
+					      	foreach ($cursos as $key => $value) {
+					      		if(isset($productos[$value['IdProducto']])){
+									echo '<label><input type="checkbox" name='."IdProducto".$value['IdProducto'].' value='.$value['IdProducto'].' disabled>'.$value['Producto'].' >>> <b>Curso ya adquirido</b> </label>';
+								}else{
+									echo '<label><input type="checkbox" name='."IdProducto".$value['IdProducto'].' value='.$value['IdProducto'].' >'.$value['Producto'].'</label>';
+								}
+							}
+					      }?>
+					      <?php if(isset($cursos) && empty($cursos)): ?>
+					      	<div class="alert-box">
+							  Aún no hay cursos disponibles
+							</div>
+					      <? endif ?>
 					    </div>
-					    
 						<div class="twelve colums espacioSuperior" style="padding-top: 15%;">
 						<a class="button" onclick="veAtras()">Regresar</a>
-						<input type="submit" id="sigteBtn" class="button" style="float: right;" value="Siguiente" />
+						
+						<?php if(isset($cursos) && !empty($cursos)): ?>
+							<input type="submit" id="sigteBtn" class="button" style="float: right;" value="Siguiente" />
+						<? endif ?>
 					</form>
 					
 				</fieldset>

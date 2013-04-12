@@ -64,7 +64,7 @@
 							<div class="twelve columns">
 								<div class="six columns">
 								<label>País:</label>
-								<select name='Usuarios_IdPais'>
+								<select name='Usuarios_IdPais' required>
 									<?php 
 										foreach ($catPais as $key => $value) {
 											echo "<option value=".$key.">".$value['NomPais']."</option>";

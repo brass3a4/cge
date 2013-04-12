@@ -173,7 +173,9 @@ function cargarVistaCursos(idUsuario) {
 }
  /* Esta función evita regresar a la página anterior*/
 function noAtras() {
-	window.history.forward(1);
+	 if(window.history.forward(1) != null){
+        window.history.forward(1);
+    }
 }
 
 function cargarVistaMenuRegistroC(idUsuario) {

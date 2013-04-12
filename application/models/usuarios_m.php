@@ -343,4 +343,5 @@ class usuarios_m extends CI_Model {
 			}
 			
 		}
+
 }

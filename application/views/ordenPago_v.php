@@ -1,5 +1,6 @@
 <html>
 <head>
+	<title>Oreden de pago</title>
 	<meta charset="utf-8" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
@@ -31,7 +32,7 @@
 					
 					<div class="twelve columns offset-by-two">
 						<div class="six columns">
-							<form action="<?php echo base_url();?>generaPdf_c/generaOrdenPagoPDF/" method="post">
+							<form action="<?php echo base_url();?>generaPdf_c/generaOrdenPagoPDF/<?=$tipoPago?>/<?=$idPedido?>" method="post">
 								<input type="submit" class="button" value="Generar orden de pago" />
 							</form>
 						</div>
