@@ -83,9 +83,9 @@
 								<select style="display:none;" id="customDropdown" name="TipoPago" required>
 									<option value="PVU">Pago en ventanilla UAMI</option>
 									<option value="PVBR">Pago en ventanilla BANCOMER</option>
-									<!-- <option value="PVBX">Pago en ventanilla BANAMEX</option>
+									<!-- <option value="PVBX">Pago en ventanilla BANAMEX</option> -->
 									<option value="TBR">Transferencia bancaria BANCOMER</option>
-									<option value="TBX">Transferencia bancaria BANAMEX</option>
+									<!--<option value="TBX">Transferencia bancaria BANAMEX</option>
 									<option value="PLBR">Pago en linea BANCOMER</option> -->
 								</select>
 								<div class="custom dropdown">
@@ -96,9 +96,9 @@
 									<ul>
 										<li>Pago en ventanilla UAMI</li>
 										<li>Pago en ventanilla BANCOMER</li>
-										<!-- <li>Pago en ventanilla BANAMEX</li>
+										<!-- <li>Pago en ventanilla BANAMEX</li>-->
 										<li>Transferencia bancaria BANCOMER</li>
-										<li>Transferencia bancaria BANAMEX</li>
+										<!--<li>Transferencia bancaria BANAMEX</li>
 										<li>Pago en linea BANCOMER</li> -->
 									</ul>
 								</div>

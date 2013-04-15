@@ -8,4 +8,3 @@ INSERT INTO `Roles` (`IdRole`, `NomRole`) VALUES
 (7, 'Estudiante Diplomado Políticas'),
 (8, 'Estudiante Posgrado Políticas'),
 (9, 'Aspirante Cursos Generales');
-

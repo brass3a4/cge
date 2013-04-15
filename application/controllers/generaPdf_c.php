@@ -171,7 +171,6 @@
 					break;
 					
 				case 'PVBR':
-					
 					$this->generaOrdenPVBR($idPedido);
 					break;
 					
@@ -180,7 +179,7 @@
 					break;
 					
 				case 'TBR':
-					
+					$this->generaOrdenTBR($idPedido);
 					break;
 					
 				case 'TBX':
@@ -296,9 +295,7 @@
 				}
 				
 				$pdf->Output();
-           
 
-		 	//}
 		}
 
 		function generaOrdenPVU($idPedido){
@@ -399,10 +396,112 @@
 			}
 			
 			$pdf->Output();
-       
 
-		 	//}
 		}
+
+		function generaOrdenTBR($idPedido){
+			
+			$datos = $this->pedidos_m->traeDatosPedido($idPedido);
+			$datosUsuario = $this->usuarios_m->traeDatosUsuario($datos['datosPedido']['Usuarios_IdUsuario']);
+			$cursos = $this->pedidos_m->traeProductos();
+			
+			foreach ($cursos as $key => $value) {
+				foreach ($datos['datosDetallePedido'] as $llave => $valor) {
+					if ($value['IdProducto'] == $valor['Productos_IdProducto']) {
+						$datos['datosDetallePedido'][$llave]['Producto'] = $value['Producto'];
+						$datos['datosDetallePedido'][$llave]['Precio'] = $value['Precio'];
+					}
+				}
+			
+			}
+			
+			// echo '<pre>';
+			// print_r($datos);
+			$pdf = new FPDF();
+
+			//$idUsuario = $this->usuarios_m->traeUsuarioId($usuario);
+			
+			//if($idUsuario != '0'){
+				
+				//$datos = $this->usuarios_m->traeDatosUsuario($idUsuario);
+				//echo '<pre>';
+				//print_r($datos);
+				
+				$contenido["folio"] = 'Folio : '.$datos['datosPedido']['IdTransaccion']."\n\n";
+				$contenido["datosAcceso"] = 'Datos de acceso'."\n\n";
+				$contenido["usr"] = 'Usuario: '.$datosUsuario['usuario']."\n";
+				$contenido["pass"] = 'Contraseña: '.$datosUsuario['password']."\n\n";
+				$contenido["indica"] = 'Indicaciones importantes:'."\n\n";
+				$contenido["cad1"] = '*Le pedimos que realice el pago de cada curso por separado.'."\n";
+				$contenido["cad2"] = '*Para finalizar su suscripción le pedimos que una vez que haya realizado el pago nos envíe su(s) comprobante(s) de transferencia con su nombre completo, a la dirección de correo: pagocursos@virtuami.izt.uam.mx'."\n\n";
+	
+                $text = ""; 
+				$pdf->AddPage();
+				$pdf->SetFont('Arial','',11);
+
+				$pdf->Image($_SERVER["DOCUMENT_ROOT"]."/cge/statics/img/image.jpeg",1,1,250);
+
+				foreach ($contenido as $row) {
+					$text = $text.$row;
+				}
+
+				$pdf->Ln(50);
+				$text = utf8_decode($text);
+				$pdf->Multicell(0, 5, $text, 0, 'J', false);
+				
+				$pdf->Ln(10);
+				$pdf->SetFont('Arial','B',15);
+				
+				$contenidoCursos['titulo'] = 'Recibo de pago curso'."\n";
+				$contenidoCursos['titulo2'] = 'Favor de cobrar los conceptos por separado';
+				
+				$text2="";
+				foreach ($contenidoCursos as $row) {
+					$text2 = $text2.$row;
+				}
+				
+				$text2 = utf8_decode($text2);
+				$pdf->Multicell(0, 5, $text2, 0, 'C', false);
+				
+				
+				$pdf->Ln(5);
+				$pdf->SetFont('Arial','',11);
+				
+				foreach ($datos['datosDetallePedido'] as $datosDet) {
+					$contenidoPago['titulo'] = "\n".'Transferencia bancaria'."\n\n";
+					$contenidoPago['universidad'] = 'Universidad Autónoma Metropolitana'."\n";
+					$contenidoPago['concepto'] = 'Concepto a pagar: '.$datosDet['RefAPagar']."\n";
+					$contenidoPago['clabe'] = 'Clabe: 012180001925682258'."\n";
+					$contenidoPago['banco'] = 'Banco: BANCOMER MEXICO S.A.'."\n";
+					$contenidoPago['monto'] = 'Monto a pagar: $'.$datosDet['Precio']."\n";
+				
+				
+					$text3="";
+					foreach ($contenidoPago as $row) {
+						$text3 = $text3.$row;
+					}
+					
+					$text3 = utf8_decode($text3);
+					$pdf->Multicell(0, 5, $text3, 0, 'J', false);
+					
+					$pdf->Ln(5);
+					
+					$pdf->Cell(90,5,'Nombre del Curso',1,0,'C',0);
+					$pdf->Cell(90,5,'Total',1,1,'C',0);
+					
+					$pdf->Cell(90,5,$datosDet['Producto'],1,0,'C',0);
+					$pdf->Cell(90,5,'$'.$datosDet['Precio'],1,1,'C',0);
+					
+					$pdf->Ln(5);
+					$lineas = "Recorta aquí -------------------------------------------------------------------------------------------------------------------------------------------------";
+					$lineas = utf8_decode($lineas);
+					$pdf->Multicell(0, 5, $lineas, 0, 'C', false);
+				}
+				
+				$pdf->Output();
+
+		}
+		
 
 	}    
 ?>
