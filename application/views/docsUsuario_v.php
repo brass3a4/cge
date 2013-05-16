@@ -28,7 +28,6 @@
 			
 			<fieldset class="cuerpo">
 				<pre><?php 
-										
 				?></pre>
 				<fieldset>
 					
@@ -52,11 +51,21 @@
 						<?php if(isset($archivosUsuario) && !empty($archivosUsuario)):?>
 							<label for="checkbox1"><input type="checkbox" id="checkbox1" value="1" name="DatosUsuario_AceptAd" <?=(isset($datosUsuario['AceptAd']) && $datosUsuario['AceptAd'] == '1' ) ? "checked disabled" : "" ?> required>Documentos aprobados etapa 2</label>
 							<label for="checkbox2"><input type="checkbox" id="checkbox2" value="1" name="DatosUsuario_AceptAc" disabled>Documentos aprobados etapa 3</label>
-							<input type="submit" id="enviarBtn" class="button offset-by-five"  value="Enviar" />
+							<input type="submit" id="aceptarBtn" class="button espacioSuperior" value="Aceptar documentos" />
 						<?php endif; ?>
-						
-						
 					</form>
+					
+					<fieldset>
+						<legend class="cuerpo"><h5>Envía un correo al aspirante</h5></legend>
+						<form action='<?php echo base_url();?>adminDocs_c/enviaMsj/' method="post">
+							<div class="six columns">
+								<label><b>Para: <?=$datosUsuario['email']?></b></label>
+								<input type="hidden" value="<?=$datosUsuario['email']?>" name="correoAspirante" />
+								<textarea name="msj"></textarea>
+								<input type="submit" id="enviarBtn" class="button"  value="Enviar mensaje" />
+							</div>
+						</form>
+					</fieldset>
 				</fieldset>
 			<a class="button" style="float: left;" onclick="veAtras()">Regresar</a>	
 			</fieldset>

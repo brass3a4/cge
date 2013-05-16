@@ -8,6 +8,7 @@
 			
 			$this->load->helper(array('html', 'url'));
 	        $this->load->model(array('catalogos_m', 'usuarios_m')); // Load the model
+	        $this->load->library('email');
 	        $this->is_logged_in();			
 	   	}
 		
@@ -71,6 +72,41 @@
 				redirect('adminDocs_c/muestraDocsUsuario/'.$idUsuario);
 			}
 			
+		}
+		function enviaMsj()
+		{
+			print_r($_POST);
+			//Configuración para mandar el correo
+			//$config['protocol'] = 'mail';
+			//$config['wordwrap'] = FALSE;				
+			//$config['mailtype']='html';
+			
+			$correos = array( $_POST['correoAspirante'], 'two@example.com', 'three@example.com');
+			
+			$config['protocol'] = 'smtp';
+			$config['smtp_host'] = 'ssl://smtp.googlemail.com';
+			$config['smtp_port'] = '465';
+			$config['smtp_user'] = 'rentzana@virtuami.izt.uam.mx';
+			$config['smtp_pass'] = 'rentzana75#';
+
+			$config['smtp_timeout'] = '7';
+			$config['charset']    = 'utf-8';
+			$config['newline']    = "\r\n";
+			$config['mailtype'] = 'html'; // or html
+			$config['validation'] = TRUE; // bool whether to validate email or not
+			
+			
+			$this->email->initialize($config);
+			$this->email->from('rentzana@virtuami.izt.uam.mx', 'Posgrado virtual');
+			$this->email->to($correos);
+			$this->email->subject('Mensaje de Posgrado virtual');
+			$msj = $_POST['msj'];
+			
+			$this->email->message($msj);		
+			if(!($this->email->send()))
+			{
+			   show_error($this->email->print_debugger());
+			}
 		}
 	}
 	
