@@ -45,6 +45,11 @@
 			
 			/* Dependiendo del rol del usuario abre diferentes vistas*/
 			switch ($data['idRol']) {
+				case '2':
+						// vista para curso ingles
+						redirect(base_url().'adminDocs_c');
+					break;
+				
 				case '3':
 						// vista para curso ingles
 						$this->load->view('menuRegistro_v',$data);

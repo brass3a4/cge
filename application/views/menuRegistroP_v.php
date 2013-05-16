@@ -25,6 +25,7 @@
 			<div class="twelve columns">
 			<fieldset class="cuerpo">
 				<fieldset >
+
 					<legend class="cuerpo"><h4>Completa para terminar tu registro</h4></legend>
 					<p><b>Paso 1: Solicitud de ingreso</b></p>
 					<div class="twelve columns espacioInferior">
@@ -55,12 +56,15 @@
 					</div>
 					
 					<p class="espacioSuperior"><b>Paso 2: Segunda etapa, documentos legalizados</b></p>
-					<p><b>Nota: </b>Esta etapa se habilitará en cuanto sean acaptados los documentos del paso 1</p>				
+					<p><b>Nota: </b>Esta etapa se habilitará en cuanto sean aceptados los documentos del paso 1</p>				
 					<div class="twelve columns">
 						<div class="six columns">
-							
-								<a class="button" disabled> Subir documentos </a>
-							
+							<?php if (isset($datosUsuario['AceptAd']) && !empty($datosUsuario['AceptAd'])) {
+								echo '<a class="button"> Subir documentos </a>';
+							}else{
+								echo '<a class="button" disabled> Subir documentos </a>';
+							}
+							?>
 						</div>
 					</div>
 					

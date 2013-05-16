@@ -1,5 +1,6 @@
 <html>
 <head>
+	<title>Aspirantes</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/foundation.min.css">
@@ -25,17 +26,21 @@
 		
 		<div class="twelve columns ">
 			
-			<fieldset class="cuerpo">
+			<fieldset class="cuerpo" style="">
 				
 				<fieldset>
-										
-					<legend class="cuerpo"><h4>Las siguientes pesonas son aspirantes</h4></legend>
+					
+					<legend class="cuerpo"><h4>Las siguientes personas son aspirantes</h4></legend>
 					<?php 
 						if (isset($usuarios)) {
 							echo '<ol>';
 							foreach ($usuarios as $datosUsuario) {
+								if (isset($datosUsuario['AceptAd'])){
+									echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'  <img src="'.base_url().'statics/img/check.svg">'.'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a><a class="small button" style="float: right; margin-right: 10px;" onclick="cargaVistaInfoUsuario('.$datosUsuario['IdUsuario'].')"> Ver información del usuario</a></li><br><br>';
+								}else{
+									echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a><a class="small button" style="float: right; margin-right: 10px;" onclick="cargaVistaInfoUsuario('.$datosUsuario['IdUsuario'].')"> Ver información del usuario</a></li><br><br>';
+								}
 								
-								echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a></li><br><br>';
 							}
 							echo '</ol>';
 						}else{
@@ -44,7 +49,7 @@
 					?>
 					
 				</fieldset>
-			<a class="button" style="float: right;" onclick="veAtras()">Regresar</a>	
+			<a class="button" style="float: left;" onclick="veAtras()">Regresar</a>	
 			</fieldset>
 
 

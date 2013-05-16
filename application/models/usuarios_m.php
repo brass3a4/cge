@@ -308,6 +308,16 @@ class usuarios_m extends CI_Model {
 					foreach ($consulta->result_array() as $DatosUsuario) {
 						$usuarios[$DatosUsuario['IdUsuario']]= $DatosUsuario; 
 					}
+				
+				$this->db->select('*');
+				$this->db->from('DatosUsuario');
+				$this->db->where('IdUsuario',$DatosUsuario['IdUsuario']);
+				$consulta = $this->db->get();
+				if($consulta->num_rows() > 0){
+					foreach ($consulta->result_array() as $row) {
+						$usuarios[$DatosUsuario['IdUsuario']][$row['NomCampo']] = $row['Datos']; 
+					}
+				}
 					
 				return $usuarios;
 				}

@@ -8,9 +8,15 @@
 			
 			$this->load->helper(array('html', 'url'));
 	        $this->load->model(array('catalogos_m', 'usuarios_m')); // Load the model
-	        			
+	        $this->is_logged_in();			
 	   	}
 		
+		private function is_logged_in(){
+			$logged_in = $this->session->userdata('logged_in');
+			if(!isset($logged_in) or $logged_in != TRUE){
+				redirect(base_url().'login_c');
+			}
+		}
 		
 		function index(){
 	    	
@@ -33,6 +39,13 @@
 			$datos['datosUsuario'] = $this->usuarios_m->traeDatosUsuario($idUsuario);
 			$datos['archivosUsuario'] = $this->usuarios_m->traeArchivos($idUsuario);
 			$this->load->view('docsUsuario_v',$datos);
+		}
+		
+		function muestraInfoUsuario($idUsuario)
+		{
+			$datos['catPais'] = $this->catalogos_m->mTraerTodo('catPaises', 'IdPais', 'NomPais');
+			$datos['datosUsuario'] = $this->usuarios_m->traeDatosUsuario($idUsuario);
+			$this->load->view('infoUsuario_v',$datos);
 		}
 		
 		function apruebaDocsUsuario($idUsuario)

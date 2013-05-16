@@ -25,18 +25,41 @@
 		{
 			$data['idUsuario'] = $idUsuario;
 			
-			$data['cursos'] = $this->pedidos_m->traeProductos();
+			$idRol= $this->usuarios_m->traeRolUsuario($idUsuario);
 			
-			$pedidos = $this->pedidos_m->traeDatosPedidoUsuario($idUsuario);
+			// si el usuario es de tipo 3 entonces
+			if($idRol == '3'){
+				$claveP='IEVE201300109';
+				$data['cursos'] = $this->pedidos_m->traeProductosClave($claveP);
+				
+				$pedidos = $this->pedidos_m->traeDatosPedidoUsuario($idUsuario);
+				
+				if(isset($pedidos) && !empty($pedidos)){
+					foreach ($pedidos as $datPedido) {
+						// echo "<pre>";
+						// print_r($datPedido);
+						foreach ($datPedido['datosDetallePedido'] as $datDetPedido) {
+							$data['productos'][$datDetPedido['Productos_IdProducto']] = $datDetPedido['Productos_IdProducto'];
+						}
+					}
+				}
+				
+			}else{
 			
-			foreach ($pedidos as $datPedido) {
-				// echo "<pre>";
-				// print_r($datPedido);
-				foreach ($datPedido['datosDetallePedido'] as $datDetPedido) {
-					$data['productos'][$datDetPedido['Productos_IdProducto']] = $datDetPedido['Productos_IdProducto'];
+				$data['cursos'] = $this->pedidos_m->traeProductos();
+				
+				$pedidos = $this->pedidos_m->traeDatosPedidoUsuario($idUsuario);
+				
+				if(isset($pedidos) && !empty($pedidos)){
+					foreach ($pedidos as $datPedido) {
+						// echo "<pre>";
+						// print_r($datPedido);
+						foreach ($datPedido['datosDetallePedido'] as $datDetPedido) {
+							$data['productos'][$datDetPedido['Productos_IdProducto']] = $datDetPedido['Productos_IdProducto'];
+						}
+					}
 				}
 			}
-			
 			// echo "<pre>";
 			// print_r($data['productos']);
 			// echo "</pre>";

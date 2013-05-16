@@ -182,3 +182,8 @@ function cargarVistaMenuRegistroC(idUsuario) {
   	var url=urlBase+'menuRegistro_c/principal/'+idUsuario;
 	document.location.href=url;
 }
+
+function cargaVistaInfoUsuario(idUsuario) {
+	var url=urlBase+'adminDocs_c/muestraInfoUsuario/'+idUsuario;
+  	document.location.href=url;  
+}

@@ -1,5 +1,6 @@
 <html>
 <head>
+	<title>Menú registro etapa 2</title>
 	<meta charset="utf-8" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
@@ -30,10 +31,11 @@
 					<div class="twelve columns espacioInferior">
 						<div class="six columns">
 							<?php if($valor == 0): ?>
-							<a class="button" onclick="cargaVistaDocs('<?=$usuario ?>','<?= $idRol?>')"> Subir documentos</a>
+								<a class="button" onclick="cargaVistaDocs('<?=$usuario ?>','<?= $idRol?>')"> Subir documentos</a>
 							<?php endif ?>
+							
 							<?php if($valor == 1): ?>
-							<a class="button" disabled> Subir documentos</a>
+								<a class="button" disabled> Subir documentos</a>
 							<?php endif ?>
 						</div>
 						<div class="twelve columns">
@@ -43,7 +45,7 @@
 									<tr>
 									<?php foreach($archivos as $archivo):?>
 										<td>
-										<a href="<?= base_url().$archivo['url'];?>"><img src="<?= base_url().'statics/img/text-x-preview.png'?>" height="50" width="50"><?=$archivo['nomArchivo']?></a>
+											<a href="<?= base_url().$archivo['url'];?>"><img src="<?= base_url().'statics/img/text-x-preview.png'?>" height="50" width="50"><?=$archivo['nomArchivo']?></a>
 										</td>
 									<?php endforeach;?>
 									</tr>
@@ -57,10 +59,10 @@
 									
 					<div class="twelve columns">
 						<div class="six columns">
-							<?php if($valor == '0'){
-								echo '<a class="button" style="padding: 10px 40px;" disabled> Realiza pago</a>';
+							<?php if(isset($datosUsuario['AceptAd']) && $datosUsuario['AceptAd'] = '1'){
+								echo '<a class="button" style="padding: 10px 40px;" onclick="cargarVistaCursos('.$idUsuario.')">Realiza pago  </a>';
 							}else{
-								echo '<a class="button" style="padding: 10px 40px;" >Realiza pago  </a>';
+								echo '<a class="button" style="padding: 10px 40px;" disabled> Realiza pago</a>';
 							}?>
 						</div>
 					</div>

@@ -1,5 +1,6 @@
 <html>
 <head>
+	<title>Documentos</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/foundation.min.css">
@@ -37,7 +38,7 @@
 							echo "<ol>";
 									foreach($archivosUsuario as $archivo){
 										echo "<li>";
-										echo '<a href="'.base_url().$archivo['url'].'"><img src="'.base_url().'statics/img/text-x-preview.png" height="50" width="50">'.$archivo['nomArchivo'].'</a>';
+										echo '<a href="'.base_url().$archivo['url'].'" target="_blank"><img src="'.base_url().'statics/img/text-x-preview.png" height="50" width="50">'.$archivo['nomArchivo'].'</a>';
 										echo "</li>";
 									}
 									

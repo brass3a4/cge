@@ -25,6 +25,25 @@ class pedidos_m extends CI_Model {
 		}
 	}
 	
+	function traeProductosClave($claveP){
+		
+		$this->db->select('*');
+		$this->db->from('Productos');
+		$this->db->where('Estatus',1);
+		$this->db->where('CveProducto',$claveP);
+		$consulta = $this->db->get();
+		
+		if($consulta->num_rows() > 0){
+			foreach ($consulta->result_array() as $producto) {
+				$productos[$producto['IdProducto']] = $producto; 
+			}
+		
+			return $productos;
+		}else{
+			return '0';
+		}
+	}
+	
 	function guardaPedido($datosPedido){
 		if (isset($datosPedido)) {
 			//print_r($datosPedido);
