@@ -26,25 +26,24 @@
 		<form action='<?=base_url(); ?>preregistro_c/guardaDatos/' method='post' accept-charset="utf-8" enctype="multipart/form-data">
 		<div class="twelve columns ">
 			<fieldset class="cuerpo">
-				
 				<fieldset>
 					<h4>Información proporcionada por el usuario</h4>
 					<pre>
 						
 					</pre>
-					<label><b>Nombre:</b> <?=$datosUsuario['Nombre']; ?></label>
-					<label><b>Apellido Paterno: </b> <?=$datosUsuario['aPaterno']; ?></label>
-					<label><b>Apellido Materno: </b> <?=$datosUsuario['aMaterno']; ?></label>
-					<label><b>Nacionalidad: </b> <?=$datosUsuario['Nacionalidad']; ?></label>
+					<label><b>Nombre:</b> <?php $datosUsuario['Nombre'] = str_replace("ñ", "Ñ", $datosUsuario['Nombre']); $datosUsuario['Nombre'] = strtoupper($datosUsuario['Nombre']); echo $datosUsuario['Nombre'];?></label>
+					<label><b>Apellido Paterno: </b> <?php $datosUsuario['aPaterno'] = str_replace("ñ", "Ñ", $datosUsuario['aPaterno']); $datosUsuario['aPaterno'] = strtoupper($datosUsuario['aPaterno']); echo $datosUsuario['aPaterno']; ?></label>
+					<label><b>Apellido Materno: </b> <?php $datosUsuario['aMaterno'] = str_replace("ñ", "Ñ", $datosUsuario['aMaterno']); $datosUsuario['aMaterno'] = strtoupper($datosUsuario['aMaterno']); echo $datosUsuario['aMaterno']; ?></label>
+					<label><b>Nacionalidad: </b> <?= $datosUsuario['Nacionalidad']; ?></label>
 					<label><b>Fecha de nacimiento: </b> <?= date($datosUsuario['FecNacimiento']); ?></label>
 					<label><b>País: </b><?php
-					//Busco en el catálogo de paises el IdPais del dato proporcionado comparando uno por uno hasta que coincida 
-					foreach ($catPais as $key => $value) {
-						if($key == $datosUsuario['IdPais']){
-							echo $value['NomPais'];
-						}
-					}
-					?></label>
+						//Busco en el catálogo de paises el IdPais del dato proporcionado comparando uno por uno hasta que coincida 
+						foreach ($catPais as $key => $value) {
+							if($key == $datosUsuario['IdPais']){
+								echo $value['NomPais'];
+							}
+						}?>
+					</label>
 					<label><b>Estado: </b> <?=$datosUsuario['NomEstado']; ?></label>
 					<label><b>Calle: </b> <?=$datosUsuario['Calle']; ?></label>
 					<label><b>Número: </b> <?=$datosUsuario['NumExterior']; ?></label>
@@ -91,12 +90,12 @@
 								case '8':
 										//Busco en el catálogo de paises el IdPais del dato proporcionado comparando uno por uno hasta que coincida 
 										foreach ($catPais as $key => $value) {
-											if($key == $datosUsuario['DatosUsuario_IdPaisIns']){
+											if($key == $datosUsuario['IdPaisIns']){
 												$pais =$value['NomPais'];
 											}
 										}
 						
-										echo '<label><b>Institución de procedencia: </b>'.$pais.','.$datosUsuario['institucionProcedenciaOtra'].'</label>';	
+										echo '<label><b>Institución de procedencia: </b>'.$pais.', '.$datosUsuario['institucionProcedenciaOtra'].'</label>';	
 									break;
 							}
 						}

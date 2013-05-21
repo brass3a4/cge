@@ -37,6 +37,7 @@ class usuarios_m extends CI_Model {
 	{
 		
 		if (!empty($datos)) {
+			
 				
         	$this->db->insert('Usuarios', $datos['Usuarios']);
 			
@@ -307,17 +308,20 @@ class usuarios_m extends CI_Model {
 				if($consulta->num_rows() > 0){
 					foreach ($consulta->result_array() as $DatosUsuario) {
 						$usuarios[$DatosUsuario['IdUsuario']]= $DatosUsuario; 
+						
+						$this->db->select('*');
+						$this->db->from('DatosUsuario');
+						$this->db->where('IdUsuario',$DatosUsuario['IdUsuario']);
+						$consulta = $this->db->get();
+						if($consulta->num_rows() > 0){
+							foreach ($consulta->result_array() as $row) {
+								$usuarios[$DatosUsuario['IdUsuario']][$row['NomCampo']] = $row['Datos']; 
+								//$usuarios[$DatosUsuario['IdUsuario']]['mensaje'] = 'HEy'; 
+							}
+						}
 					}
 				
-				$this->db->select('*');
-				$this->db->from('DatosUsuario');
-				$this->db->where('IdUsuario',$DatosUsuario['IdUsuario']);
-				$consulta = $this->db->get();
-				if($consulta->num_rows() > 0){
-					foreach ($consulta->result_array() as $row) {
-						$usuarios[$DatosUsuario['IdUsuario']][$row['NomCampo']] = $row['Datos']; 
-					}
-				}
+				
 					
 				return $usuarios;
 				}

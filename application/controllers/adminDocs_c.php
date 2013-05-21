@@ -73,16 +73,17 @@
 			}
 			
 		}
-		function enviaMsj()
+		function enviaMsj($idUsuario)
 		{
-			print_r($_POST);
-			//Configuración para mandar el correo
+			//print_r($_POST);
+			//Configuración para mandar el correo en servidor web
 			//$config['protocol'] = 'mail';
 			//$config['wordwrap'] = FALSE;				
 			//$config['mailtype']='html';
 			
-			$correos = array( $_POST['correoAspirante'], 'two@example.com', 'three@example.com');
-			
+			$correos = array( $_POST['correoAspirante'], 'gest@xanum.uam.mx', 'nivon@xanum.uam.mx','aadministrativa_pv@virtuami.izt.uam.mx','rentzana@virtuami.izt.uam.mx','csep@xanum.uam.mx');
+			//$correos = array('brass3a4@gmail.com');
+			/* Esta configuracion es para cuando está en local */
 			$config['protocol'] = 'smtp';
 			$config['smtp_host'] = 'ssl://smtp.googlemail.com';
 			$config['smtp_port'] = '465';
@@ -107,6 +108,9 @@
 			{
 			   show_error($this->email->print_debugger());
 			}
+			
+			echo '<script type="text/javascript"> alert("Correo eviado");</script>';
+			redirect('adminDocs_c/muestraDocsUsuario/'.$idUsuario);
 		}
 	}
 	

@@ -1,5 +1,6 @@
 <html>
 <head>
+	<title>Confirma tus datos</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/foundation.min.css">
@@ -32,9 +33,9 @@
 				<fieldset>
 					<h4>Por favor verifique sus datos</h4>
 					
-					<label><b>Nombre:</b> <?=$datos['Usuarios_Nombre']; ?></label>
-					<label><b>Apellido Paterno: </b> <?=$datos['Usuarios_aPaterno']; ?></label>
-					<label><b>Apellido Materno: </b> <?=$datos['Usuarios_aMaterno']; ?></label>
+					<label><b>Nombre:</b> <? $datos['Usuarios_Nombre'] = str_replace("ñ", "Ñ", $datos['Usuarios_Nombre']); $datos['Usuarios_Nombre'] = strtoupper($datos['Usuarios_Nombre']); echo $datos['Usuarios_Nombre'];?></label>
+					<label><b>Apellido Paterno: </b> <? $datos['Usuarios_aPaterno'] = str_replace("ñ", "Ñ", $datos['Usuarios_aPaterno']); $datos['Usuarios_aPaterno'] = strtoupper($datos['Usuarios_aPaterno']); echo $datos['Usuarios_aPaterno']; ?></label>
+					<label><b>Apellido Materno: </b> <? $datos['Usuarios_aMaterno']  = str_replace("ñ", "Ñ", $datos['Usuarios_aMaterno']); $datos['Usuarios_aMaterno'] = strtoupper($datos['Usuarios_aMaterno']); echo $datos['Usuarios_aMaterno']; ?></label>
 					<label><b>Nacionalidad: </b> <?=$datos['Usuarios_Nacionalidad']; ?></label>
 					<label><b>Fecha de nacimiento: </b> <?=$datos['Usuarios_FecNacimiento']; ?></label>
 					<label><b>Lugar de nacimento: </b><?=$datos['Usuarios_lugarNac'];?></label>

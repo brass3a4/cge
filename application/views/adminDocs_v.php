@@ -35,7 +35,10 @@
 						if (isset($usuarios)) {
 							echo '<ol>';
 							foreach ($usuarios as $datosUsuario) {
-								if (isset($datosUsuario['AceptAd'])){
+								$datosUsuario['Nombre'] = str_replace("ñ", "Ñ", $datosUsuario['Nombre']); $datosUsuario['Nombre'] = strtoupper($datosUsuario['Nombre']);
+								$datosUsuario['aPaterno'] = str_replace("ñ", "Ñ", $datosUsuario['aPaterno']); $datosUsuario['aPaterno'] = strtoupper($datosUsuario['aPaterno']);
+								$datosUsuario['aMaterno'] = str_replace("ñ", "Ñ", $datosUsuario['aMaterno']); $datosUsuario['aMaterno'] = strtoupper($datosUsuario['aMaterno']);
+								if (isset($datosUsuario['AceptAd']) && $datosUsuario['AceptAd'] == '1'){
 									echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'  <img src="'.base_url().'statics/img/check.svg">'.'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a><a class="small button" style="float: right; margin-right: 10px;" onclick="cargaVistaInfoUsuario('.$datosUsuario['IdUsuario'].')"> Ver información del usuario</a></li><br><br>';
 								}else{
 									echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a><a class="small button" style="float: right; margin-right: 10px;" onclick="cargaVistaInfoUsuario('.$datosUsuario['IdUsuario'].')"> Ver información del usuario</a></li><br><br>';

@@ -30,15 +30,15 @@
 						<div class="twelve columns">
 								<div class="four columns">
 									<label>Nombre(s):</label>
-									<input type="text" id="nombre" name="Usuarios_Nombre" title="El nombre debe contener únicamente letras" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç.]*$|" required/>
+									<input type="text" id="nombre" name="Usuarios_Nombre" title="El nombre debe contener únicamente letras" pattern="|^[a-zA-Z ñÑÁáÉéÍíÓóÚúüç][a-zA-Z ñÑáéíóúüç.]*$|" required/>
 								</div>
 								<div class="four columns">
 									<label>Apellido paterno:</label>
-									<input type="text" id="apellidoPat" name="Usuarios_aPaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç.]*$|"  required/>
+									<input type="text" id="apellidoPat" name="Usuarios_aPaterno" title="Este campo debe contener únicamente letras" pattern="|^[a-zA-Z ñÑÁáÉéÍíÓóÚúüç][a-zA-Z ñÑáéíóúüç.]*$|"  required/>
 								</div>
 								<div class="four columns">
 									<label>Apellido materno:</label>
-									<input type="text" id="apellidoMat" name="Usuarios_aMaterno" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç.]*$|" required/>
+									<input type="text" id="apellidoMat" name="Usuarios_aMaterno" title="Este campo debe contener únicamente letras" pattern="|^[a-zA-Z ñÑÁáÉéÍíÓóÚúüç][a-zA-Z ñÑáéíóúüç.]*$|" required/>
 								</div>
 						</div>
 						
@@ -81,7 +81,7 @@
 							<div class="twelve columns ">
 								<div class="six columns">
 									<label>Calle:</label>
-									<input type="text" id="calle" name="Usuarios_Calle" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç.]*$|" required/>
+									<input type="text" id="calle" name="Usuarios_Calle"  required/>
 								</div>
 								<div class="three columns">
 									<label>Número exterior:</label>
@@ -95,7 +95,7 @@
 							<div class="twelve columns">
 								<div class="six columns">
 								<label>Colonia:</label>	
-								<input type="text" id="colonia" name="Usuarios_Colonia" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" required/>
+								<input type="text" id="colonia" name="Usuarios_Colonia" required/>
 							</div>			
 							<div class="six columns">
 									<label>Municipio:</label>

@@ -27,10 +27,12 @@
 		<div class="twelve columns ">
 			
 			<fieldset class="cuerpo">
-				<pre><?php 
-				?></pre>
 				<fieldset>
-					
+					<?php 
+						$datosUsuario['Nombre'] = str_replace("ñ", "Ñ", $datosUsuario['Nombre']); $datosUsuario['Nombre'] = strtoupper($datosUsuario['Nombre']);
+						$datosUsuario['aPaterno'] = str_replace("ñ", "Ñ", $datosUsuario['aPaterno']); $datosUsuario['aPaterno'] = strtoupper($datosUsuario['aPaterno']);
+						$datosUsuario['aMaterno'] = str_replace("ñ", "Ñ", $datosUsuario['aMaterno']); $datosUsuario['aMaterno'] = strtoupper($datosUsuario['aMaterno']);
+					?>
 					<legend class="cuerpo"><h4>Los Documentos de <?=$datosUsuario['Nombre']?> <?=$datosUsuario['aPaterno']?> <?=$datosUsuario['aMaterno']?> son:</h4></legend>
 					<?php 
 						if (isset($archivosUsuario)) {
@@ -57,12 +59,12 @@
 					
 					<fieldset>
 						<legend class="cuerpo"><h5>Envía un correo al aspirante</h5></legend>
-						<form action='<?php echo base_url();?>adminDocs_c/enviaMsj/' method="post">
+						<form action='<?php echo base_url();?>adminDocs_c/enviaMsj/<?=$datosUsuario['IdUsuario']?>' method="post">
 							<div class="six columns">
 								<label><b>Para: <?=$datosUsuario['email']?></b></label>
 								<input type="hidden" value="<?=$datosUsuario['email']?>" name="correoAspirante" />
 								<textarea name="msj"></textarea>
-								<input type="submit" id="enviarBtn" class="button"  value="Enviar mensaje" />
+								<input type="submit" id="enviarBtn" class="button"  value="Enviar" />
 							</div>
 						</form>
 					</fieldset>
