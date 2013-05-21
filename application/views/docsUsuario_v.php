@@ -25,10 +25,9 @@
 	<div class="row">
 		
 		<div class="twelve columns ">
-			
+			<pre><?php print_r($datosUsuario['IdRol']); ?></pre>
 			<fieldset class="cuerpo">
 				<fieldset>
-
 					<legend class="cuerpo"><h4>Los Documentos de <?=$datosUsuario['Nombre']?> <?=$datosUsuario['aPaterno']?> <?=$datosUsuario['aMaterno']?> son:</h4></legend>
 					<?php 
 						if (isset($archivosUsuario)) {
@@ -65,7 +64,7 @@
 						</form>
 					</fieldset>
 				</fieldset>
-			<a class="button" style="float: left;" onclick="veAtras()">Regresar</a>	
+			<a class="button" style="float: left;" onclick="cargarVistaUsuariosRol(<?=$datosUsuario['IdRol'];?>)">Regresar</a>	
 			</fieldset>
 
 

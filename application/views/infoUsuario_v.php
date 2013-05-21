@@ -85,7 +85,7 @@
 										echo '<label><b>Institución de procedencia: </b>Incorporada a la universidad estatal, '.$datosUsuario['institucionProcedencia'].'</label>';	
 									break;
 								case '7':
-										echo '<label><b>Institución de procedencia: </b>UAM, '.$datosUsuario['institucionProcedencia'].'</label>';	
+										echo '<label><b>Institución de procedencia: </b>UAM</label>';	
 									break;
 								case '8':
 										//Busco en el catálogo de paises el IdPais del dato proporcionado comparando uno por uno hasta que coincida 

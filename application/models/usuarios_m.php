@@ -221,16 +221,26 @@ class usuarios_m extends CI_Model {
 						$datos = $row; 
 					}
 					
-				$this->db->select('*');
-				$this->db->from('DatosUsuario');
-				$this->db->where('IdUsuario',$idUsuario);
-				$consulta = $this->db->get();
-				if($consulta->num_rows() > 0){
-					foreach ($consulta->result_array() as $row) {
-						$datos[$row['NomCampo']] = $row['Datos']; 
+					$this->db->select('Roles_IdRole');
+					$this->db->from('UserRoles');
+					$this->db->where('Usuarios_IdUsuario',$idUsuario);
+					$consulta = $this->db->get();
+					if($consulta->num_rows() > 0){
+						foreach ($consulta->result_array() as $row2) {
+							$datos['IdRol'] = $row2['Roles_IdRole']; 
+						}
 					}
-					return $datos;
-				}
+					
+					$this->db->select('*');
+					$this->db->from('DatosUsuario');
+					$this->db->where('IdUsuario',$idUsuario);
+					$consulta = $this->db->get();
+					if($consulta->num_rows() > 0){
+						foreach ($consulta->result_array() as $row) {
+							$datos[$row['NomCampo']] = $row['Datos']; 
+						}
+						return $datos;
+					}
 				}
 				
 			}else{

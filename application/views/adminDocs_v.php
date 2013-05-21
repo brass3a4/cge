@@ -29,7 +29,6 @@
 			<fieldset class="cuerpo" style="">
 				
 				<fieldset>
-					
 					<legend class="cuerpo"><h4>Las siguientes personas son aspirantes</h4></legend>
 					<?php 
 						if (isset($usuarios)) {

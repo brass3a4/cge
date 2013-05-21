@@ -218,7 +218,7 @@
 						<div class="six columns row">
 							<label>Unidad:</label>
 							<input type="radio" name="DatosUsuario_unidad" value="AZC" disabled>AZC
-							<input type="radio" class="custom radio checked" name="DatosUsuario_unidad" value="IZT">IZTd
+							<input type="radio" class="custom radio checked" name="DatosUsuario_unidad" value="IZT" checked>IZT
 							<input type="radio" name="DatosUsuario_unidad" value="XOC" disabled>XOC
 							<input type="radio" name="DatosUsuario_unidad" value="CUA" disabled>CUA
 						</div>
