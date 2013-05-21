@@ -28,11 +28,7 @@
 			
 			<fieldset class="cuerpo">
 				<fieldset>
-					<?php 
-						$datosUsuario['Nombre'] = str_replace("ñ", "Ñ", $datosUsuario['Nombre']); $datosUsuario['Nombre'] = strtoupper($datosUsuario['Nombre']);
-						$datosUsuario['aPaterno'] = str_replace("ñ", "Ñ", $datosUsuario['aPaterno']); $datosUsuario['aPaterno'] = strtoupper($datosUsuario['aPaterno']);
-						$datosUsuario['aMaterno'] = str_replace("ñ", "Ñ", $datosUsuario['aMaterno']); $datosUsuario['aMaterno'] = strtoupper($datosUsuario['aMaterno']);
-					?>
+
 					<legend class="cuerpo"><h4>Los Documentos de <?=$datosUsuario['Nombre']?> <?=$datosUsuario['aPaterno']?> <?=$datosUsuario['aMaterno']?> son:</h4></legend>
 					<?php 
 						if (isset($archivosUsuario)) {

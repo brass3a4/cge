@@ -28,6 +28,21 @@
 		function muestraUsuariosRol($idRol)
 		{
 			$datos['usuarios'] = $this->usuarios_m->traeUsuariosRol($idRol);
+			
+			//letras a remplezar
+			$vocales = array('á','é','í','ó','ú','ü');
+			$remplazar = array('Á','É','Í','Ó','Ú','Ü');
+			
+			//por cada usuario pasamos su nombre y apellidos a mayusculas
+			foreach ($datos['usuarios'] as $key => $value) {
+				$datos['usuarios'][$key]['Nombre'] = str_replace($vocales, $remplazar, $datos['usuarios'][$key]['Nombre']);
+				$datos['usuarios'][$key]['Nombre'] = strtoupper($datos['usuarios'][$key]['Nombre']);
+				$datos['usuarios'][$key]['aPaterno'] = str_replace($vocales, $remplazar, $datos['usuarios'][$key]['aPaterno']);
+				$datos['usuarios'][$key]['aPaterno'] = strtoupper($datos['usuarios'][$key]['aPaterno']);
+				$datos['usuarios'][$key]['aMaterno'] = str_replace($vocales, $remplazar, $datos['usuarios'][$key]['Nombre']);
+				$datos['usuarios'][$key]['aMaterno'] = strtoupper($datos['usuarios'][$key]['aMaterno']);			
+			}
+			
 			$datos['idRol'] = $idRol;
 			// echo "<pre>";
 				// print_r($datos);
@@ -39,6 +54,19 @@
 		{
 			$datos['datosUsuario'] = $this->usuarios_m->traeDatosUsuario($idUsuario);
 			$datos['archivosUsuario'] = $this->usuarios_m->traeArchivos($idUsuario);
+			
+			//letras a remplezar
+			$vocales = array('á','é','í','ó','ú','ü');
+			$remplazar = array('Á','É','Í','Ó','Ú','Ü');
+			
+			//pasamos su nombre y apellidos a mayusculas
+			$datos['datosUsuario']['Nombre'] = str_replace($vocales, $remplazar, $datos['datosUsuario']['Nombre']);
+			$datos['datosUsuario']['Nombre'] = strtoupper($datos['datosUsuario']['Nombre']);
+			$datos['datosUsuario']['aPaterno'] = str_replace($vocales, $remplazar, $datos['datosUsuario']['aPaterno']);
+			$datos['datosUsuario']['aPaterno'] = strtoupper($datos['datosUsuario']['aPaterno']);
+			$datos['datosUsuario']['aMaterno'] = str_replace($vocales, $remplazar, $datos['datosUsuario']['aMaterno']);
+			$datos['datosUsuario']['aMaterno'] = strtoupper($datos['datosUsuario']['aMaterno']);
+			
 			$this->load->view('docsUsuario_v',$datos);
 		}
 		
@@ -46,6 +74,17 @@
 		{
 			$datos['catPais'] = $this->catalogos_m->mTraerTodo('catPaises', 'IdPais', 'NomPais');
 			$datos['datosUsuario'] = $this->usuarios_m->traeDatosUsuario($idUsuario);
+			
+			$vocales = array('á','é','í','ó','ú','ü');
+			$remplazar = array('Á','É','Í','Ó','Ú','Ü');
+			
+			$datos['datosUsuario']['Nombre'] = str_replace($vocales, $remplazar, $datos['datosUsuario']['Nombre']);
+			$datos['datosUsuario']['Nombre'] = strtoupper($datos['datosUsuario']['Nombre']);
+			$datos['datosUsuario']['aPaterno'] = str_replace($vocales, $remplazar, $datos['datosUsuario']['aPaterno']);
+			$datos['datosUsuario']['aPaterno'] = strtoupper($datos['datosUsuario']['aPaterno']);
+			$datos['datosUsuario']['aMaterno'] = str_replace($vocales, $remplazar, $datos['datosUsuario']['aMaterno']);
+			$datos['datosUsuario']['aMaterno'] = strtoupper($datos['datosUsuario']['aMaterno']);
+
 			$this->load->view('infoUsuario_v',$datos);
 		}
 		

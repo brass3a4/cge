@@ -31,9 +31,9 @@
 					<pre>
 						
 					</pre>
-					<label><b>Nombre:</b> <?php $datosUsuario['Nombre'] = str_replace("ñ", "Ñ", $datosUsuario['Nombre']); $datosUsuario['Nombre'] = strtoupper($datosUsuario['Nombre']); echo $datosUsuario['Nombre'];?></label>
-					<label><b>Apellido Paterno: </b> <?php $datosUsuario['aPaterno'] = str_replace("ñ", "Ñ", $datosUsuario['aPaterno']); $datosUsuario['aPaterno'] = strtoupper($datosUsuario['aPaterno']); echo $datosUsuario['aPaterno']; ?></label>
-					<label><b>Apellido Materno: </b> <?php $datosUsuario['aMaterno'] = str_replace("ñ", "Ñ", $datosUsuario['aMaterno']); $datosUsuario['aMaterno'] = strtoupper($datosUsuario['aMaterno']); echo $datosUsuario['aMaterno']; ?></label>
+					<label><b>Nombre:</b> <?=$datosUsuario['Nombre'];?></label>
+					<label><b>Apellido Paterno: </b> <?=$datosUsuario['aPaterno']; ?></label>
+					<label><b>Apellido Materno: </b> <?=$datosUsuario['aMaterno'];?></label>
 					<label><b>Nacionalidad: </b> <?= $datosUsuario['Nacionalidad']; ?></label>
 					<label><b>Fecha de nacimiento: </b> <?= date($datosUsuario['FecNacimiento']); ?></label>
 					<label><b>País: </b><?php
