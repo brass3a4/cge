@@ -27,7 +27,9 @@
 			
 			$data['idUsuario']=$idUsuario;
 
-			$data['archivos'] = $this->usuarios_m->traeArchivos($idUsuario);
+			$data['archivos'] = $this->usuarios_m->traeArchivos($idUsuario,'1');
+			
+			$data['archivosLegal'] = $this->usuarios_m->traeArchivos($idUsuario,'2');
 			
 			$data['idRol'] = $this->usuarios_m->traeRolUsuario($idUsuario);
 			 	
@@ -40,6 +42,13 @@
 				$data['valor']='1';
 			}else{
 				$data['valor']='0';
+			}
+
+			// si el usuario tiene archivos legalizados valor = 1 en caso contrario valor = 0
+			if(isset($data['archivosLegal']) && $data['archivosLegal'] != '0'){
+				$data['valor2']='1';
+			}else{
+				$data['valor2']='0';
 			}
 			
 			
@@ -73,7 +82,12 @@
 			}
 			
 		}
-	   
+	   	
+		function cargaDocsLegal($usuario)
+		{
+			$data['usuario'] = $usuario;
+			$this->load->view('registroDocsLegalP_v',$data);
+		}
 		
 		function cargaDocs($usuario,$idRol)
 		{
@@ -118,7 +132,7 @@
 			/*Si el usuario existe:*/
 			if($idUsuario != '0'){
 				
-				$archivos = $this->usuarios_m->traeArchivos($idUsuario);
+				$archivos = $this->usuarios_m->traeArchivos($idUsuario,'1');
 				
 				//cargamos la ruta absoluta
 				$ruta = exec('pwd');
@@ -162,7 +176,7 @@
 							
 						    if (move_uploaded_file($tmp[$i],$destino[$i])) {
 									
-								$datos['archivos'] = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario);
+								$datos['archivos'] = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario,'IdTipoDocumento' => '1');
 								
 								$mensaje = $this->usuarios_m->llenaTabla($datos,$idArchivo);
 								$status = "Archivo subido: <b>".$prefijo[$i]."_".$archivo[$i]."</b>";
@@ -186,6 +200,91 @@
 				redirect('menuRegistro_c/principal/'.$usuario);
 				//$this->principal($usuario);
 			}/* fin if idUsuario */
-		}
+			
+		}/* fin de cargaPDF()*/
+		
+				/* Esta función sube archivos al usuario
+		 * @param:
+		 * 			$usuario [String]
+		 * 
+		 * */
+		function cargarPDFLegal($usuario)
+		{
+			
+			$idUsuario = $this->usuarios_m->traeUsuarioId($usuario);
+			
+			/*Si el usuario existe:*/
+			if($idUsuario != '0'){
+				
+				$archivos = $this->usuarios_m->traeArchivos($idUsuario,'2');
+				
+				//cargamos la ruta absoluta
+				$ruta = exec('pwd');
+				// creamos el directorio donde se guardaran los archivos del usuario, 
+				$creaDir = 'mkdir '.$ruta.'/statics/docs/'.$usuario.'/docsCertificados';
+				exec($creaDir,$var);
+				//Cambiamos los permisos de directorio para poder escribir en él
+				$cambiaPer = 'chmod 777 '.$ruta.'/statics/docs/'.$usuario.'/docsCertificados';
+				exec($cambiaPer,$var);
+				
+				// obtenemos los datos del archivo
+				$i=1;
+				foreach ($_FILES as $row) {
+					$tamano[$i] = $row['size'];
+					$tipo[$i] = $row['type'];
+					$archivo[$i] = $row['name'];
+					$tmp[$i] = $row['tmp_name'];
+					$prefijo[$i] = substr(md5(uniqid(rand())),0,6);
+					$i++;
+				}
+				
+				$i=1;
+				// Para cada archivo...	
+				foreach ($archivo as $row) {
+					
+					//si existe el archivo obtrenemos el idArchivo, en caso contrario asignamos a la variable $idArchivo = NULL
+					if(isset($archivos[$i])){
+						$idArchivo = $archivos[$i]['IdArchivo'];
+						
+					}else{
+						$idArchivo = NULL;
+					}
+					
+					/* si el archivo es uno de los formatos permitidos:..*/ 
+					if($tipo[$i] == "application/pdf" || $tipo[$i] == "application/msword" || $tipo[$i] == "image/jpg" || $tipo[$i] == "image/png" || $tipo[$i] == "image/jpeg" || $tipo[$i] == "image/gif"){			
+						if ($archivo[$i] != "") {
+						    // guardamos el archivo a la carpeta asignada al usuario
+						    $destino[$i] =  $ruta.'/statics/docs/'.$usuario."/docsCertificados/".$prefijo[$i]."_".$archivo[$i];
+						    $url[$i] = '/statics/docs/'.$usuario."/docsCertificados/".$prefijo[$i]."_".$archivo[$i];
+							
+							
+						    if (move_uploaded_file($tmp[$i],$destino[$i])) {
+									
+								$datos['archivos'] = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario, 'IdTipoDocumento' => '2');
+								
+								$mensaje = $this->usuarios_m->llenaTabla($datos,$idArchivo);
+								$status = "Archivo subido: <b>".$prefijo[$i]."_".$archivo[$i]."</b>";
+								
+								
+						    } else {
+						    	
+								$status = "Error al subir el archivo ".$archivo[$i];
+								
+						    }
+						} else {
+						    $status = "Error al subir el archivo";
+							
+							
+						}
+					}else{
+						echo 'No es valido el tipo archivo';
+					}
+					$i++;
+				}// fin for
+				redirect('menuRegistro_c/principal/'.$usuario);
+				//$this->principal($usuario);
+			}/* fin if idUsuario */
+			
+		}/* fin de cargaPDFLegal()*/
 	}    
 ?>

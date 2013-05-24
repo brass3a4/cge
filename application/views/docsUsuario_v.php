@@ -25,10 +25,11 @@
 	<div class="row">
 		
 		<div class="twelve columns ">
-			<pre><?php print_r($datosUsuario['IdRol']); ?></pre>
+			
 			<fieldset class="cuerpo">
 				<fieldset>
 					<legend class="cuerpo"><h4>Los Documentos de <?=$datosUsuario['Nombre']?> <?=$datosUsuario['aPaterno']?> <?=$datosUsuario['aMaterno']?> son:</h4></legend>
+					<h5>Documentos etapa 1</h5>
 					<?php 
 						if (isset($archivosUsuario)) {
 							echo "<ol>";
@@ -47,8 +48,27 @@
 						
 						<?php if(isset($archivosUsuario) && !empty($archivosUsuario)):?>
 							<label for="checkbox1"><input type="checkbox" id="checkbox1" value="1" name="DatosUsuario_AceptAd" <?=(isset($datosUsuario['AceptAd']) && $datosUsuario['AceptAd'] == '1' ) ? "checked disabled" : "" ?> required>Documentos aprobados etapa 2</label>
-							<label for="checkbox2"><input type="checkbox" id="checkbox2" value="1" name="DatosUsuario_AceptAc" disabled>Documentos aprobados etapa 3</label>
-							<input type="submit" id="aceptarBtn" class="button espacioSuperior" value="Aceptar documentos" />
+							<label for="checkbox2"><input type="checkbox" id="checkbox2" value="2" name="DatosUsuario_AceptAE" <?=(isset($datosUsuario['AceptAE']) && $datosUsuario['AceptAE'] == '1' ) ? "checked disabled" : "" ?> <?=(!isset($datosUsuario['AceptAd'])) ? "disabled" : "required" ?> >Entrevista aprobada etapa 3</label>
+							<h5>Documentos certificados</h5>
+							<?php 
+								if (isset($archivosUsuarioLegal)) {
+									echo "<ol>";
+									foreach($archivosUsuarioLegal as $archivo){
+										echo "<li>";
+										echo '<a href="'.base_url().$archivo['url'].'" target="_blank"><img src="'.base_url().'statics/img/text-x-preview.png" height="50" width="50">'.$archivo['nomArchivo'].'</a>';
+										echo "</li>";
+									}
+							?>
+								<label for="checkbox3"><input type="checkbox" id="checkbox3" value="3" name="DatosUsuario_AceptAdc" <?=(isset($datosUsuario['AceptAdc']) && $datosUsuario['AceptAdc'] == '1' ) ? "checked disabled" : "" ?> <?=(!isset($datosUsuario['AceptAE'])) ? "disabled" : "required" ?> >Documentos certificados etapa 4</label>
+							<label for="checkbox4"><input type="checkbox" id="checkbox4" value="4" name="DatosUsuario_AceptAp" <?=(isset($datosUsuario['AceptAp']) && $datosUsuario['AceptAp'] == '1' ) ? "checked disabled" : "" ?> <?=(!isset($datosUsuario['AceptAdc'])) ? "disabled" : "required" ?> >Pago etapa 5</label>
+							<label for="checkbox5"><input type="checkbox" id="checkbox5" value="5" name="DatosUsuario_AceptAm" <?=(isset($datosUsuario['AceptAm']) && $datosUsuario['AceptAm'] == '1' ) ? "checked disabled" : "" ?> <?=(!isset($datosUsuario['AceptAp'])) ? "disabled" : "required" ?> >Matriculación etapa 6</label>
+							<?php	
+									echo "</ol>";
+								}else{
+									echo '<div class="alert-box alert">El usuario aún no tiene archivos certificados</div>';
+								}						
+							?>
+							<input type="submit" id="aceptarBtn" class="button espacioSuperior" value="Aceptar etapa" />
 						<?php endif; ?>
 					</form>
 					
@@ -58,7 +78,7 @@
 							<div class="six columns">
 								<label><b>Para: <?=$datosUsuario['email']?></b></label>
 								<input type="hidden" value="<?=$datosUsuario['email']?>" name="correoAspirante" />
-								<textarea name="msj"></textarea>
+								<textarea name="msj" required></textarea>
 								<input type="submit" id="enviarBtn" class="button"  value="Enviar" />
 							</div>
 						</form>

@@ -1,5 +1,6 @@
 <html>
 <head>
+	<title>Subida de documentos</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/foundation.min.css">

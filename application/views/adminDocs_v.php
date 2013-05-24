@@ -34,10 +34,30 @@
 						if (isset($usuarios)) {
 							echo '<ol>';
 							foreach ($usuarios as $datosUsuario) {
-								
+								// Este if es para ver si aceptaron la 1ra fase
 								if (isset($datosUsuario['AceptAd']) && $datosUsuario['AceptAd'] == '1'){
-									echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'  <img src="'.base_url().'statics/img/check.svg">'.'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a><a class="small button" style="float: right; margin-right: 10px;" onclick="cargaVistaInfoUsuario('.$datosUsuario['IdUsuario'].')"> Ver información del usuario</a></li><br><br>';
-								}else{
+									// Este if es para ver si aceptaron la 2da fase
+									if (isset($datosUsuario['AceptAE']) && $datosUsuario['AceptAE'] == '1') {
+										// Este if es para ver si aceptaron la 3ra fase
+										if (isset($datosUsuario['AceptAdc']) && $datosUsuario['AceptAdc'] == '1') {
+											// Este if es para ver si aceptaron la 4ta fase
+											if (isset($datosUsuario['AceptAp']) && $datosUsuario['AceptAp'] == '1') {
+												// Este if es para ver si aceptaron la 5ta fase
+												if (isset($datosUsuario['AceptAm']) && $datosUsuario['AceptAm'] == '1') {
+													echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'  <img src="'.base_url().'statics/img/check.svg"> <img src="'.base_url().'statics/img/check1.svg"> <img src="'.base_url().'statics/img/check2.svg"> <img src="'.base_url().'statics/img/check3.svg"> <img src="'.base_url().'statics/img/check4.svg">'.'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a><a class="small button" style="float: right; margin-right: 10px;" onclick="cargaVistaInfoUsuario('.$datosUsuario['IdUsuario'].')"> Ver información del usuario</a></li><br><br>';
+												}else{
+													echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'  <img src="'.base_url().'statics/img/check.svg"> <img src="'.base_url().'statics/img/check1.svg"> <img src="'.base_url().'statics/img/check2.svg"> <img src="'.base_url().'statics/img/check3.svg"> '.'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a><a class="small button" style="float: right; margin-right: 10px;" onclick="cargaVistaInfoUsuario('.$datosUsuario['IdUsuario'].')"> Ver información del usuario</a></li><br><br>';
+												}
+											} else {// En caso de no tener la cuarta sólo tiene la 3da fase aceptada
+												echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'  <img src="'.base_url().'statics/img/check.svg"> <img src="'.base_url().'statics/img/check1.svg"> <img src="'.base_url().'statics/img/check2.svg"> '.'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a><a class="small button" style="float: right; margin-right: 10px;" onclick="cargaVistaInfoUsuario('.$datosUsuario['IdUsuario'].')"> Ver información del usuario</a></li><br><br>';												
+											}
+										} else {// En caso de no tener la tercera sólo tiene la 2da fase aceptada
+											echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'  <img src="'.base_url().'statics/img/check.svg"> <img src="'.base_url().'statics/img/check1.svg"> '.'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a><a class="small button" style="float: right; margin-right: 10px;" onclick="cargaVistaInfoUsuario('.$datosUsuario['IdUsuario'].')"> Ver información del usuario</a></li><br><br>';
+										}
+									}else{// En caso de no tener la segunda sólo tiene la primera fase aceptada
+										echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'  <img src="'.base_url().'statics/img/check.svg">'.'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a><a class="small button" style="float: right; margin-right: 10px;" onclick="cargaVistaInfoUsuario('.$datosUsuario['IdUsuario'].')"> Ver información del usuario</a></li><br><br>';
+									}
+								}else{// En caso de no tener la primera no tiene aceptada nunguna fase
 									echo '<li>'.$datosUsuario['Nombre'].' '.$datosUsuario['aPaterno'].' '.$datosUsuario['aMaterno'].'<a style="float: right;" class="small button" onclick="cargaVistaDocsUsuario('.$datosUsuario['IdUsuario'].')"> Ver documentos</a><a class="small button" style="float: right; margin-right: 10px;" onclick="cargaVistaInfoUsuario('.$datosUsuario['IdUsuario'].')"> Ver información del usuario</a></li><br><br>';
 								}
 								
@@ -49,7 +69,7 @@
 					?>
 					
 				</fieldset>
-			<a class="button" style="float: left;" onclick="veAtras()">Regresar</a>	
+			<a class="button" style="float: left;" onclick="cargarVistaListaRol()">Regresar</a>	
 			</fieldset>
 
 

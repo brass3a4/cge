@@ -253,12 +253,13 @@ class usuarios_m extends CI_Model {
 		 * 			$IdUsuario [INT]
 		 * @return $datos[Array]
 		 * */
-		function traeArchivos($idUsuario)
+		function traeArchivos($idUsuario,$tipo)
 		{
 			if(isset($idUsuario)){
 				$this->db->select('*');
 				$this->db->from('archivos');
 				$this->db->where('IdUsuario',$idUsuario);
+				$this->db->where('IdTipoDocumento',$tipo);
 				$consulta = $this->db->get();
 				
 				if($consulta->num_rows() > 0){
@@ -353,7 +354,7 @@ class usuarios_m extends CI_Model {
 					foreach ($campos as $nomCampo => $valor) {
 						
 						$this->db->set('NomCampo', $nomCampo);
-						$this->db->set('Datos', $valor);
+						$this->db->set('Datos', '1');
 						$this->db->set('IdUsuario', $idUsuario);
 						$this->db->insert('DatosUsuario');
 					}

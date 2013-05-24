@@ -28,6 +28,7 @@
 		function muestraUsuariosRol($idRol)
 		{
 			$datos['usuarios'] = $this->usuarios_m->traeUsuariosRol($idRol);
+			$datos['idRol'] = $idRol;
 			
 			//letras a remplezar
 			$vocales = array('á','é','í','ó','ú','ü','ñ');
@@ -43,7 +44,7 @@
 				$datos['usuarios'][$key]['aMaterno'] = strtoupper($datos['usuarios'][$key]['aMaterno']);			
 			}
 			
-			$datos['idRol'] = $idRol;
+			
 			// echo "<pre>";
 				// print_r($datos);
 			// echo "</pre>";
@@ -53,7 +54,8 @@
 		function muestraDocsUsuario($idUsuario)
 		{
 			$datos['datosUsuario'] = $this->usuarios_m->traeDatosUsuario($idUsuario);
-			$datos['archivosUsuario'] = $this->usuarios_m->traeArchivos($idUsuario);
+			$datos['archivosUsuario'] = $this->usuarios_m->traeArchivos($idUsuario,'1');
+			$datos['archivosUsuarioLegal'] = $this->usuarios_m->traeArchivos($idUsuario,'2');
 			
 			//letras a remplezar
 			$vocales = array('á','é','í','ó','ú','ü','ñ');

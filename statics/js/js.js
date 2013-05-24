@@ -79,6 +79,41 @@ function quitaClaseEscondidaProc(id) {
 
 }
 
+function quitaClaseEscondidaDocsLegal(id) {
+	if(id == 0){
+		$('#tipoLic1').addClass("escondida");
+		$('#tipoLic2').addClass("escondida");
+		$('#tipoLic3').addClass("escondida");
+		$('#tipoLic4').addClass("escondida");
+	}
+  	if(id == 1){
+		$('#tipoLic1').removeClass("escondida");
+		$('#tipoLic2').addClass("escondida");
+		$('#tipoLic3').addClass("escondida");
+		$('#tipoLic4').addClass("escondida");
+	}
+  	if(id == 2){
+		$('#tipoLic2').removeClass("escondida");
+		$('#tipoLic1').addClass("escondida");
+		$('#tipoLic3').addClass("escondida");
+		$('#tipoLic4').addClass("escondida");
+	}
+	if(id == 3) {
+		$('#tipoLic3').removeClass("escondida");
+		$('#tipoLic1').addClass("escondida");
+		$('#tipoLic2').addClass("escondida");
+		$('#tipoLic4').addClass("escondida");
+	}
+	
+	if(id == 4) {
+		$('#tipoLic4').removeClass("escondida");
+		$('#tipoLic1').addClass("escondida");
+		$('#tipoLic2').addClass("escondida");
+		$('#tipoLic3').addClass("escondida");
+	}
+
+}
+
 /* Esta función agrega la clase "escondida"
   @param:
   		$valor type[string] (id del <div>)
@@ -157,8 +192,21 @@ function cargaVistaDocs(usr,idrol){
  	
 }
 
+/*Esta función carga la vista para cargar datos dependiendo del usuario
+	@param usr[string], idrol[INT] 
+ * */
+function cargaVistaDocsLegal(usr){
+	var url=urlBase+'menuRegistro_c/cargaDocsLegal/'+usr;
+	document.location.href=url;
+}
+
 function cargarVistaUsuariosRol(idRol) {
   	var url=urlBase+'adminDocs_c/muestraUsuariosRol/'+idRol;
+	document.location.href=url;
+}
+
+function cargarVistaListaRol() {
+  	var url=urlBase+'adminDocs_c/';
 	document.location.href=url;
 }
 
