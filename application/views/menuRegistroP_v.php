@@ -24,7 +24,6 @@
 	<div class="row">
 			<div class="twelve columns">
 			<fieldset class="cuerpo">
-				<?=$valor2 ?>
 				<fieldset >
 					<legend class="cuerpo"><h4>Completa para terminar tu registro</h4></legend>
 					<p><b>Paso 1: Solicitud de ingreso</b></p>

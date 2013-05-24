@@ -52,61 +52,61 @@
 						
 						<div id="tipoLic1" class="twelve columns escondida">
 							<h5>1.- Fotocopia del título de licenciatura (certificada ante notario público). No se acepta título de la maestría ni del doctorado en lugar del título de licenciatura.</h5>
-								<p>Nombre: inicialdelnombre+apellidopaterno_titulo (Ejemplo: lsuarez_titulo.pdf).</p>
+								<p> Nombre: inicialdelnombre+apellidopaterno_tituloCE (Ejemplo: lsuarez_tituloCE)..</p>
 								<input type="file" name="1" id="tituloLic1" class="offset-by-five" > 
 							<h5>2.- Fotocopia del certificado de estudios de licenciatura (certificada ante notario público).</h5>
-								<p>Nombre: inicialdelnombre+apellidopaterno_certificado (Ejemplo: lsuarez_certificado.pdf).</p>
+								<p>Nombre: inicialdelnombre+apellidopaterno_certificadoCE (Ejemplo: lsuarez_certificadoCE).</p>
 								<input type="file" name="2" id="certificadoLic1" class="offset-by-five" >
 							<h5>3.- Fotocopia del acta de nacimiento (certificada ante notario público).</h5>
-								<p>Nombre: inicial del nombre+apellidopaterno_acta (Ejemplo: lsuarez_acta.pdf)</p>	
+								<p>Nombre: inicialdelnombre+apellidopaterno_actaCE (Ejemplo: lsuarez_actaCE).</p>	
 								<input type="file" name="3" id="ActaNac1" class="offset-by-five" >
 						</div>
 						
 						<div id="tipoLic2" class="twelve columns escondida">
 							<h5>1.- Fotocopia del título de licenciatura (con Apostille de la Haya o legalización). No se acepta título de la maestría ni del doctorado en lugar del título de licenciatura.</h5>
-								<p>Nombre: inicialdelnombre+apellidopaterno_titulo (Ejemplo: lsuarez_titulo.pdf).</p>
+								<p>Nombre: inicialdelnombre+apellidopaterno_tituloLE (Ejemplo: lsuarez_tituloLE).</p>
 								<input type="file" name="4" id="tituloLic2" class="offset-by-five" > 
 							<h5>2.- Fotocopia del certificado de estudios de licenciatura (con Apostille de la Haya o legalización).</h5>
-								<p>Nombre: inicialdelnombre+apellidopaterno_certificado (Ejemplo: lsuarez_certificado.pdf).</p>
+								<p>Nombre: inicialdelnombre+apellidopaterno_certificadoLE (Ejemplo: lsuarez_certificadoLE).</p>
 								<input type="file" name="5" id="certificadoLic2" class="offset-by-five" >
 							<h5>3.- Fotocopia del acta de nacimiento (certificada ante notario público).</h5>
-								<p>Nombre: inicial del nombre+apellidopaterno_acta (Ejemplo: lsuarez_acta.pdf)</p>	
+								<p>Nombre: inicialdelnombre+apellidopaterno_actaCE (Ejemplo: lsuarez_actaCE).</p>	
 								<input type="file" name="6" id="ActaNac2" class="offset-by-five" >
 							<h5>4.- Fotocopia del plan de estudios de la licenciatura o pensum (con Apostille de la Haya o legalización).</h5>
-								<p>Nombre: inicialdelnombre+apellidopaterno_certificado (Ejemplo: lsuarez_certificado.pdf).</p>
+								<p>Nombre: inicialdelnombre+apellidopaterno_planLE (Ejemplo: lsuarez_planLE).</p>
 								<input type="file" name="7" id="panLic2" class="offset-by-five" >
 							<h5>5.- Fotocopia de los programas de estudio de la licenciatura (con Apostille de la Haya o legalización).</h5>
-								<p>Nombre: inicial del nombre+apellidopaterno_acta (Ejemplo: lsuarez_acta.pdf)</p>	
+								<p>Nombre: inicialdelnombre+apellidopaterno_programasLE (Ejemplo: lsuarez_programasLE).</p>	
 								<input type="file" name="8" id="progEst2" class="offset-by-five" >
 						</div>
 						
 						<div id="tipoLic3" class="twelve columns escondida">
 							<h5>1.- Fotocopia del título de licenciatura (certificada ante notario público). No se acepta título de la maestría ni del doctorado en lugar del título de licenciatura.</h5>
-								<p>Nombre: inicialdelnombre+apellidopaterno_titulo (Ejemplo: lsuarez_titulo.pdf).</p>
+								<p>Nombre: inicialdelnombre+apellidopaterno_tituloCE (Ejemplo: lsuarez_tituloCE).</p>
 								<input type="file" name="9" id="tituloLic3" class="offset-by-five" > 
 							<h5>2.- Fotocopia del certificado de estudios (certificada ante notario público).</h5>
-								<p>Nombre: inicialdelnombre+apellidopaterno_certificado (Ejemplo: lsuarez_certificado.pdf).</p>
+								<p>Nombre: inicialdelnombre+apellidopaterno_certificadoCE (Ejemplo: lsuarez_certificadoCE).</p>
 								<input type="file" name="10" id="certificadoLic3" class="offset-by-five" >
 							<h5>3.- Fotocopia del acta de nacimiento (con Apostille de la Haya o legalización).</h5>
-								<p>Nombre: inicial del nombre+apellidopaterno_acta (Ejemplo: lsuarez_acta.pdf)</p>	
+								<p>Nombre: inicialdelnombre+apellidopaterno_actaLE (Ejemplo: lsuarez_actaLE).</p>	
 								<input type="file" name="11" id="ActaNac3" class="offset-by-five" >
 						</div>  
 						
 						<div id="tipoLic4" class="twelve columns escondida">
 							<h5>1.- Copia del título de licenciatura (con Apostille de la Haya o legalización).</h5>
-								<p>Nombre: inicialdelnombre+apellidopaterno_titulo (Ejemplo: lsuarez_titulo.pdf).</p>
+								<p>Nombre: inicialdelnombre+apellidopaterno_tituloLE (Ejemplo: lsuarez_tituloLE).</p>
 								<input type="file" name="12" id="tituloLic4" class="offset-by-five" > 
 							<h5>2.- Copia del certificado de estudios de licenciatura (con Apostille de la Haya o legalización).</h5>
-								<p>Nombre: inicialdelnombre+apellidopaterno_certificado (Ejemplo: lsuarez_certificado.pdf).</p>
+								<p>Nombre: inicialdelnombre+apellidopaterno_certificadoLE (Ejemplo: lsuarez_certificadoLE).</p>
 								<input type="file" name="13" id="certificadoLic4" class="offset-by-five" >
 							<h5>3.- Copia del acta de nacimiento (con Apostille de la Haya o legalización).</h5>
-								<p>Nombre: inicial del nombre+apellidopaterno_acta (Ejemplo: lsuarez_acta.pdf)</p>	
+								<p>Nombre: inicialdelnombre+apellidopaterno_actaLE (Ejemplo: lsuarez_actaLE).</p>	
 								<input type="file" name="14" id="ActaNac4" class="offset-by-five" >
 							<h5>4.- Copia del plan de estudios de licenciatura o pensum (con Apostille de la Haya o legalización).</h5>
-								<p>Nombre: inicialdelnombre+apellidopaterno_certificado (Ejemplo: lsuarez_certificado.pdf).</p>
+								<p>Nombre: inicialdelnombre+apellidopaterno_planLE (Ejemplo: lsuarez_planLE).</p>
 								<input type="file" name="15" id="panLic4" class="offset-by-five" >
 							<h5>5.- Copia digitalizada de los programas de estudio de la licenciatura** (con Apostille de la Haya o legalización).</h5>
-								<p>Nombre: inicial del nombre+apellidopaterno_acta (Ejemplo: lsuarez_acta.pdf)</p>	
+								<p>Nombre: inicialdelnombre+apellidopaterno_programasLE (Ejemplo: lsuarez_programasLE).</p>	
 								<input type="file" name="16" id="progEst4" class="offset-by-five" >
 						</div>
 						
