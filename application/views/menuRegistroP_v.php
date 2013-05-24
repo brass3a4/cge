@@ -55,7 +55,7 @@
 					</div>
 					
 					<p class="espacioSuperior"><b>Paso 2: Entrevista vía Skype</b></p>
-					<p><b>Nota: </b>Esta etapa se habilitará en cuanto sean aceptados los documentos del paso 1</p>
+					<p><b>Nota: </b>Este paso se habilitará en cuanto sean aceptados los documentos del paso 1</p>
 					<?php if ((isset($datosUsuario['AceptAd']) && !empty($datosUsuario['AceptAd']))): ?>
 						<p>Las entrevistas se realizarán del 24 de mayo al 7 de junio.</p>
 						<p>Requisitos para la entrevista: </p>
@@ -71,7 +71,11 @@
 						</ol>
 					<?php endif ?>
 					<p class="espacioSuperior espacioInferior"><b>Paso 3: Segunda etapa, documentos legalizados</b></p>
-					<p><b>Nota: </b>Esta etapa se habilitará en cuanto sea realizada la entrevista del paso 2</p>				
+					<p><b>Nota: </b>Esta etapa se habilitará una vez que ha sido aceptado para cursar el programa. 
+						Recuerde que además de subir al sistema sus documentos legalizados debe enviar o entregarlos personalmente
+						al Lic. Atenco (según convocatoria). 
+						</p>				
+					<?php if((isset($datosUsuario['AceptAE']) && !empty($datosUsuario['AceptAE']))):?>
 					<div class="twelve columns">
 						<div class="six columns">
 							<?php if ($valor2 == 0): ?>
@@ -91,7 +95,7 @@
 								<ol>
 								<?php foreach($archivosLegal as $archivo):?>
 									<li>
-									<a href="<?= base_url().$archivo['url'];?>"><img src="<?= base_url().'statics/img/text-x-preview.png'?>" height="50" width="50"><?=$archivo['nomArchivo']?></a>
+										<a href="<?= base_url().$archivo['url'];?>"><img src="<?= base_url().'statics/img/text-x-preview.png'?>" height="50" width="50"><?=$archivo['nomArchivo']?></a>
 									</li>
 								<?php endforeach;?>
 								</ol>
@@ -104,15 +108,47 @@
 					<p class="espacioSuperior"><b>Paso 4: Pago</b></p>
 									
 					<div class="twelve columns">
+						<div class="six columns" >
+							<label>¿Es usted de nacionalidad Mexicana?</label>
+						</div>
+						<div class="two columns" style="float: left;" >
+							<select onchange="quitaClaseEscondidaNac(this.options[this.selectedIndex].value)" onkeyup="quitaClaseEscondidaNac(this.options[this.selectedIndex].value)" onclick="quitaClaseEscondidaNac(this.options[this.selectedIndex].value)">
+								<option value="0"></option>
+								<option value="1">Sí</option>
+								<option value="2">No</option>
+							</select>
+						</div>
+						<div class="four columns"></div>
+					</div>
+					
+					<div id="nacio" class="twelve columns escondida">
+						<p>Realice el pago en una sola exhibición y en efectivo, ya sea directamente en el banco o por medio de transferencia electrónica,
+						con los siguientes datos bancarios para pagos nacionales:</p>
 						<div class="six columns">
-							
-							<a class="button" style="padding: 10px 40px;" disabled> Realiza pago</a>
-							
+							<ul>
+								<li>$13,500.00 (Trece mil quinientos pesos 00/100 M.N.).</li>
+								<li>Banco: Santander S.A.</li>
+								<li>Beneficiario final: Diorema, Ingeniería Cultural S.C.</li>
+								<li>No. de cuenta de abono: 92000576742</li>
+							</ul>
 						</div>
 					</div>
 					
-					
-					
+					<div id="extra" class="twelve columns escondida">
+						<p>Realizce el pago en una sola exhibición, en efectivo, y en dólares estadounidenses,
+						con los siguientes datos para pagos internacionales:</p>
+						<div class="six columns">
+							<ul>
+								<li>U$D 1,500.00 (Mil quinientos dólares 00/100 USD).</li>
+								<li>Banco beneficiario: BMSXMXMM Banco Santander S.A.</li>
+								<li>Beneficiario final: Diorema, Ingeniería Cultural S.C.</li>
+								<li>Código Swiff / Aba: 21000021</li>
+								<li>No. de cuenta: 400047144</li>
+								<li>No. de cuenta de abono: 92000576742</li>
+							</ul>
+						</div>
+					</div>
+				<?php endif; ?>	
 				</fieldset>
 				<form action='<?=base_url(); ?>login_c/reiniciarSesion' method='post'>
 					<input type="submit" class="button" style="float: right;" value="Cerrar sesión" />

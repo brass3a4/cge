@@ -114,6 +114,23 @@ function quitaClaseEscondidaDocsLegal(id) {
 
 }
 
+function quitaClaseEscondidaNac(id) {
+	if(id == 0){
+		$('#nacio').addClass("escondida");
+		$('#extra').addClass("escondida");
+		$('#tipoLic3').addClass("escondida");
+		$('#tipoLic4').addClass("escondida");
+	}
+  	if(id == 1){
+		$('#nacio').removeClass("escondida");
+		$('#extra').addClass("escondida");
+	}
+  	if(id == 2){
+		$('#extra').removeClass("escondida");
+		$('#nacio').addClass("escondida");
+	}
+}
+
 /* Esta función agrega la clase "escondida"
   @param:
   		$valor type[string] (id del <div>)
