@@ -6,7 +6,6 @@
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/foundation.min.css">
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/app.css">
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/css/style.css">
-  	<link rel="stylesheet" href="<?=base_url(); ?>statics/css/datepicker.css">
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/foundation.min.js"></script>
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/jquery.foundation.forms.js"></script>
   	<script src="<?=base_url(); ?>statics/foundation/javascripts/modernizr.foundation.js"></script>
@@ -14,7 +13,6 @@
   	<script src="<?=base_url(); ?>statics/js/js.js"></script>
   	<script src="<?=base_url(); ?>statics/js/jquery-1.8.2.min.js"></script>
   	<script src="<?=base_url(); ?>statics/js/jquery-ui-1.8.23.custom.min.js"></script>
-  	<script src="<?=base_url(); ?>statics/js/datepickerEsp.js"></script>
   	<script type="text/javascript">
   		var urlBase = '<?=base_url(); ?>';
   	</script>
@@ -74,7 +72,8 @@
 					<p><b>Nota: </b>Esta etapa se habilitará una vez que ha sido aceptado para cursar el programa. 
 						Recuerde que además de subir al sistema sus documentos legalizados debe enviar o entregarlos personalmente
 						al Lic. Atenco (según convocatoria). 
-						</p>				
+						</p>
+					<!--Si el usuario ha sido aceptado en la entrevista entonces no muestra los pasos siguientes -->				
 					<?php if((isset($datosUsuario['AceptAE']) && !empty($datosUsuario['AceptAE']))):?>
 					<div class="twelve columns">
 						<div class="six columns">
@@ -135,7 +134,7 @@
 					</div>
 					
 					<div id="extra" class="twelve columns escondida">
-						<p>Realizce el pago en una sola exhibición, en efectivo, y en dólares estadounidenses,
+						<p>Realice el pago en una sola exhibición, en efectivo, y en dólares estadounidenses,
 						con los siguientes datos para pagos internacionales:</p>
 						<div class="six columns">
 							<ul>
@@ -147,8 +146,14 @@
 								<li>No. de cuenta de abono: 92000576742</li>
 							</ul>
 						</div>
+						<div class="six columns"></div>
 					</div>
+					</br>
+					<?php if((isset($datosUsuario['AceptAp']) && !empty($datosUsuario['AceptAp']))): ?>
+						<div class="twelve columns alert-box success" style="float: left;">Su pago ha sido registrado</div>
+					<?php endif ?>
 				<?php endif; ?>	
+				
 				</fieldset>
 				<form action='<?=base_url(); ?>login_c/reiniciarSesion' method='post'>
 					<input type="submit" class="button" style="float: right;" value="Cerrar sesión" />

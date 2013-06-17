@@ -2,7 +2,6 @@
 <head>
 	<title>Iniciar sesión</title>
 	<meta charset="utf-8" />
-	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/foundation.min.css">
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/app.css">

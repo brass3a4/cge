@@ -25,7 +25,6 @@
 	<div class="row">
 		
 		<div class="twelve columns ">
-			
 			<fieldset class="cuerpo">
 				<fieldset>
 					<legend class="cuerpo"><h4>Los Documentos de <?=$datosUsuario['Nombre']?> <?=$datosUsuario['aPaterno']?> <?=$datosUsuario['aMaterno']?> son:</h4></legend>
@@ -59,15 +58,16 @@
 										echo "</li>";
 									}
 							?>
-								<label for="checkbox3"><input type="checkbox" id="checkbox3" value="3" name="DatosUsuario_AceptAdc" <?=(isset($datosUsuario['AceptAdc']) && $datosUsuario['AceptAdc'] == '1' ) ? "checked disabled" : "" ?> <?=(!isset($datosUsuario['AceptAE'])) ? "disabled" : "required" ?> >Documentos certificados etapa 4</label>
-							<label for="checkbox4"><input type="checkbox" id="checkbox4" value="4" name="DatosUsuario_AceptAp" <?=(isset($datosUsuario['AceptAp']) && $datosUsuario['AceptAp'] == '1' ) ? "checked disabled" : "" ?> <?=(!isset($datosUsuario['AceptAdc'])) ? "disabled" : "required" ?> >Pago etapa 5</label>
-							<label for="checkbox5"><input type="checkbox" id="checkbox5" value="5" name="DatosUsuario_AceptAm" <?=(isset($datosUsuario['AceptAm']) && $datosUsuario['AceptAm'] == '1' ) ? "checked disabled" : "" ?> <?=(!isset($datosUsuario['AceptAp'])) ? "disabled" : "required" ?> >Matriculación etapa 6</label>
+							<label for="checkbox3"><input type="checkbox" id="checkbox3" value="3" name="DatosUsuario_AceptAdc" <?=(isset($datosUsuario['AceptAdc']) && $datosUsuario['AceptAdc'] == '1' ) ? "checked disabled" : "" ?> >Documentos certificados etapa 4</label>
 							<?php	
 									echo "</ol>";
 								}else{
 									echo '<div class="alert-box alert">El usuario aún no tiene archivos certificados</div>';
 								}						
 							?>
+							
+							<label for="checkbox4"><input type="checkbox" id="checkbox4" value="4" name="DatosUsuario_AceptAp" <?=(isset($datosUsuario['AceptAp']) && $datosUsuario['AceptAp'] == '1' ) ? "checked disabled" : "" ?> >Pago etapa 5</label>
+							<label for="checkbox5"><input type="checkbox" id="checkbox5" value="5" name="DatosUsuario_AceptAm" <?=(isset($datosUsuario['AceptAm']) && $datosUsuario['AceptAm'] == '1' ) ? "checked disabled" : "" ?> <?=(!isset($datosUsuario['AceptAp']) || !isset($datosUsuario['AceptAdc'])) ? "disabled" : " " ?> >Matriculación etapa 6</label>
 							<input type="submit" id="aceptarBtn" class="button espacioSuperior" value="Aceptar etapa" />
 						<?php endif; ?>
 					</form>
@@ -80,10 +80,15 @@
 								<input type="hidden" value="<?=$datosUsuario['email']?>" name="correoAspirante" />
 								<textarea name="msj" required></textarea>
 								<input type="submit" id="enviarBtn" class="button"  value="Enviar" />
-							</div>
 						</form>
 					</fieldset>
-				</fieldset>
+					<fieldset>
+						<form action='<?php echo base_url();?>adminDocs_c/apruebaDocsUsuario/<?=$datosUsuario['IdUsuario']?>' method="post">
+							<input type="hidden" value="1" name="DatosUsuario_SuspUsr" />
+							<input type="submit" id="enviarBtn" class="alert button"  value="Suspender usuario" />
+						</form>
+					
+					</fieldset>
 			<a class="button" style="float: left;" onclick="cargarVistaUsuariosRol(<?=$datosUsuario['IdRol'];?>)">Regresar</a>	
 			</fieldset>
 
