@@ -25,6 +25,43 @@ class pedidos_m extends CI_Model {
 		}
 	}
 	
+	function traeProductosTipo($tipoProd){
+		
+		$this->db->select('IdProducto');
+		$this->db->from('ProductosTipoProducto');
+		
+		$this->db->where('IdTipoProducto',$tipoProd);
+		$cunsultaTipo = $this->db->get();
+		
+		if($cunsultaTipo->num_rows() > 0){
+			foreach ($cunsultaTipo->result_array() as $prod) {
+				//$prodTipo[$prod['IdProducto']] = $prod;
+				
+				$this->db->select('*');
+				$this->db->from('Productos');
+				$this->db->where('IdProducto',$prod['IdProducto']);
+				$this->db->where('Estatus',1);
+				$consulta = $this->db->get();
+				
+				if($consulta->num_rows() > 0){
+					foreach ($consulta->result_array() as $producto) {
+						$productos[$producto['IdProducto']] = $producto; 
+					}
+				
+					
+				}
+				
+			}
+
+		return $productos;
+			
+		}else{
+			return '0';
+		}
+		
+
+	}
+	
 	function traeProductosClave($claveP){
 		
 		$this->db->select('*');
@@ -144,6 +181,7 @@ class pedidos_m extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('Pedidos');
 		$this->db->where('Usuarios_IdUsuario',$idUsuario);
+		$this->db->where('EstatusPedido',1);
 		$consulta = $this->db->get();
 		
 		if($consulta->num_rows() > 0){
@@ -168,6 +206,80 @@ class pedidos_m extends CI_Model {
 			return $datos;
 		}else{
 			return '0';
+		}
+	}
+	
+	function cancelaPedido($idPedido){
+		if (isset($idPedido) && !empty($idPedido)) {
+			$data = array('EstatusPedido' => 0);
+			$this->db->where('IdPedido', $idPedido);
+			$this->db->update('Pedidos', $data);
+			
+			return 1;
+		}else{
+			return 0;
+		}
+	}
+
+	function traeUsuariosProducto($idProducto)
+	{
+		if (isset($idProducto)) {
+			$this->db->select('Pedidos_IdPedido');
+			$this->db->from('DetallePedido');
+			$this->db->where('Productos_IdProducto',$idProducto);
+			$consulta = $this->db->get();
+			
+			if ($consulta->num_rows() > 0) {
+				foreach ($consulta->result_array() as $pedido) {
+					$this->db->select('Usuarios_IdUsuario');
+					$this->db->from('Pedidos');
+					$this->db->where('IdPedido',$pedido['Pedidos_IdPedido']);
+					$this->db->where('EstatusPedido',1);
+					$query = $this->db->get();
+					
+					if ($query->num_rows() > 0) {
+						foreach ($query->result_array() as $usuarios) {
+							
+							//$usuariosT[$usuarios['Usuarios_IdUsuario']] = $usuarios['Usuarios_IdUsuario']; 	
+							$this->db->select('*');
+							$this->db->from('Usuarios');
+							$this->db->where('IdUsuario', $usuarios['Usuarios_IdUsuario']);
+							$consulta = $this->db->get();
+							
+							if($consulta->num_rows() > 0){
+								foreach ($consulta->result_array() as $DatosUsuario) {
+									$usuariosT[$DatosUsuario['IdUsuario']]= $DatosUsuario; 
+									
+									$this->db->select('*');
+									$this->db->from('DatosUsuario');
+									$this->db->where('IdUsuario',$DatosUsuario['IdUsuario']);
+									$consulta = $this->db->get();
+									if($consulta->num_rows() > 0){
+										foreach ($consulta->result_array() as $row) {
+											$usuariosT[$DatosUsuario['IdUsuario']][$row['NomCampo']] = $row['Datos']; 
+										}
+									}
+								}
+							}
+							
+						}
+						
+					}
+					
+				}
+				if (isset($usuariosT)) {
+					
+					return $usuariosT;	
+				}else{
+					return 0;
+				}
+				
+			}else{
+				return 0;
+			}
+			
+		}else{
+			return 0;
 		}
 	}
 }

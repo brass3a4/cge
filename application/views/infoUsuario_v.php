@@ -35,7 +35,15 @@
 					<label><b>Apellido Paterno: </b> <?=$datosUsuario['aPaterno']; ?></label>
 					<label><b>Apellido Materno: </b> <?=$datosUsuario['aMaterno'];?></label>
 					<label><b>Nacionalidad: </b> <?= $datosUsuario['Nacionalidad']; ?></label>
-					<label><b>Fecha de nacimiento: </b> <?= date($datosUsuario['FecNacimiento']); ?></label>
+					<?php if(isset($datosUsuario['Edad'])){?>
+						<label><b>Edad: </b> <?= $datosUsuario['Edad']; ?></label>
+					<?php }?>
+					<?php if(isset($datosUsuario['Edad'])){?>
+						<label><b>Sexo: </b> <?php if($datosUsuario['Sexo'] == 'M'){echo "Masculino";}else{echo "Femenino";} ?></label>
+					<?php }?>
+					<?php if(isset($datosUsuario['FecNacimiento'])){?>
+						<label><b>Fecha de nacimiento: </b> <?= date($datosUsuario['FecNacimiento']); ?></label>
+					<?php } ?>
 					<label><b>País: </b><?php
 						//Busco en el catálogo de paises el IdPais del dato proporcionado comparando uno por uno hasta que coincida 
 						foreach ($catPais as $key => $value) {
@@ -45,20 +53,36 @@
 						}?>
 					</label>
 					<label><b>Estado: </b> <?=$datosUsuario['NomEstado']; ?></label>
-					<label><b>Calle: </b> <?=$datosUsuario['Calle']; ?></label>
-					<label><b>Número: </b> <?=$datosUsuario['NumExterior']; ?></label>
-					<!-- Si mandaron el Num interior lo muestro en la vista -->
-					<?php if(!empty($datosUsuario['NumInterior'])){
-						echo '<label><b>Número interior: </b>'.$datosUsuario['NumInterior'].'</label>';
-						} 
-					?>
+					<?php if(isset($datosUsuario['Calle'])){?>
+						<label><b>Calle: </b> <?=$datosUsuario['Calle']; ?></label>
+					<?php } ?>
+					<?php if(isset($datosUsuario['NumExterior'])){?>
+						<label><b>Número: </b> <?=$datosUsuario['NumExterior']; ?></label>
+						<!-- Si mandaron el Num interior lo muestro en la vista -->
+						<?php if(!empty($datosUsuario['NumInterior'])){
+							echo '<label><b>Número interior: </b>'.$datosUsuario['NumInterior'].'</label>';
+							} 
+						?>
+					<?php } ?>
+					<?php if(isset($datosUsuario['Colonia'])){?>
 					<label><b>Colonia: </b> <?=$datosUsuario['Colonia']; ?></label>
+					<?php } ?>
+					<?php if(isset($datosUsuario['NomMunicipio']) && !empty($datosUsuario['NomMunicipio'])){?>
 					<label><b>Municipio: </b> <?=$datosUsuario['NomMunicipio']; ?></label>
+					<?php } ?>
+					<?php if(isset($datosUsuario['CP'])){?>
 					<label><b>C.P.: </b> <?=$datosUsuario['CP']; ?></label>
+					<?php } ?>
+					<?php if(isset($datosUsuario['RFC'])){?>
 					<label><b>RFC: </b> <?=$datosUsuario['RFC']; ?></label>
+					<?php } ?>
+					<?php if(isset($datosUsuario['CURP'])){?>
 					<label><b>CURP: </b> <?=$datosUsuario['CURP']; ?></label>
+					<?php } ?>
 					<label><b>Correo electrónico: </b> <?=$datosUsuario['email']; ?></label>
-					
+					<?php if(isset($datosUsuario['email2'])){?>
+						<label><b>Correo electrónico2: </b> <?=$datosUsuario['email2']; ?></label>
+					<?php } ?>					
 					<!-- Informacion académica para posgrados -->
 					
 					<?php 
@@ -101,6 +125,63 @@
 						}
 					
 					?>
+					<?php 
+						switch ($datosUsuario['InstProcedencia']) {
+							case '1':
+									echo '<label><b>Comunidad: </b>Profesor de UAM Iztapalapa</label>';	
+								break;
+							case '2':
+									echo '<label><b>Comunidad: </b>Profesor de UAM Xochimilco</label>';	
+								break;
+							case '3':
+									echo '<label><b>Comunidad: </b>Profesor de UAM Azcapozalto</label>';	
+								break;
+							case '4':
+									echo '<label><b>Comunidad: </b>Profesor de UAM Cuajimalpa</label>';	
+								break;
+							case '5':
+									echo '<label><b>Comunidad: </b>Profesor de UAM Lerma</label>';	
+								break;
+							case '6':
+									echo '<label><b>Comunidad: </b>'.$datosUsuario['InstProcedenciaOtra'].'</label>';	
+								break;							
+							case '7':
+									echo '<label><b>Comunidad: </b> Empleado UAM con Número '.$datosUsuario['NumEmp'].'</label>';	
+								break;
+							
+						}
+					
+					
+					?>
+					
+					<?php 
+						switch ($datosUsuario['UGradoEstudio']) {
+							case '1':
+									echo '<label><b>Último grado de estudios: </b>Licenciatura</label>';	
+								break;
+							case '2':
+									echo '<label><b>Último grado de estudios: </b>Maestría</label>';	
+								break;
+							case '3':
+									echo '<label><b>Último grado de estudios: </b>Doctorado</label>';	
+								break;
+							case '4':
+									echo '<label><b>Último grado de estudios: </b>Posdoctorado</label>';	
+								break;
+							case '5':
+									echo '<label><b>Último grado de estudios: </b>'.$datosUsuario['UGradoEstudioOtro'].'</label>';	
+								break;
+						}
+					?>
+					
+					<?php 
+						if($datosUsuario['ExpEst'] == '1') {
+							echo "<br><label><b>Experiencia como estudiante o docente virtual:</b></label><br>";
+							echo '<label><b>Nivel académico: </b>'.$datosUsuario['NAcademicoEst'].'</label>';
+							echo '<label><b>Nombre del curso o programa de estudio: </b>'.$datosUsuario['NomCusoEst'].'</label>';	
+						}
+					?>
+					
 					
 					<?php 
 						if (isset($datosUsuario['UnivelEstudio']) && isset($datosUsuario['nombEstudio']) && !empty($datosUsuario['nombEstudio'])) {

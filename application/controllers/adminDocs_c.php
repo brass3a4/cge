@@ -7,7 +7,7 @@
 	        parent::__construct();
 			
 			$this->load->helper(array('html', 'url'));
-	        $this->load->model(array('catalogos_m', 'usuarios_m')); // Load the model
+	        $this->load->model(array('catalogos_m', 'usuarios_m','pedidos_m')); // Load the model
 	        $this->load->library('email');
 	        $this->is_logged_in();			
 	   	}
@@ -49,6 +49,35 @@
 				// print_r($datos);
 			// echo "</pre>";
 			$this->load->view('adminDocs_v',$datos);
+		}
+
+		function muestraTalleres()
+		{
+			$datos['talleres'] = $this->pedidos_m->traeProductosTipo(3);
+			$this->load->view('listaTalleres_v',$datos);
+		}
+		
+		function muestraUsuariosTaller($idTaller)
+		{
+			$datos['usuarios'] = $this->pedidos_m->traeUsuariosProducto($idTaller);
+			
+			//letras a remplezar
+			$vocales = array('á','é','í','ó','ú','ü','ñ');
+			$remplazar = array('Á','É','Í','Ó','Ú','Ü','Ñ');
+			
+			//por cada usuario pasamos su nombre y apellidos a mayusculas
+			if (!empty($datos['usuarios'])) {
+			
+				foreach ($datos['usuarios'] as $key => $value) {
+					$datos['usuarios'][$key]['Nombre'] = str_replace($vocales, $remplazar, $datos['usuarios'][$key]['Nombre']);
+					$datos['usuarios'][$key]['Nombre'] = strtoupper($datos['usuarios'][$key]['Nombre']);
+					$datos['usuarios'][$key]['aPaterno'] = str_replace($vocales, $remplazar, $datos['usuarios'][$key]['aPaterno']);
+					$datos['usuarios'][$key]['aPaterno'] = strtoupper($datos['usuarios'][$key]['aPaterno']);
+					$datos['usuarios'][$key]['aMaterno'] = str_replace($vocales, $remplazar, $datos['usuarios'][$key]['aMaterno']);
+					$datos['usuarios'][$key]['aMaterno'] = strtoupper($datos['usuarios'][$key]['aMaterno']);			
+				}
+			}
+			$this->load->view('usuariosTaller_v',$datos);
 		}
 		
 		function muestraDocsUsuario($idUsuario)
@@ -114,6 +143,7 @@
 			}
 			
 		}
+		
 		function enviaMsj($idUsuario)
 		{
 			//print_r($_POST);

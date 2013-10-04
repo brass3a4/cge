@@ -7,7 +7,7 @@
 	        parent::__construct();
 			
 			$this->load->helper(array('html', 'url'));
-	        $this->load->model('usuarios_m'); // Load the model
+	        $this->load->model(array('usuarios_m','pedidos_m')); // Load the model
 			$this->is_logged_in();	        			
 	   	}
 
@@ -36,6 +36,19 @@
 			$data['usuario'] = $usr;
 			
 			$data['datosUsuario'] = $this->usuarios_m->traeDatosUsuario($idUsuario);
+			
+			$pedidos= $this->pedidos_m->traeDatosPedidoUsuario($idUsuario);
+			
+			
+			$sumaCursos = 0;
+			if (isset($pedidos) && !empty($pedidos)) {
+				
+				foreach ($pedidos as $pedido) {
+					$sumaCursos = $sumaCursos + count($pedido['datosDetallePedido']);
+				}
+			}
+			$data['numCursos'] = $sumaCursos;
+			
 			
 			// si el usuario tiene archivos valor = 1 en caso contrario valor = 0
 			if(isset($data['archivos']) && $data['archivos'] != '0'){
@@ -74,6 +87,12 @@
 				case '9':
 						// vista para posgrados
 						$this->load->view('menuRegistroC_v',$data);
+					break;
+					
+				case '10':
+						
+						// vista para Talleres
+						$this->load->view('menuRegistroT_v',$data);
 					break;
 				
 				default:

@@ -28,7 +28,7 @@
 			<fieldset class="cuerpo">
 				<fieldset >
 					
-					<legend class="cuerpo"><h4>El pedido se ha realizado con éxito</h4></legend>
+					<legend class="cuerpo"><h4>La solitud se ha realizado con éxito</h4></legend>
 					
 					<div class="twelve columns offset-by-two">
 						<div class="six columns">

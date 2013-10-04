@@ -21,11 +21,25 @@
 	    	$this->listaCursos();
 	    }
 		
-		function listaCursos($idUsuario)
-		{
+		function listaCursos($idUsuario,$tipo){
 			$data['idUsuario'] = $idUsuario;
+			$data['tipo'] = $tipo;
+			$data['datosUsuario'] = $this->usuarios_m->traeDatosUsuario($idUsuario);
 			
 			$idRol= $this->usuarios_m->traeRolUsuario($idUsuario);
+			
+			/* Traigo los pedidos de un usuario*/
+			$pedidos= $this->pedidos_m->traeDatosPedidoUsuario($idUsuario);
+			$sumaCursos = 0;
+			if (isset($pedidos) && !empty($pedidos)) {
+				
+				foreach ($pedidos as $pedido) {
+					/* Obtengo la cantidad de cursos pedidos por el usuario*/
+					$sumaCursos = $sumaCursos + count($pedido['datosDetallePedido']);
+				}
+			}
+			$data['numCursos'] = $sumaCursos;
+			
 			
 			// si el usuario es de tipo 3 entonces
 			if($idRol == '3'){
@@ -46,7 +60,7 @@
 				
 			}else{
 			
-				$data['cursos'] = $this->pedidos_m->traeProductos();
+				$data['cursos'] = $this->pedidos_m->traeProductosTipo($tipo);
 				
 				$pedidos = $this->pedidos_m->traeDatosPedidoUsuario($idUsuario);
 				
@@ -64,10 +78,48 @@
 			// print_r($data['productos']);
 			// echo "</pre>";
 			// vista con la lista de cursos seleccionables para compra
-			$this->load->view('listaCursos_v',$data);
+			$this->load->view('listaCursosT_v',$data);
+		}
+
+		function prueba()
+		{
+			$productos = $this->pedidos_m->traeProductosTipo(3);
+			echo "<pre>";
+			print_r($productos);
 		}
 		
-		function carritoCursos()
+		
+		/* Esta función muestra los pedidos de un usuario */
+		function muestraPedidosUsuario($idUsuario)
+		{
+			$pedidos=$this->pedidos_m->traeDatosPedidoUsuario($idUsuario);
+			$cursos = $this->pedidos_m->traeProductos();
+			
+			if (isset($pedidos) && !empty($pedidos)) {
+				foreach ($pedidos as $pedido) {
+				foreach ($pedido['datosDetallePedido'] as $detallePedido) {
+					foreach ($cursos as $key => $value) {
+						if($value['IdProducto'] == $detallePedido['Productos_IdProducto']){
+							$pedidos[$pedido['IdPedido']]['datosDetallePedido'][$detallePedido['IdDetallePedido']]['Producto']=$value['Producto'];
+							$pedidos[$pedido['IdPedido']]['datosDetallePedido'][$detallePedido['IdDetallePedido']]['Precio']=$value['Precio'];
+						}
+					}
+				}
+			}
+			
+			$data['pedidos'] = $pedidos;
+			$data['idUsuario'] =$idUsuario;
+			$data['datosUsuario'] = $this->usuarios_m->traeDatosUsuario($idUsuario);
+			$this->load->view('pedidosT_v',$data);
+			}else{
+				$data['datosUsuario'] = $this->usuarios_m->traeDatosUsuario($idUsuario);
+				$this->load->view('pedidosT_v',$data);
+			}			
+			
+		}
+		
+		
+		function carritoCursos($tipo)
 		{
 			foreach ($_POST as $key => $value) {
 				if ($key == 'idUsuario') {
@@ -76,7 +128,7 @@
 					$data['productos'][$value]['IdProducto']=$value;
 				}
 			}
-
+			$data['tipo'] = $tipo;
 			$data['cursos'] = $this->pedidos_m->traeProductos();
 			// echo "<pre>";
 			// print_r($data);
@@ -291,5 +343,12 @@
 		            return $cadena; 
 					
 		}/*Fin de generaDV*/
+		
+		function cancelaPedido($idPedido,$idUsuario)
+		{
+			$valor = $this->pedidos_m->cancelaPedido($idPedido);
+			echo $valor;
+			$this->muestraPedidosUsuario($idUsuario);
+		}
 	}    
 ?>

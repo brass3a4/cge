@@ -1,3 +1,12 @@
+/* Variables globales para verifica() */
+
+//Número máximo de casillas marcadas por cada fila 
+var maxi=2; 
+//El contador es un arrayo de forma que cada posición del array es una linea del formulario 
+var contador=new Array(0,0); 
+
+/*******************************************************/
+
 /* Esta función quita la clase "escondida"
   @param:
   		$valor type[string] (id del <div>)
@@ -42,7 +51,7 @@ function quitaClaseEscondidaInsP(valor,id) {
   		$valor type[string] (id del <div>)
  * */
 function quitaClaseEscondidaUGradoO(valor,id) {
-	if(id == 6){
+	if(id == 5){
 		$('#'+valor).removeClass("escondida");
 	}else{
 		$('#'+valor).addClass("escondida");
@@ -222,6 +231,16 @@ function cargarVistaUsuariosRol(idRol) {
 	document.location.href=url;
 }
 
+function cargarVistaTalleres(){
+	var url=urlBase+'adminDocs_c/muestraTalleres/';
+	document.location.href=url;
+}
+
+function cargarUsuariosTaller(idTaller) {
+    var url=urlBase+'adminDocs_c/muestraUsuariosTaller/'+idTaller;
+	document.location.href=url;
+}
+
 function cargarVistaListaRol() {
   	var url=urlBase+'adminDocs_c/';
 	document.location.href=url;
@@ -232,8 +251,8 @@ function cargaVistaDocsUsuario(idUsuario) {
   	document.location.href=url;
 }
 
-function cargarVistaCursos(idUsuario) {
-  	var url=urlBase+'cursos_c/listaCursos/'+idUsuario;
+function cargarVistaCursos(idUsuario,tipo) {
+  	var url=urlBase+'cursos_c/listaCursos/'+idUsuario+'/'+tipo;
 	document.location.href=url;
 }
  /* Esta función evita regresar a la página anterior*/
@@ -251,4 +270,36 @@ function cargarVistaMenuRegistroC(idUsuario) {
 function cargaVistaInfoUsuario(idUsuario) {
 	var url=urlBase+'adminDocs_c/muestraInfoUsuario/'+idUsuario;
   	document.location.href=url;  
+}
+
+function cargarVistaPedidos(idUsuario) {
+  	var url=urlBase+'cursos_c/muestraPedidosUsuario/'+idUsuario;
+  	document.location.href=url;
+}
+
+/* Esta Función valida que solo se puedan seleccionar a lo más 2 casillas en un checkbox */
+function validar(check,grupo) { 
+   //Compruebo si la casilla está marcada 
+   if (check.checked==true){ 
+      	//está marcada, entonces aumento en uno el contador del grupo 
+      	contador[grupo]++; 
+      	//compruebo si el contador ha llegado al máximo permitido 
+      	if (contador[grupo]>maxi) { 
+         	 //si ha llegado al máximo, muestro mensaje de error 
+         	 alert('No se pueden elegir más de '+maxi+' cursos a la vez.'); 
+         	 //desmarco la casilla, porque no se puede permitir marcar 
+         	 check.checked=false; 
+         	 //resto una unidad al contador de grupo, porque he desmarcado una casilla 
+         	 contador[grupo]--; 
+      	} 
+   }else { 
+      	//si la casilla no estaba marcada, resto uno al contador de grupo 
+      	contador[grupo]--; 
+   } 
+} 
+
+/* Esta función manda a llamar a la función para cancelar un pedido */
+function cancelaPedido(idPedido,idUsuario) {
+  	var url=urlBase+'cursos_c/cancelaPedido/'+idPedido+'/'+idUsuario;
+  	document.location.href=url;
 }

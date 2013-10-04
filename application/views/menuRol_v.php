@@ -35,6 +35,7 @@
 					<a class="button" onclick="cargarVistaUsuariosRol('4')">Aspirantes Diplomado Políticas >></a><br><br>
 					<a class="button" onclick="cargarVistaUsuariosRol('5')">Aspirantes Posgrado Políticas >></a><br><br>
 					<a class="button" onclick="cargarVistaUsuariosRol('9')">Aspirates Cursos Generales >></a><br><br>
+					<a class="button" onclick="cargarVistaTalleres()">Aspirates Talleres >></a><br><br>
 				</fieldset>
 				<form action='<?=base_url(); ?>login_c/reiniciarSesion' method='post'>
 					<input type="submit" class="button" style="float: right;" value="Cerrar sesión" />

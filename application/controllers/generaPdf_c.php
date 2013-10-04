@@ -117,6 +117,53 @@
 
 		}
 
+		function crearTaller($usuario = NULL)
+		{
+			
+	        	$pdf = new FPDF();
+
+			$idUsuario = $this->usuarios_m->traeUsuarioId($usuario);
+			
+			if($idUsuario != '0'){
+				
+				$datos = $this->usuarios_m->traeDatosUsuario($idUsuario);
+				//echo '<pre>';
+				//print_r($datos);
+				
+				$contenido["cad1"] = 'Estimad@:'."\n\n";
+				$contenido['nombre'] = $datos['Nombre'].' ';
+				$contenido['aPat'] = $datos['aPaterno'].' ';
+				$contenido['aMat'] = $datos['aMaterno'].', ';
+				$contenido['cad2'] = 'su preregistro al Sistema para acompañarnos en alguno de los talleres en modalidad mixta que se impartirán en el marco de la 2ª Semana de la Educación Virtual, se ha realizado con éxito:';
+				$contenido['cad3'] = ''."\n\n";
+				$contenido['soliciud'] = 'Su número de solicitud es: '.$idUsuario. "\n";
+				$contenido['usuario'] = 'Usuario: '.$usuario."\n\n";
+				$contenido['contrasena'] = 'Contraseña: '.$datos['password']."\n\n\n";
+				$contenido['login'] = 'Para completar su registro y elegir el taller en el que se encuentra interesad@, por favor ingrese: '.base_url().'login_c'."\n\n\n";
+				$contenido['saludo'] = 'Reciba un cordial saludo.'."\n".'Coordinación de Educación Virtual'."\n\n\n";
+							
+                $text = ""; 
+				$pdf->AddPage();
+				$pdf->SetFont('Arial','B',12);
+
+				$pdf->Image($_SERVER["DOCUMENT_ROOT"]."/cge/statics/img/image.jpeg",1,1,250);
+
+				foreach ($contenido as $row) {
+					$text = $text.$row;
+				}
+
+				$pdf->Ln(60);
+				$text = utf8_decode($text);
+				$pdf->Multicell(0, 5, $text, 0, 'J', false);
+
+				$pdf->Output();
+           
+
+		 	}
+
+
+		}
+
 		function crearDipomado($usuario = NULL)
 		{
 			
@@ -225,7 +272,7 @@
 				//print_r($datos);
 				
 				$contenido["folio"] = 'Folio número: '.$datos['datosPedido']['IdTransaccion']."\n\n";
-				$contenido["datosAcceso"] = 'Datos de acceso'."\n\n";
+				$contenido["datosAcceso"] = 'Datos de acceso:'."\n\n";
 				$contenido["usr"] = 'Usuario: '.$datosUsuario['usuario']."\n";
 				$contenido["pass"] = 'Contraseña: '.$datosUsuario['password']."\n\n";
 				$contenido["indica"] = 'Indicaciones importantes:'."\n\n";
@@ -250,7 +297,7 @@
 				$pdf->Ln(10);
 				$pdf->SetFont('Arial','B',15);
 				
-				$contenidoCursos['titulo'] = 'Recibo de pago curso'."\n";
+				$contenidoCursos['titulo'] = 'Recibo de pago taller'."\n";
 				$contenidoCursos['titulo2'] = 'Favor de cobrar los conceptos por separado';
 				
 				$text2="";
@@ -282,14 +329,14 @@
 					
 					$pdf->Ln(5);
 					
-					$pdf->Cell(90,5,'Nombre del Curso',1,0,'C',0);
+					$pdf->Cell(90,5,'Nombre del taller',1,0,'C',0);
 					$pdf->Cell(90,5,'Total',1,1,'C',0);
 					
 					$pdf->Cell(90,5,utf8_decode($datosDet['Producto']),1,0,'C',0);
 					$pdf->Cell(90,5,'$'.$datosDet['Precio'],1,1,'C',0);
 					
 					$pdf->Ln(5);
-					$lineas = "Recorta aquí -------------------------------------------------------------------------------------------------------------------------------------------------";
+					$lineas = "Recorte aquí -------------------------------------------------------------------------------------------------------------------------------------------------";
 					$lineas = utf8_decode($lineas);
 					$pdf->Multicell(0, 5, $lineas, 0, 'C', false);
 				}
@@ -327,11 +374,11 @@
 			//print_r($datos);
 			
 			$contenido["folio"] = 'Folio número: '.$datos['datosPedido']['IdTransaccion']."\n\n";
-			$contenido["datosAcceso"] = 'Datos de acceso'."\n\n";
+			$contenido["datosAcceso"] = 'Datos de acceso:'."\n\n";
 			$contenido["usr"] = 'Usuario: '.$datosUsuario['usuario']."\n";
 			$contenido["pass"] = 'Contraseña: '.$datosUsuario['password']."\n\n";
 			$contenido["indica"] = 'Indicaciones importantes:'."\n\n";
-			$contenido["cad1"] = '*Antes de acudir a las cajas de la UAMI le pedimos que acuda a la Coordinación de Educación Virtual por su comprobante de pre registro, el cual le será solicitado parapoder realizar su pago. Estamos ubicados en el edificio de la biblioteca, pero la entrada es independiente y se encuentra frente al edificio de posgrado.'."\n";
+			$contenido["cad1"] = '*Antes de acudir a las cajas de la UAMI le pedimos que acuda a la Coordinación de Educación Virtual por su comprobante de preregistro, el cual le será solicitado para poder realizar su pago. Estamos ubicados en el edificio de la biblioteca, pero la entrada es independiente y se encuentra frente al edificio de posgrado.'."\n";
 			$contenido["cad2"] = '*Tras realizar su pago, acuda de nueva cuenta a la Coordinación de Educación Virtual para entregarlo y finalizar su proceso de inscripción.'."\n\n";
 			//$contenido["cad3"] = '*Le pedimos que todos los campos del comprobante escaneado se vean correctamente.'."\n\n";
 
@@ -352,7 +399,7 @@
 			$pdf->Ln(10);
 			$pdf->SetFont('Arial','B',15);
 			
-			$contenidoCursos['titulo'] = 'Recibo de pago curso'."\n";
+			$contenidoCursos['titulo'] = 'Recibo de pago taller'."\n";
 			$contenidoCursos['titulo2'] = 'Favor de cobrar los conceptos por separado';
 			
 			$text2="";
@@ -368,7 +415,7 @@
 			$pdf->SetFont('Arial','',11);
 			
 			foreach ($datos['datosDetallePedido'] as $datosDet) {
-				$contenidoPago['titulo'] = "\n".'Pago en ventanilla UAM'."\n";
+				$contenidoPago['titulo'] = "\n".'Pago en ventanilla UAMI'."\n";
 				$contenidoPago['concepto'] = 'Concepto a pagar: '.$datosDet['RefAPagar']."\n";
 				$contenidoPago['monto'] = 'Monto a pagar: $'.$datosDet['Precio']."\n";
 			
@@ -383,14 +430,14 @@
 				
 				$pdf->Ln(5);
 				
-				$pdf->Cell(90,5,'Nombre del Curso',1,0,'C',0);
+				$pdf->Cell(90,5,'Nombre del Taller',1,0,'C',0);
 				$pdf->Cell(90,5,'Total',1,1,'C',0);
 				
 				$pdf->Cell(90,5,$datosDet['Producto'],1,0,'C',0);
 				$pdf->Cell(90,5,'$'.$datosDet['Precio'],1,1,'C',0);
 				
 				$pdf->Ln(5);
-				$lineas = "Recorta aquí -------------------------------------------------------------------------------------------------------------------------------------------------";
+				$lineas = "Recorte aquí -------------------------------------------------------------------------------------------------------------------------------------------------";
 				$lineas = utf8_decode($lineas);
 				$pdf->Multicell(0, 5, $lineas, 0, 'C', false);
 			}
@@ -426,7 +473,7 @@
 			//print_r($datos);
 			
 			$contenido["folio"] = 'Folio : '.$datos['datosPedido']['IdTransaccion']."\n\n";
-			$contenido["datosAcceso"] = 'Datos de acceso'."\n\n";
+			$contenido["datosAcceso"] = 'Datos de acceso:'."\n\n";
 			$contenido["usr"] = 'Usuario: '.$datosUsuario['usuario']."\n";
 			$contenido["pass"] = 'Contraseña: '.$datosUsuario['password']."\n\n";
 			$contenido["indica"] = 'Indicaciones importantes:'."\n\n";
@@ -450,7 +497,7 @@
 			$pdf->Ln(10);
 			$pdf->SetFont('Arial','B',15);
 			
-			$contenidoCursos['titulo'] = 'Recibo de pago curso'."\n";
+			$contenidoCursos['titulo'] = 'Recibo de pago taller'."\n";
 			$contenidoCursos['titulo2'] = 'Favor de cobrar los conceptos por separado';
 			
 			$text2="";
@@ -491,7 +538,7 @@
 				$pdf->Cell(90,5,'$'.$datosDet['Precio'],1,1,'C',0);
 				
 				$pdf->Ln(5);
-				$lineas = "Recorta aquí -------------------------------------------------------------------------------------------------------------------------------------------------";
+				$lineas = "Recorte aquí -------------------------------------------------------------------------------------------------------------------------------------------------";
 				$lineas = utf8_decode($lineas);
 				$pdf->Multicell(0, 5, $lineas, 0, 'C', false);
 			}
