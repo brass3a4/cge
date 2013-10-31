@@ -187,8 +187,6 @@
 			
 			// Vista con la orden de pago
 			$this->load->view('ordenPago_v',$data);
-			
-						
 		}
 
 		function generaVal(){

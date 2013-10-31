@@ -22,7 +22,7 @@
 <body>
 
 	<div class="row">
-		
+		<?php date_default_timezone_set('America/Mexico_City')?>
 		<form action='<?=base_url(); ?>preregistro_c/guardaDatos/' method='post' accept-charset="utf-8" enctype="multipart/form-data">
 		<div class="twelve columns ">
 			<fieldset class="cuerpo">

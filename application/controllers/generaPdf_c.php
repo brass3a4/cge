@@ -123,10 +123,13 @@
 	        	$pdf = new FPDF();
 
 			$idUsuario = $this->usuarios_m->traeUsuarioId($usuario);
+			print_r($idUsuario);
 			
 			if($idUsuario != '0'){
 				
 				$datos = $this->usuarios_m->traeDatosUsuario($idUsuario);
+				
+				print_r($idUsuario);
 				//echo '<pre>';
 				//print_r($datos);
 				

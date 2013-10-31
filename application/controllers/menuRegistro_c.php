@@ -67,6 +67,12 @@
 			
 			/* Dependiendo del rol del usuario abre diferentes vistas*/
 			switch ($data['idRol']) {
+				
+				case '1':
+						// vista para curso root
+						redirect(base_url().'admin_c');
+					break;
+				
 				case '2':
 						// vista para curso ingles
 						redirect(base_url().'adminDocs_c');
