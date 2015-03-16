@@ -28,11 +28,11 @@
 			<fieldset class="cuerpo">
 				
 				<fieldset>
-					<h4>Por favor verifica los datos que ingresaste</h4>
+					<h4>Por favor verifique sus datos</h4>
 					
-					<label><b>Nombre:</b> <?=$datos['Usuarios_Nombre']; ?></label>
-					<label><b>Apellido Paterno: </b> <?=$datos['Usuarios_aPaterno']; ?></label>
-					<label><b>Apellido Materno: </b> <?=$datos['Usuarios_aMaterno']; ?></label>
+					<label><b>Nombre:</b> <? $datos['Usuarios_Nombre'] = str_replace("ñ", "Ñ", $datos['Usuarios_Nombre']); $datos['Usuarios_Nombre'] = strtoupper($datos['Usuarios_Nombre']); echo $datos['Usuarios_Nombre'];?></label>
+					<label><b>Apellido Paterno: </b> <? $datos['Usuarios_aPaterno'] = str_replace("ñ", "Ñ", $datos['Usuarios_aPaterno']); $datos['Usuarios_aPaterno'] = strtoupper($datos['Usuarios_aPaterno']); echo $datos['Usuarios_aPaterno']; ?></label>
+					<label><b>Apellido Materno: </b> <? $datos['Usuarios_aMaterno']  = str_replace("ñ", "Ñ", $datos['Usuarios_aMaterno']); $datos['Usuarios_aMaterno'] = strtoupper($datos['Usuarios_aMaterno']); echo $datos['Usuarios_aMaterno']; ?></label>
 					<label><b>Nacionalidad: </b> <?=$datos['Usuarios_Nacionalidad']; ?></label>
 					<label><b>Fecha de nacimiento: </b> <?=$datos['Usuarios_FecNacimiento']; ?></label>
 					<label><b>País: </b><?php
@@ -99,7 +99,7 @@
 							|| !empty($datos['DatosUsuario_toefl'])
 							|| !empty($datos['DatosUsuario_otro'])
 								){
-								echo "<br><label><b>Cetificacion(es) obtenidas en el idioma ingles:<b></label><br>";
+								echo "<br><label><b>Certificacion(es) obtenidas en el idioma inglés:<b></label><br>";
 								}
 					?>
 					
@@ -136,6 +136,9 @@
 					<?php if(!empty($datos['DatosUsuario_toefl'])){
 						echo '<label>TOEFL institucional, puntuaje: '.$datos['DatosUsuario_puntuajeTOEFL'].'</label>';}
 					?>
+					<?php if(!empty($datos['DatosUsuario_cenni'])){
+						echo '<label>Examen CENNI: '.$datos['DatosUsuario_datosCenni'].'</label>';}
+					?>
 					<?php if(!empty($datos['DatosUsuario_otro'])){
 						echo '<label>Otro: '.$datos['DatosUsuario_otroText'].'</label>';}
 					?>
@@ -146,7 +149,7 @@
 				<?php  $str = serialize($datos);?>
 				<input type="hidden" name="datos" value='<?=$str?>'/>
 				</form>
-				<a class="button" onclick="veAtras()">Correguir</a>
+				<a class="button" onclick="veAtras()">Corregir</a>
 				<input type="submit" class="button" style="float: right;" onclick="cargarVista()" value="Confirmar"/>
 				
 			</fieldset>

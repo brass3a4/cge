@@ -1,0 +1,29 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2014-02-18 10:29:32 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 11:40:12 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 11:40:47 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 11:40:47 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 11:43:06 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 11:43:33 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 11:43:38 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 11:45:05 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 11:45:21 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 11:45:27 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 11:46:11 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 11:46:27 --> Query error: Duplicate entry 'mav@xanum.uam.mx' for key 'email_UNIQUE'
+ERROR - 2014-02-18 11:47:13 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 11:47:51 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 11:55:08 --> 404 Page Not Found --> images
+ERROR - 2014-02-18 11:55:08 --> 404 Page Not Found --> images
+ERROR - 2014-02-18 11:55:08 --> 404 Page Not Found --> images
+ERROR - 2014-02-18 11:55:08 --> 404 Page Not Found --> images
+ERROR - 2014-02-18 11:55:08 --> 404 Page Not Found --> images
+ERROR - 2014-02-18 11:55:08 --> 404 Page Not Found --> images
+ERROR - 2014-02-18 11:55:08 --> 404 Page Not Found --> images
+ERROR - 2014-02-18 11:55:08 --> 404 Page Not Found --> images
+ERROR - 2014-02-18 11:55:08 --> 404 Page Not Found --> images
+ERROR - 2014-02-18 11:55:08 --> 404 Page Not Found --> images
+ERROR - 2014-02-18 11:55:08 --> 404 Page Not Found --> images
+ERROR - 2014-02-18 14:02:56 --> 404 Page Not Found --> statics
+ERROR - 2014-02-18 16:45:52 --> 404 Page Not Found --> statics

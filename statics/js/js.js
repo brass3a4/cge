@@ -1,4 +1,13 @@
-/* Esta función agrega la clase "escondida"
+/* Variables globales para verifica() */
+
+//Número máximo de casillas marcadas por cada fila 
+var maxi=2; 
+//El contador es un arrayo de forma que cada posición del array es una linea del formulario 
+var contador=new Array(0,0); 
+
+/*******************************************************/
+
+/* Esta función quita la clase "escondida"
   @param:
   		$valor type[string] (id del <div>)
  * */
@@ -8,6 +17,130 @@ function quitaClaseEscondida(valor){
 }
 
 /* Esta función quita la clase "escondida"
+  @param:
+  		$valor type[string] (id del <div>)
+ * */
+function quitaClaseEscondidaIns(valor,id){
+	if(id != 1 && id !=2 && id !=7 && id !=8){	
+		$('#'+valor).removeClass("escondida");
+		$('#OtraIns').addClass("escondida");
+		
+	}else{
+		$('#OtraIns').addClass("escondida");
+		$('#institucion').addClass("escondida");
+	}
+	if(id == 8){
+		$('#OtraIns').removeClass("escondida");
+	}
+}
+
+/* Esta función quita la clase "escondida"
+  @param:
+  		$valor type[string] (id del <div>)
+ * */
+function quitaClaseEscondidaInsP(valor,id) {
+	if(id == 6 && id != 7){
+		$('#'+valor).removeClass("escondida");
+	}else{
+		$('#'+valor).addClass("escondida");
+	}  
+	
+}
+/* Esta función quita la clase "escondida"
+  @param:
+  		$valor type[string] (id del <div>)
+ * */
+function quitaClaseEscondidaUGradoO(valor,id) {
+	if(id == 5){
+		$('#'+valor).removeClass("escondida");
+	}else{
+		$('#'+valor).addClass("escondida");
+	}
+}
+/* Esta función quita la clase "escondida"
+  @param:
+  		$valor type[string] (id del <div>)
+ * */
+function quitaClaseEscondidaExpEst(valor,id) {
+	if(id == 1){
+		$('#'+valor).removeClass("escondida");
+	}else{
+		$('#'+valor).addClass("escondida");
+	}
+}
+
+function quitaClaseEscondidaProc(id) {
+  	if(id == 1){
+		$('#profUAM').removeClass("escondida");
+		$('#inputs').removeClass("escondida");
+		$('#profExt').addClass("escondida");
+	}
+  	if(id == 2){
+		$('#profExt').removeClass("escondida");
+		$('#inputs').removeClass("escondida");
+		$('#profUAM').addClass("escondida");
+	}
+	if(id == 0) {
+		$('#inputs').addClass("escondida");
+		$('#profExt').addClass("escondida");
+		$('#profUAM').addClass("escondida");
+	};
+
+}
+
+function quitaClaseEscondidaDocsLegal(id) {
+	if(id == 0){
+		$('#tipoLic1').addClass("escondida");
+		$('#tipoLic2').addClass("escondida");
+		$('#tipoLic3').addClass("escondida");
+		$('#tipoLic4').addClass("escondida");
+	}
+  	if(id == 1){
+		$('#tipoLic1').removeClass("escondida");
+		$('#tipoLic2').addClass("escondida");
+		$('#tipoLic3').addClass("escondida");
+		$('#tipoLic4').addClass("escondida");
+	}
+  	if(id == 2){
+		$('#tipoLic2').removeClass("escondida");
+		$('#tipoLic1').addClass("escondida");
+		$('#tipoLic3').addClass("escondida");
+		$('#tipoLic4').addClass("escondida");
+	}
+	if(id == 3) {
+		$('#tipoLic3').removeClass("escondida");
+		$('#tipoLic1').addClass("escondida");
+		$('#tipoLic2').addClass("escondida");
+		$('#tipoLic4').addClass("escondida");
+	}
+	
+	if(id == 4) {
+		$('#tipoLic4').removeClass("escondida");
+		$('#tipoLic1').addClass("escondida");
+		$('#tipoLic2').addClass("escondida");
+		$('#tipoLic3').addClass("escondida");
+	}
+
+}
+
+function quitaClaseEscondidaNac(id) {
+	if(id == 0){
+		$('#nacio').addClass("escondida");
+		$('#extra').addClass("escondida");
+		$('#tipoLic3').addClass("escondida");
+		$('#tipoLic4').addClass("escondida");
+	}
+  	if(id == 1){
+		$('#nacio').removeClass("escondida");
+		$('#extra').addClass("escondida");
+	}
+  	if(id == 2){
+		$('#extra').removeClass("escondida");
+		$('#nacio').addClass("escondida");
+	}
+}
+
+/* Esta función agrega la clase "escondida"
   @param:
   		$valor type[string] (id del <div>)
  * */
@@ -65,20 +198,108 @@ $(function() {
 	changeYear: true });
 });
 
+$(function() {
+	$( "#FechExa" ).datepicker({ dateFormat: "yy-mm-dd",
+	changeYear: true });
+});
+
 /* Esta función carga la página previa en el historial*/
 function veAtras(){
   window.history.back()
 }
 
-function cargarVista(){
+/*Esta función carga la vista para cargar datos dependiendo del usuario y el rol
+	@param usr[string], idrol[INT] 
+ * */
+function cargaVistaDocs(usr,idrol){
 	
-	var url=urlBase+'preregistro_c/guardaDatos/';
+	var url=urlBase+'menuRegistro_c/cargaDocs/'+usr+'/'+idrol;
 	document.location.href=url;
  	
 }
-function cargaVistaDocs(usr){
-	
-	var url=urlBase+'menuRegistro_c/cargaDocs/'+usr;
+
+/*Esta función carga la vista para cargar datos dependiendo del usuario
+	@param usr[string], idrol[INT] 
+ * */
+function cargaVistaDocsLegal(usr){
+	var url=urlBase+'menuRegistro_c/cargaDocsLegal/'+usr;
 	document.location.href=url;
- 	
+}
+
+function cargarVistaUsuariosRol(idRol) {
+  	var url=urlBase+'adminDocs_c/muestraUsuariosRol/'+idRol;
+	document.location.href=url;
+}
+
+function cargarVistaTalleres(){
+	var url=urlBase+'adminDocs_c/muestraTalleres/';
+	document.location.href=url;
+}
+
+function cargarUsuariosTaller(idTaller) {
+    var url=urlBase+'adminDocs_c/muestraUsuariosTaller/'+idTaller;
+	document.location.href=url;
+}
+
+function cargarVistaListaRol() {
+  	var url=urlBase+'adminDocs_c/';
+	document.location.href=url;
+}
+
+function cargaVistaDocsUsuario(idUsuario) {
+  	var url=urlBase+'adminDocs_c/muestraDocsUsuario/'+idUsuario;
+  	document.location.href=url;
+}
+
+function cargarVistaCursos(idUsuario,tipo) {
+  	var url=urlBase+'cursos_c/listaCursos/'+idUsuario+'/'+tipo;
+	document.location.href=url;
+}
+ /* Esta función evita regresar a la página anterior*/
+function noAtras() {
+	 if(window.history.forward(1) != null){
+        window.history.forward(1);
+    }
+}
+
+function cargarVistaMenuRegistroC(idUsuario) {
+  	var url=urlBase+'menuRegistro_c/principal/'+idUsuario;
+	document.location.href=url;
+}
+
+function cargaVistaInfoUsuario(idUsuario) {
+	var url=urlBase+'adminDocs_c/muestraInfoUsuario/'+idUsuario;
+  	document.location.href=url;  
+}
+
+function cargarVistaPedidos(idUsuario) {
+  	var url=urlBase+'cursos_c/muestraPedidosUsuario/'+idUsuario;
+  	document.location.href=url;
+}
+
+/* Esta Función valida que solo se puedan seleccionar a lo más 2 casillas en un checkbox */
+function validar(check,grupo) { 
+   //Compruebo si la casilla está marcada 
+   if (check.checked==true){ 
+      	//está marcada, entonces aumento en uno el contador del grupo 
+      	contador[grupo]++; 
+      	//compruebo si el contador ha llegado al máximo permitido 
+      	if (contador[grupo]>maxi) { 
+         	 //si ha llegado al máximo, muestro mensaje de error 
+         	 alert('No se pueden elegir más de '+maxi+' cursos a la vez.'); 
+         	 //desmarco la casilla, porque no se puede permitir marcar 
+         	 check.checked=false; 
+         	 //resto una unidad al contador de grupo, porque he desmarcado una casilla 
+         	 contador[grupo]--; 
+      	} 
+   }else { 
+      	//si la casilla no estaba marcada, resto uno al contador de grupo 
+      	contador[grupo]--; 
+   } 
+} 
+
+/* Esta función manda a llamar a la función para cancelar un pedido */
+function cancelaPedido(idPedido,idUsuario) {
+  	var url=urlBase+'cursos_c/cancelaPedido/'+idPedido+'/'+idUsuario;
+  	document.location.href=url;
 }

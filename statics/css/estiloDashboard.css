@@ -1,0 +1,26 @@
+.circulo {
+    border-radius: 14px;
+    width: 25px;
+    height: 25px;
+    margin: 2px 2px 2px 2px;
+    padding: 1em;
+    /* width and height can be anything, as long as they're equal */
+}
+
+.espera{
+	background-color: #f6bb42;
+}
+.rechazado{
+	background-color: #e9573f;	
+}
+.aceptado{
+	background-color: #8cc152;
+}
+.vacia{
+	background-color: #aab2bd;
+}
+.caja{
+    height: 600px;
+    overflow: hidden;
+    width: 400px;
+}

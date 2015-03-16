@@ -1,0 +1,121 @@
+#avatar{
+	width: 80%;
+	margin: 10px 10px 10px 10px;	 
+}
+.borde{
+	border: 1px solid black;
+}
+.espacio{
+	padding-top: 25% ;
+	padding-bottom: 25% ;
+	
+}
+.bordeSecciones{
+    border:hidden 2px gray;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #de9516;
+}
+.espacioSuperior{
+	margin-top: 5%;
+}
+.fondoCajas{
+	background-color: #f9f9f9;
+	border: 1px solid #bdbdbd;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+}
+label{
+	font-weight: bold;
+}
+
+/*Tamaños para los foundation-icons*/
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-24 { font-size: 24px; }
+.size-36 { font-size: 36px; }
+.size-48 { font-size: 48px; }
+.size-60 { font-size: 60px; }
+.size-72 { font-size: 72px; }
+/* *************************** */
+.cajita{
+	height: 162px;
+    overflow: hidden;
+    width: 110px;
+}
+.vacia {
+	background:white url(../img/sisreg_jpg-.jpg) no-repeat center top;
+	outline: 10px solid #aab2bd;
+
+}
+.vaciapdf {
+	background:white url(../img/sisreg_pdf-.jpg) no-repeat center top;
+	outline: 10px solid #aab2bd;
+
+}
+.espera{
+	outline: 10px solid #f6bb42;
+}
+.rechazado{
+	outline: 10px solid #e9573f;	
+}
+.aceptado{
+	outline: 10px solid #8cc152;
+}
+/* ****** media ****** */
+
+body {
+/*	: url(https://www.mediation.org/mediation/images/background.jpg) repeat-y top center transparent;*/
+	background: url(../img/registro.jpg) no-repeat center top transparent;
+
+}
+
+body .main {
+	max-width: 964px;
+}
+
+body .main fieldset{
+	background: url(../img/bg.png) repeat center top transparent;
+	margin:7rem 0 1em 0;
+	padding: 0 0 2em 0;
+}
+
+.title {
+	text-shadow: 1px 1px 5px white;
+	padding: 1em 0;
+}
+.row .columns2 {
+	margin: 0 1.04%;
+	width: 47.91%;
+}
+.row .columns3 {
+	margin: 0 1.04%;
+	width: 31.25%;
+}
+.columns .dropzone {
+	background: url(../img/drag-in-drop.jpg) no-repeat -11px top transparent;
+}
+.ccamarillo, .ccverde, .ccrojo {
+	background: transparent url(../img/ccolor.png) no-repeat;
+	display: inline-block;
+	height: 26px;
+	margin-left: 1em;
+	margin-right: .3em;
+	margin-bottom: -.5em;
+	width: 26px;
+}
+.ccamarillo {
+	background-position: left top;
+}
+.ccverde {
+	background-position: center top;
+}
+.ccrojo {
+	background-position: right top;
+}

@@ -1,0 +1,87 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2014-10-16 00:35:21 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 09:18:21 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 09:18:39 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 09:18:50 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 09:19:03 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 09:19:13 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 09:23:48 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 09:23:53 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 09:23:57 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:25:30 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:54:04 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:54:12 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:54:17 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:54:23 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:54:30 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:54:34 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:54:41 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:54:47 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:54:56 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:55:03 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:55:10 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:55:17 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:55:46 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:55:55 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:56:01 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:56:08 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:56:12 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:56:25 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:56:30 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:56:36 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:56:41 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:56:47 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:56:52 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:56:57 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:57:03 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:57:09 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:58:31 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 10:58:34 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 11:11:28 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 11:32:18 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 11:32:48 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 11:33:26 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 11:33:50 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 11:34:25 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 11:34:31 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 11:34:39 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 12:22:08 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 12:24:47 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 12:27:28 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 12:29:49 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 12:34:18 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 12:35:46 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 12:36:26 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 12:38:54 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 12:38:56 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 12:40:19 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 12:59:51 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 13:12:00 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 13:19:16 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 13:20:46 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 13:20:50 --> Query error: Duplicate entry 'memitronix@gmail.com' for key 'email_UNIQUE'
+ERROR - 2014-10-16 13:21:18 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 13:21:19 --> Query error: Duplicate entry 'memitronix@gmail.com ' for key 'email_UNIQUE'
+ERROR - 2014-10-16 13:22:51 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 13:22:52 --> Query error: Duplicate entry 'memitronix@gmail.com ' for key 'email_UNIQUE'
+ERROR - 2014-10-16 16:46:52 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 19:32:06 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 21:24:46 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 21:52:50 --> Severity: Notice  --> Undefined index: DatosUsuario_ocupacion /var/storage/www/html/cge/application/views/preDatosP_v.php 128
+ERROR - 2014-10-16 21:52:50 --> Severity: Notice  --> Undefined index: DatosUsuario_experiencia /var/storage/www/html/cge/application/views/preDatosP_v.php 129
+ERROR - 2014-10-16 21:52:51 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 21:53:26 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 21:55:09 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 21:58:29 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 21:58:52 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 21:59:07 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 21:59:57 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 22:06:31 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 22:07:06 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 22:09:51 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 22:09:58 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 22:10:32 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 22:59:56 --> 404 Page Not Found --> statics
+ERROR - 2014-10-16 23:27:35 --> The session cookie data did not match what was expected. This could be a possible hacking attempt.
+ERROR - 2014-10-16 23:27:36 --> 404 Page Not Found --> statics

@@ -32,15 +32,16 @@
 							<p>
 							En este espacio envie en el documento en procesador de textos word, los motivos por los que quiere cursar este diplomado. 
 							El documento deberá ser enviado en el idioma inglés en no máximo de una cuartilla.
+							<b>El tamaño máximo por cada documento debe ser de 2MB.</b>
 							</p>
 						
-						<input type="file" name="file" id="motivos" class="offset-by-five" required> 
+						<input type="file" name="1" id="motivos" class="offset-by-five" required> 
 						<h5>2.- Documentación</h5>
 							<p>a) <b>Carta constancia</b> actual membretada y sellada de la instutución escolar donde trabaja en la
 								que se esoecifique a qué grupo o grupos enseña.</p>
-							<input type="file" name="file2" id="constancia" class="offset-by-five" required>
+							<input type="file" name="2" id="constancia" class="offset-by-five" required>
 							<p class="espacioSuperior">b) <b>Constancia dominio inglés</b> equivalente a nivel B2 del Marco Común Europeo</p>
-						<input type="file" name="file3" id="constancia2" class="offset-by-five" required>
+						<input type="file" name="3" id="constancia2" class="offset-by-five" required>
 						</div> 
 						
 					</fieldset>

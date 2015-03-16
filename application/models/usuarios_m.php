@@ -30,10 +30,14 @@ class usuarios_m extends CI_Model {
 							        )
 							); 
 	 * 
+	 * @return $idUsuario [INT]
+	 * 
 	 * */
 	function guardaUsuario($datos)
 	{
+		
 		if (!empty($datos)) {
+			
 				
         	$this->db->insert('Usuarios', $datos['Usuarios']);
 			
@@ -51,10 +55,11 @@ class usuarios_m extends CI_Model {
                 
             }
 		    
+			$datos['UserRoles']['Usuarios_IdUsuario']=$IdUsuario;
 			/* Para la tabla Datos usuarios guardamos los datos dependiendo del IdUsuario*/
 			foreach($datos as $tabla => $campos){
                 
-                if($tabla != 'Usuarios' && (!empty($tabla))){
+                if($tabla != 'Usuarios' && (!empty($tabla)) && $tabla != 'UserRoles'){
                 	
 					foreach ($campos as $nomCampo => $valor) {
 						
@@ -63,7 +68,12 @@ class usuarios_m extends CI_Model {
 						$this->db->set('IdUsuario', $IdUsuario);
 						$this->db->insert('DatosUsuario');
 					}
+					
                 }
+				if($tabla == "UserRoles"){
+						
+						$this->db->insert($tabla,$campos);
+				}
                 
             }
 			
@@ -73,6 +83,15 @@ class usuarios_m extends CI_Model {
 			return 0;
 		}
 	}
+	
+	/*Esta función guarda las credenciales de identificación de un usuario mediante el idUsuario
+	 * @param:
+	 * 
+	 * 			$credenciales [Array]
+	 * 			$IdUsuario [INT]
+	 * 
+	 * @return BOLEAN
+	 * */
 	
 	function guardaCredenciales($credenciales,$IdUsuario)
 	{
@@ -93,12 +112,13 @@ class usuarios_m extends CI_Model {
 							'usuario' => 'brass3a4',
 							'password' => '123'
 						   );
+	 	 * @return $mensaje [string] 
 		 * 
 		 * */
 		function verificaUsuario($datos){
 			
 			if (isset($datos['usuario'])) {
-				$this->db->select('password');
+				$this->db->select('idUsuario,password');
 				$this->db->from('Usuarios');
 				$this->db->where('usuario',$datos['usuario']);
 				
@@ -107,17 +127,17 @@ class usuarios_m extends CI_Model {
 				/*Sí existe el usuario:*/
 				if($consultaPass->num_rows() > 0){
 					foreach ($consultaPass->result_array() as $row) {
-						$pass = $row['password']; 
+						$pass = $row; 
 					}
 					/*Si la contraseña coincide: */
-					if($pass == $datos['password']){
-						$mensaje = '1';
+					if($pass['password'] == $datos['password']){
+						$mensaje = $pass['idUsuario'];
 					}else{
-						$mensaje = '2';
+						$mensaje = '0';
 					}
 				}else{
 					
-					$mensaje = '3';
+					$mensaje = '0';
 				}
 				
 				return $mensaje;
@@ -125,6 +145,12 @@ class usuarios_m extends CI_Model {
 			
 		}
 		
+		/* Esta función trae el IdUsario de un usuario mediante el nombre de usuario
+		 * @param:
+		 * 			$nomUsuario [INT]
+		 * 
+		 * @return $idUsr [INT]
+		 * */
 		function traeUsuarioId($nomUsuario)
 		{
 			if(isset($nomUsuario)){
@@ -147,10 +173,28 @@ class usuarios_m extends CI_Model {
 			}
 		}
 		
-		function llenaTabla($datos)
+		/*Esta funcion agrega archivos a un usuario
+		 * @param:
+		 * 			$datos [Array]
+		 * 			$idArchivo [INT]
+		 * 
+		 * @return BOLEAN
+		 * Este es un ejemplo de $datos = array('url'=>$url[$i],'nomArchivo'=>$archivo[$i], 'IdUsuario' => $idUsuario); 
+		 * */
+		function llenaTabla($datos,$idArchivo)
 		{
 			if(isset($datos)){
-				$this->db->insert('archivos', $datos['archivos']);
+				/*si el idArchivo es distinto de vacio entonces hay un archivo ya relacionado a un usuario así que hay que actualizarlo
+				 *mediante el idArchivo de lo contrario hay que agregarlo.*/
+				if($idArchivo != NULL){
+					
+					$this->db->where('IdArchivo', $idArchivo);
+					$this->db->update('archivos', $datos['archivos']); 					
+				}else{
+					
+					$this->db->insert('archivos', $datos['archivos']);
+					
+				}				
 				
 				return '1';
 			}else{
@@ -158,6 +202,12 @@ class usuarios_m extends CI_Model {
 			}
 		}
 		
+		/* Esta función trae los datos de un usuario mediante su idUsuario
+		 * @param:
+		 * 			$idUsuario [INT]
+		 * 
+		 * @return $datos [array]
+		 * */
 		function traeDatosUsuario($idUsuario)
 		{
 			if(isset($idUsuario)){
@@ -171,20 +221,45 @@ class usuarios_m extends CI_Model {
 						$datos = $row; 
 					}
 					
-				
-				return $datos;
+					$this->db->select('Roles_IdRole');
+					$this->db->from('UserRoles');
+					$this->db->where('Usuarios_IdUsuario',$idUsuario);
+					$consulta = $this->db->get();
+					if($consulta->num_rows() > 0){
+						foreach ($consulta->result_array() as $row2) {
+							$datos['IdRol'] = $row2['Roles_IdRole']; 
+						}
+					}
+					
+					$this->db->select('*');
+					$this->db->from('DatosUsuario');
+					$this->db->where('IdUsuario',$idUsuario);
+					$consulta = $this->db->get();
+					if($consulta->num_rows() > 0){
+						foreach ($consulta->result_array() as $row) {
+							$datos[$row['NomCampo']] = $row['Datos']; 
+						}
+						return $datos;
+					}
 				}
 				
 			}else{
 				return '0';
 			}
 		}
-		function traeArchivos($idUsuario)
+		
+		/*Esta función trae los archivos de un usuario a partir de su IdUsuario
+		 * @param:
+		 * 			$IdUsuario [INT]
+		 * @return $datos[Array]
+		 * */
+		function traeArchivos($idUsuario,$tipo)
 		{
 			if(isset($idUsuario)){
 				$this->db->select('*');
 				$this->db->from('archivos');
 				$this->db->where('IdUsuario',$idUsuario);
+				$this->db->where('IdTipoDocumento',$tipo);
 				$consulta = $this->db->get();
 				
 				if($consulta->num_rows() > 0){
@@ -200,4 +275,98 @@ class usuarios_m extends CI_Model {
 				return '0';
 			}
 		}
+		
+		/* Esta función trae el rol de un usuario a partir de su IdUsuario
+		 * @param:
+		 * 			$IdUsuario [INT]
+		 * @return $idRol[INT]
+		 * */
+		function traeRolUsuario($idUsuario)
+		{
+			if(isset($idUsuario)){
+				$this->db->select('Roles_IdRole');
+				$this->db->from('UserRoles');
+				$this->db->where('Usuarios_IdUsuario',$idUsuario);
+				$consulta = $this->db->get();
+				
+				if($consulta->num_rows() > 0){
+					foreach ($consulta->result_array() as $row) {
+						$idRol = $row['Roles_IdRole']; 
+					}
+					
+				
+				return $idRol;
+				}
+				
+			}else{
+				return '0';
+			}
+		}
+		
+		/* Esta función trae todos los usuarios dependiendo de su idRol
+		 * @param $idRol[INT]
+		 * @return $usuarios[array]
+		 * */
+		function traeUsuariosRol($idRol)
+		{
+			if(isset($idRol)){
+				$this->db->select('*');
+				$this->db->from('Usuarios');
+				$this->db->join('UserRoles', 'UserRoles.Usuarios_IdUsuario = Usuarios.IdUsuario');
+				$this->db->where('UserRoles.Roles_IdRole', $idRol);
+				$consulta = $this->db->get();
+				
+				if($consulta->num_rows() > 0){
+					foreach ($consulta->result_array() as $DatosUsuario) {
+						$usuarios[$DatosUsuario['IdUsuario']]= $DatosUsuario; 
+						
+						$this->db->select('*');
+						$this->db->from('DatosUsuario');
+						$this->db->where('IdUsuario',$DatosUsuario['IdUsuario']);
+						$consulta = $this->db->get();
+						if($consulta->num_rows() > 0){
+							foreach ($consulta->result_array() as $row) {
+								$usuarios[$DatosUsuario['IdUsuario']][$row['NomCampo']] = $row['Datos']; 
+								//$usuarios[$DatosUsuario['IdUsuario']]['mensaje'] = 'HEy'; 
+							}
+						}
+					}
+				
+				
+					
+				return $usuarios;
+				}
+				
+			}else{
+				return '0';
+			}
+			
+		}
+		
+		function guardaAprobacionDocsUsuario($idUsuario,$datos)
+		{
+			if (isset($idUsuario) && isset($datos)) {
+				
+				foreach($datos as $tabla => $campos){
+                
+                if($tabla == 'DatosUsuario' && (!empty($tabla))){
+                	
+					foreach ($campos as $nomCampo => $valor) {
+						
+						$this->db->set('NomCampo', $nomCampo);
+						$this->db->set('Datos', '1');
+						$this->db->set('IdUsuario', $idUsuario);
+						$this->db->insert('DatosUsuario');
+					}
+					
+                }
+                
+            }
+				return '1';
+			} else {
+				return '0';
+			}
+			
+		}
+
 }

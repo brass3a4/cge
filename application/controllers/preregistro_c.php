@@ -92,7 +92,7 @@
 			$config['smtp_timeout'] = '7';
 			$config['charset']    = 'utf-8';
 			$config['newline']    = "\r\n";
-			$config['mailtype'] = 'text'; // or html
+			$config['mailtype'] = 'html'; // or html
 			$config['validation'] = TRUE; // bool whether to validate email or not
 			
 			
@@ -100,11 +100,34 @@
 			$this->email->from('rentzana@virtuami.izt.uam.mx', 'Diplomado Virtual');
 			$this->email->to($data['Usuarios_email']);
 			$this->email->subject('Gracias por Registrarse');
-			$msj='Estimado profesor: '.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].', su preregistro y solicitud de ingreso al Diplomado Virtual: "Formación docente en la enseñanza escolarizada de inglés para niños" ha realizado con exito:
-					Su número de solicitud es: '.$IdUsuario.' 
-					Su usuario y contraseña asignados son:
-					Usuario: '.$credenciales['usuario'].'
-					contraseña: '.$credenciales['password'].'';
+			$msj = '<html>
+						<head>
+						    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+						    
+						</head>
+						<body>
+							<table width="100%" style="background-image:url('.base_url().'statics/img/image2.jpeg);">
+							<tr>
+							<br><br><br><br><br><br><br><br><br><br><br><br>
+							</tr>
+							<tr>
+							Estimado profesor:<br><br> <b>'.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].'</b>, 
+											su preregistro y solicitud de ingreso al Diplomado Virtual:<br> 
+											"Formación docente en la enseñanza escolarizada de inglés para niños" se ha realizado con éxito:<br><br>
+											Su número de solicitud es: '.$IdUsuario.'<br> 
+											Su usuario y contraseña asignados son:<br><br>
+											<b>
+											Usuario: '.$credenciales['usuario'].'<br>
+											contraseña: '.$credenciales['password'].'<br>
+											</b>
+											Para completar su registro por favor ingrese 
+											<a href="'.base_url().'login_c">Aquí </a>
+							</tr>
+							</table>				
+							
+						</body>
+					</html>';
+			
 			$this->email->message($msj);		
 			if(!($this->email->send()))
 			  {

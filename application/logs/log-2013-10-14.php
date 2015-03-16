@@ -1,0 +1,54 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2013-10-14 00:40:15 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 01:08:42 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 01:25:35 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 01:25:37 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 01:25:44 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 01:25:47 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 01:25:53 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 02:05:46 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 02:05:46 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 08:08:32 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 08:08:32 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 08:10:03 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 08:10:18 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 08:11:04 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 08:11:47 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 08:12:27 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 08:12:30 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 08:12:46 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 08:12:57 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 09:38:34 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 09:38:35 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 09:38:53 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 09:38:55 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 09:38:58 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 09:39:05 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 09:39:11 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 09:39:16 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 09:39:29 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:00:58 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:01:11 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:01:13 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:01:14 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:01:17 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:01:20 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:01:24 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:13:39 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:42:51 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:43:24 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:44:31 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:45:49 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:46:29 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 12:48:55 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 13:01:31 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 13:01:31 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 13:31:19 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 19:19:50 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 19:20:27 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 19:20:35 --> 404 Page Not Found --> statics
+ERROR - 2013-10-14 19:20:52 --> Severity: Notice  --> Undefined variable: str /var/storage/www/html/cge/application/views/carritoCursos_v.php 111
+ERROR - 2013-10-14 19:20:52 --> Severity: Notice  --> Undefined variable: precioTotal /var/storage/www/html/cge/application/views/carritoCursos_v.php 113
+ERROR - 2013-10-14 19:20:52 --> Severity: Notice  --> Undefined variable: i /var/storage/www/html/cge/application/views/carritoCursos_v.php 114
+ERROR - 2013-10-14 19:20:53 --> 404 Page Not Found --> statics

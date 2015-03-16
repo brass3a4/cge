@@ -1,5 +1,6 @@
 <html>
 <head>
+	<title>Menú registro etapa 2</title>
 	<meta charset="utf-8" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
@@ -22,14 +23,19 @@
 </head>
 <body>
 	<div class="row">
-			<div class="twelve columns headLogin">
+			<div class="twelve columns">
 			<fieldset class="cuerpo">
 				<fieldset >
-					<legend class="cuerpo"><h4>Completa los pasos siguiente para terminar tu registro</h4></legend>
+					<legend class="cuerpo"><h4>Completa los pasos siguientes para terminar tu registro</h4></legend>
 					<p><b>Paso 1: Solicitud de ingreso</b></p>
 					<div class="twelve columns espacioInferior">
 						<div class="six columns">
-							<a class="button" onclick="cargaVistaDocs('<?=$usuario ?>')"> Subir documentos</a>
+							<?php if($valor == 0): ?>
+							<a class="button" onclick="cargaVistaDocs('<?=$usuario ?>','<?= $idRol?>')"> Subir documentos</a>
+							<?php endif ?>
+							<?php if($valor == 1): ?>
+							<a class="button" disabled> Subir documentos</a>
+							<?php endif ?>
 						</div>
 						<div class="twelve columns">
 							
@@ -52,10 +58,10 @@
 									
 					<div class="twelve columns">
 						<div class="six columns">
-							<?php if($valor == '0'){
-								echo '<a class="button" style="padding: 10px 40px;" disabled> Realiza pago</a>';
+							<?php if(isset($datosUsuario['AceptAd']) && $datosUsuario['AceptAd'] = '1'){
+								echo '<a class="button" style="padding: 10px 40px;" onclick="cargarVistaCursos('.$idUsuario.')">Realiza pago  </a>';
 							}else{
-								echo '<a class="button" style="padding: 10px 40px;" >Realiza pago  </a>';
+								echo '<a class="button" style="padding: 10px 40px;" disabled> Realiza pago</a>';
 							}?>
 						</div>
 					</div>
@@ -63,6 +69,10 @@
 					
 					
 				</fieldset>
+				<form action='<?=base_url(); ?>login_c/reiniciarSesion' method='post'>
+					<input type="submit" class="button" style="float: right;" value="Cerrar sesión" />
+				</form>
+				
 				
 			</fieldset>
 			</div><!--twelve columns-->

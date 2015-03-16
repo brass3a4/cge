@@ -1,0 +1,35 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2014-07-02 11:47:16 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 11:47:17 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 11:47:38 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 11:47:41 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 11:47:48 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 11:47:53 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 11:47:57 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 11:48:00 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 11:48:05 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 11:48:15 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 11:48:19 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 11:48:47 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 11:48:49 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 11:48:56 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:07:20 --> 404 Page Not Found --> loginC
+ERROR - 2014-07-02 12:07:25 --> 404 Page Not Found --> loginC
+ERROR - 2014-07-02 12:07:31 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:07:31 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:07:35 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:07:38 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:07:38 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:10:08 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:10:38 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:10:41 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:10:47 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:10:47 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:11:50 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:11:58 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:11:58 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 12:11:59 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 19:23:22 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 19:28:33 --> 404 Page Not Found --> statics
+ERROR - 2014-07-02 19:28:44 --> Query error: Duplicate entry 'CART591015MDFLROO' for key 'CURP_UNIQUE'

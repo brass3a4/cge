@@ -1,17 +1,20 @@
 body{
-	background-color:#EEEEEE;
+	background: url("../img/registro.jpg") no-repeat scroll center top white;
 }
-.login{
-	background-color:#B5D991;
+.row {
+	margin-top: 50px;
+}
+.row .login{
+	margin-top: 0;
 }
 
 .button{
-	background-color:#5BB75B;
+	background-color:#714d99;
 	box-shadow: 0 0px 0 rgba(0, 0, 0, 0.5) inset;
-	border: 1px solid #5BB75B;
+	border: 1px solid #714d99;
 }
 .button:hover, .button:focus {
-    background-color: #51A351;
+    background-color: #857399;
     color: #FFFFFF;
 }
 a{
@@ -20,8 +23,20 @@ a{
 a:hover{
 	color: #51A351;
 }
-.cuerpo{
-	background-color:#B5D991;
+
+.ui-datepicker a {
+	color: #7A6D89;
+}
+
+.cuerpo, .login {
+	background: url("../img/bg.png") repeat center center transparent;
+	box-shadow: 5px 5px 10px gray;
+	margin-top: 80px;
+}
+.cuerpo .cuerpo{
+	background: none;
+	box-shadow: none;
+	margin-top: inherit;
 }
 .escondida{
 	display: none;
@@ -34,7 +49,7 @@ a:hover{
 }
 
 .headLogin{
-	padding-top: 20%;
+	padding-top: 0%;
 }
 
 .button.disabled, .button[disabled]{
@@ -43,3 +58,49 @@ a:hover{
 .button.disabled:hover, .button[disabled]:hover{
 	background: none repeat scroll 0 0 #51A351;
 }
+ding-bottom: 10px;
+}
+
+.headLogin{
+	padding-top: 10%;
+}
+
+.button.disabled, .button[disabled]{
+	background: #5BB75B;
+}
+.button.disabled:hover, .button[disabled]:hover{
+	background: none repeat scroll 0 0 #51A351;
+}
+
+/*   posgrado    */
+
+	.posgrado {
+	background: url("../img/registro_pv.jpg") no-repeat scroll center top white;
+}
+
+	.posgrado .button{
+		background-color:#714d99;
+		box-shadow: 0 0px 0 rgba(0, 0, 0, 0.5) inset;
+		border: 1px solid #714d99;
+	}
+	.posgrado .button:hover, .button:focus {
+	    background-color: #857399;
+	    color: #FFFFFF;
+	}
+
+/*   diplomado   */
+
+	.diplomado {
+		background: url("../img/registro_dv.jpg") no-repeat scroll center top white;
+	}
+
+	.diplomado .button{
+		background-color:#714d99;
+		box-shadow: 0 0px 0 rgba(0, 0, 0, 0.5) inset;
+		border: 1px solid #714d99;
+	}
+	.diplomado .button:hover, .button:focus {
+	    background-color: #857399;
+	    color: #FFFFFF;
+	}
+

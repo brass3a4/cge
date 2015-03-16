@@ -1,0 +1,43 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2014-06-20 12:43:36 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 12:43:51 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 12:43:55 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 12:43:58 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 12:44:04 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 12:44:33 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 12:44:57 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 12:45:06 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:00:38 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:00:39 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:00:45 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:00:53 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:00:57 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:01:08 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:01:30 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:01:30 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:01:45 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:01:51 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:01:59 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:01:59 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:02:06 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:02:17 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:13:36 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:13:37 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:13:48 --> Severity: Notice  --> Undefined variable: productos /var/storage/www/html/cge/application/models/pedidos_m.php 56
+ERROR - 2014-06-20 13:13:48 --> Severity: Warning  --> Invalid argument supplied for foreach() /var/storage/www/html/cge/application/views/listaTalleres_v.php 35
+ERROR - 2014-06-20 13:13:48 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:13:51 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 13:13:54 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 15:07:20 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 15:07:23 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 16:47:39 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 16:47:43 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 16:48:14 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 16:48:17 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 16:48:22 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 16:48:25 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 16:48:27 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 16:50:33 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 16:50:34 --> 404 Page Not Found --> statics
+ERROR - 2014-06-20 16:50:36 --> 404 Page Not Found --> statics

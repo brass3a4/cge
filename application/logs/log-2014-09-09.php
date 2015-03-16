@@ -1,0 +1,39 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2014-09-09 00:24:11 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 08:07:42 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 10:18:22 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 12:57:07 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 12:57:07 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 12:57:20 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 12:57:24 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 12:57:46 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 13:01:09 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 13:01:14 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 13:01:19 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 13:01:54 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 13:01:58 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 13:24:31 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 13:24:33 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 15:41:29 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 16:26:29 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 16:26:30 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 16:56:28 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 17:46:20 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 17:47:27 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 17:48:53 --> Severity: Notice  --> Undefined index: DatosUsuario_ocupacion /var/storage/www/html/cge/application/views/preDatosP_v.php 128
+ERROR - 2014-09-09 17:48:53 --> Severity: Notice  --> Undefined index: DatosUsuario_experiencia /var/storage/www/html/cge/application/views/preDatosP_v.php 129
+ERROR - 2014-09-09 17:48:54 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 17:48:58 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 17:49:12 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 17:49:24 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 17:49:32 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 17:49:38 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 17:49:59 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 18:02:29 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 18:02:40 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 20:11:26 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 20:18:17 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 20:18:41 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 20:18:57 --> 404 Page Not Found --> statics
+ERROR - 2014-09-09 21:31:02 --> 404 Page Not Found --> statics

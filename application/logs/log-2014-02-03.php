@@ -1,0 +1,50 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2014-02-03 12:13:55 --> 404 Page Not Found --> images
+ERROR - 2014-02-03 12:13:55 --> 404 Page Not Found --> images
+ERROR - 2014-02-03 12:13:55 --> 404 Page Not Found --> images
+ERROR - 2014-02-03 12:13:55 --> 404 Page Not Found --> images
+ERROR - 2014-02-03 12:13:55 --> 404 Page Not Found --> images
+ERROR - 2014-02-03 12:13:55 --> 404 Page Not Found --> images
+ERROR - 2014-02-03 12:13:55 --> 404 Page Not Found --> images
+ERROR - 2014-02-03 12:13:55 --> 404 Page Not Found --> images
+ERROR - 2014-02-03 12:13:55 --> 404 Page Not Found --> images
+ERROR - 2014-02-03 12:13:55 --> 404 Page Not Found --> images
+ERROR - 2014-02-03 12:13:55 --> 404 Page Not Found --> images
+ERROR - 2014-02-03 12:14:42 --> 404 Page Not Found --> p
+ERROR - 2014-02-03 12:14:52 --> 404 Page Not Found --> preregistro
+ERROR - 2014-02-03 12:15:04 --> 404 Page Not Found --> preregistro_
+ERROR - 2014-02-03 12:15:10 --> 404 Page Not Found --> statics
+ERROR - 2014-02-03 12:15:37 --> 404 Page Not Found --> statics
+ERROR - 2014-02-03 12:15:47 --> 404 Page Not Found --> l
+ERROR - 2014-02-03 12:15:53 --> 404 Page Not Found --> login
+ERROR - 2014-02-03 12:16:04 --> 404 Page Not Found --> loginC
+ERROR - 2014-02-03 12:16:12 --> 404 Page Not Found --> loginc
+ERROR - 2014-02-03 12:16:21 --> 404 Page Not Found --> loginc
+ERROR - 2014-02-03 12:16:29 --> 404 Page Not Found --> login_
+ERROR - 2014-02-03 12:16:33 --> 404 Page Not Found --> login_C
+ERROR - 2014-02-03 12:16:43 --> 404 Page Not Found --> login_C
+ERROR - 2014-02-03 12:16:58 --> 404 Page Not Found --> loginC
+ERROR - 2014-02-03 12:17:12 --> 404 Page Not Found --> login_
+ERROR - 2014-02-03 12:17:33 --> 404 Page Not Found --> login_C
+ERROR - 2014-02-03 12:17:40 --> 404 Page Not Found --> login_C
+ERROR - 2014-02-03 12:17:44 --> 404 Page Not Found --> login_C
+ERROR - 2014-02-03 12:18:05 --> 404 Page Not Found --> login
+ERROR - 2014-02-03 12:31:36 --> 404 Page Not Found --> L
+ERROR - 2014-02-03 12:32:05 --> 404 Page Not Found --> Login_C
+ERROR - 2014-02-03 12:32:15 --> 404 Page Not Found --> l
+ERROR - 2014-02-03 12:32:23 --> 404 Page Not Found --> login_
+ERROR - 2014-02-03 12:32:26 --> 404 Page Not Found --> statics
+ERROR - 2014-02-03 12:32:52 --> 404 Page Not Found --> statics
+ERROR - 2014-02-03 12:32:55 --> 404 Page Not Found --> statics
+ERROR - 2014-02-03 12:32:58 --> Severity: Notice  --> Undefined index: InstProcedencia /var/storage/www/html/cge/application/views/infoUsuario_v.php 129
+ERROR - 2014-02-03 12:32:58 --> Severity: Notice  --> Undefined index: UGradoEstudio /var/storage/www/html/cge/application/views/infoUsuario_v.php 158
+ERROR - 2014-02-03 12:32:58 --> Severity: Notice  --> Undefined index: ExpEst /var/storage/www/html/cge/application/views/infoUsuario_v.php 178
+ERROR - 2014-02-03 12:32:58 --> 404 Page Not Found --> statics
+ERROR - 2014-02-03 12:33:27 --> 404 Page Not Found --> statics
+ERROR - 2014-02-03 12:33:34 --> 404 Page Not Found --> statics
+ERROR - 2014-02-03 12:33:39 --> 404 Page Not Found --> statics
+ERROR - 2014-02-03 12:35:03 --> 404 Page Not Found --> statics
+ERROR - 2014-02-03 12:35:14 --> 404 Page Not Found --> statics
+ERROR - 2014-02-03 12:35:20 --> 404 Page Not Found --> statics
+ERROR - 2014-02-03 12:35:32 --> 404 Page Not Found --> statics

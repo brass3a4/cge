@@ -1,0 +1,1127 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2014-10-22 00:51:57 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:26:58 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:27:29 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:27:33 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:29:47 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:29:49 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:29:56 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:30:44 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:31:15 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:31:19 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:31:36 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:39:09 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:39:11 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:39:20 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:39:23 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:40:54 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 08:53:29 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 09:16:24 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 09:16:26 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 09:16:30 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_Nombre /var/storage/www/html/cge/application/views/preDatosP_v.php 35
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_aPaterno /var/storage/www/html/cge/application/views/preDatosP_v.php 36
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_aMaterno /var/storage/www/html/cge/application/views/preDatosP_v.php 37
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_Nacionalidad /var/storage/www/html/cge/application/views/preDatosP_v.php 38
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_FecNacimiento /var/storage/www/html/cge/application/views/preDatosP_v.php 39
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_lugarNac /var/storage/www/html/cge/application/views/preDatosP_v.php 40
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_NomEstado /var/storage/www/html/cge/application/views/preDatosP_v.php 49
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_Calle /var/storage/www/html/cge/application/views/preDatosP_v.php 50
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_NumExterior /var/storage/www/html/cge/application/views/preDatosP_v.php 51
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_Colonia /var/storage/www/html/cge/application/views/preDatosP_v.php 57
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_NomMunicipio /var/storage/www/html/cge/application/views/preDatosP_v.php 58
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_CP /var/storage/www/html/cge/application/views/preDatosP_v.php 59
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_Telefono /var/storage/www/html/cge/application/views/preDatosP_v.php 60
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_RFC /var/storage/www/html/cge/application/views/preDatosP_v.php 69
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_CURP /var/storage/www/html/cge/application/views/preDatosP_v.php 70
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: Usuarios_email /var/storage/www/html/cge/application/views/preDatosP_v.php 71
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_TipoInstProcedencia /var/storage/www/html/cge/application/views/preDatosP_v.php 73
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_UnivelEstudio /var/storage/www/html/cge/application/views/preDatosP_v.php 111
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_FecExa /var/storage/www/html/cge/application/views/preDatosP_v.php 126
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_Prom /var/storage/www/html/cge/application/views/preDatosP_v.php 127
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_ocupacion /var/storage/www/html/cge/application/views/preDatosP_v.php 128
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_experiencia /var/storage/www/html/cge/application/views/preDatosP_v.php 129
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_motivos /var/storage/www/html/cge/application/views/preDatosP_v.php 130
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_interes /var/storage/www/html/cge/application/views/preDatosP_v.php 131
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_interes2 /var/storage/www/html/cge/application/views/preDatosP_v.php 132
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_proyecto /var/storage/www/html/cge/application/views/preDatosP_v.php 133
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_medio /var/storage/www/html/cge/application/views/preDatosP_v.php 134
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_unidad /var/storage/www/html/cge/application/views/preDatosP_v.php 135
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_division /var/storage/www/html/cge/application/views/preDatosP_v.php 136
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_NivEstudio /var/storage/www/html/cge/application/views/preDatosP_v.php 137
+ERROR - 2014-10-22 09:26:15 --> Severity: Notice  --> Undefined index: DatosUsuario_NomPosgrado /var/storage/www/html/cge/application/views/preDatosP_v.php 138
+ERROR - 2014-10-22 09:26:16 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 09:30:43 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 09:30:47 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 09:31:19 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 09:42:54 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 10:00:14 --> Severity: Notice  --> Undefined index: datos /var/storage/www/html/cge/application/controllers/preregistroP_c.php 40
+ERROR - 2014-10-22 10:00:14 --> Severity: Warning  --> Invalid argument supplied for foreach() /var/storage/www/html/cge/application/controllers/preregistroP_c.php 43
+ERROR - 2014-10-22 10:00:14 --> Severity: Notice  --> Undefined variable: datos /var/storage/www/html/cge/application/controllers/preregistroP_c.php 56
+ERROR - 2014-10-22 10:00:14 --> Severity: Notice  --> Undefined variable: datos /var/storage/www/html/cge/application/controllers/preregistroP_c.php 58
+ERROR - 2014-10-22 10:00:14 --> Severity: Notice  --> Uninitialized string offset: 0 /var/storage/www/html/cge/application/controllers/preregistroP_c.php 159
+ERROR - 2014-10-22 10:03:13 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 10:03:16 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 10:03:29 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 10:05:45 --> Severity: Notice  --> Undefined index: datos /var/storage/www/html/cge/application/controllers/preregistroP_c.php 40
+ERROR - 2014-10-22 10:05:45 --> Severity: Warning  --> Invalid argument supplied for foreach() /var/storage/www/html/cge/application/controllers/preregistroP_c.php 43
+ERROR - 2014-10-22 10:05:45 --> Severity: Notice  --> Undefined variable: datos /var/storage/www/html/cge/application/controllers/preregistroP_c.php 56
+ERROR - 2014-10-22 10:05:45 --> Severity: Notice  --> Undefined variable: datos /var/storage/www/html/cge/application/controllers/preregistroP_c.php 58
+ERROR - 2014-10-22 10:05:45 --> Severity: Notice  --> Uninitialized string offset: 0 /var/storage/www/html/cge/application/controllers/preregistroP_c.php 159
+ERROR - 2014-10-22 10:06:48 --> Severity: Notice  --> Undefined index: datos /var/storage/www/html/cge/application/controllers/preregistroP_c.php 40
+ERROR - 2014-10-22 10:06:48 --> Severity: Warning  --> Invalid argument supplied for foreach() /var/storage/www/html/cge/application/controllers/preregistroP_c.php 43
+ERROR - 2014-10-22 10:06:48 --> Severity: Notice  --> Undefined variable: datos /var/storage/www/html/cge/application/controllers/preregistroP_c.php 56
+ERROR - 2014-10-22 10:06:48 --> Severity: Notice  --> Undefined variable: datos /var/storage/www/html/cge/application/controllers/preregistroP_c.php 58
+ERROR - 2014-10-22 10:06:48 --> Severity: Notice  --> Uninitialized string offset: 0 /var/storage/www/html/cge/application/controllers/preregistroP_c.php 159
+ERROR - 2014-10-22 10:09:57 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 10:10:01 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 10:13:27 --> Severity: Notice  --> Undefined index: datos /var/storage/www/html/cge/application/controllers/preregistroP_c.php 40
+ERROR - 2014-10-22 10:13:27 --> Severity: Warning  --> Invalid argument supplied for foreach() /var/storage/www/html/cge/application/controllers/preregistroP_c.php 43
+ERROR - 2014-10-22 10:13:27 --> Severity: Notice  --> Undefined variable: datos /var/storage/www/html/cge/application/controllers/preregistroP_c.php 56
+ERROR - 2014-10-22 10:13:27 --> Severity: Notice  --> Undefined variable: datos /var/storage/www/html/cge/application/controllers/preregistroP_c.php 58
+ERROR - 2014-10-22 10:13:27 --> Severity: Notice  --> Uninitialized string offset: 0 /var/storage/www/html/cge/application/controllers/preregistroP_c.php 159
+ERROR - 2014-10-22 11:02:24 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:02:24 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:02:38 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:02:41 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:04:07 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:04:42 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:04:48 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:05:22 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:05:39 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:05:41 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:06:57 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:07:07 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:08:38 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:08:45 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:08:52 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:08:58 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:09:03 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:10:14 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:11:52 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:12:50 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:33:47 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:34:06 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:39:53 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:46:31 --> The session cookie data did not match what was expected. This could be a possible hacking attempt.
+ERROR - 2014-10-22 11:46:32 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:46:45 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:46:58 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:47:05 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:47:08 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:47:50 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:49:07 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:50:30 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:51:19 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:52:04 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:52:48 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:53:17 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 11:53:27 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 12:08:50 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 13:23:22 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_Nombre /var/storage/www/html/cge/application/views/preDatosP_v.php 35
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_aPaterno /var/storage/www/html/cge/application/views/preDatosP_v.php 36
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_aMaterno /var/storage/www/html/cge/application/views/preDatosP_v.php 37
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_Nacionalidad /var/storage/www/html/cge/application/views/preDatosP_v.php 38
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_FecNacimiento /var/storage/www/html/cge/application/views/preDatosP_v.php 39
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_lugarNac /var/storage/www/html/cge/application/views/preDatosP_v.php 40
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_NomEstado /var/storage/www/html/cge/application/views/preDatosP_v.php 49
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_Calle /var/storage/www/html/cge/application/views/preDatosP_v.php 50
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_NumExterior /var/storage/www/html/cge/application/views/preDatosP_v.php 51
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_Colonia /var/storage/www/html/cge/application/views/preDatosP_v.php 57
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_NomMunicipio /var/storage/www/html/cge/application/views/preDatosP_v.php 58
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_CP /var/storage/www/html/cge/application/views/preDatosP_v.php 59
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_Telefono /var/storage/www/html/cge/application/views/preDatosP_v.php 60
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_RFC /var/storage/www/html/cge/application/views/preDatosP_v.php 69
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_CURP /var/storage/www/html/cge/application/views/preDatosP_v.php 70
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: Usuarios_email /var/storage/www/html/cge/application/views/preDatosP_v.php 71
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_TipoInstProcedencia /var/storage/www/html/cge/application/views/preDatosP_v.php 73
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_UnivelEstudio /var/storage/www/html/cge/application/views/preDatosP_v.php 111
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_FecExa /var/storage/www/html/cge/application/views/preDatosP_v.php 126
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_Prom /var/storage/www/html/cge/application/views/preDatosP_v.php 127
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_ocupacion /var/storage/www/html/cge/application/views/preDatosP_v.php 128
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_experiencia /var/storage/www/html/cge/application/views/preDatosP_v.php 129
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_motivos /var/storage/www/html/cge/application/views/preDatosP_v.php 130
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_interes /var/storage/www/html/cge/application/views/preDatosP_v.php 131
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_interes2 /var/storage/www/html/cge/application/views/preDatosP_v.php 132
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_proyecto /var/storage/www/html/cge/application/views/preDatosP_v.php 133
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_medio /var/storage/www/html/cge/application/views/preDatosP_v.php 134
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_unidad /var/storage/www/html/cge/application/views/preDatosP_v.php 135
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_division /var/storage/www/html/cge/application/views/preDatosP_v.php 136
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_NivEstudio /var/storage/www/html/cge/application/views/preDatosP_v.php 137
+ERROR - 2014-10-22 13:30:30 --> Severity: Notice  --> Undefined index: DatosUsuario_NomPosgrado /var/storage/www/html/cge/application/views/preDatosP_v.php 138
+ERROR - 2014-10-22 13:30:31 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 14:10:49 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 14:11:16 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 14:37:30 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 14:39:09 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 14:39:11 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 14:39:22 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 14:48:13 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 15:15:51 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 15:15:52 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 15:16:02 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 15:19:28 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 15:33:54 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 15:33:59 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 15:48:18 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 15:48:23 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 15:49:01 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 16:35:50 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 16:36:50 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 16:36:55 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 16:37:45 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 16:37:48 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 16:37:53 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 16:40:56 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_Nombre /var/storage/www/html/cge/application/views/preDatosP_v.php 35
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_aPaterno /var/storage/www/html/cge/application/views/preDatosP_v.php 36
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_aMaterno /var/storage/www/html/cge/application/views/preDatosP_v.php 37
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_Nacionalidad /var/storage/www/html/cge/application/views/preDatosP_v.php 38
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_FecNacimiento /var/storage/www/html/cge/application/views/preDatosP_v.php 39
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_lugarNac /var/storage/www/html/cge/application/views/preDatosP_v.php 40
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_NomEstado /var/storage/www/html/cge/application/views/preDatosP_v.php 49
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_Calle /var/storage/www/html/cge/application/views/preDatosP_v.php 50
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_NumExterior /var/storage/www/html/cge/application/views/preDatosP_v.php 51
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_Colonia /var/storage/www/html/cge/application/views/preDatosP_v.php 57
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_NomMunicipio /var/storage/www/html/cge/application/views/preDatosP_v.php 58
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_CP /var/storage/www/html/cge/application/views/preDatosP_v.php 59
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_Telefono /var/storage/www/html/cge/application/views/preDatosP_v.php 60
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_RFC /var/storage/www/html/cge/application/views/preDatosP_v.php 69
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_CURP /var/storage/www/html/cge/application/views/preDatosP_v.php 70
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: Usuarios_email /var/storage/www/html/cge/application/views/preDatosP_v.php 71
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_TipoInstProcedencia /var/storage/www/html/cge/application/views/preDatosP_v.php 73
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_UnivelEstudio /var/storage/www/html/cge/application/views/preDatosP_v.php 111
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_FecExa /var/storage/www/html/cge/application/views/preDatosP_v.php 126
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_Prom /var/storage/www/html/cge/application/views/preDatosP_v.php 127
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_ocupacion /var/storage/www/html/cge/application/views/preDatosP_v.php 128
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_experiencia /var/storage/www/html/cge/application/views/preDatosP_v.php 129
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_motivos /var/storage/www/html/cge/application/views/preDatosP_v.php 130
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_interes /var/storage/www/html/cge/application/views/preDatosP_v.php 131
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_interes2 /var/storage/www/html/cge/application/views/preDatosP_v.php 132
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_proyecto /var/storage/www/html/cge/application/views/preDatosP_v.php 133
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_medio /var/storage/www/html/cge/application/views/preDatosP_v.php 134
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_unidad /var/storage/www/html/cge/application/views/preDatosP_v.php 135
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_division /var/storage/www/html/cge/application/views/preDatosP_v.php 136
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_NivEstudio /var/storage/www/html/cge/application/views/preDatosP_v.php 137
+ERROR - 2014-10-22 17:09:16 --> Severity: Notice  --> Undefined index: DatosUsuario_NomPosgrado /var/storage/www/html/cge/application/views/preDatosP_v.php 138
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_Nombre /var/storage/www/html/cge/application/views/preDatosP_v.php 35
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_aPaterno /var/storage/www/html/cge/application/views/preDatosP_v.php 36
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_aMaterno /var/storage/www/html/cge/application/views/preDatosP_v.php 37
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_Nacionalidad /var/storage/www/html/cge/application/views/preDatosP_v.php 38
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_FecNacimiento /var/storage/www/html/cge/application/views/preDatosP_v.php 39
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_lugarNac /var/storage/www/html/cge/application/views/preDatosP_v.php 40
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_IdPais /var/storage/www/html/cge/application/views/preDatosP_v.php 44
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_NomEstado /var/storage/www/html/cge/application/views/preDatosP_v.php 49
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_Calle /var/storage/www/html/cge/application/views/preDatosP_v.php 50
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_NumExterior /var/storage/www/html/cge/application/views/preDatosP_v.php 51
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_Colonia /var/storage/www/html/cge/application/views/preDatosP_v.php 57
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_NomMunicipio /var/storage/www/html/cge/application/views/preDatosP_v.php 58
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_CP /var/storage/www/html/cge/application/views/preDatosP_v.php 59
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_Telefono /var/storage/www/html/cge/application/views/preDatosP_v.php 60
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_RFC /var/storage/www/html/cge/application/views/preDatosP_v.php 69
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_CURP /var/storage/www/html/cge/application/views/preDatosP_v.php 70
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: Usuarios_email /var/storage/www/html/cge/application/views/preDatosP_v.php 71
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_TipoInstProcedencia /var/storage/www/html/cge/application/views/preDatosP_v.php 73
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_UnivelEstudio /var/storage/www/html/cge/application/views/preDatosP_v.php 111
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_FecExa /var/storage/www/html/cge/application/views/preDatosP_v.php 126
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_Prom /var/storage/www/html/cge/application/views/preDatosP_v.php 127
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_ocupacion /var/storage/www/html/cge/application/views/preDatosP_v.php 128
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_experiencia /var/storage/www/html/cge/application/views/preDatosP_v.php 129
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_motivos /var/storage/www/html/cge/application/views/preDatosP_v.php 130
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_interes /var/storage/www/html/cge/application/views/preDatosP_v.php 131
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_interes2 /var/storage/www/html/cge/application/views/preDatosP_v.php 132
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_proyecto /var/storage/www/html/cge/application/views/preDatosP_v.php 133
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_medio /var/storage/www/html/cge/application/views/preDatosP_v.php 134
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_unidad /var/storage/www/html/cge/application/views/preDatosP_v.php 135
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_division /var/storage/www/html/cge/application/views/preDatosP_v.php 136
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_NivEstudio /var/storage/www/html/cge/application/views/preDatosP_v.php 137
+ERROR - 2014-10-22 17:21:36 --> Severity: Notice  --> Undefined index: DatosUsuario_NomPosgrado /var/storage/www/html/cge/application/views/preDatosP_v.php 138
+ERROR - 2014-10-22 17:21:37 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 18:58:56 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 18:59:43 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 18:59:48 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 19:00:22 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 19:05:36 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 20:45:41 --> 404 Page Not Found --> statics
+ERROR - 2014-10-22 23:08:24 --> 404 Page Not Found --> statics
