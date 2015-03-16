@@ -32,6 +32,7 @@
 						<div class="twelve columns">
 								<div class="four columns">
 									<label>Nombre(s):</label>
+<<<<<<< HEAD
 									<input type="text" id="nombre" name="Usuarios_Nombre" title="El nombre debe contener únicamente letras" pattern="^[a-zA-Z ñÑÁáÉéÍíÓóÚúüç][a-zA-Z ñÑáéíóúüç]*$" required/>
 								</div>
 								<div class="four columns">

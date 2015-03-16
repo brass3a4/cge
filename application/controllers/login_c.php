@@ -43,6 +43,7 @@
 				if ($verifica != '0'){
 					$newdata = array(
 						   'idUsuario' => $verifica,
+
 		                   'usr'  => $credenciales['usuario'],
 		                   'pass'     => $credenciales['password'],
 		                   'logged_in' => TRUE
@@ -54,6 +55,7 @@
 					
 					if(!empty($_SESSION['usr'])){
 					redirect('perfil_c');
+
 					}	
 				} else {
 					

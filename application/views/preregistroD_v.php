@@ -39,6 +39,7 @@
 								<div class="four columns">
 									<label>Apellido materno: </label>
 									<input type="text" id="apellidoMat" name="Usuarios_aMaterno" title="Este campo debe contener únicamente letras"  />
+
 								</div>
 						</div>
 						
@@ -53,6 +54,7 @@
 								</div>
 								<div class="four columns">
 									<label>Lugar de nacimiento: <small>(obligatorio)</small></label>
+
 									<input type="text" id="Lnacimiento" name="Usuarios_lugarNac" required/>
 								</div>
 						</div>
@@ -75,6 +77,7 @@
 							<div class="six columns">
 								<label>Estado: <small>(obligatorio)</small></label>
 								<input type="text" name="Usuarios_NomEstado"  />
+
 							</div>
 							</div>
 							
@@ -99,6 +102,7 @@
 							</div>			
 							<div class="six columns">
 									<label>Ciudad: <small>(obligatorio)</small></label>
+
 									<input type="text" name="Usuarios_NomMunicipio" pattern="|^[a-zA-Z][a-zA-Z ñÑáéíóúüç]*$|" />
 							</div>	
 							</div>
@@ -130,6 +134,7 @@
 							</fieldset>
 							<div class="four columns">
 								<label>RFC: <small>(obligatorio)</small></label>
+
 								<input type="text" id="rfc" name="Usuarios_RFC"/>
 							</div>
 							<div class="four columns">

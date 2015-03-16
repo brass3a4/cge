@@ -2,7 +2,11 @@ body{
 	background: url("../img/registro.jpg") no-repeat scroll center top white;
 }
 .row {
+<<<<<<< HEAD
 	margin-top: 50px;
+=======
+	margin-top: 150px;
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 }
 .row .login{
 	margin-top: 0;
@@ -31,7 +35,10 @@ a:hover{
 .cuerpo, .login {
 	background: url("../img/bg.png") repeat center center transparent;
 	box-shadow: 5px 5px 10px gray;
+<<<<<<< HEAD
 	margin-top: 80px;
+=======
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 }
 .cuerpo .cuerpo{
 	background: none;
@@ -48,28 +55,36 @@ a:hover{
 	padding-bottom: 10px;
 }
 
+<<<<<<< HEAD
 .headLogin{
 	padding-top: 0%;
 }
 
+=======
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 .button.disabled, .button[disabled]{
 	background: #5BB75B;
 }
 .button.disabled:hover, .button[disabled]:hover{
 	background: none repeat scroll 0 0 #51A351;
+<<<<<<< HEAD
 }
 ding-bottom: 10px;
 }
 
 .headLogin{
 	padding-top: 10%;
+=======
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 }
+
 
 .button.disabled, .button[disabled]{
 	background: #5BB75B;
 }
 .button.disabled:hover, .button[disabled]:hover{
 	background: none repeat scroll 0 0 #51A351;
+<<<<<<< HEAD
 }
 
 /*   posgrado    */
@@ -104,3 +119,6 @@ ding-bottom: 10px;
 	    color: #FFFFFF;
 	}
 
+=======
+}
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc

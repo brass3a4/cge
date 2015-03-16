@@ -31,10 +31,18 @@
 					<div class="twelve columns espacioInferior">
 						<div class="six columns">
 							<?php if($valor == 0): ?>
+<<<<<<< HEAD
 							<a class="button" onclick="cargaVistaDocs('<?=$usuario ?>','<?= $idRol?>')"> Subir documentos</a>
 							<?php endif ?>
 							<?php if($valor == 1): ?>
 							<a class="button" disabled> Subir documentos</a>
+=======
+								<a class="button" onclick="cargaVistaDocs('<?=$usuario ?>','<?= $idRol?>')"> Subir documentos</a>
+							<?php endif ?>
+							
+							<?php if($valor == 1): ?>
+								<a class="button" disabled> Subir documentos</a>
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 							<?php endif ?>
 						</div>
 						<div class="twelve columns">
@@ -44,7 +52,7 @@
 									<tr>
 									<?php foreach($archivos as $archivo):?>
 										<td>
-										<a href="<?= base_url().$archivo['url'];?>"><img src="<?= base_url().'statics/img/text-x-preview.png'?>" height="50" width="50"><?=$archivo['nomArchivo']?></a>
+											<a href="<?= base_url().$archivo['url'];?>"><img src="<?= base_url().'statics/img/text-x-preview.png'?>" height="50" width="50"><?=$archivo['nomArchivo']?></a>
 										</td>
 									<?php endforeach;?>
 									</tr>

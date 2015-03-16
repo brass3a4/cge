@@ -63,8 +63,53 @@
 			}else{
 				$data['valor2']='0';
 			}
+<<<<<<< HEAD
+=======
 			
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 			
+			/* Dependiendo del rol del usuario abre diferentes vistas*/
+			switch ($data['idRol']) {
+				
+				case '1':
+						// vista para curso root
+						redirect(base_url().'admin_c');
+					break;
+				
+				case '2':
+						// vista para curso ingles
+						redirect(base_url().'adminDocs_c');
+					break;
+				
+				case '3':
+						// vista para curso ingles
+						$this->load->view('menuRegistro_v',$data);
+					break;
+				case '4':
+						// vista para curso diplomado en ciencias póliticas
+						$this->load->view('menuRegistroD_v',$data);
+					break;
+				case '5':
+						// vista para posgrados
+						$this->load->view('menuRegistroP_v',$data);
+					break;
+				case '9':
+						// vista para posgrados
+						$this->load->view('menuRegistroC_v',$data);
+					break;
+					
+				case '10':
+						
+						// vista para Talleres
+						$this->load->view('menuRegistroT_v',$data);
+					break;
+				
+				default:
+					
+					break;
+			}
+			
+<<<<<<< HEAD
 			/* Dependiendo del rol del usuario abre diferentes vistas*/
 			switch ($data['idRol']) {
 				case '2':
@@ -107,6 +152,15 @@
 			$data['usuario'] = $usuario;
 			$this->load->view('registroDocsLegalP_v',$data);
 		}
+=======
+		}
+	   	
+		function cargaDocsLegal($usuario)
+		{
+			$data['usuario'] = $usuario;
+			$this->load->view('registroDocsLegalP_v',$data);
+		}
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 		
 		function cargaDocs($usuario,$idRol)
 		{
@@ -150,9 +204,15 @@
 			
 			/*Si el usuario existe:*/
 			if($idUsuario != '0'){
+<<<<<<< HEAD
 				
 				$archivos = $this->usuarios_m->traeArchivos($idUsuario,'1');
 				
+=======
+				
+				$archivos = $this->usuarios_m->traeArchivos($idUsuario,'1');
+				
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 				//cargamos la ruta absoluta
 				$ruta = exec('pwd');
 				// creamos el directorio donde se guardaran los archivos del usuario, 

@@ -75,6 +75,7 @@
 			
 	        $pdf = new FPDF();
 	        $link = $pdf->AddLink();
+
 			$idUsuario = $this->usuarios_m->traeUsuarioId($usuario);
 			
 			if($idUsuario != '0'){
@@ -89,6 +90,7 @@
 				$contenido['aMat'] = $datos['aMaterno'].', ';
 				$contenido['cad2'] = 'su preregistro y solicitud de ingreso al plan de estudios: ';
 				$contenido['cad3'] = '"Posgrado virtual en Politicas Culturales y Gestión Cultural" se ha realizado con éxito.'."\n\n";
+
 				$contenido['soliciud'] = 'Su número de solicitud es: '.$idUsuario. "\n";
 				$contenido['usuario'] = 'Usuario: '.$usuario."\n";
 				$contenido['contrasena'] = 'contraseña: '.$datos['password']."\n\n\n";
@@ -98,6 +100,7 @@
                 		$text = ""; 
 				$pdf->AddPage();
 				$pdf->SetFont('Arial','',12);
+
 
 				$pdf->Image($_SERVER["DOCUMENT_ROOT"]."/cge/statics/img/image.jpeg",1,1,250);
 
@@ -127,6 +130,7 @@
 			if($idUsuario != '0'){
 				
 				$datos = $this->usuarios_m->traeDatosUsuario($idUsuario);
+
 				//echo '<pre>';
 				//print_r($datos);
 				
@@ -181,6 +185,7 @@
 				$contenido['nombre'] = $datos['Nombre'].' ';
 				$contenido['aPat'] = $datos['aPaterno'].' ';
 				$contenido['aMat'] = $datos['aMaterno'].', ';
+
 				$contenido['cad2'] = 'su preregistro y solicitud de ingreso al Diplomado Virtual: ';
 				$contenido['cad3'] = '"Políticas y Desarrollo Cultural" se ha realizado con éxito.'."\n\n";
 				$contenido['soliciud'] = 'Su número de solicitud es: '.$idUsuario. "\n";
@@ -315,6 +320,7 @@
 				foreach ($datos['datosDetallePedido'] as $datosDet) {
 					$contenidoPago['titulo'] = "\n".'Pago en ventanilla BANCOMER'."\n";
 					$contenidoPago['convenio'] = 'Convenio CIE: 1151754'."\n";
+
 					$contenidoPago['concepto'] = 'Concepto a pagar: '.$datosDet['RefAPagar']."\n";
 					$contenidoPago['monto'] = 'Monto a pagar: $'.$datosDet['Precio']."\n";
 				

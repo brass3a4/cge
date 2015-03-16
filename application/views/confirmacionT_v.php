@@ -38,6 +38,7 @@
 					</div>
 
 					<p><b>Para completar su registro y elegir el taller en el que se encuentra interesad@, por favor ingrese <a href="http://virtuami.izt.uam.mx/cge/login_c">aquí.</a></b></p>
+
 					<p>Reciba un cordial saludo.</p>
 					<p>Coordinación de Educación Virtual</p>
 					<form action="<?php echo base_url();?>generaPdf_c/crearTaller/<?= $credenciales['usuario']?>" method="post">

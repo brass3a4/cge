@@ -2,6 +2,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Confirmación</title>
+
 	<meta name="viewport" content="width=device-width" />
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/foundation.min.css">
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/app.css">
@@ -28,6 +29,7 @@
 					<legend class="cuerpo" ><h4>Preregistro exitoso</h4></legend>	
 					<p>Estimado candidato, <b><?=$data['Usuarios_Nombre']?> <?=$data['Usuarios_aPaterno']?> <?=$data['Usuarios_aMaterno']?></b>, su preregistro y solicitud de ingreso al plan de estudios: 
 						"Posgrado virtual en Politicas Culturales y Gestión Cultural" se ha realizado con éxito.</p>
+
 					<p>Su número de solicitud es: <b><?=$IdUsuario?></b></p>	
 					<p>Su usuario y contraseña asignados son:</p>
 					<div class="offset-by-five">
@@ -37,6 +39,7 @@
 					<p>Reciba un cordial saludo.</p>
 					<p>Coordinación Académica</p>
 					<p><b> Para continuar con su registro ingrese <a href="<?=base_url();?>login_c">aquí.</a></b> En este paso debe subir todos los documentos solicitados en la convocatoria.</p>
+
 					<form action="<?php echo base_url();?>generaPdf_c/crearPosgrado/<?= $credenciales['usuario']?>" method="post">
 						<input type="submit" class="button" value="Exportar a pdf" />
 					</form>

@@ -1,5 +1,6 @@
 <html>
 <head>
+	<title>Confirma tus datos</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
   	<link rel="stylesheet" href="<?=base_url(); ?>statics/foundation/stylesheets/foundation.min.css">
@@ -21,9 +22,7 @@
 <body>
 
 	<div class="row">
-<!-- 		<pre><?php
-			print_r($datos);
-		?></pre> -->
+
 		<form action='<?=base_url(); ?>preregistroP_c/guardaDatos/' method='post' accept-charset="utf-8" enctype="multipart/form-data">
 		<div class="twelve columns ">
 			

@@ -36,6 +36,7 @@
 			// echo "</pre>";
 
 			$data['datos'] = $datos;
+
 			
 			
 			
@@ -64,6 +65,7 @@
         	// echo "<pre>";
         	// 	print_r($datos);
         	// echo "</pre>";
+
 			
 			$IdUsuario = $this->usuarios_m->guardaUsuario($datos);
 			
@@ -96,12 +98,14 @@
 			//$config['mailtype']='html';
 			
 			$config['protocol'] = 'smtp';
+
 			$config['smtp_host'] = 'ssl://smtp.googlemail.com';
 			$config['smtp_port'] = '465';
 			$config['smtp_user'] = 'rentzana@virtuami.izt.uam.mx';
 			$config['smtp_pass'] = 'rentzana75#';
 
 			$config['smtp_timeout'] = '7';
+
 			$config['charset']    = 'utf-8';
 			$config['newline']    = "\r\n";
 			$config['mailtype'] = 'html'; // or html
@@ -126,6 +130,7 @@
 							Estimado candidato, <b>'.$data['Usuarios_Nombre'].' '.$data['Usuarios_aPaterno'].' '.$data['Usuarios_aMaterno'].', </b> 
 											su preregistro y solicitud de ingreso al plan de estudios:<br> 
 											"Posgrado virtual en Politicas Culturales y Gestión Cultural" se ha realizado con éxito:<br><br>
+
 											Su número de solicitud es: '.$IdUsuario.'<br> 
 											Su usuario y contraseña asignados son:<br><br>
 											<b>
@@ -147,6 +152,7 @@
 			$this->email->message($msj);		
 			if(!($this->email->send()))
 			  {
+
 			   show_error($this->email->print_debugger());
 			  }		
 			}
@@ -191,6 +197,7 @@
 		    $cadena = utf8_decode($cadena);
 		    $cadena = strtr($cadena, utf8_decode($originales), $modificadas);
 		    $cadena = mb_strtolower($cadena);
+
 		    return utf8_encode($cadena);
 		}
 		

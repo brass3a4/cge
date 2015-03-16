@@ -185,6 +185,5 @@
 			redirect('adminDocs_c/muestraDocsUsuario/'.$idUsuario);
 		}
 	}
-	
-	
+
 ?>

@@ -22,7 +22,6 @@
 <body>
 
 	<div class="row">
-		
 		<form action='<?=base_url(); ?>preregistro_c/guardaDatos/' method='post' accept-charset="utf-8" enctype="multipart/form-data">
 		<div class="twelve columns ">
 			<fieldset class="cuerpo">
@@ -97,6 +96,7 @@
 										echo '<label><b>Institución de procedencia: </b>IPN</label>';	
 									break;
 								case '3':
+
 										if (isset($datosUsuario['institucionProcedencia'])) {
 											echo '<label><b>Institución de procedencia: </b>Incorporada a la UNAM, '.$datosUsuario['institucionProcedencia'].'</label>';	
 										}
@@ -134,7 +134,11 @@
 					
 					?>
 					<?php 
+<<<<<<< HEAD
 						switch (isset($datosUsuario['InstProcedencia'])) {
+=======
+						switch ($datosUsuario['InstProcedencia']) {
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 							case '1':
 									echo '<label><b>Comunidad: </b>Profesor de UAM Iztapalapa</label>';	
 								break;
@@ -163,7 +167,11 @@
 					?>
 					
 					<?php 
+<<<<<<< HEAD
 						switch (isset($datosUsuario['UGradoEstudio'])) {
+=======
+						switch ($datosUsuario['UGradoEstudio']) {
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 							case '1':
 									echo '<label><b>Último grado de estudios: </b>Licenciatura</label>';	
 								break;
@@ -183,7 +191,11 @@
 					?>
 					
 					<?php 
+<<<<<<< HEAD
 						if(isset($datosUsuario['ExpEst']) && $datosUsuario['ExpEst'] == '1') {
+=======
+						if($datosUsuario['ExpEst'] == '1') {
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 							echo "<br><label><b>Experiencia como estudiante o docente virtual:</b></label><br>";
 							echo '<label><b>Nivel académico: </b>'.$datosUsuario['NAcademicoEst'].'</label>';
 							echo '<label><b>Nombre del curso o programa de estudio: </b>'.$datosUsuario['NomCusoEst'].'</label>';	
@@ -216,6 +228,7 @@
 					<?php if(isset($datosUsuario['Prom'])):?>
 						<label><b>Promedio: </b><?=$datosUsuario['Prom']?></label>
 					<?php endif ?>
+<<<<<<< HEAD
 
 
 					<?php if(isset($datosUsuario['motivos'])):?>
@@ -236,6 +249,8 @@
 
 
 
+=======
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 					<?php if(isset($datosUsuario['unidad'])):?>
 						<label><b>Unidad: </b><?=$datosUsuario['unidad']?></label>
 					<?php endif ?>
@@ -333,9 +348,12 @@
 					<?php if(!empty($datosUsuario['unam2'])){
 						echo '<label>Exámenes de la comisión Técnica de Idiomas Extranjeros y de la comisión Especial de Lenguas Extranjeras (UNAM)</label>';}
 					?>
+<<<<<<< HEAD
 					<?php if(!empty($datosUsuario['cenni'])){
 						echo '<label>EXAMEN CENNI: '.$datosUsuario['datosCenni'].'</label>';}
 					?>
+=======
+>>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 					<?php if(!empty($datosUsuario['toefl'])){
 						echo '<label>TOEFL institucional, puntuaje: '.$datosUsuario['puntuajeTOEFL'].'</label>';}
 					?>

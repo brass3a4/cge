@@ -64,6 +64,7 @@
 							<div class="twelve columns">
 								<div class="six columns">
 								<label>País: <small>(obligatorio)</small></label>
+
 								<select name='Usuarios_IdPais'>
 									<?php 
 										foreach ($catPais as $key => $value) {
@@ -89,6 +90,7 @@
 								</div>
 								<div class="three columns">
 									<label>Número interior: </label>
+
 									<input type="text" id="numeroInt" name="Usuarios_NumInterior" />
 								</div>
 							</div>
@@ -146,7 +148,6 @@
 				 	</fieldset> 
 				 	<fieldset>
 				 	<legend class="cuerpo"><h4>Antecedentes</h4></legend>
-
 
 				 	<div class="twelve columns">
 				 		<div class="row">
