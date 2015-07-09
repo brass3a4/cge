@@ -1,3 +1,6 @@
+.borde{
+    border: 1px solid black;
+}
 .circulo {
     border-radius: 14px;
     width: 25px;
@@ -23,4 +26,105 @@
     height: 600px;
     overflow: hidden;
     width: 400px;
+}
+
+.esperaOut{
+    border: 10px solid #f6bb42;
+}
+.rechazadoOut{
+    border: 10px solid #e9573f;    
+}
+.aceptadoOut{
+    border: 10px solid #8cc152;
+}
+p{
+    color: white;
+    margin: -13px 0 0 -6px;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+    width: .74em;
+}
+
+/* mod multimedia */
+
+div>.fno:last-child {
+  float:none;
+}
+
+.ptop {
+  padding-top: 1.5em;
+}
+.pbtm {
+  padding-bottom: 1em; 
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  margin-right: 2em;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn-aceptar {
+  color: #fff;
+  background-color: #a0d468;
+  border-color: #8cc152;
+}
+.btn-aceptar:hover {
+  color: #fff;
+  background-color: #8cc152;
+  border-color: #8cc152;
+}
+
+.btn-rechazar {
+  color: #fff;
+  background-color: #fc6e51;
+  border-color: #e9573f;
+}
+.btn-rechazar:hover {
+  color: #fff;
+  background-color: #e9573f;
+  border-color: #e9573f;
+}
+.btn-print {
+  color: #fff;
+  background-color: #ccd1d9;
+  border-color: #aab2bd;
+}
+.btn-print:hover {
+  color: #fff;
+  background-color: #aab2bd;
+  border-color: #aab2bd;
+}
+.ccamarillo, .ccverde, .ccrojo {
+  background: transparent url(../img/ccolor.png) no-repeat;
+  display: inline-block;
+  height: 26px;
+  margin-left: 1em;
+  margin-right: .3em;
+  margin-bottom: -.5em;
+  width: 26px;
+}
+.ccamarillo {
+  background-position: left top;
+}
+.ccverde {
+  background-position: center top;
+}
+.ccrojo {
+  background-position: right top;
 }

@@ -33,6 +33,12 @@ class Perfil_c extends CI_Controller {
 			case '5':
 					$this->load->view('perfil_v', NULL, FALSE);
 				break;
+			case '2':
+					redirect('dashboard_c');
+				break;
+			case '11':
+					redirect('dashboard_c/diplomado');
+				break;
 			
 			default:
 				# code...

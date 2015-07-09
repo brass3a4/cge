@@ -16,115 +16,123 @@
   	<script src="<?=base_url(); ?>statics/foundation5/js/foundation/foundation.reveal.js"></script>
   	<script src="<?=base_url(); ?>statics/foundation5/js/foundation/foundation.equalizer.js"></script>
   	<script src="<?=base_url(); ?>statics/foundation5/js/foundation/foundation.tab.js"></script>
-  	<script src="<?=base_url();?>statics/dataTables/media/js/jquery.dataTables.js"></script>
+  	<script src="<?=base_url(); ?>statics/foundation5/js/foundation/foundation.tooltip.js"></script>
+  	<script src="<?=base_url(); ?>statics/dataTables/media/js/jquery.dataTables.js"></script>
 	<script src="<?=base_url(); ?>statics/js/dashboard.js"></script>
+	<script src="<?=base_url(); ?>statics/js/disqus.js"></script>
   	<script type="text/javascript">
 		var urlBase = "<?=base_url(); ?>";
 	</script>
+	
 </head>
 <body>
 	<div class="row">
 		<fieldset>
-			<ul class="tabs" data-tab> 
-				<li class="tab-title active"><a href="#panel1">Extranjeros</a></li> 
-				<li class="tab-title"><a href="#panel2">Nacionales</a></li> 
-				<li class="tab-title"><a href="#panel3">Aceptados</a></li> 
-				<li class="tab-title"><a href="#panel4">Sin interacción</a></li> 
-			</ul> 
-			<div class="tabs-content"> 
-				<div class="content active" id="panel1"> <!-- Cuerpo 1er Tab -->
-					<table id="extranjeros"> 
-						<thead> 
-							<tr> 
-								<th>Nombre</th> 
-								<th>Archivos</th> 
-								<th>Fecha actualización</th> 
-							</tr> 
-						</thead> 
-						<tbody id="cuerpoExtranjero"> 
-							
-						</tbody> 
-					</table>
-					<div id="modalDivsExtra"></div>
-				</div> 
-				<div class="content" id="panel2"> <!-- Cuerpo 2do Tab -->
-					<table id="nacional"> 
-						<thead> 
-							<tr> 
-								<th>Nombre</th> 
-								<th>Archivos</th> 
-								<th>Fecha actualización</th> 
-							</tr> 
-						</thead> 
-						<tbody id="cuerpoNacional"> 
-							
-						</tbody> 
-					</table>
-					<div id="modalDivsNacio"></div>
-				</div> 
-				<div class="content" id="panel3"> <!-- Cuerpo 3er Tab -->
-					<table id="aceptados"> 
-						<thead> 
-							<tr> 
-								<th>Nombre</th> 
-								<th>Archivos</th> 
-								<th>Lugar de estudios</th> 
-							</tr> 
-						</thead> 
-						<tbody id="cuerpoAceptados"> 
-							
-						</tbody> 
-					</table>
-					<div id="modalDivsAcept"></div>
-				</div> 
-				<div class="content" id="panel4"> <!-- Cuerpo 4to Tab -->
-					<table id="sinInteraccion"> 
-						<thead> 
-							<tr> 
-								<th>Nombre</th> 
-								<th>Correo electrónico</th> 
-								<th>Lugar de estudios</th> 
-							</tr> 
-						</thead> 
-						<tbody id="cuerpoSinInter"> 
-							
-						</tbody> 
-					</table>
-					<div id="modalDivsSinInter"></div>
-				</div> 
+			<div class="row">
+				<div class="large-12 small-12 columns">
+					<div class="large-6 small-6 columns">
+						<div class="row">
+							<span class="ccamarillo"></span>En revisión
+							<span class="ccverde"></span>Verificado
+							<span class="ccrojo"></span>No aprobado
+						</div>
+					</div>
+					<div class="large-6 small-6 columns right">
+						<div class="large-3 small-3 columns ">
+							<img id="avatar" src="<?=base_url('statics/img/avatar.png')?>" alt="">
+						</div>
+						<div class="large-8 small-8 columns">
+							<div class="row">
+								<div id="nomUsuario" class="large-12 small-12 large-centered small-centered columns">
+									
+								</div>
+							</div>
+							<div class="row">
+								<div class="large-12 small-12 large-centered small-centered columns">
+									<a href="#" id="cerrarSesion" class="button tiny radius">Cerrar sesión</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<ul class="tabs" data-tab> 
+					<li class="tab-title active"><a href="#panel1">Extranjeros</a></li> 
+					<li class="tab-title"><a href="#panel2">Nacionales</a></li> 
+					<li class="tab-title"><a href="#panel3">Verificados</a></li> 
+					<li class="tab-title"><a href="#panel4">Sin interacción</a></li> 
+				</ul> 
+				<div class="tabs-content"> 
+					<div class="content active" id="panel1"> <!-- Cuerpo 1er Tab -->
+						<table id="extranjeros"> 
+							<thead> 
+								<tr> 
+									<th>Nombre</th> 
+									<th>Archivos</th> 
+									<th>Fecha actualización</th> 
+								</tr> 
+							</thead> 
+							<tbody id="cuerpoExtranjero"> 
+								
+							</tbody> 
+						</table>
+						<div id="modalDivsExtra"></div>
+					</div> 
+					<div class="content" id="panel2"> <!-- Cuerpo 2do Tab -->
+						<table id="nacional"> 
+							<thead> 
+								<tr> 
+									<th>Nombre</th> 
+									<th>Archivos</th> 
+									<th>Fecha actualización</th> 
+								</tr> 
+							</thead> 
+							<tbody id="cuerpoNacional"> 
+								
+							</tbody> 
+						</table>
+						<div id="modalDivsNacio"></div>
+					</div> 
+					<div class="content" id="panel3"> <!-- Cuerpo 3er Tab -->
+						<table id="aceptados"> 
+							<thead> 
+								<tr> 
+									<th>Nombre</th> 
+									<th>Archivos</th> 
+									<th>Lugar de estudios</th> 
+								</tr> 
+							</thead> 
+							<tbody id="cuerpoAceptados"> 
+								
+							</tbody> 
+						</table>
+						<div id="modalDivsAcept"></div>
+						<div id="modalDivsInfoAcept"></div>
+					</div> 
+					<div class="content" id="panel4"> <!-- Cuerpo 4to Tab -->
+						<table id="sinInteraccion"> 
+							<thead> 
+								<tr> 
+									<th>Nombre</th> 
+									<th>Correo electrónico</th> 
+									<th>Lugar de estudios</th> 
+								</tr> 
+							</thead> 
+							<tbody id="cuerpoSinInter"> 
+								
+							</tbody> 
+						</table>
+						<div id="modalDivsSinInter"></div>
+					</div> 
+				</div>
 			</div>
 		</fieldset>
 	<script>
 			$(document).foundation();
 			// $(document).foundation('reveal', 'reflow');
 	</script>
-	<script type="text/javascript">
-	    /* * * CONFIGURATION VARIABLES * * */
-	    var disqus_shortname = 'blogerisimo';
-	    var disqus_identifier = '1234';
-	    // var disqus_title = 'a unique title for each page where Disqus is present';
-	    // var disqus_url = 'a unique URL for each page where Disqus is present';
-	    
-	    /* * * DON'T EDIT BELOW THIS LINE * * */
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
-	<script type="text/javascript">
-	    /* * * CONFIGURATION VARIABLES * * */
-	    var disqus_shortname = 'blogerisimo';
-	    var disqus_identifier = '123';
-	    // var disqus_title = 'a unique title for each page where Disqus is present';
-	    // var disqus_url = 'a unique URL for each page where Disqus is present';
-	    
-	    /* * * DON'T EDIT BELOW THIS LINE * * */
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
+	
+	
 </body>
 </html>

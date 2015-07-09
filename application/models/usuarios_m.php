@@ -239,8 +239,8 @@ class usuarios_m extends CI_Model {
 						foreach ($consulta->result_array() as $row) {
 							$datos[$row['NomCampo']] = $row['Datos']; 
 						}
-						return $datos;
 					}
+						return $datos;
 				}
 				
 			}else{

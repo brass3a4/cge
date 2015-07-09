@@ -16,6 +16,7 @@
   	<script src="<?=base_url(); ?>statics/foundation5/js/foundation/foundation.equalizer.js"></script>
   	<script src="<?=base_url(); ?>statics/dropzone/dropzone.js"></script>
   	<script src="<?=base_url(); ?>statics/js/perfil.js"></script>
+  	<script src="<?=base_url(); ?>statics/js/disqusPerfil.js"></script>
   	<script type="text/javascript">
 		var urlBase = "<?=base_url(); ?>";
 	</script>
@@ -35,7 +36,7 @@
 						<p>Para subir (o sustituir) los documentos, arrastre y suelte el archivo, o de clic, en el área punteada.</p>
 						<p>Código de color de los archivos:<br/>
 							<span class="ccamarillo"></span>En revisión
-							<span class="ccverde"></span>Aprobado 
+							<span class="ccverde"></span>Verificado
 							<span class="ccrojo"></span>No aprobado</p>
 					</div>
 					<div class="large-6 small-6 columns fondoCajas columns2">
@@ -249,7 +250,7 @@
 					<div class="large-4 small-4 columns fondoCajas columns3" data-equalizer-watch>
 						<div class="row">
 							<div class="large-12 small-centered large-centered small-12 columns">
-								<h5>Identificación oficial con fotografía (IFE o Pasaporte)</h5>
+								<h5>Identificación oficial con fotografía (INE o Pasaporte)</h5>
 							</div>
 							<hr>
 						</div>

@@ -152,7 +152,7 @@
 				 	<div class="twelve columns">
 				 		<div class="row">
 						<div class="four columns">
-				 			<label class="espacioInferior"><b>Estudios realizados en:</b></label>
+				 			<label class="espacioInferior"><b>Estudios de licenciatura realizados en:</b></label>
 							<input type="radio" name="DatosUsuario_Estudios" value="México" checked>México
 							<input type="radio" name="DatosUsuario_Estudios" value="Extranjero">Extranjero
 						</div>

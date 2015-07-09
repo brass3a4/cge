@@ -9,22 +9,23 @@ $(document).on('ready',function(){
     }, function(data) {
         // console.log(data);
         var documentos = JSON.parse(data);
-        // console.log(documentos.tituloLicFrente.color);
+        // console.log(documentos.tituloLicFrente);
         // console.info(documentos);
         // console.info($.isEmptyObject(documentos.tituloLicFrente));
        	if($.isEmptyObject(documentos.tituloLicFrente) == false){
-       		   	$('#tituloLicFrenteImg').html('<a data-reveal-id="modalTituloLicFrente"><img src="'+urlBase+documentos.tituloLicFrente.url+'" alt=""></a>');
+       		   	$('#tituloLicFrenteImg').html("<a data-reveal-id='modalTituloLicFrente'><img onclick=\"reset('"+documentos.tituloLicFrente.IdArchivo+"', 'http://localhost/cge/dashboard_c/"+documentos.tituloLicFrente.IdArchivo+"', 'Archivo "+documentos.tituloLicFrente.IdArchivo+"','es','modalTituloLicFrente');\" src='"+urlBase+documentos.tituloLicFrente.url+"'></a>");
        		   	$('#tituloLicFrenteImg').removeClass('vacia');
 				$('#tituloLicFrenteImg').addClass('cajita');
 				$('#tituloLicFrenteImg').addClass(documentos.tituloLicFrente.color);
 				$('#modalTituloLicFrente').html('<center><img src="'+urlBase+documentos.tituloLicFrente.url+'" alt=""><a class="close-reveal-modal">&#215;</a></center>');
+
 				$(document).foundation('equalizer', 'reflow');
 				if(documentos.tituloLicFrente.estado == 3){
 					myDropzone1.disable();
 				}
        	}
        	if($.isEmptyObject(documentos.tituloLicAtras) == false){
-       		   	$('#tituloAtrasImg').html('<a data-reveal-id="modalTituloLicAtras"><img src="'+urlBase+documentos.tituloLicAtras.url+'" alt=""></a>');
+       		   	$('#tituloAtrasImg').html("<a data-reveal-id='modalTituloLicAtras'><img onclick=\"reset('"+documentos.tituloLicAtras.IdArchivo+"', 'http://localhost/cge/dashboard_c/"+documentos.tituloLicAtras.IdArchivo+"', 'Archivo "+documentos.tituloLicAtras.IdArchivo+"','es','modalTituloLicAtras');\" src='"+urlBase+documentos.tituloLicAtras.url+"'></a>");
        		   	$('#tituloAtrasImg').removeClass('vacia');
 				$('#tituloAtrasImg').addClass('cajita');
 				$('#tituloAtrasImg').addClass(documentos.tituloLicAtras.color);
@@ -35,7 +36,7 @@ $(document).on('ready',function(){
 				}
        	}
        	if($.isEmptyObject(documentos.certiFrente) == false){
-       		   	$('#certiFrenteImg').html('<a data-reveal-id="modalCertiFrente"><img src="'+urlBase+documentos.certiFrente.url+'" alt=""></a>');
+       		   	$('#certiFrenteImg').html("<a data-reveal-id='modalCertiFrente'><img onclick=\"reset('"+documentos.certiFrente.IdArchivo+"', 'http://localhost/cge/dashboard_c/"+documentos.certiFrente.IdArchivo+"', 'Archivo "+documentos.certiFrente.IdArchivo+"','es','modalCertiFrente');\" src='"+urlBase+documentos.certiFrente.url+"'></a>");
        		   	$('#certiFrenteImg').removeClass('vacia');
 				$('#certiFrenteImg').addClass('cajita');
 				$('#certiFrenteImg').addClass(documentos.certiFrente.color);
@@ -47,7 +48,7 @@ $(document).on('ready',function(){
 
        	}
        	if($.isEmptyObject(documentos.certiAtras) == false){
-       		   	$('#certiAtrasImg').html('<a data-reveal-id="modalCertiAtras"><img src="'+urlBase+documentos.certiAtras.url+'" alt=""></a>');
+       		   	$('#certiAtrasImg').html("<a data-reveal-id='modalCertiAtras'><img onclick=\"reset('"+documentos.certiAtras.IdArchivo+"', 'http://localhost/cge/dashboard_c/"+documentos.certiAtras.IdArchivo+"', 'Archivo "+documentos.certiAtras.IdArchivo+"','es','modalCertiAtras');\" src='"+urlBase+documentos.certiAtras.url+"'></a>");
        		   	$('#certiAtrasImg').removeClass('vacia');
 				$('#certiAtrasImg').addClass('cajita');
 				$('#certiAtrasImg').addClass(documentos.certiAtras.color);
@@ -58,7 +59,7 @@ $(document).on('ready',function(){
 				}
        	}
        	if($.isEmptyObject(documentos.actaFrente) == false){
-       		   	$('#actaFrenteImg').html('<a data-reveal-id="modalActaFrente"><img src="'+urlBase+documentos.actaFrente.url+'" alt=""></a>');
+       		   	$('#actaFrenteImg').html("<a data-reveal-id='modalActaFrente'><img onclick=\"reset('"+documentos.actaFrente.IdArchivo+"', 'http://localhost/cge/dashboard_c/"+documentos.actaFrente.IdArchivo+"', 'Archivo "+documentos.actaFrente.IdArchivo+"','es','modalActaFrente');\" src='"+urlBase+documentos.actaFrente.url+"'></a>");
        		   	$('#actaFrenteImg').removeClass('vacia');
 				$('#actaFrenteImg').addClass('cajita');
 				$('#actaFrenteImg').addClass(documentos.actaFrente.color);
@@ -69,7 +70,7 @@ $(document).on('ready',function(){
 				}
        	}
        	if($.isEmptyObject(documentos.actaAtras) == false){
-       		   	$('#actaAtrasImg').html('<a data-reveal-id="modalActaAtras"><img src="'+urlBase+documentos.actaAtras.url+'" alt=""></a>');
+       		   	$('#actaAtrasImg').html("<a data-reveal-id='modalActaAtras'><img onclick=\"reset('"+documentos.actaAtras.IdArchivo+"', 'http://localhost/cge/dashboard_c/"+documentos.actaAtras.IdArchivo+"', 'Archivo "+documentos.actaAtras.IdArchivo+"','es','modalActaAtras');\" src='"+urlBase+documentos.actaAtras.url+"'></a>");
        		   	$('#actaAtrasImg').removeClass('vacia');
 				$('#actaAtrasImg').addClass('cajita');
 				$('#actaAtrasImg').addClass(documentos.actaAtras.color);
@@ -80,7 +81,7 @@ $(document).on('ready',function(){
 				}
        	}
        	if($.isEmptyObject(documentos.curpFrente) == false){
-       		   	$('#curpFrenteImg').html('<a data-reveal-id="modalCurpFrente"><img src="'+urlBase+documentos.curpFrente.url+'" alt=""></a>');
+       		   	$('#curpFrenteImg').html("<a data-reveal-id='modalCurpFrente'><img onclick=\"reset('"+documentos.curpFrente.IdArchivo+"', 'http://localhost/cge/dashboard_c/"+documentos.curpFrente.IdArchivo+"', 'Archivo "+documentos.curpFrente.IdArchivo+"','es','modalCurpFrente');\" src='"+urlBase+documentos.curpFrente.url+"'></a>");
        		   	$('#curpFrenteImg').removeClass('vacia');
 				$('#curpFrenteImg').addClass('cajita');
 				$('#curpFrenteImg').addClass(documentos.curpFrente.color);
@@ -91,8 +92,7 @@ $(document).on('ready',function(){
 				}
        	}
        	if($.isEmptyObject(documentos.cv) == false){
-       		    // console.log(documentos.cv.url);
-				$('#cvFrenteImg').html('<a data-reveal-id="modalCvFrente" ><img src="'+urlBase+'/statics/img/sisreg_pdf.jpg" alt=""></a>');
+				$('#cvFrenteImg').html("<a data-reveal-id='modalCvFrente' ><img onclick=\"reset('"+documentos.cv.IdArchivo+"', 'http://localhost/cge/dashboard_c/"+documentos.cv.IdArchivo+"', 'Archivo "+documentos.cv.IdArchivo+"','es','modalCvFrente');\" src='"+urlBase+"/statics/img/sisreg_pdf.jpg'></a>");
 				$(document).foundation('equalizer', 'reflow');
 				$('#cvFrenteImg').removeClass('vacia');
 				$('#cvFrenteImg').addClass('cajita');
@@ -104,7 +104,7 @@ $(document).on('ready',function(){
 				}
        	}
        	if($.isEmptyObject(documentos.ifeFrente) == false){
-       		   	$('#ifeFrenteImg').html('<a data-reveal-id="modalIfeFrente"><img src="'+urlBase+documentos.ifeFrente.url+'" alt=""></a>');
+       		   	$('#ifeFrenteImg').html("<a data-reveal-id='modalIfeFrente'><img onclick=\"reset('"+documentos.ifeFrente.IdArchivo+"', 'http://localhost/cge/dashboard_c/"+documentos.ifeFrente.IdArchivo+"', 'Archivo "+documentos.ifeFrente.IdArchivo+"','es','modalIfeFrente');\" src='"+urlBase+documentos.ifeFrente.url+"'></a>");
        		   	$('#ifeFrenteImg').removeClass('vacia');
 				$('#ifeFrenteImg').addClass('cajita');
 				$('#ifeFrenteImg').addClass(documentos.ifeFrente.color);
@@ -115,7 +115,7 @@ $(document).on('ready',function(){
 				}
        	}
        	if($.isEmptyObject(documentos.ifeAtras) == false){
-       		   	$('#ifeAtrasImg').html('<a data-reveal-id="modalIfeAtras"><img src="'+urlBase+documentos.ifeAtras.url+'" alt=""></a>');
+       		   	$('#ifeAtrasImg').html("<a data-reveal-id='modalIfeAtras'><img onclick=\"reset('"+documentos.ifeAtras.IdArchivo+"', 'http://localhost/cge/dashboard_c/"+documentos.ifeAtras.IdArchivo+"', 'Archivo "+documentos.ifeAtras.IdArchivo+"','es','modalIfeAtras');\" src='"+urlBase+documentos.ifeAtras.url+"'></a>");
        		   	$('#ifeAtrasImg').removeClass('vacia');
 				$('#ifeAtrasImg').addClass('cajita');
 				$('#ifeAtrasImg').addClass(documentos.ifeAtras.color);

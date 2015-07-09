@@ -2,11 +2,7 @@ body{
 	background: url("../img/registro.jpg") no-repeat scroll center top white;
 }
 .row {
-<<<<<<< HEAD
-	margin-top: 50px;
-=======
 	margin-top: 150px;
->>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 }
 .row .login{
 	margin-top: 0;
@@ -35,10 +31,6 @@ a:hover{
 .cuerpo, .login {
 	background: url("../img/bg.png") repeat center center transparent;
 	box-shadow: 5px 5px 10px gray;
-<<<<<<< HEAD
-	margin-top: 80px;
-=======
->>>>>>> 76d9beaee6f95c71520e6078da2450e2477101fc
 }
 .cuerpo .cuerpo{
 	background: none;
